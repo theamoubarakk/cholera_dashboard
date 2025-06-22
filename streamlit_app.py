@@ -106,21 +106,15 @@ with left_col:
                             # 1. ADDED: Internal title to match Malaria style
                             title="Reported Cholera Cases (Log Scale)")
     
-    # 2. MODIFIED: Height and margins now match the Malaria map exactly
-    fig_map.update_layout(height=400, margin=dict(t=30, b=10))
-    st.plotly_chart(fig_map, use_container_width=True)
-
-
     # --- Line Chart: Cholera Over Time (Smaller) ---
-    # The subheader is removed, and the title is now INSIDE the plot.
-    trend = filtered_df.groupby("Year")["Number of reported cases of cholera"].sum().reset_index()
-    fig_trend = px.line(trend, x="Year", y="Number of reported cases of cholera", markers=True,
-                        # 1. ADDED: Internal title to match Malaria style
-                        title="Cholera Cases Over Time")
+trend = filtered_df.groupby("Year")["Number of reported cases of cholera"].sum().reset_index()
+fig_trend = px.line(trend, x="Year", y="Number of reported cases of cholera", markers=True,
+                    title="Cholera Cases Over Time")
 
-    # 2. MODIFIED: Height and margins now match the Malaria trend line exactly
-    fig_trend.update_layout(height=200, margin=dict(t=30, b=10))
-    st.plotly_chart(fig_trend, use_container_width=True)
+# CORRECTED: The "l" (left margin) parameter is removed.
+fig_trend.update_layout(height=200, margin=dict(t=30, b=10))
+
+st.plotly_chart(fig_trend, use_container_width=True)
 
 
 # --- Right Column (Bar and Box Plots) ---

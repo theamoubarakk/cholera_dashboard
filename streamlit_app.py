@@ -124,7 +124,7 @@ with right_col:
                            color="WHO Region",
                            title="Cases by WHO Region Over Time")
                            
-    fig_regional.update_layout(height=280, margin=dict(l=0, r=10, t=30, b=0))
+    fig_regional.update_layout(height=200, margin=dict(l=0, r=10, t=30, b=0))
     st.plotly_chart(fig_regional, use_container_width=True)
 
 
@@ -146,7 +146,7 @@ with right_col:
                           title="Avg. Fatality Rate by Sanitation & Water Access",
                           category_orders={"Sanitation_Level": ["Low", "Medium", "High"]}) # Ensure correct order
 
-    fig_fatality.update_layout(height=320, margin=dict(l=0, r=10, t=30, b=0))
+    fig_fatality.update_layout(height=200, margin=dict(l=0, r=10, t=30, b=0))
     st.plotly_chart(fig_fatality, use_container_width=True)
 
 
@@ -164,5 +164,5 @@ with right_col:
                             points=False, # Hide individual data points for a cleaner look
                             title="Age Distribution in Urban vs. Rural Settings")
                          
-    fig_violin.update_layout(height=280, margin=dict(l=0, r=10, t=30, b=0))
+    fig_violin.update_layout(height=200, margin=dict(l=0, r=10, t=30, b=0))
     st.plotly_chart(fig_violin, use_container_width=True)

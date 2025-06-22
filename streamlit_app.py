@@ -62,26 +62,27 @@ world_map_fig = px.choropleth(
 )
 
 # Layout
-col1, col2 = st.columns([1.2, 1.8])
+col1, col2 = st.columns([1.1, 1.9])
 
 with col1:
     st.plotly_chart(
-        gender_vaccine_fig.update_layout(height=190, margin=dict(t=20, b=5), title_font_size=14),
+        gender_vaccine_fig.update_layout(height=180, margin=dict(t=15, b=5), title_font_size=13),
         use_container_width=True,
     )
     st.plotly_chart(
-        age_sanitation_fig.update_layout(height=190, margin=dict(t=10, b=0), title_font_size=14),
+        age_sanitation_fig.update_layout(height=180, margin=dict(t=5, b=0), title_font_size=13),
         use_container_width=True,
     )
 
 with col2:
     st.markdown("<h5 class='map-title'>Reported Cholera Cases (Log Scale)</h5>", unsafe_allow_html=True)
     st.plotly_chart(
-        world_map_fig.update_layout(height=310, margin=dict(t=10, b=5), title=None),
+        world_map_fig.update_layout(height=370, margin=dict(t=5, b=5), title=None),
         use_container_width=True,
     )
-    st.markdown("<div style='margin-top: -30px'></div>", unsafe_allow_html=True)
+    st.markdown("<div style='margin-top: -40px'></div>", unsafe_allow_html=True)
     st.plotly_chart(
-        trend_over_time_fig.update_layout(height=160, margin=dict(t=0, b=0), title_font_size=14),
+        trend_over_time_fig.update_layout(height=160, margin=dict(t=0, b=0), title_font_size=13),
         use_container_width=True,
     )
+

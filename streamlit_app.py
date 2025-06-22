@@ -91,7 +91,23 @@ with left_col:
                             title="Reported Cholera Cases (Log Scale)")
     
     # 2. MODIFIED: Height and margins now match the Malaria map exactly
-    fig_map.update_layout(height=400, margin=dict(t=30, b=10 ))
+# --- Left Column (MODIFIED to match the style of the Malaria dashboard) ---
+with left_col:
+    # --- Choropleth Map (Bigger) ---
+    # The subheader is removed, and the title is now INSIDE the plot, like the Malaria code.
+    map_df = filtered_df.groupby("Country")["Number of reported cases of cholera"].sum().reset_index()
+    if not map_df.empty and map_df["Number of reported cases of cholera"].sum() > 0:
+        map_df["Log_Cases"] = np.log10(map_df["Number of reported cases of cholera"] + 1)
+    else:
+        map_df["Log_Cases"] = 0
+
+    fig_map = px.choropleth(map_df, locations="Country", locationmode="country names",
+                            color="Log_Cases", color_continuous_scale="Reds",
+                            # 1. ADDED: Internal title to match Malaria style
+                            title="Reported Cholera Cases (Log Scale)")
+    
+    # 2. MODIFIED: Height and margins now match the Malaria map exactly
+    fig_map.update_layout(height=400, margin=dict(t=30, b=10))
     st.plotly_chart(fig_map, use_container_width=True)
 
 
@@ -103,13 +119,8 @@ with left_col:
                         title="Cholera Cases Over Time")
 
     # 2. MODIFIED: Height and margins now match the Malaria trend line exactly
-fig_trend.update_layout(
-    height=200, 
-    margin=dict(t=30, b=10),
-    yaxis_title_font=dict(size=10) # Set the font size (e.g., 10px)
-)
-
-st.plotly_chart(fig_trend, use_container_width=True)
+    fig_trend.update_layout(height=200, margin=dict(t=30, b=10))
+    st.plotly_chart(fig_trend, use_container_width=True)
 
 
 # --- Right Column (Bar and Box Plots) ---

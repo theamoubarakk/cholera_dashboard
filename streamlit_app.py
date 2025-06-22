@@ -108,7 +108,7 @@ with right_col:
     fig_factors = px.bar(all_factors_df, x='Cholera case fatality rate', y='Display_Label',
                          color='Cholera case fatality rate', color_continuous_scale='Reds',
                          orientation='h', labels={'Display_Label': '', 'Cholera case fatality rate': 'Avg. Fatality Rate (%)'})
-    fig_factors.update_layout(height=200, margin=dict(l=10, r=10, t=10, b=0), coloraxis_showscale=False, yaxis={'title': ''})
+    fig_factors.update_layout(height=180, margin=dict(l=10, r=10, t=10, b=0), coloraxis_showscale=False, yaxis={'title': ''})
     st.plotly_chart(fig_factors, use_container_width=True)
 
     # --- CHART 2: Heatmap ---

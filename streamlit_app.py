@@ -152,22 +152,40 @@ with right_col:
     st.plotly_chart(fig_fatality, use_container_width=True)
 
 
-    # --- GRAPH 3 (Optional third graph): Age Distribution in Urban vs. Rural areas ---
-    st.subheader("Age Distribution by Location")
-    
-    # # Prepare data: simply select the needed columns and drop missing values
-    age_location_data = filtered_df[['Urban_or_Rural', 'Age']].dropna()
-    
-    fig_violin = px.violin(age_location_data, 
-                            x='Urban_or_Rural', 
-                            y='Age', 
-                            color='Urban_or_Rural',
-                            box=True, # Show a box plot inside the violin
-                            points=False, # Hide individual data points for a cleaner look
-                           color_discrete_map={
-                                "Urban": "#E6443E",    # Medium Red
-                                "Rural": "#B22222"     # Dark Red
-                            } )
-                         
-    fig_violin.update_layout(height=145, margin=dict(l=0, r=10, t=30, b=0))
-    st.plotly_chart(fig_violin, use_container_width=True)
+   import plotly.graph_objects as go
+
+# --- GRAPH 3 Alternative: Overlaid Histograms ---
+st.subheader("Age Distribution by Location (Histogram)")
+
+# Create separate dataframes for urban and rural
+urban_ages = filtered_df[filtered_df['Urban_or_Rural'] == 'Urban']['Age'].dropna()
+rural_ages = filtered_df[filtered_df['Urban_or_Rural'] == 'Rural']['Age'].dropna()
+
+fig_hist = go.Figure()
+
+# Add a trace for Urban ages with some transparency
+fig_hist.add_trace(go.Histogram(
+    x=urban_ages,
+    name='Urban',
+    marker_color='#E6443E',  # Medium Red
+    opacity=0.75
+))
+
+# Add a trace for Rural ages with some transparency
+fig_hist.add_trace(go.Histogram(
+    x=rural_ages,
+    name='Rural',
+    marker_color='#B22222',  # Dark Red
+    opacity=0.75
+))
+
+# Update the layout to overlay the bars
+fig_hist.update_layout(
+    barmode='overlay',
+    title_text='Comparing Age Histograms',
+    xaxis_title_text='Age',
+    yaxis_title_text='Count',
+    height=200, 
+    margin=dict(l=0, r=10, t=30, b=0)
+)
+st.plotly_chart(fig_hist, use_container_width=True)

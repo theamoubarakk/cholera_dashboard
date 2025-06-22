@@ -185,7 +185,7 @@ fig_hist.update_layout(
     title_text='Comparing Age Histograms',
     xaxis_title_text='Age',
     yaxis_title_text='Count',
-    height=200, 
+    height=145, 
     margin=dict(l=0, r=10, t=30, b=0)
 )
 st.plotly_chart(fig_hist, use_container_width=True)

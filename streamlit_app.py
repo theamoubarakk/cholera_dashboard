@@ -133,7 +133,7 @@ with right_col:
                          labels={'Display_Label': '', 'Cholera case fatality rate': 'Avg. Fatality Rate (%)'})
                          
     # Update layout for a clean look
-    fig_factors.update_layout(height=180, # Give this important chart more vertical space
+    fig_factors.update_layout(height=160, # Give this important chart more vertical space
                               margin=dict(l=10, r=10, t=10, b=40), 
                               coloraxis_showscale=False, 
                               yaxis={'title': ''})

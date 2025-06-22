@@ -107,7 +107,7 @@ with right_col:
                            color="WHO Region",
                            color_discrete_sequence=px.colors.sequential.Reds_r)
     # Balanced height with ZERO TOP MARGIN
-    fig_regional.update_layout(height=200, margin=dict(l=0, r=10, t=0, b=0))
+    fig_regional.update_layout(height=145, margin=dict(l=0, r=10, t=0, b=0))
     st.plotly_chart(fig_regional, use_container_width=True)
 
 
@@ -124,7 +124,7 @@ with right_col:
                           category_orders={"Sanitation_Level": ["Low", "Medium", "High"]},
                           color_discrete_map={"Low": "#FFA07A", "Medium": "#E6443E", "High": "#B22222"})
     # Balanced height with ZERO TOP MARGIN
-    fig_fatality.update_layout(height=200, margin=dict(l=0, r=10, t=0, b=0))
+    fig_fatality.update_layout(height=145, margin=dict(l=0, r=10, t=0, b=0))
     st.plotly_chart(fig_fatality, use_container_width=True)
 
 
@@ -139,7 +139,7 @@ with right_col:
         barmode='overlay',
         xaxis_title_text='Age',
         yaxis_title_text='Count',
-        height=200, # Balanced height
+        height=145, # Balanced height
         margin=dict(l=0, r=10, t=0, b=0) # ZERO TOP MARGIN
     )
     st.plotly_chart(fig_hist, use_container_width=True)

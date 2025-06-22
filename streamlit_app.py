@@ -75,9 +75,10 @@ st.title("\U0001F30E Global Cholera Tracker")
 left_col, right_col = st.columns([3, 2])
 
 # --- Left Column (Map and Trend Line with NO gap) ---
+# --- Left Column (MODIFIED to match the style of the Malaria dashboard) ---
 with left_col:
-    # Choropleth Map (Bigger)
-    st.subheader("Reported Cholera Cases (Log Scale)")
+    # --- Choropleth Map (Bigger) ---
+    # The subheader is removed, and the title is now INSIDE the plot, like the Malaria code.
     map_df = filtered_df.groupby("Country")["Number of reported cases of cholera"].sum().reset_index()
     if not map_df.empty and map_df["Number of reported cases of cholera"].sum() > 0:
         map_df["Log_Cases"] = np.log10(map_df["Number of reported cases of cholera"] + 1)
@@ -85,17 +86,24 @@ with left_col:
         map_df["Log_Cases"] = 0
 
     fig_map = px.choropleth(map_df, locations="Country", locationmode="country names",
-                            color="Log_Cases", color_continuous_scale="Reds")
-    # Taller map with ZERO margins
-    fig_map.update_layout(height=400, margin=dict(l=0, r=0, t=0, b=0))
+                            color="Log_Cases", color_continuous_scale="Reds",
+                            # 1. ADDED: Internal title to match Malaria style
+                            title="Reported Cholera Cases (Log Scale)")
+    
+    # 2. MODIFIED: Height and margins now match the Malaria map exactly
+    fig_map.update_layout(height=400, margin=dict(t=30, b=10))
     st.plotly_chart(fig_map, use_container_width=True)
 
-    # Line Chart: Cholera Over Time (Smaller)
-    st.subheader("Cholera Cases Over Time")
+
+    # --- Line Chart: Cholera Over Time (Smaller) ---
+    # The subheader is removed, and the title is now INSIDE the plot.
     trend = filtered_df.groupby("Year")["Number of reported cases of cholera"].sum().reset_index()
-    fig_trend = px.line(trend, x="Year", y="Number of reported cases of cholera", markers=True)
-    # Shorter trend line with ZERO TOP MARGIN to sit flush under its title
-    fig_trend.update_layout(height=160, margin=dict(l=0, r=0, t=0, b=30))
+    fig_trend = px.line(trend, x="Year", y="Number of reported cases of cholera", markers=True,
+                        # 1. ADDED: Internal title to match Malaria style
+                        title="Cholera Cases Over Time")
+
+    # 2. MODIFIED: Height and margins now match the Malaria trend line exactly
+    fig_trend.update_layout(height=200, margin=dict(t=30, b=10))
     st.plotly_chart(fig_trend, use_container_width=True)
 
 

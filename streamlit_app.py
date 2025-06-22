@@ -133,7 +133,7 @@ with right_col:
                          orientation='h',
                          labels={'Category': 'Factor Category', 'Cholera case fatality rate': 'Avg. Fatality Rate (%)'})
     
-    fig_factors.update_layout(height=180, margin=dict(l=0, r=10, t=10, b=0), coloraxis_showscale=False)
+    fig_factors.update_layout(height=160, margin=dict(l=0, r=10, t=10, b=0), coloraxis_showscale=False)
     st.plotly_chart(fig_factors, use_container_width=True)
     # --- CHART 3: Heatmap of Fatality Rate by Region and Sanitation ---
     st.subheader("Fatality Rate: Region vs. Sanitation")
@@ -150,7 +150,7 @@ with right_col:
                             labels=dict(x="Sanitation Level", y="WHO Region", color="Avg. Fatality Rate"),
                             color_continuous_scale='Reds')
 
-    fig_heatmap.update_layout(height=180, margin=dict(l=0, r=10, t=10, b=0))
+    fig_heatmap.update_layout(height=190, margin=dict(l=0, r=10, t=10, b=0))
     st.plotly_chart(fig_heatmap, use_container_width=True)
 
  # --- CHART 1: Population Pyramid of Cases by Region and Gender ---
@@ -182,7 +182,7 @@ with right_col:
             ticktext=['5M', '2.5M', '0', '2.5M', '5M']
         ),
         yaxis_autorange='reversed',
-        height=220, 
+        height=200, 
         margin=dict(l=0, r=10, t=10, b=0),
         legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1)
     )

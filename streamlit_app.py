@@ -103,13 +103,7 @@ with left_col:
                         title="Cholera Cases Over Time")
 
     # 2. MODIFIED: Height and margins now match the Malaria trend line exactly
-    fig_trend.update_layout(
-    height=200,
-    margin=dict(t=30, b=10, l=70),  # Added left margin for the y-axis title
-    yaxis_title_font=dict(size=11) # Made the y-axis font smaller
-)
-
-st.plotly_chart(fig_trend, use_container_width=True)
+   fig_trend.update_layout((height=200, margin=dict(t=30, b=10, l=50)
 
 
 # --- Right Column (Bar and Box Plots) ---

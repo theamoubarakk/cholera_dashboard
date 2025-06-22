@@ -38,11 +38,13 @@ df = load_data("enriched_data_logical_cleaned.csv")
 with st.sidebar:
     st.title("Filters")
     countries = st.multiselect("Select Countries", sorted(df["Country"].dropna().unique()))
-    year_range = st.slider("Select Year Range", int(df["Year"].min()), int(df["Year"].max()), (2000, 2016))
+    year_range = st.slider("Select Year Range", int(df["Year"].min()), int(df["Year"].max()), (1994, 2016)) # Adjusted to match screenshot
     genders = st.multiselect("Select Gender", df["Gender"].dropna().unique(), default=list(df["Gender"].dropna().unique()))
     location = st.radio("Urban or Rural", ["Both", "Urban", "Rural"], index=0)
-    water_access = st.selectbox("Access to Clean Water", ["Both", "Yes", "No"])
-    vaccinated = st.selectbox("Vaccinated Against Cholera", ["Both", "Yes", "No"])
+    
+    # MODIFIED: Changed from st.selectbox to st.radio
+    water_access = st.radio("Access to Clean Water", ["Both", "Yes", "No"], index=0)
+    vaccinated = st.radio("Vaccinated Against Cholera", ["Both", "Yes", "No"], index=0)
 
 # --- Filter Data ---
 filtered_df = df.copy()

@@ -48,14 +48,18 @@ fig_trend = px.line(time_df, x="Year", y="Number of reported cases of cholera", 
                     title="Cholera Cases Over Time")
 
 # Heatmap
-heatmap_data = df.groupby(["Gender", "Age_Group"])["Number of reported cases of cholera"].mean().unstack()
-fig_heatmap = go.Figure(data=go.Heatmap(
-    z=heatmap_data.values,
-    x=heatmap_data.columns.astype(str),
-    y=heatmap_data.index,
-    colorscale='YlGnBu'
-))
-fig_heatmap.update_layout(title="Avg Cholera Cases by Gender and Age Group", height=300)
+# Heatmap: Cholera Cases by Gender and Age
+heatmap_data = filtered_df.groupby(['Gender', 'Age'])['Number of reported cases of cholera'].sum().reset_index()
+heatmap_pivot = heatmap_data.pivot(index='Gender', columns='Age', values='Number of reported cases of cholera').fillna(0)
+
+fig_heatmap = px.imshow(
+    heatmap_pivot.values,
+    labels=dict(x="Age", y="Gender", color="Cholera Cases"),
+    x=heatmap_pivot.columns,
+    y=heatmap_pivot.index,
+    color_continuous_scale="Reds"
+)
+fig_heatmap.update_layout(title="Cholera Cases by Gender and Age")
 
 # Correlation bar
 numeric_df = df.select_dtypes(include=[np.number])

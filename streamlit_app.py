@@ -2,6 +2,8 @@ import streamlit as st
 import pandas as pd
 import geopandas as gpd
 import matplotlib.pyplot as plt
+import plotly.express as px
+
 
 # Load your dataset
 df = pd.read_csv("enriched_data_logical.csv")

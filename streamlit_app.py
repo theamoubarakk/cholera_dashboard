@@ -3,35 +3,80 @@ import pandas as pd
 import numpy as np
 import plotly.express as px
 
-# -------------------------------
-# ✅ Load and clean the dataset
-# -------------------------------
+# ----------------------------
+# ✅ Load and clean the data
+# ----------------------------
 df = pd.read_csv("enriched_data_logical.csv")
 df["Country"] = df["Country"].str.strip()
+df["Number of reported cases of cholera"] = pd.to_numeric(df["Number of reported cases of cholera"], errors="coerce").fillna(0)
 
-# Convert cholera case values to numeric and handle errors
-df["Number of reported cases of cholera"] = pd.to_numeric(
-    df["Number of reported cases of cholera"], errors="coerce"
-).fillna(0)
-
-# -------------------------------
-# ✅ Page configuration
-# -------------------------------
+# ----------------------------
+# ✅ Streamlit setup
+# ----------------------------
 st.set_page_config(layout="wide")
 st.title("🌍 Global Cholera Tracker")
-st.markdown("This interactive map shows the **total number of reported cholera cases** by country using a logarithmic color scale for clarity.")
+st.markdown("Use the filters on the left to explore cholera cases across countries and demographics.")
 
-# -------------------------------
-# ✅ Aggregate cases by country
-# -------------------------------
-map_df = df.groupby("Country")["Number of reported cases of cholera"].sum().reset_index()
+# ----------------------------
+# ✅ Sidebar filters
+# ----------------------------
+st.sidebar.header("🔍 Filters")
 
-# Log-scale transformation for better shading
+selected_countries = st.sidebar.multiselect(
+    "Select Countries", sorted(df["Country"].unique()), default=sorted(df["Country"].unique())
+)
+
+year_range = st.sidebar.slider(
+    "Select Year Range",
+    min_value=int(df["Year"].min()),
+    max_value=int(df["Year"].max()),
+    value=(2000, 2016)
+)
+
+selected_genders = st.sidebar.multiselect(
+    "Select Gender", df["Gender"].unique(), default=list(df["Gender"].unique())
+)
+
+selected_urban_rural = st.sidebar.radio(
+    "Urban or Rural", ["Both", "Urban", "Rural"], index=0
+)
+
+selected_water = st.sidebar.multiselect(
+    "Access to Clean Water", df["Access_to_Clean_Water"].unique(), default=list(df["Access_to_Clean_Water"].unique())
+)
+
+selected_vaccine = st.sidebar.multiselect(
+    "Vaccinated Against Cholera", df["Vaccinated_Against_Cholera"].unique(), default=list(df["Vaccinated_Against_Cholera"].unique())
+)
+
+selected_sanitation = st.sidebar.multiselect(
+    "Sanitation Level", df["Sanitation_Level"].unique(), default=list(df["Sanitation_Level"].unique())
+)
+
+# ----------------------------
+# ✅ Apply filters to data
+# ----------------------------
+filtered_df = df[
+    (df["Country"].isin(selected_countries)) &
+    (df["Year"].between(year_range[0], year_range[1])) &
+    (df["Gender"].isin(selected_genders)) &
+    (df["Access_to_Clean_Water"].isin(selected_water)) &
+    (df["Vaccinated_Against_Cholera"].isin(selected_vaccine)) &
+    (df["Sanitation_Level"].isin(selected_sanitation))
+]
+
+if selected_urban_rural != "Both":
+    filtered_df = filtered_df[filtered_df["Urban_or_Rural"] == selected_urban_rural]
+
+# ----------------------------
+# ✅ Create map data
+# ----------------------------
+map_df = filtered_df.groupby("Country")["Number of reported cases of cholera"].sum().reset_index()
 map_df["Log_Cases"] = np.log1p(map_df["Number of reported cases of cholera"])
 
-# -------------------------------
-# ✅ Build interactive choropleth map
-# -------------------------------
+# ----------------------------
+# ✅ Plot the interactive map
+# ----------------------------
 fig = px.choropleth(
     map_df,
     locations="Country",
@@ -52,7 +97,4 @@ fig.update_geos(
     fitbounds="locations"
 )
 
-# -------------------------------
-# ✅ Display the map
-# -------------------------------
 st.plotly_chart(fig, use_container_width=True)

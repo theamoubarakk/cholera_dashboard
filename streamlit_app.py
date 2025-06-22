@@ -77,6 +77,26 @@ col3, col4 = st.columns(2)
 
 # Donut: Access to Clean Water
 with col3:
+    # Group and count values for Access_to_Clean_Water
+donut1 = filtered_df["Access_to_Clean_Water"].value_counts().reset_index()
+donut1.columns = ["Access_to_Clean_Water", "Count"]
+
+# Only plot if there is data
+if not donut1.empty:
+    fig_donut1 = px.pie(
+        donut1,
+        values="Count",
+        names="Access_to_Clean_Water",
+        hole=0.5,
+        title="Access to Clean Water",
+        color_discrete_sequence=px.colors.sequential.Blues
+    )
+    with col1:
+        st.plotly_chart(fig_donut1, use_container_width=True)
+else:
+    with col1:
+        st.info("No data available for Access to Clean Water.")
+
     st.subheader("Access to Clean Water")
     donut1 = filtered_df["Access_to_Clean_Water"].value_counts().reset_index()
     fig_donut1 = px.pie(donut1, values="Access_to_Clean_Water", names="index", hole=0.5, color_discrete_sequence=px.colors.sequential.Blues)

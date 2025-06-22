@@ -61,20 +61,10 @@ world_map_fig = px.choropleth(
     color_continuous_scale="Reds", title=""
 )
 
-# Layout
-col1, col2 = st.columns([1.1, 1.9])
+# Layout: LEFT = Map + Trend, RIGHT = 2 small stacked charts
+col_left, col_right = st.columns([1.8, 1.1])
 
-with col1:
-    st.plotly_chart(
-        gender_vaccine_fig.update_layout(height=180, margin=dict(t=15, b=5), title_font_size=13),
-        use_container_width=True,
-    )
-    st.plotly_chart(
-        age_sanitation_fig.update_layout(height=180, margin=dict(t=5, b=0), title_font_size=13),
-        use_container_width=True,
-    )
-
-with col2:
+with col_left:
     st.markdown("<h5 class='map-title'>Reported Cholera Cases (Log Scale)</h5>", unsafe_allow_html=True)
     st.plotly_chart(
         world_map_fig.update_layout(height=370, margin=dict(t=5, b=5), title=None),
@@ -86,3 +76,12 @@ with col2:
         use_container_width=True,
     )
 
+with col_right:
+    st.plotly_chart(
+        gender_vaccine_fig.update_layout(height=180, margin=dict(t=15, b=5), title_font_size=13),
+        use_container_width=True,
+    )
+    st.plotly_chart(
+        age_sanitation_fig.update_layout(height=180, margin=dict(t=5, b=0), title_font_size=13),
+        use_container_width=True,
+    )

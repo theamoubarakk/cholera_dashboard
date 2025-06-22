@@ -1,4 +1,3 @@
-
 import streamlit as st
 import pandas as pd
 import plotly.express as px
@@ -26,7 +25,7 @@ with st.sidebar:
     all_countries = df["Country"].dropna().unique().tolist()
     default_countries = [c for c in ["Nigeria", "India", "United States"] if c in all_countries]
     countries = st.multiselect("Select Countries", all_countries, default=default_countries)
-
+    
     years = st.slider("Select Year Range", int(df["Year"].min()), int(df["Year"].max()), (2000, 2016))
     gender = st.multiselect("Gender", df["Gender"].unique(), default=list(df["Gender"].unique()))
     urban_rural = st.radio("Urban or Rural", ["Urban", "Rural", "Both"], index=2)
@@ -46,7 +45,7 @@ if urban_rural != "Both":
 # Layout with no scrolling
 col1, col2 = st.columns(2)
 
-# Map: Cholera cases by country
+# Map: Cholera cases by country (with fixed projection)
 with col1:
     map_df = filtered_df.groupby("Country")["Number of reported cases of cholera"].sum().reset_index()
     map_fig = px.choropleth(
@@ -58,7 +57,14 @@ with col1:
         color_continuous_scale="OrRd",
         template="plotly_white"
     )
-    map_fig.update_geos(showcountries=True, showcoastlines=True, showland=True, fitbounds="locations")
+    map_fig.update_geos(
+        showcountries=True,
+        showcoastlines=True,
+        showland=True,
+        projection_type="natural earth",
+        lonaxis_range=[-180, 180],
+        lataxis_range=[-60, 90]
+    )
     st.plotly_chart(map_fig, use_container_width=True)
 
 # Bar: Deaths by sanitation level

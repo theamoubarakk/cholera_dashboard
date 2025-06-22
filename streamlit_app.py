@@ -6,45 +6,38 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 import plotly.graph_objects as go
 
-# Load and prepare data
+# Load data
 df = pd.read_csv("enriched_data_logical.csv")
 df["Number of reported cases of cholera"] = pd.to_numeric(df["Number of reported cases of cholera"], errors="coerce")
 
-# Sidebar filters (optional)
+# Sidebar filters
 with st.sidebar:
     st.title("Filters")
     country_list = df["Country"].dropna().unique().tolist()
     st.multiselect("Select Countries", options=country_list)
-    st.slider("Select Year Range", min_value=int(df["Year"].min()), max_value=int(df["Year"].max()), value=(2000, 2016))
+    st.slider("Select Year Range", int(df["Year"].min()), int(df["Year"].max()), (2000, 2016))
     st.multiselect("Select Gender", ["Male", "Female"], default=["Male", "Female"])
     st.radio("Urban or Rural", ["Both", "Urban", "Rural"], index=0)
     st.selectbox("Access to Clean Water", ["Both", "Yes", "No"])
     st.selectbox("Vaccinated Against Cholera", ["Both", "Yes", "No"])
 
-# Styling
+# CSS styling for tighter layout
 st.markdown("""
     <style>
         .block-container {
             padding-top: 1rem;
             padding-bottom: 1rem;
         }
-        h1 {
-            font-size: 30px !important;
-        }
-        h2, h3, h4, h5 {
-            font-size: 16px !important;
-            margin-bottom: 0.2rem;
-        }
-        .map-title {
-            margin-bottom: -10px;
-        }
+        h1 { font-size: 30px !important; }
+        h2, h3, h4, h5 { font-size: 16px !important; margin-bottom: 0.2rem; }
+        .map-title { margin-bottom: -10px; }
     </style>
 """, unsafe_allow_html=True)
 
-# Page header
+# Header
 st.title("🌍 Global Cholera Tracker")
 
-# Create figures
+# Create charts
 gender_vaccine_fig = px.bar(
     df.groupby(["Gender", "Vaccinated_Against_Cholera"])["Number of reported cases of cholera"].sum().reset_index(),
     x="Gender", y="Number of reported cases of cholera", color="Vaccinated_Against_Cholera",
@@ -52,7 +45,8 @@ gender_vaccine_fig = px.bar(
 )
 
 age_sanitation_fig = px.box(
-    df, x="Sanitation_Level", y="Age", color="Sanitation_Level", title="Age Distribution by Sanitation Level"
+    df, x="Sanitation_Level", y="Age", color="Sanitation_Level",
+    title="Age Distribution by Sanitation Level"
 )
 
 trend_df = df.groupby("Year")["Number of reported cases of cholera"].sum().reset_index()
@@ -67,27 +61,27 @@ world_map_fig = px.choropleth(
     color_continuous_scale="Reds", title=""
 )
 
-# Layout with 2 left (small) and 2 right (large)
+# Layout
 col1, col2 = st.columns([1.2, 1.8])
 
 with col1:
     st.plotly_chart(
-        gender_vaccine_fig.update_layout(height=210, margin=dict(t=25, b=5, l=0, r=0), title_font_size=14),
+        gender_vaccine_fig.update_layout(height=210, margin=dict(t=25, b=5), title_font_size=14),
         use_container_width=True,
     )
     st.plotly_chart(
-        age_sanitation_fig.update_layout(height=210, margin=dict(t=20, b=0, l=0, r=0), title_font_size=14),
+        age_sanitation_fig.update_layout(height=210, margin=dict(t=10, b=0), title_font_size=14),
         use_container_width=True,
     )
 
 with col2:
     st.markdown("<h5 class='map-title'>Reported Cholera Cases (Log Scale)</h5>", unsafe_allow_html=True)
     st.plotly_chart(
-        world_map_fig.update_layout(height=320, margin=dict(t=10, b=10, l=0, r=0)),
+        world_map_fig.update_layout(height=360, margin=dict(t=10, b=5)),
         use_container_width=True,
     )
     st.markdown("<div style='margin-top: -20px'></div>", unsafe_allow_html=True)
     st.plotly_chart(
-        trend_over_time_fig.update_layout(height=280, margin=dict(t=10, b=0, l=0, r=0), title_font_size=14),
+        trend_over_time_fig.update_layout(height=180, margin=dict(t=0, b=0), title_font_size=14),
         use_container_width=True,
     )

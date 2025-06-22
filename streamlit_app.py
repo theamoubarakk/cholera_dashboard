@@ -124,7 +124,7 @@ with right_col:
                            color="WHO Region",
                         )
                            
-    fig_regional.update_layout(height=160, margin=dict(l=0, r=10, t=30, b=0))
+    fig_regional.update_layout(height=145, margin=dict(l=0, r=10, t=30, b=0))
     st.plotly_chart(fig_regional, use_container_width=True)
 
 
@@ -145,7 +145,7 @@ with right_col:
                           facet_col="Access_to_Clean_Water", # Creates side-by-side charts,
                           category_orders={"Sanitation_Level": ["Low", "Medium", "High"]}) # Ensure correct order
 
-    fig_fatality.update_layout(height=160, margin=dict(l=0, r=10, t=30, b=0))
+    fig_fatality.update_layout(height=145, margin=dict(l=0, r=10, t=30, b=0))
     st.plotly_chart(fig_fatality, use_container_width=True)
 
 
@@ -163,5 +163,5 @@ with right_col:
                             points=False, # Hide individual data points for a cleaner look
                             )
                          
-    fig_violin.update_layout(height=160, margin=dict(l=0, r=10, t=30, b=0))
+    fig_violin.update_layout(height=145, margin=dict(l=0, r=10, t=30, b=0))
     st.plotly_chart(fig_violin, use_container_width=True)

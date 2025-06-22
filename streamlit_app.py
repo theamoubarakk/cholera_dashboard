@@ -182,7 +182,7 @@ with right_col:
             ticktext=['5M', '2.5M', '0', '2.5M', '5M']
         ),
         yaxis_autorange='reversed',
-        height=180, 
+        height=160, 
         margin=dict(l=0, r=10, t=10, b=0),
         legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1)
     )

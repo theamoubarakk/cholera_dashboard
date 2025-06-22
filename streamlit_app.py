@@ -62,20 +62,20 @@ world_map_fig = px.choropleth(
 )
 
 # Layout with enforced containers and external titles
-col_left, col_right = st.columns([1.8, 1.2])
+col_left, col_right = st.columns([1.45, 1.05])
 
 with col_left:
     with st.container():
         st.markdown("### Reported Cholera Cases (Log Scale)")
         st.plotly_chart(
-            world_map_fig.update_layout(height=340, margin=dict(t=0, b=0), title=None),
+            world_map_fig.update_layout(height=320, margin=dict(t=0, b=0), title=None),
             use_container_width=True,
         )
 
     with st.container():
         st.markdown("### Cholera Cases Over Time")
         st.plotly_chart(
-            trend_over_time_fig.update_layout(height=200, margin=dict(t=0, b=0), title=None),
+            trend_over_time_fig.update_layout(height=170, margin=dict(t=0, b=0), title=None),
             use_container_width=True,
         )
 
@@ -83,13 +83,13 @@ with col_right:
     with st.container():
         st.markdown("### Cases by Gender and Vaccination Status")
         st.plotly_chart(
-            gender_vaccine_fig.update_layout(height=270, margin=dict(t=0, b=0), title=None),
+            gender_vaccine_fig.update_layout(height=230, margin=dict(t=0, b=0), title=None),
             use_container_width=True,
         )
 
     with st.container():
         st.markdown("### Age Distribution by Sanitation Level")
         st.plotly_chart(
-            age_sanitation_fig.update_layout(height=270, margin=dict(t=0, b=0), title=None),
+            age_sanitation_fig.update_layout(height=230, margin=dict(t=0, b=0), title=None),
             use_container_width=True,
         )

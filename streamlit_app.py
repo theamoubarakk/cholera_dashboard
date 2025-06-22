@@ -1,9 +1,21 @@
+
 import streamlit as st
 import pandas as pd
 import plotly.express as px
 
-# Load data
+# Load and clean data
 df = pd.read_csv("enriched_data_logical.csv")
+df["Country"] = df["Country"].str.strip()
+
+# Optional: Fix known country name issues
+df["Country"] = df["Country"].replace({
+    "United States of America": "United States",
+    "Côte d’Ivoire": "Ivory Coast",
+    "Russian Federation": "Russia",
+    "Viet Nam": "Vietnam",
+    "Syrian Arab Republic": "Syria",
+    "Democratic Republic of the Congo": "DR Congo"
+})
 
 st.set_page_config(layout="wide")
 st.title("🌍 Cholera Dashboard - Global Trends and Risk Factors")
@@ -14,7 +26,7 @@ with st.sidebar:
     all_countries = df["Country"].dropna().unique().tolist()
     default_countries = [c for c in ["Nigeria", "India", "United States"] if c in all_countries]
     countries = st.multiselect("Select Countries", all_countries, default=default_countries)
-    
+
     years = st.slider("Select Year Range", int(df["Year"].min()), int(df["Year"].max()), (2000, 2016))
     gender = st.multiselect("Gender", df["Gender"].unique(), default=list(df["Gender"].unique()))
     urban_rural = st.radio("Urban or Rural", ["Urban", "Rural", "Both"], index=2)
@@ -43,8 +55,10 @@ with col1:
         locationmode="country names",
         color="Number of reported cases of cholera",
         title="Cholera Cases by Country",
-        color_continuous_scale="Reds"
+        color_continuous_scale="OrRd",
+        template="plotly_white"
     )
+    map_fig.update_geos(showcountries=True, showcoastlines=True, showland=True, fitbounds="locations")
     st.plotly_chart(map_fig, use_container_width=True)
 
 # Bar: Deaths by sanitation level

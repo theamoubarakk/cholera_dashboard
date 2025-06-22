@@ -150,7 +150,7 @@ with right_col:
                                         columns='Sanitation_Level', aggfunc='mean').reindex(columns=['Low', 'Medium', 'High'])
     fig_heatmap = px.imshow(heatmap_data, labels=dict(x="Sanitation Level", y="", color="Avg. Fatality Rate"),
                             color_continuous_scale='Reds')
-    fig_heatmap.update_layout(height=185, margin=dict(l=0, r=10, t=0, b=0))
+    fig_heatmap.update_layout(height=190, margin=dict(l=0, r=10, t=0, b=0))
     st.plotly_chart(fig_heatmap, use_container_width=True)
 
     

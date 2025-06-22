@@ -155,7 +155,7 @@ with right_col:
 
     
     # --- CHART 3: (Kept as is) REGIONAL CASES BY GENDER ---
-    st.subheader("Regional Cases by Gender")
+    st.subheader("Regional Gender Gaps in Cholera Cases")
     pyramid_data = clean_df.groupby(['WHO Region', 'Gender'])['Number of reported cases of cholera'].sum().reset_index()
     pyramid_data['Cases'] = pyramid_data.apply(
         lambda row: -row['Number of reported cases of cholera'] if row['Gender'] == 'Male' else row['Number of reported cases of cholera'], axis=1)

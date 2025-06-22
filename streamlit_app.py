@@ -60,7 +60,7 @@ if vaccinated != "Both":
     filtered_df = filtered_df[filtered_df["Vaccinated_Against_Cholera"] == vaccinated]
 
 # --- Main Page Title ---
-st.title("\U0001F30E Global Cholera Tracker")
+st.title("\U0001F30E Cholera Dashboard - Global Trends and Risk Factors")
 
 # --- Layout Columns ---
 left_col, right_col = st.columns([3, 2])

@@ -92,12 +92,20 @@ with col1:
 
 
 # Donut: Vaccinated
-with col4:
-    st.subheader("Vaccinated Against Cholera")
+with col2:
     donut2 = filtered_df["Vaccinated_Against_Cholera"].value_counts().reset_index()
-    fig_donut2 = px.pie(donut2, values="Vaccinated_Against_Cholera", names="index", hole=0.5, color_discrete_sequence=px.colors.sequential.Greens)
-    fig_donut2.update_layout(showlegend=True, height=350)
+    donut2.columns = ["Vaccinated_Against_Cholera", "Count"]
+
+    fig_donut2 = px.pie(
+        donut2,
+        values="Count",
+        names="Vaccinated_Against_Cholera",
+        hole=0.5,
+        title="Vaccinated Against Cholera",
+        color_discrete_sequence=px.colors.sequential.Greens
+    )
     st.plotly_chart(fig_donut2, use_container_width=True)
+
 
 # Row 3
 col5, col6 = st.columns(2)

@@ -61,27 +61,35 @@ world_map_fig = px.choropleth(
     color_continuous_scale="Reds", title=""
 )
 
-# Layout: LEFT = Map + Trend, RIGHT = 2 small stacked charts
-col_left, col_right = st.columns([1.8, 1.1])
+# Layout with enforced containers and external titles
+col_left, col_right = st.columns([1.8, 1.2])
 
 with col_left:
-    st.markdown("<h5 class='map-title'>Reported Cholera Cases (Log Scale)</h5>", unsafe_allow_html=True)
-    st.plotly_chart(
-        world_map_fig.update_layout(height=370, margin=dict(t=5, b=5), title=None),
-        use_container_width=True,
-    )
-    st.markdown("<div style='margin-top: -40px'></div>", unsafe_allow_html=True)
-    st.plotly_chart(
-        trend_over_time_fig.update_layout(height=160, margin=dict(t=0, b=0), title_font_size=13),
-        use_container_width=True,
-    )
+    with st.container():
+        st.markdown("### Reported Cholera Cases (Log Scale)")
+        st.plotly_chart(
+            world_map_fig.update_layout(height=340, margin=dict(t=0, b=0), title=None),
+            use_container_width=True,
+        )
+
+    with st.container():
+        st.markdown("### Cholera Cases Over Time")
+        st.plotly_chart(
+            trend_over_time_fig.update_layout(height=200, margin=dict(t=0, b=0), title=None),
+            use_container_width=True,
+        )
 
 with col_right:
-    st.plotly_chart(
-        gender_vaccine_fig.update_layout(height=180, margin=dict(t=15, b=5), title_font_size=13),
-        use_container_width=True,
-    )
-    st.plotly_chart(
-        age_sanitation_fig.update_layout(height=180, margin=dict(t=5, b=0), title_font_size=13),
-        use_container_width=True,
-    )
+    with st.container():
+        st.markdown("### Cases by Gender and Vaccination Status")
+        st.plotly_chart(
+            gender_vaccine_fig.update_layout(height=270, margin=dict(t=0, b=0), title=None),
+            use_container_width=True,
+        )
+
+    with st.container():
+        st.markdown("### Age Distribution by Sanitation Level")
+        st.plotly_chart(
+            age_sanitation_fig.update_layout(height=270, margin=dict(t=0, b=0), title=None),
+            use_container_width=True,
+        )

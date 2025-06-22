@@ -96,50 +96,98 @@ with left_col:
     st.plotly_chart(fig_trend, use_container_width=True)
 
 
-# --- Right Column (Three Interesting Graphs) ---
+# --- Right Column (ADVANCED VISUALIZATIONS) ---
 with right_col:
-    # --- GRAPH 1: Cholera Cases by WHO Region Over Time ---
-    st.subheader("Regional Contribution to Cholera Cases")
-    regional_trend = filtered_df.groupby(['Year', 'WHO Region'])['Number of reported cases of cholera'].sum().reset_index()
-    fig_regional = px.area(regional_trend, 
-                           x="Year", 
-                           y="Number of reported cases of cholera", 
-                           color="WHO Region",
-                           color_discrete_sequence=px.colors.sequential.Reds_r)
-    # Balanced height with ZERO TOP MARGIN
-    fig_regional.update_layout(height=160, margin=dict(l=0, r=10, t=0, b=0))
-    st.plotly_chart(fig_regional, use_container_width=True)
+    
+    # --- Data Cleaning (Important First Step) ---
+    # Convert numeric columns, coercing errors to NaN (Not a Number)
+    numeric_cols = ['Number of reported cases of cholera', 'Cholera case fatality rate']
+    for col in numeric_cols:
+        filtered_df[col] = pd.to_numeric(filtered_df[col], errors='coerce')
+    
+    # Remove rows where these critical values are missing
+    clean_df = filtered_df.dropna(subset=numeric_cols)
 
 
-    # --- GRAPH 2: Fatality Rate by Sanitation and Water Access ---
-    st.subheader("How Environment Affects Fatality Rate")
-    filtered_df['Cholera case fatality rate'] = pd.to_numeric(filtered_df['Cholera case fatality rate'], errors='coerce')
-    filtered_df.replace([np.inf, -np.inf], np.nan, inplace=True)
-    fatality_data = filtered_df.groupby(['Sanitation_Level', 'Access_to_Clean_Water'])['Cholera case fatality rate'].mean().reset_index().dropna()
-    fig_fatality = px.bar(fatality_data, 
-                          x="Sanitation_Level", 
-                          y="Cholera case fatality rate", 
-                          color="Sanitation_Level",
-                          facet_col="Access_to_Clean_Water",
-                          category_orders={"Sanitation_Level": ["Low", "Medium", "High"]},
-                          color_discrete_map={"Low": "#FFA07A", "Medium": "#E6443E", "High": "#B22222"})
-    # Balanced height with ZERO TOP MARGIN
-    fig_fatality.update_layout(height=160, margin=dict(l=0, r=10, t=0, b=0))
-    st.plotly_chart(fig_fatality, use_container_width=True)
-
-
-    # --- GRAPH 3: Overlaid Histograms ---
-    st.subheader("Age Distribution by Location")
-    urban_ages = filtered_df[filtered_df['Urban_or_Rural'] == 'Urban']['Age'].dropna()
-    rural_ages = filtered_df[filtered_df['Urban_or_Rural'] == 'Rural']['Age'].dropna()
-    fig_hist = go.Figure()
-    fig_hist.add_trace(go.Histogram(x=urban_ages, name='Urban', marker_color='#E6443E', opacity=0.75))
-    fig_hist.add_trace(go.Histogram(x=rural_ages, name='Rural', marker_color='#B22222', opacity=0.75))
-    fig_hist.update_layout(
-        barmode='overlay',
-        xaxis_title_text='Age',
-        yaxis_title_text='Count',
-        height=160, # Balanced height
-        margin=dict(l=0, r=10, t=0, b=0) # ZERO TOP MARGIN
+    # --- CHART 1: Population Pyramid of Cases by Region and Gender ---
+    st.subheader("Cholera Cases by Region and Gender")
+    
+    # Prepare data for the pyramid
+    pyramid_data = clean_df.groupby(['WHO Region', 'Gender'])['Number of reported cases of cholera'].sum().reset_index()
+    
+    # Key step for pyramid: make one gender's values negative
+    pyramid_data['Cases'] = pyramid_data.apply(
+        lambda row: -row['Number of reported cases of cholera'] if row['Gender'] == 'Male' else row['Number of reported cases of cholera'],
+        axis=1
     )
-    st.plotly_chart(fig_hist, use_container_width=True)
+    
+    fig_pyramid = px.bar(pyramid_data, 
+                         y='WHO Region', 
+                         x='Cases', 
+                         color='Gender',
+                         orientation='h',
+                         barmode='relative',
+                         color_discrete_map={'Female': '#E6443E', 'Male': '#FFA07A'},
+                         labels={'Cases': 'Number of Reported Cases'})
+                         
+    # Customize layout for pyramid look
+    fig_pyramid.update_layout(
+        xaxis=dict(
+            tickformat=',.0f',
+            tickvals=[-5000000, -2500000, 0, 2500000, 5000000],
+            ticktext=['5M', '2.5M', '0', '2.5M', '5M']
+        ),
+        yaxis_autorange='reversed',
+        height=220, 
+        margin=dict(l=0, r=10, t=10, b=0),
+        legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1)
+    )
+    st.plotly_chart(fig_pyramid, use_container_width=True)
+
+
+    # --- CHART 2: Factor Importance (Average Fatality Rate) ---
+    st.subheader("Factors Affecting Fatality Rate")
+    
+    factors = ['WHO Region', 'Urban_or_Rural', 'Sanitation_Level', 'Access_to_Clean_Water', 'Vaccinated_Against_Cholera']
+    factor_fatality_list = []
+
+    for factor in factors:
+        # Calculate mean fatality rate for each category in the factor
+        grouped = clean_df.groupby(factor)['Cholera case fatality rate'].mean().reset_index()
+        grouped.rename(columns={factor: 'Category'}, inplace=True)
+        grouped['Factor'] = factor
+        factor_fatality_list.append(grouped)
+
+    # Combine all factors into one DataFrame
+    all_factors_df = pd.concat(factor_fatality_list).dropna()
+    all_factors_df = all_factors_df.sort_values('Cholera case fatality rate', ascending=True)
+
+    fig_factors = px.bar(all_factors_df,
+                         x='Cholera case fatality rate',
+                         y='Category',
+                         color='Cholera case fatality rate',
+                         color_continuous_scale='Reds',
+                         orientation='h',
+                         labels={'Category': 'Factor Category', 'Cholera case fatality rate': 'Avg. Fatality Rate (%)'})
+    
+    fig_factors.update_layout(height=200, margin=dict(l=0, r=10, t=10, b=0), coloraxis_showscale=False)
+    st.plotly_chart(fig_factors, use_container_width=True)
+
+
+    # --- CHART 3: Heatmap of Fatality Rate by Region and Sanitation ---
+    st.subheader("Fatality Rate: Region vs. Sanitation")
+    
+    # Create a pivot table to structure the data for the heatmap
+    heatmap_data = clean_df.pivot_table(
+        values='Cholera case fatality rate',
+        index='WHO Region',
+        columns='Sanitation_Level',
+        aggfunc='mean'
+    ).reindex(columns=['Low', 'Medium', 'High']) # Ensure logical column order
+
+    fig_heatmap = px.imshow(heatmap_data,
+                            labels=dict(x="Sanitation Level", y="WHO Region", color="Avg. Fatality Rate"),
+                            color_continuous_scale='Reds')
+
+    fig_heatmap.update_layout(height=180, margin=dict(l=0, r=10, t=10, b=0))
+    st.plotly_chart(fig_heatmap, use_container_width=True)

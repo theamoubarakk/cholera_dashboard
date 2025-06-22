@@ -101,7 +101,7 @@ with right_col:
     clean_df = filtered_df.dropna(subset=numeric_cols)
     
     # --- CHART: What Makes an Outbreak More Deadly? ---
-    st.subheader("Which Conditions are Deadliest?")
+    st.subheader("Which Living Conditions Increase Risk of Death?")
 
     # Define the specific, comparable factors to analyze
     factors = ['Urban_or_Rural', 'Sanitation_Level', 'Access_to_Clean_Water', 'Vaccinated_Against_Cholera']

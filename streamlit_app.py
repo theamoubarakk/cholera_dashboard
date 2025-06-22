@@ -92,7 +92,7 @@ with left_col:
                         color_discrete_sequence=['red'])
 
     # Shorter trend line with ZERO TOP MARGIN
-    fig_trend.update_layout(height=200, margin=dict(l=0, r=0, t=0, b=30))
+    fig_trend.update_layout(height=180, margin=dict(l=0, r=0, t=0, b=30))
     st.plotly_chart(fig_trend, use_container_width=True)
 
 
@@ -107,7 +107,7 @@ with right_col:
                            color="WHO Region",
                            color_discrete_sequence=px.colors.sequential.Reds_r)
     # Balanced height with ZERO TOP MARGIN
-    fig_regional.update_layout(height=150, margin=dict(l=0, r=10, t=0, b=0))
+    fig_regional.update_layout(height=160, margin=dict(l=0, r=10, t=0, b=0))
     st.plotly_chart(fig_regional, use_container_width=True)
 
 
@@ -124,7 +124,7 @@ with right_col:
                           category_orders={"Sanitation_Level": ["Low", "Medium", "High"]},
                           color_discrete_map={"Low": "#FFA07A", "Medium": "#E6443E", "High": "#B22222"})
     # Balanced height with ZERO TOP MARGIN
-    fig_fatality.update_layout(height=150, margin=dict(l=0, r=10, t=0, b=0))
+    fig_fatality.update_layout(height=160, margin=dict(l=0, r=10, t=0, b=0))
     st.plotly_chart(fig_fatality, use_container_width=True)
 
 
@@ -139,7 +139,7 @@ with right_col:
         barmode='overlay',
         xaxis_title_text='Age',
         yaxis_title_text='Count',
-        height=150, # Balanced height
+        height=160, # Balanced height
         margin=dict(l=0, r=10, t=0, b=0) # ZERO TOP MARGIN
     )
     st.plotly_chart(fig_hist, use_container_width=True)

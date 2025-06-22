@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 import numpy as np
+import plotly.graph_objects as go  # MOVED TO THE TOP OF THE SCRIPT
 
 # --- Page Configuration and CSS for a Hyper-Compact Layout ---
 st.set_page_config(layout="wide")
@@ -9,28 +10,18 @@ st.set_page_config(layout="wide")
 # This CSS is the key to removing all extra space.
 st.markdown("""
     <style>
-        /* Reduce top padding of the whole page */
         .block-container {
-            padding-top: 1rem;
-            padding-bottom: 0rem;
-            padding-left: 2rem;
-            padding-right: 2rem;
+            padding-top: 1rem; padding-bottom: 0rem; padding-left: 2rem; padding-right: 2rem;
         }
-        /* Reduce space above the main title */
         h1 {
-            padding-top: 0rem !important;
-            margin-top: 0rem !important;
-            font-size: 2.5rem !important;
+            padding-top: 0rem !important; margin-top: 0rem !important; font-size: 2.5rem !important;
         }
-        /* Make plot titles smaller and remove bottom margin */
         h3 {
-            font-size: 1.2rem !important;
-            margin-top: 1rem !important;
-            margin-bottom: 0rem !important; /* CRITICAL: removes space below title */
+            font-size: 1.2rem !important; margin-top: 1rem !important; margin-bottom: 0rem !important;
         }
         /* This targets the container for elements in a column and removes the gap */
-        .st-emotion-cache-z5fcl4 {
-             gap: 0rem !important; /* CRITICAL: removes the vertical gap between plots */
+        div[data-testid="stVerticalBlock"] {
+            gap: 0.5rem; /* A small gap is better than zero for readability */
         }
     </style>
     """, unsafe_allow_html=True)
@@ -74,11 +65,13 @@ st.title("\U0001F30E Global Cholera Tracker")
 # --- Layout Columns ---
 left_col, right_col = st.columns([3, 2])
 
-# --- Left Column (Map and Trend Line with NO gap) ---
-# --- Left Column (MODIFIED to match the style of the Malaria dashboard) ---
+# --- UNIFIED LAYOUT STYLE ---
+# Both columns now use external subheaders and tight margins for a consistent look.
+
+# --- Left Column (Map and Trend Line) ---
 with left_col:
     # --- Choropleth Map (Bigger) ---
-    # The subheader is removed, and the title is now INSIDE the plot, like the Malaria code.
+    st.subheader("Reported Cholera Cases (Log Scale)") # External title
     map_df = filtered_df.groupby("Country")["Number of reported cases of cholera"].sum().reset_index()
     if not map_df.empty and map_df["Number of reported cases of cholera"].sum() > 0:
         map_df["Log_Cases"] = np.log10(map_df["Number of reported cases of cholera"] + 1)
@@ -86,106 +79,67 @@ with left_col:
         map_df["Log_Cases"] = 0
 
     fig_map = px.choropleth(map_df, locations="Country", locationmode="country names",
-                            color="Log_Cases", color_continuous_scale="Reds",
-                            # 1. ADDED: Internal title to match Malaria style
-                            title="Reported Cholera Cases (Log Scale)")
-    
-    # 2. MODIFIED: Height and margins now match the Malaria map exactly
-    fig_map.update_layout(height=400, margin=dict(t=30, b=10))
+                            color="Log_Cases", color_continuous_scale="Reds")
+    # Taller map with ZERO TOP MARGIN
+    fig_map.update_layout(height=380, margin=dict(l=0, r=0, t=0, b=0))
     st.plotly_chart(fig_map, use_container_width=True)
 
 
     # --- Line Chart: Cholera Over Time (Smaller) ---
-    # The subheader is removed, and the title is now INSIDE the plot.
+    st.subheader("Cholera Cases Over Time") # External title
     trend = filtered_df.groupby("Year")["Number of reported cases of cholera"].sum().reset_index()
     fig_trend = px.line(trend, x="Year", y="Number of reported cases of cholera", markers=True,
-                        # 1. ADDED: Internal title to match Malaria style
-                        title="Cholera Cases Over Time",
-                    color_discrete_sequence=['red'])
+                        color_discrete_sequence=['red'])
 
-    # 2. MODIFIED: Height and margins now match the Malaria trend line exactly
-    fig_trend.update_layout(height=180, margin=dict(t=30, b=10))
+    # Shorter trend line with ZERO TOP MARGIN
+    fig_trend.update_layout(height=220, margin=dict(l=0, r=0, t=0, b=30))
     st.plotly_chart(fig_trend, use_container_width=True)
 
 
-
-# --- Right Column (NEW, INTERESTING GRAPHS) ---
+# --- Right Column (Three Interesting Graphs) ---
 with right_col:
-
     # --- GRAPH 1: Cholera Cases by WHO Region Over Time ---
     st.subheader("Regional Contribution to Cholera Cases")
-    
-    # Prepare data: Group by Year and WHO Region, summing the cases
     regional_trend = filtered_df.groupby(['Year', 'WHO Region'])['Number of reported cases of cholera'].sum().reset_index()
-    
     fig_regional = px.area(regional_trend, 
                            x="Year", 
                            y="Number of reported cases of cholera", 
-                           color="WHO Region",color_discrete_sequence=px.colors.sequential.Reds_r,
-                        )
-                           
-    fig_regional.update_layout(height=145, margin=dict(l=0, r=10, t=30, b=0))
+                           color="WHO Region",
+                           color_discrete_sequence=px.colors.sequential.Reds_r)
+    # Balanced height with ZERO TOP MARGIN
+    fig_regional.update_layout(height=200, margin=dict(l=0, r=10, t=0, b=0))
     st.plotly_chart(fig_regional, use_container_width=True)
 
 
     # --- GRAPH 2: Fatality Rate by Sanitation and Water Access ---
     st.subheader("How Environment Affects Fatality Rate")
-    
-    # Clean the fatality rate data (remove potential infinite values)
     filtered_df['Cholera case fatality rate'] = pd.to_numeric(filtered_df['Cholera case fatality rate'], errors='coerce')
     filtered_df.replace([np.inf, -np.inf], np.nan, inplace=True)
-
-    # Prepare data: Group by Sanitation and Water Access, calculating the *mean* fatality rate
     fatality_data = filtered_df.groupby(['Sanitation_Level', 'Access_to_Clean_Water'])['Cholera case fatality rate'].mean().reset_index().dropna()
-    
     fig_fatality = px.bar(fatality_data, 
                           x="Sanitation_Level", 
                           y="Cholera case fatality rate", 
                           color="Sanitation_Level",
-                          facet_col="Access_to_Clean_Water", # Creates side-by-side charts,
-                          category_orders={"Sanitation_Level": ["Low", "Medium", "High"]}, color_discrete_map={
-                              "Low": "#FFA07A",      # Light Red (LightSalmon)
-                              "Medium": "#E6443E",   # Medium Red
-                              "High": "#B22222"  } ) # Ensure correct order
-
-    fig_fatality.update_layout(height=145, margin=dict(l=0, r=10, t=30, b=0))
+                          facet_col="Access_to_Clean_Water",
+                          category_orders={"Sanitation_Level": ["Low", "Medium", "High"]},
+                          color_discrete_map={"Low": "#FFA07A", "Medium": "#E6443E", "High": "#B22222"})
+    # Balanced height with ZERO TOP MARGIN
+    fig_fatality.update_layout(height=200, margin=dict(l=0, r=10, t=0, b=0))
     st.plotly_chart(fig_fatality, use_container_width=True)
 
 
-   import plotly.graph_objects as go
-
-# --- GRAPH 3 Alternative: Overlaid Histograms ---
-st.subheader("Age Distribution by Location (Histogram)")
-
-# Create separate dataframes for urban and rural
-urban_ages = filtered_df[filtered_df['Urban_or_Rural'] == 'Urban']['Age'].dropna()
-rural_ages = filtered_df[filtered_df['Urban_or_Rural'] == 'Rural']['Age'].dropna()
-
-fig_hist = go.Figure()
-
-# Add a trace for Urban ages with some transparency
-fig_hist.add_trace(go.Histogram(
-    x=urban_ages,
-    name='Urban',
-    marker_color='#E6443E',  # Medium Red
-    opacity=0.75
-))
-
-# Add a trace for Rural ages with some transparency
-fig_hist.add_trace(go.Histogram(
-    x=rural_ages,
-    name='Rural',
-    marker_color='#B22222',  # Dark Red
-    opacity=0.75
-))
-
-# Update the layout to overlay the bars
-fig_hist.update_layout(
-    barmode='overlay',
-    title_text='Comparing Age Histograms',
-    xaxis_title_text='Age',
-    yaxis_title_text='Count',
-    height=145, 
-    margin=dict(l=0, r=10, t=30, b=0)
-)
-st.plotly_chart(fig_hist, use_container_width=True)
+    # --- GRAPH 3: Overlaid Histograms ---
+    st.subheader("Age Distribution by Location")
+    urban_ages = filtered_df[filtered_df['Urban_or_Rural'] == 'Urban']['Age'].dropna()
+    rural_ages = filtered_df[filtered_df['Urban_or_Rural'] == 'Rural']['Age'].dropna()
+    fig_hist = go.Figure()
+    fig_hist.add_trace(go.Histogram(x=urban_ages, name='Urban', marker_color='#E6443E', opacity=0.75))
+    fig_hist.add_trace(go.Histogram(x=rural_ages, name='Rural', marker_color='#B22222', opacity=0.75))
+    fig_hist.update_layout(
+        barmode='overlay',
+        xaxis_title_text='Age',
+        yaxis_title_text='Count',
+        height=200, # Balanced height
+        margin=dict(l=0, r=10, t=0, b=0) # ZERO TOP MARGIN
+    )
+    st.plotly_chart(fig_hist, use_container_width=True)

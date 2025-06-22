@@ -146,7 +146,7 @@ with right_col:
                           category_orders={"Sanitation_Level": ["Low", "Medium", "High"]}, color_discrete_map={
                               "Low": "#FFA07A",      # Light Red (LightSalmon)
                               "Medium": "#E6443E",   # Medium Red
-                              "High": "#B22222" ) # Ensure correct order
+                              "High": "#B22222"  } ) # Ensure correct order
 
     fig_fatality.update_layout(height=145, margin=dict(l=0, r=10, t=30, b=0))
     st.plotly_chart(fig_fatality, use_container_width=True)

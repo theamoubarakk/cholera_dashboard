@@ -106,12 +106,12 @@ with right_col:
     stacked_bar = filtered_df.groupby(["Gender", "Vaccinated_Against_Cholera"])["Number of reported cases of cholera"].sum().reset_index()
     fig_bar = px.bar(stacked_bar, x="Gender", y="Number of reported cases of cholera", color="Vaccinated_Against_Cholera",
                      barmode="stack")
-    fig_bar.update_layout(height=310, margin=dict(l=0, r=10, t=0, b=0))
+    fig_bar.update_layout(height=190, margin=dict(l=0, r=10, t=0, b=0))
     st.plotly_chart(fig_bar, use_container_width=True)
 
     # Age Distribution by Sanitation Level
     st.subheader("Age Distribution by Sanitation Level")
     box_data = filtered_df[["Sanitation_Level", "Age"]].dropna()
     fig_box = px.box(box_data, x="Sanitation_Level", y="Age", color="Sanitation_Level")
-    fig_box.update_layout(height=310, showlegend=True, margin=dict(l=0, r=10, t=0, b=0))
+    fig_box.update_layout(height=190, showlegend=True, margin=dict(l=0, r=10, t=0, b=0))
     st.plotly_chart(fig_box, use_container_width=True)

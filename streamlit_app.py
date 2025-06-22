@@ -43,7 +43,6 @@ st.markdown("""
 
 # Page header
 st.title("🌍 Global Cholera Tracker")
-st.markdown("Use the filters on the left to explore reported cholera cases across countries and time.")
 
 # Create figures
 gender_vaccine_fig = px.bar(

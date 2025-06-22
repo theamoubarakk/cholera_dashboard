@@ -4,3 +4,4 @@ matplotlib
 geopandas
 plotly
 numpy
+seaborn

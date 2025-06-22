@@ -145,7 +145,7 @@ with right_col:
     
 
     # --- CHART 2: Heatmap ---
-    st.subheader("Where Sanitation Matters Most")
+    st.subheader("Sanitation Disparities and Death Rates Across Regions")
     heatmap_data = clean_df.pivot_table(values='Cholera case fatality rate', index='WHO Region',
                                         columns='Sanitation_Level', aggfunc='mean').reindex(columns=['Low', 'Medium', 'High'])
     fig_heatmap = px.imshow(heatmap_data, labels=dict(x="Sanitation Level", y="", color="Avg. Fatality Rate"),

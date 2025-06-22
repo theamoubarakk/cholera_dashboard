@@ -92,24 +92,57 @@ with right_col:
         filtered_df[col] = pd.to_numeric(filtered_df[col], errors='coerce')
     clean_df = filtered_df.dropna(subset=numeric_cols)
 
-    # --- CHART 1 (was CHART 2): Factors Affecting Fatality Rate ---
-    st.subheader("What Makes an Outbreak More Deadly?")
-    factors = ['WHO Region', 'Urban_or_Rural', 'Sanitation_Level', 'Access_to_Clean_Water', 'Vaccinated_Against_Cholera']
+    # --- Right Column (Revised for one clear, insightful chart) ---
+with right_col:
+    # --- Data Cleaning (Run Once at the Top) ---
+    numeric_cols = ['Number of reported cases of cholera', 'Cholera case fatality rate']
+    for col in numeric_cols:
+        filtered_df[col] = pd.to_numeric(filtered_df[col], errors='coerce')
+    clean_df = filtered_df.dropna(subset=numeric_cols)
+    
+    # --- CHART: What Makes an Outbreak More Deadly? ---
+    st.subheader("Which Conditions are Deadliest?")
+
+    # Define the specific, comparable factors to analyze
+    factors = ['Urban_or_Rural', 'Sanitation_Level', 'Access_to_Clean_Water', 'Vaccinated_Against_Cholera']
     factor_fatality_list = []
+
+    # Loop through each factor to calculate its average fatality rate and create a clean label
     for factor in factors:
         grouped = clean_df.groupby(factor)['Cholera case fatality rate'].mean().reset_index()
-        clean_factor_name = factor.replace('_', ' ').replace('Level', '').replace('Against Cholera', '').strip()
-        if factor == 'WHO Region':
-            grouped['Display_Label'] = grouped[factor]
-        else:
-            grouped['Display_Label'] = clean_factor_name + ': ' + grouped[factor]
+        
+        # Create a descriptive label (e.g., "Sanitation: Low")
+        clean_name = factor.replace('_', ' ').replace('Level', '').replace('Against Cholera', '').strip()
+        grouped['Display_Label'] = clean_name + ': ' + grouped[factor]
+        
         factor_fatality_list.append(grouped[['Display_Label', 'Cholera case fatality rate']])
-    all_factors_df = pd.concat(factor_fatality_list).dropna().sort_values('Cholera case fatality rate', ascending=True)
-    fig_factors = px.bar(all_factors_df, x='Cholera case fatality rate', y='Display_Label',
-                         color='Cholera case fatality rate', color_continuous_scale='Reds',
-                         orientation='h', labels={'Display_Label': '', 'Cholera case fatality rate': 'Avg. Fatality Rate (%)'})
-    fig_factors.update_layout(height=160, margin=dict(l=10, r=10, t=10, b=0), coloraxis_showscale=False, yaxis={'title': ''})
+
+    # Combine all factors into one DataFrame for plotting
+    all_factors_df = pd.concat(factor_fatality_list).dropna()
+
+    # Sort by fatality rate to rank the factors from most to least deadly
+    all_factors_df = all_factors_df.sort_values('Cholera case fatality rate', ascending=True)
+
+    # Create the final bar chart
+    fig_factors = px.bar(all_factors_df,
+                         x='Cholera case fatality rate',
+                         y='Display_Label',
+                         color='Cholera case fatality rate',
+                         color_continuous_scale='Reds',
+                         orientation='h',
+                         labels={'Display_Label': '', 'Cholera case fatality rate': 'Avg. Fatality Rate (%)'})
+                         
+    # Update layout for a clean look
+    fig_factors.update_layout(height=400, # Give this important chart more vertical space
+                              margin=dict(l=10, r=10, t=10, b=40), 
+                              coloraxis_showscale=False, 
+                              yaxis={'title': ''})
+                              
     st.plotly_chart(fig_factors, use_container_width=True)
+
+    # You can add the other charts (like the pyramid) below this if you have space
+    # and want to bring them back later.
+    
 
     # --- CHART 2: Heatmap ---
     st.subheader("Where Sanitation Matters Most")

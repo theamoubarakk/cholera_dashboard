@@ -68,7 +68,7 @@ with col_left:
         st.markdown("### Reported Cholera Cases (Log Scale)")
         st.plotly_chart(
             world_map_fig.update_layout(
-                height=310, margin=dict(t=0, b=0, l=0, r=0), title=None
+                height=400, margin=dict(t=0, b=0, l=0, r=0), title=None
             ),
             use_container_width=True,
         )
@@ -79,7 +79,7 @@ with col_left:
         st.markdown("### Cholera Cases Over Time")
         st.plotly_chart(
             trend_over_time_fig.update_layout(
-                height=200, margin=dict(t=0, b=0, l=0, r=0), title=None
+                height=200, margin=dict(t=30, b=10, l=0, r=0), title=None
             ),
             use_container_width=True,
         )
@@ -89,7 +89,7 @@ with col_right:
         st.markdown("### Cases by Gender and Vaccination Status")
         st.plotly_chart(
             gender_vaccine_fig.update_layout(
-                height=255, margin=dict(t=0, b=0, l=0, r=0), title=None
+                height=400, margin=dict(t=30, b=10, l=0, r=0), title=None
             ),
             use_container_width=True,
         )
@@ -100,7 +100,7 @@ with col_right:
         st.markdown("### Age Distribution by Sanitation Level")
         st.plotly_chart(
             age_sanitation_fig.update_layout(
-                height=255, margin=dict(t=0, b=0, l=0, r=0), title=None
+                height=200, margin=dict(t=30, b=10, l=0, r=0), title=None
             ),
             use_container_width=True,
         )

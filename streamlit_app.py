@@ -46,36 +46,37 @@ if urban_rural != "Both":
 col1, col2 = st.columns(2)
 
 # Map: Cholera cases by country (with fixed projection)
+import geopandas as gpd
+import matplotlib.pyplot as plt
+
 with col1:
+    # Load world map shapefile
+    world = gpd.read_file(gpd.datasets.get_path("naturalearth_lowres"))
+
+    # Aggregate your cholera data
     map_df = df.groupby("Country")["Number of reported cases of cholera"].sum().reset_index()
+    map_df["Number of reported cases of cholera"] = pd.to_numeric(map_df["Number of reported cases of cholera"], errors="coerce").fillna(0).clip(upper=1_000_000)
 
-    # Convert to numeric and clip unrealistic values
-    map_df["Number of reported cases of cholera"] = pd.to_numeric(
-        map_df["Number of reported cases of cholera"], errors="coerce"
-    ).fillna(0).clip(upper=1_000_000)
+    # Merge with GeoDataFrame
+    merged = world.merge(map_df, left_on="name", right_on="Country", how="left")
+    merged["Number of reported cases of cholera"] = merged["Number of reported cases of cholera"].fillna(0)
 
-    all_countries = df["Country"].dropna().unique()
-    case_map = map_df.set_index("Country").reindex(all_countries, fill_value=0).reset_index()
-
-    map_fig = px.choropleth(
-        case_map,
-        locations="Country",
-        locationmode="country names",
-        color="Number of reported cases of cholera",
-        title="Cholera Cases by Country (Cleaned & Clipped)",
-        color_continuous_scale="OrRd",
-        template="plotly_white"
+    # Plot with matplotlib
+    fig, ax = plt.subplots(1, 1, figsize=(16, 8))
+    merged.plot(
+        column="Number of reported cases of cholera",
+        cmap="Reds",
+        linewidth=0.8,
+        ax=ax,
+        edgecolor="0.8",
+        legend=True,
+        legend_kwds={"label": "Cholera Cases", "orientation": "vertical"}
     )
-    map_fig.update_geos(
-        projection_type="natural earth",
-        showcountries=True,
-        showcoastlines=True,
-        showland=True,
-        fitbounds=False,
-        lonaxis_range=[-180, 180],
-        lataxis_range=[-60, 90]
-    )
-    st.plotly_chart(map_fig, use_container_width=True)
+    ax.set_title("Cholera Burden by Country", fontsize=16)
+    ax.axis("off")
+
+    st.pyplot(fig)
+
 
 
 with col2:

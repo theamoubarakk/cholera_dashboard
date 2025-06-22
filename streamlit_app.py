@@ -77,7 +77,7 @@ with left_col:
     fig_map.update_layout(height=400, margin=dict(l=0, r=0, t=0, b=0))
     st.plotly_chart(fig_map, use_container_width=True)
 
-    st.subheader("Cholera Cases Over Time")
+    st.subheader("Decades of Cholera: How Cases Have Risen and Fallen Over Time")
     trend = filtered_df.groupby("Year")["Number of reported cases of cholera"].sum().reset_index()
     fig_trend = px.line(trend, x="Year", y="Number of reported cases of cholera", markers=True,
                         color_discrete_sequence=['#B22222'])

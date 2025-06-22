@@ -4,9 +4,9 @@ import numpy as np
 import plotly.express as px
 
 # ----------------------------
-# ✅ Load and clean the data
+# ✅ Load cleaned data
 # ----------------------------
-df = pd.read_csv("enriched_data_cleaned_logical.csv")
+df = pd.read_csv("enriched_data_logical_cleaned.csv")
 df["Country"] = df["Country"].str.strip()
 df["Number of reported cases of cholera"] = pd.to_numeric(df["Number of reported cases of cholera"], errors="coerce").fillna(0)
 
@@ -15,7 +15,7 @@ df["Number of reported cases of cholera"] = pd.to_numeric(df["Number of reported
 # ----------------------------
 st.set_page_config(layout="wide")
 st.title("🌍 Global Cholera Tracker")
-st.markdown("Use the filters on the left to explore cholera cases across countries and demographics.")
+st.markdown("Use the filters on the left to explore **reported cholera cases** across countries and time.")
 
 # ----------------------------
 # ✅ Sidebar filters
@@ -54,7 +54,7 @@ selected_sanitation = st.sidebar.multiselect(
 )
 
 # ----------------------------
-# ✅ Apply filters to data
+# ✅ Apply filters to dataset
 # ----------------------------
 filtered_df = df[
     (df["Country"].isin(selected_countries)) &
@@ -75,7 +75,7 @@ map_df = filtered_df.groupby("Country")["Number of reported cases of cholera"].s
 map_df["Log_Cases"] = np.log1p(map_df["Number of reported cases of cholera"])
 
 # ----------------------------
-# ✅ Plot the interactive map
+# ✅ Draw interactive map
 # ----------------------------
 fig = px.choropleth(
     map_df,

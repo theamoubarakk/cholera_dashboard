@@ -117,7 +117,7 @@ with right_col:
                                         columns='Sanitation_Level', aggfunc='mean').reindex(columns=['Low', 'Medium', 'High'])
     fig_heatmap = px.imshow(heatmap_data, labels=dict(x="Sanitation Level", y="", color="Avg. Fatality Rate"),
                             color_continuous_scale='Reds')
-    fig_heatmap.update_layout(height=190, margin=dict(l=0, r=10, t=0, b=0))
+    fig_heatmap.update_layout(height=185, margin=dict(l=0, r=10, t=0, b=0))
     st.plotly_chart(fig_heatmap, use_container_width=True)
 
     # --- CHART 3: Population Pyramid ---
@@ -132,6 +132,6 @@ with right_col:
     fig_pyramid.update_layout(
         xaxis=dict(tickformat=',.0f', tickvals=[-50000000, -25000000, 0, 25000000, 50000000],
                    ticktext=['50M', '25M', '0', '25M', '50M']),
-        yaxis_autorange='reversed', height=150, margin=dict(l=0, r=10, t=0, b=0),
+        yaxis_autorange='reversed', height=155, margin=dict(l=0, r=10, t=0, b=0),
         legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1))
     st.plotly_chart(fig_pyramid, use_container_width=True)

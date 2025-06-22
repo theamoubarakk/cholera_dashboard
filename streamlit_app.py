@@ -163,9 +163,6 @@ with right_col:
     st.plotly_chart(fig_heatmap, use_container_width=True)
 
 
-
-
-
   # --- CHART 2: Factor Importance (Average Fatality Rate) ---
     st.subheader("Factors Affecting Fatality Rate")
     
@@ -191,5 +188,5 @@ with right_col:
                          orientation='h',
                          labels={'Category': 'Factor Category', 'Cholera case fatality rate': 'Avg. Fatality Rate (%)'})
     
-    fig_factors.update_layout(height=200, margin=dict(l=0, r=10, t=10, b=0), coloraxis_showscale=False)
+    fig_factors.update_layout(height=180, margin=dict(l=0, r=10, t=10, b=0), coloraxis_showscale=False)
     st.plotly_chart(fig_factors, use_container_width=True)

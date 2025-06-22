@@ -92,7 +92,7 @@ with left_col:
                         color_discrete_sequence=['red'])
 
     # Shorter trend line with ZERO TOP MARGIN
-    fig_trend.update_layout(height=180, margin=dict(l=0, r=0, t=0, b=30))
+    fig_trend.update_layout(height=165, margin=dict(l=0, r=0, t=0, b=30))
     st.plotly_chart(fig_trend, use_container_width=True)
 
 

@@ -100,7 +100,8 @@ with left_col:
     trend = filtered_df.groupby("Year")["Number of reported cases of cholera"].sum().reset_index()
     fig_trend = px.line(trend, x="Year", y="Number of reported cases of cholera", markers=True,
                         # 1. ADDED: Internal title to match Malaria style
-                        title="Cholera Cases Over Time")
+                        title="Cholera Cases Over Time",
+                    color_discrete_sequence=['red'])
 
     # 2. MODIFIED: Height and margins now match the Malaria trend line exactly
     fig_trend.update_layout(height=200, margin=dict(t=30, b=10))

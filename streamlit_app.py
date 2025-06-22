@@ -3,16 +3,16 @@ import pandas as pd
 import plotly.express as px
 import numpy as np
 
-# --- Page Configuration and CSS for a Compact Layout ---
+# --- Page Configuration and CSS for a Hyper-Compact Layout ---
 st.set_page_config(layout="wide")
 
-# This CSS is crucial for removing whitespace and controlling sizes
+# This CSS is the key to removing all extra space.
 st.markdown("""
     <style>
         /* Reduce top padding of the whole page */
         .block-container {
             padding-top: 1rem;
-            padding-bottom: 1rem;
+            padding-bottom: 0rem;
             padding-left: 2rem;
             padding-right: 2rem;
         }
@@ -20,17 +20,17 @@ st.markdown("""
         h1 {
             padding-top: 0rem !important;
             margin-top: 0rem !important;
-            font-size: 2.5rem !important; /* Make main title smaller */
+            font-size: 2.5rem !important;
         }
-        /* Make the plot titles (subheaders) smaller and tighter */
+        /* Make plot titles smaller and remove bottom margin */
         h3 {
-            font-size: 1.2rem !important; /* Smaller plot titles */
+            font-size: 1.2rem !important;
             margin-top: 1rem !important;
-            margin-bottom: 0rem !important;
+            margin-bottom: 0rem !important; /* CRITICAL: removes space below title */
         }
-        /* Reduce the vertical gap between plots in a column */
+        /* This targets the container for elements in a column and removes the gap */
         .st-emotion-cache-z5fcl4 {
-             gap: 0.75rem !important;
+             gap: 0rem !important; /* CRITICAL: removes the vertical gap between plots */
         }
     </style>
     """, unsafe_allow_html=True)
@@ -71,11 +71,10 @@ if vaccinated != "Both":
 # --- Main Page Title ---
 st.title("\U0001F30E Global Cholera Tracker")
 
-# --- NEW LAYOUT: Map on the left, other charts on the right ---
-# The left column is wider to accommodate the bigger map.
+# --- Layout Columns ---
 left_col, right_col = st.columns([3, 2])
 
-# --- Left Column (Bigger Map, Smaller Trend) ---
+# --- Left Column (Map and Trend Line with NO gap) ---
 with left_col:
     # Choropleth Map (Bigger)
     st.subheader("Reported Cholera Cases (Log Scale)")
@@ -87,16 +86,16 @@ with left_col:
 
     fig_map = px.choropleth(map_df, locations="Country", locationmode="country names",
                             color="Log_Cases", color_continuous_scale="Reds")
-    # MODIFIED: Made taller and with zero margins to fill the space
-    fig_map.update_layout(height=380, margin=dict(l=0, r=0, t=0, b=0))
+    # Taller map with ZERO margins
+    fig_map.update_layout(height=400, margin=dict(l=0, r=0, t=0, b=0))
     st.plotly_chart(fig_map, use_container_width=True)
 
     # Line Chart: Cholera Over Time (Smaller)
     st.subheader("Cholera Cases Over Time")
     trend = filtered_df.groupby("Year")["Number of reported cases of cholera"].sum().reset_index()
     fig_trend = px.line(trend, x="Year", y="Number of reported cases of cholera", markers=True)
-    # MODIFIED: Made shorter to fit under the map, with tight margins
-    fig_trend.update_layout(height=220, margin=dict(l=0, r=0, t=20, b=20))
+    # Shorter trend line with ZERO TOP MARGIN to sit flush under its title
+    fig_trend.update_layout(height=220, margin=dict(l=0, r=0, t=0, b=30))
     st.plotly_chart(fig_trend, use_container_width=True)
 
 
@@ -107,14 +106,12 @@ with right_col:
     stacked_bar = filtered_df.groupby(["Gender", "Vaccinated_Against_Cholera"])["Number of reported cases of cholera"].sum().reset_index()
     fig_bar = px.bar(stacked_bar, x="Gender", y="Number of reported cases of cholera", color="Vaccinated_Against_Cholera",
                      barmode="stack")
-    # MODIFIED: Adjusted height to match the vertical space
-    fig_bar.update_layout(height=300, margin=dict(l=0, r=10, t=20, b=0))
+    fig_bar.update_layout(height=310, margin=dict(l=0, r=10, t=0, b=0))
     st.plotly_chart(fig_bar, use_container_width=True)
 
     # Age Distribution by Sanitation Level
     st.subheader("Age Distribution by Sanitation Level")
     box_data = filtered_df[["Sanitation_Level", "Age"]].dropna()
     fig_box = px.box(box_data, x="Sanitation_Level", y="Age", color="Sanitation_Level")
-    # MODIFIED: Adjusted height to match, removed legend
-    fig_box.update_layout(height=300, showlegend=True, margin=dict(l=0, r=10, t=20, b=0))
+    fig_box.update_layout(height=310, showlegend=True, margin=dict(l=0, r=10, t=0, b=0))
     st.plotly_chart(fig_box, use_container_width=True)

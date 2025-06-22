@@ -16,7 +16,7 @@ df_map = df.copy()
 df_map["Log_Cases"] = df_map["Number of reported cases of cholera"].apply(lambda x: np.log10(x) if x > 0 else 0)
 
 # Sidebar filters
-st.sidebar.header("\ud83d\udd0d Filters")
+st.sidebar.header("Filters")
 
 countries = st.sidebar.multiselect("Select Countries", options=sorted(df["Country"].unique()))
 year_range = st.sidebar.slider("Select Year Range", int(df["Year"].min()), int(df["Year"].max()), (2000, 2016))

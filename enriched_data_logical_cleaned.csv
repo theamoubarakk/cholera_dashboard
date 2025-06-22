@@ -1,0 +1,2493 @@
+Country,Year,Number of reported cases of cholera,Number of reported deaths from cholera,Cholera case fatality rate,WHO Region,Gender,Age,Urban_or_Rural,Sanitation_Level,Access_to_Clean_Water,Vaccinated_Against_Cholera
+Afghanistan,2016,677,5,0.7,Eastern Mediterranean,Male,38,Urban,Medium,No,No
+Afghanistan,2015,58064,8,0.01,Eastern Mediterranean,Female,34,Rural,Low,Yes,Yes
+Afghanistan,2014,45481,4,0,Eastern Mediterranean,Male,8,Rural,Medium,No,No
+Afghanistan,2013,3957,14,0.35,Eastern Mediterranean,Male,0,Rural,Low,Yes,No
+Afghanistan,2012,12,0,0.1,Eastern Mediterranean,Male,8,Urban,High,Yes,No
+Afghanistan,2011,3733,44,1.18,Eastern Mediterranean,Female,11,Rural,Low,Yes,No
+Afghanistan,2010,2369,10,0.42,Eastern Mediterranean,Male,16,Urban,Medium,No,No
+Afghanistan,2009,662,11,1.66,Eastern Mediterranean,Male,10,Urban,Medium,No,No
+Afghanistan,2008,4384,22,0.5,Eastern Mediterranean,Male,32,Rural,Low,Yes,Yes
+Afghanistan,2005,33,0,0,Eastern Mediterranean,Female,45,Urban,High,Yes,No
+Afghanistan,2003,41,7,17.07,Eastern Mediterranean,Male,59,Rural,Medium,Yes,No
+Afghanistan,2002,3,0,0,Eastern Mediterranean,Male,52,Urban,Medium,Yes,Yes
+Afghanistan,2001,4499,114,2.53,Eastern Mediterranean,Male,36,Rural,Low,Yes,No
+Afghanistan,2000,4330,198,4.57,Eastern Mediterranean,Male,8,Rural,High,Yes,No
+Afghanistan,1999,24639,152,0.62,Eastern Mediterranean,Female,13,Rural,Medium,No,No
+Afghanistan,1998,10000,0,0,Eastern Mediterranean,Male,5,Urban,Low,Yes,No
+Afghanistan,1997,4170,125,3,Eastern Mediterranean,Female,24,Urban,Low,No,Yes
+Afghanistan,1995,19903,624,3.14,Eastern Mediterranean,Female,1,Rural,High,No,No
+Afghanistan,1994,38735,118,0.3,Eastern Mediterranean,Female,0,Urban,Medium,Yes,Yes
+Afghanistan,1993,37046,931,2.51,Eastern Mediterranean,Male,0,Rural,Medium,No,No
+Afghanistan,1965,218,55,25.23,Eastern Mediterranean,Female,5,Rural,Medium,No,No
+Afghanistan,1960,887,199,22.44,Eastern Mediterranean,Male,40,Urban,Medium,Yes,No
+Albania,1994,626,25,3.99,Europe,Female,1,Urban,Low,Yes,No
+Algeria,2006,0,0,0,Africa,Female,6,Urban,Low,No,No
+Algeria,2005,0,0,0,Africa,Female,17,Rural,Medium,Yes,No
+Algeria,1994,118,4,3.39,Africa,Female,20,Urban,High,Yes,No
+Algeria,1992,69,0,0,Africa,Female,14,Urban,Low,Yes,Yes
+Algeria,1990,1299,20,1.54,Africa,Female,22,Urban,Medium,No,No
+Algeria,1989,393,0,0,Africa,Female,11,Rural,Medium,No,No
+Algeria,1988,699,30,4.29,Africa,Female,21,Urban,Medium,No,Yes
+Algeria,1987,1507,0,0,Africa,Male,20,Urban,High,Yes,No
+Algeria,1984,45,0,0,Africa,Male,9,Rural,Medium,Yes,No
+Algeria,1983,218,9,4.13,Africa,Female,11,Rural,Low,Yes,No
+Algeria,1980,614,18,2.93,Africa,Female,1,Rural,High,No,No
+Algeria,1979,2513,94,3.74,Africa,Female,39,Urban,Medium,Yes,No
+Algeria,1978,220,13,5.91,Africa,Male,33,Urban,High,Yes,No
+Algeria,1977,262,9,3.44,Africa,Female,3,Rural,Medium,Yes,Yes
+Algeria,1976,286,30,10.49,Africa,Male,6,Urban,High,Yes,No
+Algeria,1975,1165,118,10.13,Africa,Male,20,Rural,Low,No,No
+Algeria,1974,738,50,6.78,Africa,Male,51,Rural,Low,No,No
+Algeria,1973,605,74,12.23,Africa,Male,8,Urban,High,No,No
+Algeria,1972,646,71,10.99,Africa,Male,2,Rural,Low,Yes,No
+Algeria,1971,1332,110,8.26,Africa,Female,5,Rural,Low,No,No
+Angola,2016,78,3,3.8,Africa,Female,44,Urban,Medium,No,Yes
+Angola,2014,213,3,1.4,Africa,Female,9,Rural,High,Yes,No
+Angola,2013,6655,86,1.29,Africa,Female,3,Urban,Low,No,No
+Angola,2012,1215,98,8.07,Africa,Female,3,Urban,High,Yes,No
+Angola,2011,1810,110,6.08,Africa,Male,2,Urban,Medium,No,Yes
+Angola,2010,1484,30,2.02,Africa,Female,9,Rural,Medium,No,Yes
+Angola,2009,2019,88,4.36,Africa,Female,29,Rural,High,No,No
+Angola,2008,10511,243,2.31,Africa,Male,5,Rural,Medium,Yes,No
+Angola,2007,18422,513,2.78,Africa,Female,2,Urban,Low,Yes,No
+Angola,2006,67257,2722,4.05,Africa,Male,54,Rural,Low,Yes,Yes
+Angola,2005,0,0,0,Africa,Female,49,Urban,Medium,Yes,No
+Angola,1996,1306,42,3.22,Africa,Male,3,Rural,Medium,No,No
+Angola,1995,3295,248,7.53,Africa,Female,28,Urban,High,No,No
+Angola,1994,3443,187,5.43,Africa,Female,51,Urban,Medium,No,No
+Angola,1992,3608,184,5.1,Africa,Male,12,Urban,Medium,Yes,No
+Angola,1991,8590,582,6.78,Africa,Male,11,Rural,Medium,No,Yes
+Angola,1990,9527,809,8.49,Africa,Male,8,Urban,Low,No,Yes
+Angola,1989,17601,925,5.26,Africa,Male,5,Rural,Low,No,Yes
+Angola,1988,15500,1542,9.95,Africa,Male,8,Urban,High,Yes,No
+Angola,1987,16222,1403,8.65,Africa,Male,4,Urban,Low,Yes,Yes
+Angola,1977,726,31,4.27,Africa,Male,7,Urban,Low,Yes,No
+Angola,1975,88,4,4.55,Africa,Male,12,Rural,Medium,No,No
+Angola,1974,934,34,3.64,Africa,Female,10,Rural,Medium,No,No
+Angola,1973,263,9,3.42,Africa,Female,13,Urban,High,No,No
+Angola,1972,268,24,8.96,Africa,Male,26,Urban,Low,Yes,Yes
+Angola,1971,1,0,0,Africa,Female,0,Urban,Low,Yes,No
+Argentina,1998,12,0,0,Americas,Female,26,Rural,Low,No,No
+Argentina,1997,637,12,1.88,Americas,Female,5,Urban,Medium,No,Yes
+Argentina,1996,474,5,1.05,Americas,Female,10,Rural,Low,No,No
+Argentina,1995,188,1,0.53,Americas,Male,51,Rural,Medium,No,No
+Argentina,1994,889,15,1.69,Americas,Female,7,Urban,High,Yes,No
+Argentina,1993,2350,34,1.45,Americas,Male,14,Urban,High,No,No
+Armenia,1998,25,0,0,Europe,Female,10,Rural,Low,No,No
+Australia,2016,1,0,0,Western Pacific,Female,1,Rural,High,Yes,No
+Australia,2015,2,0,0,Western Pacific,Female,3,Urban,High,Yes,Yes
+Australia,2014,2,0,0,Western Pacific,Male,6,Urban,Medium,Yes,No
+Australia,2013,3,0,0,Western Pacific,Female,4,Urban,Medium,Yes,Yes
+Australia,2012,5,0,0,Western Pacific,Male,28,Urban,High,Yes,No
+Australia,2011,6,0,0,Western Pacific,Female,38,Urban,Medium,Yes,No
+Australia,2010,3,0,0,Western Pacific,Male,13,Urban,High,Yes,No
+Australia,2007,3,0,0,Western Pacific,Female,12,Urban,High,Yes,No
+Australia,2006,3,0,0,Western Pacific,Male,14,Urban,High,Yes,No
+Australia,2005,2,0,0,Western Pacific,Male,11,Urban,High,Yes,No
+Australia,2004,2,0,0,Western Pacific,Female,13,Urban,High,Yes,No
+Australia,2002,5,0,0,Western Pacific,Male,56,Rural,High,Yes,No
+Australia,2001,2,0,0,Western Pacific,Female,7,Rural,High,Yes,No
+Australia,2000,1,0,0,Western Pacific,Female,7,Urban,High,Yes,No
+Australia,1999,4,0,0,Western Pacific,Female,4,Urban,High,Yes,Yes
+Australia,1998,5,0,0,Western Pacific,Female,0,Rural,High,Yes,No
+Australia,1997,2,0,0,Western Pacific,Female,32,Urban,High,Yes,No
+Australia,1996,2,0,0,Western Pacific,Female,54,Urban,High,Yes,Yes
+Australia,1995,5,0,0,Western Pacific,Female,22,Urban,High,Yes,Yes
+Australia,1994,3,0,0,Western Pacific,Female,47,Urban,High,Yes,Yes
+Australia,1993,5,0,0,Western Pacific,Female,30,Urban,High,Yes,No
+Australia,1992,3,0,0,Western Pacific,Female,4,Rural,High,Yes,No
+Australia,1988,1,0,0,Western Pacific,Female,16,Urban,High,Yes,No
+Australia,1987,1,0,0,Western Pacific,Male,23,Urban,High,Yes,No
+Australia,1985,2,0,0,Western Pacific,Male,27,Rural,Medium,Yes,No
+Australia,1984,1,0,0,Western Pacific,Female,45,Urban,High,Yes,No
+Australia,1983,4,0,0,Western Pacific,Female,3,Urban,High,Yes,No
+Australia,1982,1,0,0,Western Pacific,Female,18,Urban,High,Yes,No
+Australia,1981,2,0,0,Western Pacific,Female,48,Urban,High,Yes,No
+Australia,1980,2,0,0,Western Pacific,Female,8,Urban,High,Yes,No
+Australia,1979,1,0,0,Western Pacific,Female,10,Urban,High,Yes,No
+Australia,1978,1,0,0,Western Pacific,Female,5,Urban,High,Yes,No
+Australia,1977,2,0,0,Western Pacific,Female,14,Urban,Medium,Yes,Yes
+Australia,1972,40,0,0,Western Pacific,Male,29,Urban,High,Yes,Yes
+Austria,2005,1,0,0,Europe,Female,11,Urban,Medium,Yes,No
+Austria,2002,1,0,0,Europe,Male,0,Urban,Medium,Yes,No
+Austria,2001,0,0,0,Europe,Female,11,Urban,High,Yes,No
+Austria,1999,1,0,0,Europe,Female,22,Urban,Medium,Yes,No
+Austria,1998,1,0,0,Europe,Male,9,Rural,Low,No,Yes
+Austria,1996,1,0,0,Europe,Female,35,Urban,High,Yes,Yes
+Austria,1994,1,0,0,Europe,Male,20,Urban,Medium,Yes,Yes
+Austria,1993,1,0,0,Europe,Female,12,Rural,High,Yes,No
+Austria,1990,2,0,0,Europe,Female,4,Urban,High,Yes,No
+Azerbaijan,1994,18,0,0,Europe,Male,14,Urban,Low,Yes,No
+Bahamas,2012,1,0,0,Americas,Female,37,Rural,Medium,No,No
+Bahamas,2011,1,0,0,Americas,Male,58,Rural,Low,Yes,No
+Bahrain,2015,8,0,0,Eastern Mediterranean,Female,12,Rural,Low,Yes,No
+Bahrain,1979,39,0,0,Eastern Mediterranean,Male,30,Urban,Low,Yes,No
+Bahrain,1978,906,2,0.22,Eastern Mediterranean,Male,11,Rural,Medium,Yes,No
+Bahrain,1973,37,0,0,Eastern Mediterranean,Female,10,Rural,Low,Yes,No
+Bahrain,1972,74,4,5.41,Eastern Mediterranean,Female,12,Urban,Low,Yes,Yes
+Bahrain,1965,1,0,0,Eastern Mediterranean,Male,13,Urban,Medium,No,Yes
+Bangladesh,2000,1021,16,1.57,South-East Asia,Female,41,Rural,Low,No,Yes
+Bangladesh,1999,3440,63,1.83,South-East Asia,Female,11,Urban,Low,Yes,Yes
+Bangladesh,1998,1067,26,2.44,South-East Asia,Female,50,Rural,Low,Yes,No
+Bangladesh,1997,1959,95,4.85,South-East Asia,Male,1,Urban,Low,No,No
+Bangladesh,1996,418,0,0,South-East Asia,Male,8,Urban,Low,No,No
+Bangladesh,1995,2297,61,2.66,South-East Asia,Male,14,Urban,Low,No,No
+Bangladesh,1994,562,41,7.3,South-East Asia,Male,45,Rural,Medium,No,No
+Bangladesh,1993,78,0,0,South-East Asia,Male,7,Urban,Medium,No,No
+Bangladesh,1992,479,29,6.05,South-East Asia,Male,7,Rural,Low,No,No
+Bangladesh,1991,8,0,0,South-East Asia,Male,21,Rural,Low,No,No
+Bangladesh,1990,82,4,4.88,South-East Asia,Male,59,Rural,Low,No,Yes
+Bangladesh,1989,94,2,2.13,South-East Asia,Male,27,Rural,Low,Yes,No
+Bangladesh,1988,571,43,7.53,South-East Asia,Female,35,Rural,Low,No,No
+Bangladesh,1987,523,23,4.4,South-East Asia,Male,8,Urban,Low,No,No
+Bangladesh,1979,2154,21,0.97,South-East Asia,Female,9,Rural,Medium,Yes,No
+Bangladesh,1978,5576,81,1.45,South-East Asia,Female,56,Rural,Low,No,No
+Bangladesh,1977,10403,354,3.4,South-East Asia,Female,0,Urban,Low,No,Yes
+Bangladesh,1976,957,62,6.48,South-East Asia,Male,38,Urban,Medium,No,Yes
+Bangladesh,1975,4888,117,2.39,South-East Asia,Male,53,Rural,Low,No,No
+Bangladesh,1974,5614,173,3.08,South-East Asia,Male,33,Urban,Low,No,No
+Bangladesh,1973,1969,369,18.74,South-East Asia,Male,0,Rural,Low,Yes,No
+Bangladesh,1972,1059,201,18.98,South-East Asia,Female,58,Urban,Low,No,Yes
+Bangladesh,1971,2342,386,16.48,South-East Asia,Male,6,Urban,Medium,No,No
+Bangladesh,1970,7419,1889,25.46,South-East Asia,Male,4,Rural,Low,Yes,No
+Bangladesh,1969,7411,1556,21,South-East Asia,Male,46,Urban,Medium,Yes,No
+Bangladesh,1968,3156,614,19.46,South-East Asia,Male,28,Urban,Medium,No,No
+Bangladesh,1967,664,369,55.57,South-East Asia,Male,39,Rural,Medium,Yes,No
+Bangladesh,1966,3154,1234,39.12,South-East Asia,Female,21,Urban,Medium,No,No
+Bangladesh,1965,1123,683,60.82,South-East Asia,Male,2,Rural,Low,Yes,No
+Bangladesh,1964,3333,2419,72.58,South-East Asia,Female,55,Rural,Low,Yes,Yes
+Bangladesh,1963,3975,1248,31.4,South-East Asia,Male,6,Rural,Low,No,Yes
+Bangladesh,1962,2524,1304,51.66,South-East Asia,Female,18,Urban,Low,Yes,No
+Bangladesh,1961,2663,1703,63.95,South-East Asia,Male,9,Urban,Medium,No,No
+Bangladesh,1960,15618,6272,40.16,South-East Asia,Male,13,Rural,Low,No,No
+Bangladesh,1959,16915,11056,65.36,South-East Asia,Female,0,Rural,Medium,Yes,No
+Bangladesh,1958,15631,10119,64.74,South-East Asia,Female,7,Rural,Medium,Yes,No
+Bangladesh,1957,8054,5134,63.74,South-East Asia,Female,8,Rural,Medium,Yes,No
+Bangladesh,1956,23699,15310,64.6,South-East Asia,Male,16,Urban,Medium,Yes,No
+Bangladesh,1955,16642,9802,58.9,South-East Asia,Female,41,Urban,Low,No,Yes
+Bangladesh,1954,15617,9443,60.47,South-East Asia,Male,7,Urban,Low,No,No
+Bangladesh,1953,27631,16904,61.18,South-East Asia,Male,2,Urban,Low,Yes,No
+Bangladesh,1952,21154,12884,60.91,South-East Asia,Female,36,Urban,Low,No,No
+Bangladesh,1951,20894,12372,59.21,South-East Asia,Female,58,Rural,Low,Yes,No
+Bangladesh,1950,29809,12947,43.43,South-East Asia,Male,49,Urban,Medium,Yes,Yes
+Belarus,1995,3,0,0,Europe,Male,13,Urban,High,Yes,No
+Belarus,1994,3,0,0,Europe,Female,50,Urban,Medium,No,Yes
+Belgium,2005,2,0,0,Europe,Female,45,Rural,Low,No,No
+Belgium,2004,1,0,0,Europe,Female,6,Rural,Low,No,Yes
+Belgium,1994,1,0,0,Europe,Male,13,Rural,Low,Yes,No
+Belgium,1993,1,0,0,Europe,Male,22,Rural,Low,Yes,No
+Belgium,1992,1,0,0,Europe,Male,13,Urban,Medium,Yes,No
+Belgium,1985,1,0,0,Europe,Male,2,Rural,Low,No,No
+Belgium,1984,1,0,0,Europe,Male,54,Urban,Low,No,No
+Belgium,1983,1,0,0,Europe,Male,0,Urban,Low,Yes,No
+Belgium,1980,1,0,0,Europe,Female,5,Rural,Medium,Yes,No
+Belize,1999,12,0,0,Americas,Male,6,Rural,Medium,No,No
+Belize,1998,28,1,3.57,Americas,Male,11,Urban,Medium,No,No
+Belize,1997,2,0,0,Americas,Male,12,Urban,Medium,No,Yes
+Belize,1996,26,0,0,Americas,Female,6,Rural,High,No,No
+Belize,1995,19,1,5.26,Americas,Male,16,Urban,Low,No,No
+Belize,1994,6,1,16.67,Americas,Male,8,Urban,Medium,Yes,No
+Belize,1993,135,3,2.22,Americas,Female,37,Urban,Medium,No,No
+Belize,1992,159,4,2.52,Americas,Male,20,Urban,Medium,No,Yes
+Benin,2016,761,13,1.7,Africa,Male,29,Rural,High,No,Yes
+Benin,2014,832,12,1.4,Africa,Male,4,Urban,Low,Yes,Yes
+Benin,2013,528,6,1.14,Africa,Male,0,Urban,Medium,Yes,No
+Benin,2012,625,3,0.48,Africa,Male,49,Rural,Low,Yes,No
+Benin,2011,755,4,0.53,Africa,Female,44,Rural,Medium,Yes,No
+Benin,2010,983,8,0.81,Africa,Female,2,Urban,Low,No,Yes
+Benin,2009,74,1,1.35,Africa,Female,13,Urban,Low,Yes,No
+Benin,2008,985,5,0.51,Africa,Male,2,Urban,Medium,Yes,No
+Benin,2006,91,1,1.1,Africa,Male,32,Rural,Medium,No,Yes
+Benin,2005,749,11,1.47,Africa,Male,24,Rural,Low,Yes,No
+Benin,2004,642,9,1.4,Africa,Female,47,Rural,Medium,Yes,Yes
+Benin,2003,434,11,2.53,Africa,Male,15,Rural,Medium,Yes,Yes
+Benin,2002,270,13,4.81,Africa,Male,17,Rural,Low,No,No
+Benin,2001,3943,71,1.8,Africa,Female,39,Rural,Medium,Yes,No
+Benin,2000,468,11,2.35,Africa,Male,1,Urban,Medium,No,Yes
+Benin,1999,855,25,2.92,Africa,Female,3,Urban,Medium,Yes,Yes
+Benin,1998,206,1,0.49,Africa,Female,26,Rural,Low,No,No
+Benin,1997,796,16,2.01,Africa,Female,27,Urban,Low,Yes,No
+Benin,1996,6190,203,3.28,Africa,Male,3,Urban,Medium,Yes,No
+Benin,1995,203,12,5.91,Africa,Male,14,Rural,High,Yes,No
+Benin,1994,187,20,10.7,Africa,Male,16,Urban,Medium,Yes,No
+Benin,1993,10,2,20,Africa,Male,2,Rural,Low,Yes,No
+Benin,1992,413,17,4.12,Africa,Male,2,Rural,Medium,Yes,No
+Benin,1991,7474,259,3.47,Africa,Male,25,Urban,High,Yes,No
+Benin,1986,243,13,5.35,Africa,Male,29,Rural,Low,Yes,Yes
+Benin,1984,1,0,0,Africa,Female,2,Urban,High,Yes,Yes
+Benin,1983,1,0,0,Africa,Male,8,Urban,High,Yes,No
+Benin,1982,3,0,0,Africa,Female,21,Rural,Low,No,Yes
+Benin,1981,2,0,0,Africa,Male,11,Rural,High,No,Yes
+Benin,1980,3,0,0,Africa,Male,54,Rural,Low,Yes,Yes
+Benin,1978,27,0,0,Africa,Male,43,Urban,High,Yes,No
+Benin,1977,2,0,0,Africa,Female,11,Rural,Medium,No,No
+Benin,1976,146,14,9.59,Africa,Female,51,Urban,Medium,Yes,No
+Benin,1975,45,1,2.22,Africa,Female,13,Rural,Medium,No,No
+Benin,1974,73,4,5.48,Africa,Female,36,Urban,Medium,Yes,No
+Benin,1973,3,2,66.67,Africa,Male,36,Rural,Low,No,No
+Benin,1972,250,29,11.6,Africa,Female,6,Urban,Medium,Yes,No
+Benin,1971,2133,274,12.85,Africa,Male,4,Urban,Low,No,Yes
+Benin,1970,175,37,21.14,Africa,Male,9,Urban,Low,Yes,Yes
+Bhutan,1998,19,0,0,South-East Asia,Female,6,Rural,Low,No,Yes
+Bhutan,1995,25,0,0,South-East Asia,Female,4,Rural,Medium,Yes,Yes
+Bhutan,1992,494,6,1.21,South-East Asia,Female,4,Rural,Low,Yes,No
+Bhutan,1991,422,19,4.5,South-East Asia,Female,3,Urban,Low,No,No
+Bolivia (Plurinational State of),1998,466,7,1.5,Americas,Female,11,Urban,Low,Yes,No
+Bolivia (Plurinational State of),1997,1632,18,1.1,Americas,Female,3,Urban,Low,No,No
+Bolivia (Plurinational State of),1996,2847,68,2.39,Americas,Female,1,Rural,Medium,Yes,No
+Bolivia (Plurinational State of),1995,2293,54,2.36,Americas,Female,8,Urban,High,No,No
+Bolivia (Plurinational State of),1994,2710,46,1.7,Americas,Male,56,Rural,Low,Yes,No
+Bolivia (Plurinational State of),1993,10134,254,2.51,Americas,Female,12,Rural,High,No,No
+Bolivia (Plurinational State of),1992,22260,395,1.77,Americas,Female,23,Rural,Medium,No,Yes
+Bolivia (Plurinational State of),1991,206,12,5.83,Americas,Male,1,Rural,Medium,Yes,Yes
+Botswana,2009,15,2,13.33,Africa,Female,1,Rural,Medium,No,No
+Botswana,2008,8,1,12.5,Africa,Male,10,Rural,High,No,No
+Botswana,2006,0,0,0,Africa,Male,5,Urban,Low,Yes,Yes
+Botswana,2005,0,0,0,Africa,Female,0,Rural,Medium,No,Yes
+Brazil,2011,1,0,0,Americas,Male,19,Urban,Medium,Yes,No
+Brazil,2005,5,0,0,Americas,Male,37,Urban,Medium,No,Yes
+Brazil,2004,21,0,0,Americas,Male,12,Urban,High,Yes,No
+Brazil,2001,7,0,0,Americas,Male,10,Urban,Low,Yes,Yes
+Brazil,2000,715,17,2.38,Americas,Female,7,Urban,Medium,Yes,No
+Brazil,1999,4495,83,1.85,Americas,Male,34,Urban,Medium,Yes,No
+Brazil,1998,2571,27,1.05,Americas,Female,9,Rural,Low,No,No
+Brazil,1997,2881,37,1.28,Americas,Male,29,Urban,Low,No,Yes
+Brazil,1996,5522,33,0.6,Americas,Male,2,Rural,Medium,Yes,No
+Brazil,1995,15915,85,0.53,Americas,Male,9,Urban,High,Yes,No
+Brazil,1994,49455,452,0.91,Americas,Male,5,Rural,Medium,No,No
+Brazil,1993,59212,644,1.09,Americas,Female,9,Rural,High,Yes,No
+Brazil,1992,30317,363,1.2,Americas,Female,11,Rural,Medium,Yes,No
+Brazil,1991,2103,33,1.57,Americas,Male,39,Rural,Low,Yes,No
+Brunei Darussalam,2011,3,0,0,Western Pacific,Male,14,Urban,Low,Yes,No
+Brunei Darussalam,1999,93,0,0,Western Pacific,Female,18,Rural,Low,Yes,No
+Brunei Darussalam,1982,6,0,0,Western Pacific,Male,8,Urban,Low,No,No
+Brunei Darussalam,1970,24,0,0,Western Pacific,Male,24,Urban,Low,Yes,Yes
+Brunei Darussalam,1965,198,6,3.03,Western Pacific,Male,41,Rural,Medium,No,No
+Brunei Darussalam,1955,1,0,0,Western Pacific,Female,5,Urban,Medium,Yes,No
+Burkina Faso,2012,143,7,4.9,Africa,Female,30,Rural,Low,Yes,No
+Burkina Faso,2011,20,2,10,Africa,Female,11,Rural,Low,No,No
+Burkina Faso,2008,0,0,0,Africa,Male,31,Urban,Low,Yes,No
+Burkina Faso,2006,0,0,0,Africa,Male,6,Urban,Medium,Yes,No
+Burkina Faso,2005,1050,16,1.52,Africa,Female,10,Urban,Low,No,No
+Burkina Faso,2003,1,0,0,Africa,Female,8,Rural,Low,Yes,No
+Burkina Faso,2001,477,7,1.47,Africa,Female,35,Rural,High,No,No
+Burkina Faso,2000,617,14,2.27,Africa,Female,2,Urban,High,Yes,No
+Burkina Faso,1999,93,7,7.53,Africa,Male,53,Urban,Low,No,No
+Burkina Faso,1998,1036,52,5.02,Africa,Female,32,Rural,Medium,Yes,No
+Burkina Faso,1996,425,58,13.65,Africa,Male,35,Rural,Low,Yes,No
+Burkina Faso,1995,1451,113,7.79,Africa,Female,13,Urban,Medium,No,No
+Burkina Faso,1991,537,61,11.36,Africa,Male,6,Urban,Medium,No,Yes
+Burkina Faso,1985,1149,156,13.58,Africa,Female,36,Rural,Low,Yes,No
+Burkina Faso,1984,2191,117,5.34,Africa,Female,5,Urban,Medium,Yes,No
+Burkina Faso,1978,1,0,0,Africa,Female,1,Urban,Low,Yes,No
+Burkina Faso,1975,3,3,100,Africa,Female,41,Rural,Low,No,Yes
+Burkina Faso,1974,632,66,10.44,Africa,Male,37,Rural,Low,No,No
+Burkina Faso,1973,1118,249,22.27,Africa,Female,12,Urban,Medium,No,No
+Burkina Faso,1972,1,0,0,Africa,Male,12,Urban,Low,Yes,No
+Burkina Faso,1971,1761,495,28.11,Africa,Male,14,Urban,Low,No,No
+Burkina Faso,1970,1,1,100,Africa,Male,13,Urban,Low,Yes,No
+Burundi,2016,434,5,1.2,Africa,Male,8,Rural,Low,Yes,No
+Burundi,2015,442,0,0,Africa,Female,30,Urban,Medium,Yes,Yes
+Burundi,2014,582,9,1.5,Africa,Male,19,Rural,Low,No,No
+Burundi,2013,1557,17,1.09,Africa,Male,3,Rural,Low,No,Yes
+Burundi,2012,214,1,0.47,Africa,Male,9,Urban,Medium,Yes,No
+Burundi,2011,1072,1,0.09,Africa,Female,35,Urban,Medium,No,No
+Burundi,2010,333,1,0.3,Africa,Female,6,Rural,High,No,No
+Burundi,2009,355,0,0,Africa,Female,8,Rural,Medium,Yes,No
+Burundi,2008,234,4,1.71,Africa,Female,36,Rural,Low,Yes,Yes
+Burundi,2007,365,2,0.55,Africa,Male,26,Urban,Medium,No,No
+Burundi,2006,886,7,0.79,Africa,Male,48,Rural,Medium,No,Yes
+Burundi,2005,1309,18,1.38,Africa,Female,25,Rural,Low,Yes,Yes
+Burundi,2004,819,14,1.71,Africa,Male,20,Rural,High,Yes,No
+Burundi,2003,432,18,4.17,Africa,Male,4,Urban,Low,Yes,Yes
+Burundi,2002,577,8,1.39,Africa,Male,34,Rural,High,Yes,No
+Burundi,2001,1003,20,1.99,Africa,Female,5,Rural,High,No,No
+Burundi,2000,1021,16,1.57,Africa,Female,5,Urban,Medium,Yes,Yes
+Burundi,1999,3440,63,1.83,Africa,Male,6,Urban,High,No,Yes
+Burundi,1998,1067,26,2.44,Africa,Female,13,Urban,Medium,Yes,No
+Burundi,1997,1959,95,4.85,Africa,Female,12,Urban,Low,Yes,No
+Burundi,1996,418,0,0,Africa,Female,6,Urban,Medium,Yes,No
+Burundi,1995,2297,0,0,Africa,Female,2,Rural,Low,No,No
+Burundi,1994,562,41,7.3,Africa,Female,9,Urban,Low,Yes,No
+Burundi,1993,78,0,0,Africa,Male,7,Urban,Medium,No,No
+Burundi,1992,479,29,6.05,Africa,Female,2,Rural,Low,Yes,No
+Burundi,1991,3,0,0,Africa,Male,2,Urban,Low,Yes,No
+Burundi,1990,82,0,0,Africa,Male,26,Urban,Medium,Yes,No
+Burundi,1985,259,15,5.79,Africa,Female,45,Rural,High,Yes,No
+Burundi,1984,180,10,5.56,Africa,Male,2,Rural,Low,No,No
+Burundi,1983,512,35,6.84,Africa,Male,6,Rural,Low,Yes,No
+Burundi,1982,415,9,2.17,Africa,Male,42,Rural,Low,No,Yes
+Burundi,1981,582,11,1.89,Africa,Female,10,Urban,Medium,Yes,No
+Burundi,1980,2039,28,1.37,Africa,Female,5,Rural,Low,Yes,No
+Burundi,1979,915,31,3.39,Africa,Male,41,Urban,Medium,Yes,No
+Burundi,1978,8297,248,2.99,Africa,Female,28,Rural,Low,Yes,Yes
+Cabo Verde,2006,0,0,0,Africa,Female,23,Urban,Low,No,No
+Cabo Verde,2005,0,0,0,Africa,Female,4,Rural,High,No,No
+Cabo Verde,1998,133,1,0.75,Africa,Female,12,Rural,Low,Yes,No
+Cabo Verde,1996,428,3,0.7,Africa,Male,59,Rural,Medium,Yes,Yes
+Cabo Verde,1995,12913,240,1.86,Africa,Male,59,Urban,Low,No,No
+Cabo Verde,1994,128,12,9.38,Africa,Female,56,Urban,Medium,No,Yes
+Cabo Verde,1976,219,17,7.76,Africa,Female,19,Rural,Medium,No,No
+Cabo Verde,1975,20,3,15,Africa,Male,34,Rural,Low,Yes,No
+Cabo Verde,1974,303,8,2.64,Africa,Male,19,Urban,Low,Yes,Yes
+Cambodia,2010,588,1,0.17,Western Pacific,Female,9,Rural,Low,No,No
+Cambodia,2009,39,0,0,Western Pacific,Male,6,Rural,Medium,No,No
+Cambodia,2004,57,1,1.75,Western Pacific,Female,50,Urban,Medium,Yes,No
+Cambodia,1999,1711,130,7.6,Western Pacific,Female,5,Rural,Medium,No,No
+Cambodia,1998,1197,66,5.51,Western Pacific,Male,34,Rural,Medium,No,No
+Cambodia,1997,155,0,0,Western Pacific,Male,3,Urban,Low,Yes,No
+Cambodia,1996,740,20,2.7,Western Pacific,Female,11,Urban,Low,Yes,No
+Cambodia,1995,4190,123,2.94,Western Pacific,Female,11,Rural,Low,Yes,No
+Cambodia,1994,3085,211,6.84,Western Pacific,Male,11,Rural,Low,Yes,No
+Cambodia,1993,2252,104,4.62,Western Pacific,Female,5,Urban,Low,No,Yes
+Cambodia,1992,1229,120,9.76,Western Pacific,Male,12,Rural,Medium,Yes,No
+Cambodia,1991,770,97,12.6,Western Pacific,Female,12,Rural,Medium,No,No
+Cambodia,1990,5,0,0,Western Pacific,Male,32,Rural,High,No,No
+Cambodia,1989,47,2,4.26,Western Pacific,Male,8,Urban,Low,Yes,No
+Cambodia,1988,56,0,0,Western Pacific,Male,0,Rural,Medium,Yes,No
+Cambodia,1987,474,55,11.6,Western Pacific,Female,14,Urban,High,No,No
+Cambodia,1975,66,0,0,Western Pacific,Female,25,Urban,Medium,No,No
+Cambodia,1974,145,1,0.69,Western Pacific,Male,14,Urban,Low,No,No
+Cambodia,1973,159,14,8.81,Western Pacific,Female,58,Urban,Low,Yes,Yes
+Cambodia,1968,8,1,12.5,Western Pacific,Male,51,Rural,Low,Yes,No
+Cambodia,1967,4,0,0,Western Pacific,Male,19,Urban,Low,Yes,No
+Cambodia,1966,62,5,8.06,Western Pacific,Female,9,Rural,Medium,No,No
+Cambodia,1964,187,27,14.44,Western Pacific,Female,39,Urban,Low,Yes,No
+Cambodia,1963,52,13,25,Western Pacific,Male,11,Urban,Low,No,Yes
+Cambodia,1958,3,0,0,Western Pacific,Female,4,Rural,Medium,Yes,Yes
+Cambodia,1957,6,1,16.67,Western Pacific,Female,21,Rural,Medium,No,No
+Cambodia,1956,1,1,100,Western Pacific,Male,31,Urban,Medium,No,No
+Cambodia,1954,2,2,100,Western Pacific,Male,12,Rural,Medium,Yes,No
+Cambodia,1953,11,8,72.73,Western Pacific,Female,55,Urban,Low,No,No
+Cambodia,1952,24,10,41.67,Western Pacific,Male,31,Urban,Low,Yes,No
+Cambodia,1951,57,40,70.18,Western Pacific,Male,20,Rural,Low,Yes,Yes
+Cambodia,1950,10,1,10,Western Pacific,Female,9,Rural,Medium,Yes,No
+Cameroon,2015,124,6,4.8,Africa,Male,5,Urban,High,Yes,Yes
+Cameroon,2014,3355,184,5.5,Africa,Male,2,Rural,Low,Yes,No
+Cameroon,2013,29,0,0,Africa,Female,7,Rural,Medium,No,No
+Cameroon,2012,363,5,1.38,Africa,Female,24,Urban,Low,No,No
+Cameroon,2011,22433,783,3.49,Africa,Male,2,Rural,Medium,Yes,No
+Cameroon,2010,10759,657,6.1,Africa,Male,3,Rural,Low,No,No
+Cameroon,2009,804,89,11.07,Africa,Female,13,Rural,Low,No,No
+Cameroon,2008,0,0,0,Africa,Female,35,Urban,High,No,Yes
+Cameroon,2007,10,1,10,Africa,Female,3,Rural,Medium,No,No
+Cameroon,2006,922,35,3.8,Africa,Female,12,Urban,Medium,Yes,No
+Cameroon,2005,2847,110,3.86,Africa,Male,11,Rural,Low,Yes,No
+Cameroon,2004,8005,137,1.71,Africa,Female,1,Rural,Low,No,No
+Cameroon,2003,207,36,17.39,Africa,Female,2,Urban,Low,Yes,No
+Cameroon,2002,66,8,12.12,Africa,Male,9,Rural,High,Yes,No
+Cameroon,2001,259,7,2.7,Africa,Female,37,Rural,High,Yes,No
+Cameroon,2000,123,29,23.58,Africa,Male,57,Rural,Medium,Yes,Yes
+Cameroon,1999,1584,35,2.21,Africa,Female,2,Urban,Low,Yes,No
+Cameroon,1998,4603,316,6.87,Africa,Female,9,Urban,High,Yes,Yes
+Cameroon,1997,1709,180,10.53,Africa,Female,11,Rural,Medium,Yes,No
+Cameroon,1996,5796,485,8.37,Africa,Male,22,Urban,Medium,No,Yes
+Cameroon,1995,615,21,3.41,Africa,Male,29,Rural,Low,Yes,No
+Cameroon,1994,527,61,11.58,Africa,Female,7,Urban,Medium,Yes,Yes
+Cameroon,1993,648,19,2.93,Africa,Male,20,Urban,Medium,Yes,No
+Cameroon,1992,1268,66,5.21,Africa,Male,30,Urban,High,Yes,No
+Cameroon,1991,4026,491,12.2,Africa,Male,2,Urban,Medium,Yes,No
+Cameroon,1990,16,0,0,Africa,Male,7,Rural,Low,Yes,No
+Cameroon,1989,4,2,50,Africa,Male,22,Urban,Medium,Yes,No
+Cameroon,1988,4,0,0,Africa,Male,11,Urban,High,No,No
+Cameroon,1987,94,6,6.38,Africa,Female,20,Urban,Low,Yes,Yes
+Cameroon,1986,165,12,7.27,Africa,Female,2,Rural,Low,Yes,No
+Cameroon,1985,1158,103,8.89,Africa,Male,30,Urban,Low,Yes,No
+Cameroon,1984,392,60,15.31,Africa,Female,35,Rural,Medium,No,No
+Cameroon,1983,55,18,32.73,Africa,Female,18,Rural,Low,No,No
+Cameroon,1982,5,3,60,Africa,Female,45,Rural,Medium,No,No
+Cameroon,1981,243,17,7,Africa,Female,10,Rural,Low,Yes,No
+Cameroon,1980,229,23,10.04,Africa,Male,18,Rural,High,Yes,No
+Cameroon,1979,16,4,25,Africa,Female,1,Rural,Low,Yes,No
+Cameroon,1978,3,0,0,Africa,Female,4,Urban,Low,No,Yes
+Cameroon,1976,135,27,20,Africa,Male,23,Urban,Medium,Yes,No
+Cameroon,1975,3,0,0,Africa,Male,20,Urban,Medium,No,Yes
+Cameroon,1974,83,16,19.28,Africa,Female,25,Rural,Low,No,No
+Cameroon,1973,206,16,7.77,Africa,Female,11,Rural,Low,No,No
+Cameroon,1972,362,27,7.46,Africa,Female,48,Rural,Low,Yes,No
+Cameroon,1971,2167,336,15.51,Africa,Female,11,Urban,Medium,No,No
+Canada,2016,1,0,0,Americas,Female,42,Rural,Medium,Yes,No
+Canada,2015,3,0,0,Americas,Female,13,Urban,High,Yes,No
+Canada,2014,2,0,0,Americas,Male,3,Urban,Medium,Yes,No
+Canada,2013,1,0,0,Americas,Female,32,Urban,Medium,Yes,Yes
+Canada,2011,9,0,0,Americas,Female,37,Urban,High,Yes,No
+Canada,2010,2,0,0,Americas,Male,31,Urban,Medium,Yes,No
+Canada,2009,2,0,0,Americas,Male,44,Urban,Medium,Yes,Yes
+Canada,2008,1,0,0,Americas,Male,2,Urban,High,Yes,No
+Canada,2007,1,0,0,Americas,Male,1,Urban,High,Yes,No
+Canada,2006,2,0,0,Americas,Female,42,Rural,High,Yes,No
+Canada,2005,7,0,0,Americas,Female,23,Urban,High,Yes,No
+Canada,2004,3,0,0,Americas,Female,0,Urban,Medium,Yes,No
+Canada,2003,5,0,0,Americas,Female,17,Rural,High,Yes,No
+Canada,2002,4,0,0,Americas,Female,8,Rural,Medium,Yes,No
+Canada,2001,6,0,0,Americas,Female,49,Urban,Medium,Yes,No
+Canada,2000,5,0,0,Americas,Male,28,Urban,High,Yes,No
+Canada,1998,2,0,0,Americas,Female,53,Urban,High,Yes,No
+Canada,1996,2,0,0,Americas,Male,27,Urban,High,Yes,No
+Canada,1995,7,0,0,Americas,Male,47,Urban,High,Yes,No
+Canada,1994,2,0,0,Americas,Female,10,Rural,High,Yes,No
+Canada,1993,6,1,16.67,Americas,Male,1,Urban,High,Yes,No
+Canada,1992,5,0,0,Americas,Female,4,Rural,High,Yes,No
+Canada,1991,2,0,0,Americas,Male,44,Rural,Medium,Yes,No
+Canada,1989,1,0,0,Americas,Female,10,Rural,High,Yes,Yes
+Central African Republic,2012,21,0,0,Africa,Male,7,Urban,Low,Yes,No
+Central African Republic,2011,117,15,12.82,Africa,Female,5,Rural,Medium,Yes,No
+Central African Republic,2006,0,0,0,Africa,Female,33,Urban,Medium,Yes,Yes
+Central African Republic,2005,0,0,0,Africa,Female,56,Rural,Low,No,No
+Central African Republic,2004,320,48,15,Africa,Female,34,Urban,Low,Yes,No
+Central African Republic,1998,22,3,13.64,Africa,Female,13,Urban,High,Yes,No
+Central African Republic,1997,443,75,16.93,Africa,Male,33,Rural,Low,Yes,No
+Chad,2011,17267,458,2.65,Africa,Male,13,Urban,Low,No,No
+Chad,2010,6395,175,2.74,Africa,Male,3,Urban,Medium,No,No
+Chad,2009,67,6,8.96,Africa,Female,8,Urban,Medium,No,Yes
+Chad,2007,0,0,0,Africa,Male,8,Rural,Low,Yes,No
+Chad,2006,1668,71,4.26,Africa,Female,2,Urban,Low,Yes,No
+Chad,2005,90,14,15.56,Africa,Female,13,Rural,Low,Yes,No
+Chad,2004,5531,272,4.92,Africa,Male,42,Urban,High,Yes,No
+Chad,2003,55,7,12.73,Africa,Male,36,Urban,Low,No,No
+Chad,2001,5244,226,4.31,Africa,Female,14,Urban,Medium,Yes,No
+Chad,1999,217,18,8.29,Africa,Male,0,Urban,High,Yes,No
+Chad,1998,4095,144,3.52,Africa,Female,10,Urban,Low,Yes,No
+Chad,1997,8801,443,5.03,Africa,Female,4,Urban,High,No,Yes
+Chad,1996,7830,448,5.72,Africa,Female,47,Rural,High,Yes,No
+Chad,1994,1094,43,3.93,Africa,Female,23,Rural,High,Yes,No
+Chad,1991,13915,1344,9.66,Africa,Female,48,Urban,Low,No,No
+Chad,1974,338,87,25.74,Africa,Male,0,Urban,Medium,Yes,No
+Chad,1972,9,3,33.33,Africa,Male,14,Rural,Medium,No,No
+Chad,1971,8230,2411,29.3,Africa,Female,29,Urban,High,Yes,No
+Chile,2014,1,0,0,Americas,Female,9,Urban,Low,No,No
+Chile,2013,2,0,0,Americas,Male,4,Rural,Medium,Yes,Yes
+Chile,2011,1,0,0,Americas,Male,18,Rural,Low,Yes,No
+Chile,1998,24,2,8.33,Americas,Female,11,Rural,Low,No,Yes
+Chile,1997,4,0,0,Americas,Male,59,Urban,Medium,Yes,No
+Chile,1996,1,0,0,Americas,Female,11,Urban,Medium,Yes,No
+Chile,1994,1,0,0,Americas,Male,10,Rural,Medium,Yes,No
+Chile,1993,32,0,0,Americas,Female,6,Urban,Medium,No,Yes
+Chile,1992,73,1,1.37,Americas,Male,8,Rural,High,Yes,No
+Chile,1991,41,2,4.88,Americas,Female,11,Rural,Low,No,No
+China,2016,27,0,0,Western Pacific,Male,7,Urban,Medium,No,No
+China,2015,13,0,0,Western Pacific,Male,0,Rural,Low,No,No
+China,2014,24,0,0,Western Pacific,Female,2,Rural,Low,Yes,Yes
+China,2013,53,1,1.89,Western Pacific,Male,12,Rural,Medium,Yes,No
+China,2012,77,0,0,Western Pacific,Female,52,Urban,High,No,No
+China,2011,26,0,0,Western Pacific,Male,0,Urban,Medium,Yes,No
+China,2010,157,0,0,Western Pacific,Female,11,Urban,Medium,Yes,No
+China,2009,85,0,0,Western Pacific,Male,4,Urban,Low,Yes,No
+China,2008,174,0,0,Western Pacific,Female,13,Rural,Low,Yes,No
+China,2007,168,0,0,Western Pacific,Male,55,Urban,Medium,Yes,No
+China,2006,161,2,1.24,Western Pacific,Female,4,Urban,Low,Yes,Yes
+China,2005,980,4,0.41,Western Pacific,Male,27,Urban,Low,No,No
+China,2004,244,1,0.41,Western Pacific,Female,13,Rural,Medium,Yes,No
+China,2003,223,1,0.45,Western Pacific,Female,14,Urban,Low,Yes,Yes
+China,2001,140,0,0,Western Pacific,Female,11,Urban,Low,Yes,No
+China,2000,1846,3,0.16,Western Pacific,Male,59,Urban,Medium,Yes,No
+China,1999,4589,0,0,Western Pacific,Female,59,Rural,Medium,Yes,No
+China,1998,4642,0,0,Western Pacific,Male,11,Urban,High,No,No
+China,1997,1177,29,2.46,Western Pacific,Female,37,Rural,Medium,No,No
+China,1996,316,4,1.27,Western Pacific,Male,14,Rural,Medium,Yes,Yes
+China,1995,10337,88,0.85,Western Pacific,Female,3,Urban,High,Yes,No
+China,1994,34877,319,0.91,Western Pacific,Male,44,Rural,Medium,Yes,Yes
+China,1993,11673,94,0.81,Western Pacific,Male,3,Urban,Low,No,No
+China,1992,583,1,0.17,Western Pacific,Female,14,Rural,Low,No,No
+China,1991,210,0,0,Western Pacific,Male,0,Rural,Medium,No,No
+China,1990,644,5,0.78,Western Pacific,Male,29,Urban,Medium,Yes,No
+China,1989,5628,59,1.05,Western Pacific,Female,43,Urban,Medium,No,No
+China,1988,7267,89,1.22,Western Pacific,Male,1,Urban,Medium,Yes,No
+China,1987,4,0,0,Western Pacific,Male,13,Rural,Medium,Yes,No
+China,1980,88,0,0,Western Pacific,Male,53,Urban,High,No,No
+China,1979,85,2,2.35,Western Pacific,Female,3,Rural,Medium,No,No
+China,1967,1,0,0,Western Pacific,Male,1,Urban,Low,Yes,No
+China,1963,1,0,0,Western Pacific,Female,54,Rural,High,Yes,Yes
+China,1962,384,24,6.25,Western Pacific,Male,8,Urban,Low,Yes,No
+China,1949,1,1,100,Western Pacific,Male,0,Rural,Medium,Yes,Yes
+Colombia,2004,2,0,0,Americas,Male,35,Urban,High,Yes,No
+Colombia,1999,42,0,0,Americas,Female,14,Rural,Medium,No,No
+Colombia,1998,442,7,1.58,Americas,Male,52,Urban,Medium,No,No
+Colombia,1997,1508,32,2.12,Americas,Male,5,Urban,Medium,No,No
+Colombia,1996,4428,70,1.58,Americas,Female,2,Urban,Low,No,No
+Colombia,1995,1922,35,1.82,Americas,Male,52,Rural,Low,Yes,No
+Colombia,1994,996,14,1.41,Americas,Female,58,Urban,Medium,No,No
+Colombia,1993,230,0,0,Americas,Female,17,Rural,Medium,Yes,No
+Colombia,1992,15129,158,1.04,Americas,Male,14,Urban,Medium,Yes,No
+Colombia,1991,11979,207,1.73,Americas,Female,7,Rural,Low,Yes,No
+Comoros,2008,4,0,0,Africa,Male,9,Rural,Medium,Yes,No
+Comoros,2007,1555,29,1.86,Africa,Female,7,Rural,Medium,No,No
+Comoros,2006,0,0,0,Africa,Female,51,Urban,Medium,No,No
+Comoros,2005,0,0,0,Africa,Male,4,Urban,Medium,Yes,No
+Comoros,2004,1,0,0,Africa,Female,3,Urban,Medium,No,No
+Comoros,2003,56,0,0,Africa,Female,32,Urban,Medium,Yes,No
+Comoros,2002,1567,46,2.94,Africa,Female,45,Rural,Medium,No,No
+Comoros,2001,226,4,1.77,Africa,Female,52,Rural,High,Yes,No
+Comoros,2000,3297,91,2.76,Africa,Female,48,Rural,Low,Yes,No
+Comoros,1999,1180,42,3.56,Africa,Male,7,Urban,High,Yes,No
+Comoros,1998,7300,68,0.93,Africa,Female,14,Rural,Low,No,No
+Comoros,1976,5,1,20,Africa,Male,1,Urban,Low,Yes,No
+Comoros,1975,2675,238,8.9,Africa,Female,17,Rural,High,No,No
+Congo,2016,15,2,13.3,Americas,Male,3,Urban,Low,Yes,Yes
+Congo,2013,1624,221,13.61,Americas,Male,5,Urban,Medium,No,No
+Congo,2012,1181,37,3.13,Americas,Female,20,Urban,High,No,No
+Congo,2011,762,0,0,Americas,Female,14,Rural,High,Yes,Yes
+Congo,2009,93,0,0,Americas,Female,51,Rural,High,Yes,No
+Congo,2008,156,4,2.56,Americas,Male,49,Urban,Low,No,No
+Congo,2007,7785,133,1.71,Americas,Female,32,Urban,Medium,No,Yes
+Congo,2006,175,10,5.71,Americas,Male,0,Urban,Low,No,No
+Congo,2005,0,0,0,Americas,Male,14,Rural,Medium,Yes,No
+Congo,2000,9,2,22.22,Americas,Male,18,Urban,High,Yes,Yes
+Congo,1999,4813,20,0.42,Americas,Female,8,Rural,Low,No,No
+Congo,1998,3222,22,0.68,Americas,Female,5,Rural,Medium,Yes,No
+Congo,1997,275,60,21.82,Americas,Male,9,Rural,Medium,Yes,No
+Congo,1979,5,0,0,Americas,Male,2,Urban,Medium,Yes,No
+Congo,1978,51,14,27.45,Americas,Female,35,Rural,High,No,No
+Costa Rica,1997,1,0,0,Americas,Male,6,Rural,Low,No,No
+Costa Rica,1996,19,1,5.26,Americas,Female,38,Urban,Medium,Yes,No
+Costa Rica,1995,24,0,0,Americas,Male,12,Rural,High,Yes,No
+Costa Rica,1994,38,0,0,Americas,Female,31,Rural,Medium,Yes,No
+Costa Rica,1993,14,0,0,Americas,Male,1,Urban,Low,Yes,No
+Costa Rica,1992,12,0,0,Americas,Female,7,Urban,Medium,Yes,No
+Côte d'Ivoire,2015,199,6,3,Africa,Male,4,Urban,Low,No,No
+Côte d'Ivoire,2014,235,12,5.1,Africa,Female,0,Rural,Low,Yes,No
+Côte d'Ivoire,2013,56,2,3.57,Africa,Female,41,Urban,High,Yes,No
+Côte d'Ivoire,2012,424,19,4.48,Africa,Male,10,Rural,Medium,No,No
+Côte d'Ivoire,2011,1261,24,1.9,Africa,Male,35,Rural,High,Yes,No
+Côte d'Ivoire,2010,32,0,0,Africa,Female,6,Rural,High,Yes,No
+Côte d'Ivoire,2009,5,2,40,Africa,Male,7,Urban,Medium,Yes,No
+Côte d'Ivoire,2008,7,1,14.29,Africa,Female,26,Rural,Low,Yes,No
+Côte d'Ivoire,2007,8,1,12.5,Africa,Male,2,Urban,Medium,No,No
+Côte d'Ivoire,2006,414,15,3.62,Africa,Female,58,Urban,Low,Yes,No
+Côte d'Ivoire,2005,39,6,0,Africa,Female,5,Rural,High,Yes,No
+Côte d'Ivoire,2004,105,9,8.57,Africa,Female,0,Urban,Low,No,No
+Côte d'Ivoire,2003,1034,50,4.84,Africa,Female,25,Rural,Low,No,No
+Côte d'Ivoire,2002,4188,143,3.41,Africa,Female,31,Urban,Medium,Yes,No
+Côte d'Ivoire,2001,5912,305,5.16,Africa,Female,13,Urban,Low,Yes,No
+Côte d'Ivoire,1996,1345,22,1.64,Africa,Male,18,Urban,Low,No,No
+Côte d'Ivoire,1995,4993,184,3.69,Africa,Male,2,Rural,Medium,Yes,No
+Côte d'Ivoire,1994,1108,55,4.96,Africa,Male,31,Rural,Low,No,Yes
+Côte d'Ivoire,1993,724,42,5.8,Africa,Female,0,Rural,Low,No,No
+Côte d'Ivoire,1992,37,7,18.92,Africa,Female,14,Urban,Low,No,Yes
+Côte d'Ivoire,1991,604,116,19.21,Africa,Female,27,Urban,Medium,Yes,No
+Côte d'Ivoire,1982,34,0,0,Africa,Female,45,Rural,Medium,Yes,No
+Côte d'Ivoire,1979,3,0,0,Africa,Male,46,Urban,Medium,No,No
+Côte d'Ivoire,1971,668,9,1.35,Africa,Male,57,Urban,Medium,Yes,No
+Côte d'Ivoire,1970,868,39,4.49,Africa,Female,56,Rural,Low,Yes,No
+Cuba,2015,65,0,0,Americas,Male,30,Urban,High,Yes,Yes
+Cuba,2014,76,0,0,Americas,Male,38,Rural,Low,Yes,No
+Cuba,2013,181,0,0,Americas,Female,13,Rural,Medium,No,Yes
+Cuba,2012,417,3,0.72,Americas,Male,22,Urban,High,Yes,Yes
+Czechia,2002,2,0,0,Europe,Female,7,Urban,High,No,Yes
+Czechia,1970,4,1,25,Europe,Male,2,Urban,Low,Yes,No
+Democratic People's Republic of Korea,1996,7,0,0,Western Pacific,Female,4,Rural,Low,Yes,No
+Democratic People's Republic of Korea,1980,170,0,0,Western Pacific,Female,54,Rural,Medium,Yes,No
+Democratic Republic of the Congo,2016,28093,759,2.7,Africa,Female,23,Urban,Low,No,Yes
+Democratic Republic of the Congo,2015,19182,276,1.4,Africa,Female,49,Urban,High,No,Yes
+Democratic Republic of the Congo,2014,22203,372,1.7,Africa,Male,7,Rural,Medium,Yes,No
+Democratic Republic of the Congo,2013,26944,491,1.82,Africa,Female,13,Rural,Medium,No,Yes
+Democratic Republic of the Congo,2012,33661,819,2.43,Africa,Female,13,Urban,Low,Yes,No
+Democratic Republic of the Congo,2011,21700,584,2.69,Africa,Female,2,Urban,Medium,No,Yes
+Democratic Republic of the Congo,2010,13884,182,1.31,Africa,Male,27,Urban,Medium,No,No
+Democratic Republic of the Congo,2009,22899,237,1.03,Africa,Female,59,Rural,High,No,No
+Democratic Republic of the Congo,2008,30150,548,1.82,Africa,Male,10,Rural,Low,No,No
+Democratic Republic of the Congo,2007,28269,600,2.12,Africa,Female,7,Urban,Low,Yes,No
+Democratic Republic of the Congo,2006,20642,426,2.06,Africa,Male,9,Rural,Low,Yes,No
+Democratic Republic of the Congo,2005,13430,244,0,Africa,Male,16,Urban,Low,Yes,Yes
+Democratic Republic of the Congo,2004,7665,228,2.97,Africa,Female,7,Urban,Medium,Yes,No
+Democratic Republic of the Congo,2003,27272,989,3.63,Africa,Male,17,Urban,High,No,No
+Democratic Republic of the Congo,2002,31658,1979,6.25,Africa,Female,13,Rural,Low,Yes,Yes
+Democratic Republic of the Congo,2001,5728,390,6.81,Africa,Female,6,Urban,High,No,No
+Democratic Republic of the Congo,2000,14995,941,6.28,Africa,Female,44,Rural,Low,Yes,Yes
+Democratic Republic of the Congo,1999,12711,783,6.16,Africa,Male,4,Urban,Low,Yes,No
+Democratic Republic of the Congo,1998,34899,2926,8.38,Africa,Male,8,Urban,Low,No,No
+Democratic Republic of the Congo,1997,2421,326,13.47,Africa,Female,37,Urban,Low,Yes,No
+Democratic Republic of the Congo,1996,7886,638,8.09,Africa,Female,24,Rural,High,No,No
+Democratic Republic of the Congo,1995,553,22,3.98,Africa,Male,34,Urban,Low,Yes,Yes
+Democratic Republic of the Congo,1994,58057,4181,7.2,Africa,Female,13,Rural,Medium,No,No
+Democratic Republic of the Congo,1993,986,175,17.75,Africa,Female,4,Urban,Medium,Yes,No
+Democratic Republic of the Congo,1992,1949,59,3.03,Africa,Female,13,Urban,High,Yes,No
+Democratic Republic of the Congo,1991,4066,294,7.23,Africa,Male,6,Urban,Low,No,No
+Democratic Republic of the Congo,1990,468,61,13.03,Africa,Male,6,Urban,Low,No,No
+Democratic Republic of the Congo,1989,99,6,6.06,Africa,Male,48,Urban,Low,Yes,No
+Democratic Republic of the Congo,1988,295,32,10.85,Africa,Female,8,Urban,Medium,Yes,No
+Democratic Republic of the Congo,1987,1150,218,18.96,Africa,Female,8,Rural,Low,Yes,Yes
+Democratic Republic of the Congo,1986,1059,125,11.8,Africa,Female,40,Rural,High,Yes,No
+Democratic Republic of the Congo,1985,740,30,4.05,Africa,Male,52,Urban,Medium,No,Yes
+Democratic Republic of the Congo,1984,162,3,1.85,Africa,Female,7,Urban,Medium,No,No
+Democratic Republic of the Congo,1983,2977,245,8.23,Africa,Female,58,Urban,Medium,Yes,No
+Democratic Republic of the Congo,1982,10328,693,6.71,Africa,Female,12,Urban,Low,Yes,No
+Democratic Republic of the Congo,1981,2379,800,33.63,Africa,Female,0,Urban,Medium,No,Yes
+Democratic Republic of the Congo,1980,1051,81,7.71,Africa,Male,10,Rural,High,Yes,No
+Democratic Republic of the Congo,1979,5515,511,9.27,Africa,Male,32,Urban,High,No,No
+Democratic Republic of the Congo,1978,3481,183,5.26,Africa,Female,33,Urban,High,Yes,Yes
+Denmark,2016,1,0,0,Europe,Male,26,Urban,High,No,Yes
+Denmark,2008,1,0,0,Europe,Male,0,Urban,Low,Yes,No
+Denmark,2004,1,0,0,Europe,Female,41,Rural,Low,No,Yes
+Denmark,1995,3,0,0,Europe,Female,6,Urban,Low,Yes,No
+Denmark,1994,2,0,0,Europe,Male,35,Urban,Low,Yes,No
+Denmark,1993,2,0,0,Europe,Female,4,Rural,Low,No,No
+Denmark,1990,1,0,0,Europe,Male,31,Urban,Medium,Yes,No
+Djibouti,2011,127,1,0.79,Eastern Mediterranean,Female,8,Rural,Medium,Yes,No
+Djibouti,2010,2047,19,0.93,Eastern Mediterranean,Male,33,Rural,High,Yes,No
+Djibouti,2007,1087,27,2.48,Eastern Mediterranean,Female,4,Urban,Medium,Yes,No
+Djibouti,2000,1828,32,1.75,Eastern Mediterranean,Male,5,Rural,High,No,No
+Djibouti,1998,164,3,1.83,Eastern Mediterranean,Male,8,Urban,Low,No,No
+Djibouti,1997,2424,50,2.06,Eastern Mediterranean,Male,28,Rural,Low,Yes,Yes
+Djibouti,1994,1122,15,1.34,Eastern Mediterranean,Female,21,Urban,Medium,No,Yes
+Djibouti,1993,10055,99,0.98,Eastern Mediterranean,Male,51,Urban,Low,Yes,No
+Djibouti,1985,115,7,6.09,Eastern Mediterranean,Male,14,Rural,Low,No,No
+Djibouti,1978,3,2,66.67,Eastern Mediterranean,Female,8,Rural,Low,Yes,Yes
+Djibouti,1977,2,0,0,Eastern Mediterranean,Female,7,Rural,Low,Yes,Yes
+Djibouti,1976,2,0,0,Eastern Mediterranean,Male,37,Rural,Medium,Yes,No
+Djibouti,1972,8,3,37.5,Eastern Mediterranean,Male,1,Urban,Medium,Yes,No
+Djibouti,1971,440,81,18.41,Eastern Mediterranean,Female,50,Urban,Medium,Yes,No
+Djibouti,1970,6,3,50,Eastern Mediterranean,Female,20,Urban,Medium,Yes,No
+Dominican Republic,2016,1159,27,2.3,Americas,Female,42,Urban,Low,No,Yes
+Dominican Republic,2015,546,15,2.7,Americas,Female,15,Urban,Low,Yes,No
+Dominican Republic,2014,603,11,1.8,Americas,Female,11,Rural,Low,No,No
+Dominican Republic,2013,1954,42,2.15,Americas,Male,8,Urban,Low,Yes,Yes
+Dominican Republic,2012,7919,68,0.86,Americas,Female,14,Urban,Medium,No,No
+Dominican Republic,2011,20851,336,1.61,Americas,Male,4,Urban,Medium,No,No
+Dominican Republic,2010,191,0,0,Americas,Male,5,Rural,Medium,No,No
+Ecuador,2004,5,0,0,Americas,Male,9,Rural,Low,No,Yes
+Ecuador,2003,25,0,0,Americas,Female,14,Rural,Medium,No,No
+Ecuador,2001,9,0,0,Americas,Male,38,Urban,Medium,Yes,No
+Ecuador,2000,27,1,3.7,Americas,Male,8,Rural,Medium,No,Yes
+Ecuador,1999,90,0,0,Americas,Female,52,Urban,Medium,Yes,No
+Ecuador,1998,3724,37,0.99,Americas,Male,6,Rural,Medium,Yes,No
+Ecuador,1997,65,3,4.62,Americas,Male,0,Rural,Medium,Yes,No
+Ecuador,1996,1059,12,1.13,Americas,Female,11,Urban,Medium,No,No
+Ecuador,1995,2160,23,1.06,Americas,Male,9,Urban,Low,Yes,No
+Ecuador,1994,1785,16,0.9,Americas,Male,4,Rural,Medium,Yes,No
+Ecuador,1993,6833,72,1.05,Americas,Male,39,Urban,Low,Yes,No
+Ecuador,1992,31870,208,0.65,Americas,Female,9,Rural,Low,No,Yes
+Ecuador,1991,46320,697,1.5,Americas,Female,13,Urban,High,Yes,No
+El Salvador,2000,631,2,0.32,Americas,Female,10,Urban,High,Yes,No
+El Salvador,1999,134,0,0,Americas,Male,3,Urban,Low,Yes,Yes
+El Salvador,1998,8,0,0,Americas,Male,47,Urban,Medium,No,No
+El Salvador,1996,182,2,1.1,Americas,Female,7,Urban,Low,No,No
+El Salvador,1995,2923,2,0.07,Americas,Male,18,Urban,Medium,No,No
+El Salvador,1994,11745,38,0.32,Americas,Male,55,Rural,High,No,No
+El Salvador,1993,6573,14,0.21,Americas,Female,1,Urban,High,Yes,No
+El Salvador,1992,8717,45,0.52,Americas,Female,37,Rural,Medium,No,Yes
+El Salvador,1991,947,34,3.59,Americas,Male,40,Rural,Low,Yes,Yes
+Equatorial Guinea,2006,0,0,0,Africa,Male,6,Rural,Medium,Yes,No
+Equatorial Guinea,2005,6391,33,0.52,Africa,Male,25,Urban,Low,Yes,No
+Equatorial Guinea,2004,59,1,1.69,Africa,Female,11,Urban,High,Yes,No
+Equatorial Guinea,1985,108,1,0.93,Africa,Female,10,Urban,High,No,No
+Equatorial Guinea,1984,404,31,7.67,Africa,Female,40,Rural,Medium,Yes,No
+Eritrea,2008,1,0,0,Africa,Female,10,Rural,Low,No,No
+Eritrea,2007,119,9,7.56,Africa,Male,22,Urban,Low,Yes,No
+Eritrea,2006,0,0,0,Africa,Female,45,Urban,Low,Yes,Yes
+Eritrea,2005,0,0,0,Africa,Female,10,Rural,High,Yes,No
+Estonia,1993,2,0,0,Europe,Female,3,Urban,Medium,No,No
+Eswatini,2009,19,0,0,Africa,Female,45,Rural,Low,No,No
+Eswatini,2008,1,0,0,Africa,Female,1,Rural,Medium,Yes,No
+Eswatini,2007,0,0,0,Africa,Male,34,Rural,High,Yes,No
+Eswatini,2006,18,0,0,Africa,Male,47,Urban,Low,Yes,No
+Eswatini,2005,0,0,0,Africa,Female,10,Urban,High,No,No
+Eswatini,2004,1075,16,1.49,Africa,Male,35,Rural,High,No,No
+Eswatini,2003,32,13,40.63,Africa,Female,52,Rural,High,Yes,No
+Eswatini,2002,134,2,1.49,Africa,Female,13,Urban,Low,No,No
+Eswatini,2001,5612,107,1.91,Africa,Male,13,Urban,Low,Yes,Yes
+Eswatini,2000,141,16,11.35,Africa,Male,44,Rural,Low,Yes,No
+Eswatini,1999,7,0,0,Africa,Female,58,Rural,Low,No,No
+Eswatini,1998,7,0,0,Africa,Female,11,Rural,Low,Yes,No
+Eswatini,1996,2,0,0,Africa,Female,10,Rural,Medium,Yes,No
+Eswatini,1992,2281,30,1.32,Africa,Male,42,Urban,Medium,Yes,No
+Eswatini,1982,538,13,2.42,Africa,Female,30,Urban,High,Yes,No
+Eswatini,1981,238,17,7.14,Africa,Female,11,Rural,Low,No,No
+Eswatini,1978,2,0,0,Africa,Female,11,Rural,Medium,No,No
+Ethiopia,2010,1682,21,1.25,Africa,Male,1,Urban,Medium,No,Yes
+Ethiopia,2009,31509,434,1.38,Africa,Female,32,Urban,Medium,Yes,No
+Ethiopia,2008,3862,23,0.6,Africa,Female,58,Rural,Medium,Yes,No
+Ethiopia,2007,24121,272,1.13,Africa,Male,48,Urban,Medium,Yes,No
+Ethiopia,2006,54070,575,1.06,Africa,Female,30,Urban,Medium,No,No
+Ethiopia,2005,0,0,0,Africa,Female,6,Rural,Low,No,No
+Ethiopia,2004,16,0,0,Africa,Male,44,Rural,Low,No,Yes
+Ethiopia,1982,0,0,0,Africa,Female,44,Rural,Low,Yes,Yes
+Ethiopia,1971,2187,124,5.67,Africa,Male,6,Urban,Low,No,No
+Ethiopia,1970,850,72,8.47,Africa,Male,36,Rural,Low,No,No
+Finland,2008,1,0,0,Europe,Female,23,Rural,Low,Yes,No
+Finland,2005,1,0,0,Europe,Female,3,Rural,Low,No,No
+Finland,1998,1,0,0,Europe,Female,56,Rural,Low,Yes,No
+Finland,1995,1,0,0,Europe,Female,38,Urban,Low,Yes,No
+Finland,1994,2,0,0,Europe,Male,7,Urban,High,Yes,No
+Finland,1981,1,0,0,Europe,Female,10,Urban,Low,Yes,No
+France,2015,1,0,0,Europe,Male,8,Urban,Medium,Yes,Yes
+France,2014,1,0,0,Europe,Female,12,Urban,High,Yes,No
+France,2011,1,0,0,Europe,Female,41,Rural,Medium,Yes,No
+France,2009,1,0,0,Europe,Female,0,Rural,Medium,Yes,No
+France,2008,2,0,0,Europe,Male,6,Rural,High,Yes,No
+France,2007,4,0,0,Europe,Female,44,Urban,High,Yes,Yes
+France,2006,2,0,0,Europe,Female,0,Urban,High,Yes,No
+France,2002,1,0,0,Europe,Female,31,Urban,Medium,Yes,No
+France,2001,2,0,0,Europe,Female,3,Urban,Medium,Yes,Yes
+France,2000,5,0,0,Europe,Male,32,Urban,Medium,Yes,No
+France,1998,2,0,0,Europe,Female,1,Urban,High,Yes,No
+France,1997,3,0,0,Europe,Male,12,Rural,High,Yes,No
+France,1996,8,0,0,Europe,Male,25,Urban,Medium,Yes,Yes
+France,1995,6,0,0,Europe,Male,4,Urban,High,Yes,No
+France,1994,4,0,0,Europe,Male,1,Rural,High,Yes,No
+France,1993,5,0,0,Europe,Male,19,Urban,High,Yes,No
+France,1991,7,0,0,Europe,Male,7,Rural,Medium,Yes,No
+France,1990,6,1,16.67,Europe,Female,9,Rural,High,Yes,No
+France,1989,1,0,0,Europe,Male,21,Rural,High,Yes,No
+France,1987,7,0,0,Europe,Male,35,Urban,High,Yes,No
+France,1986,37,0,0,Europe,Male,56,Urban,Medium,Yes,No
+France,1984,1,0,0,Europe,Female,1,Urban,High,Yes,No
+France,1983,3,0,0,Europe,Female,8,Urban,High,Yes,No
+France,1982,18,0,0,Europe,Male,42,Urban,High,Yes,No
+France,1981,20,0,0,Europe,Female,10,Urban,Medium,Yes,No
+France,1980,1,0,0,Europe,Male,2,Urban,Medium,Yes,Yes
+France,1979,8,0,0,Europe,Male,38,Urban,Medium,Yes,No
+France,1976,5,0,0,Europe,Female,50,Rural,High,Yes,No
+France,1975,9,0,0,Europe,Male,38,Rural,Medium,Yes,No
+France,1974,5,0,0,Europe,Female,48,Urban,High,Yes,No
+France,1973,4,0,0,Europe,Female,37,Urban,High,Yes,No
+France,1971,3,0,0,Europe,Male,14,Rural,High,Yes,No
+France,1970,1,0,0,Europe,Male,8,Urban,High,Yes,No
+Gabon,2008,2,0,0,Africa,Female,9,Rural,Medium,Yes,No
+Gabon,2006,0,0,0,Africa,Male,5,Rural,Medium,Yes,No
+Gabon,2005,0,0,0,Africa,Male,36,Urban,Low,Yes,No
+Gabon,2003,629,0,0,Africa,Male,11,Rural,Low,No,No
+Gabon,2002,6,0,0,Africa,Female,50,Urban,Low,No,No
+Gabon,1981,7,0,0,Africa,Female,4,Urban,Medium,No,No
+Gabon,1979,5,2,40,Africa,Male,1,Rural,Low,Yes,No
+Gambia,2008,1,0,0,Africa,Female,8,Urban,Low,Yes,Yes
+Gambia,2007,12,1,8.33,Africa,Female,50,Rural,Medium,Yes,No
+Gambia,2006,0,0,0,Africa,Female,7,Urban,Medium,Yes,No
+Gambia,2005,214,13,6.07,Africa,Female,22,Urban,Medium,Yes,No
+Gambia,1996,7,0,0,Africa,Female,45,Rural,Medium,No,No
+Gambia,1995,15,0,0,Africa,Male,48,Rural,High,No,No
+Gambia,1994,1,0,0,Africa,Male,31,Rural,High,No,No
+Gambia,1985,2,0,0,Africa,Male,9,Rural,High,Yes,No
+Georgia,1993,8,0,0,Europe,Female,3,Rural,Medium,Yes,No
+Germany,2016,1,0,Unknown,Europe,Female,52,Urban,High,Yes,Yes
+Germany,2014,1,0,0,Europe,Male,14,Urban,Medium,Yes,No
+Germany,2011,4,0,0,Europe,Female,0,Urban,High,Yes,No
+Germany,2010,4,1,25,Europe,Male,1,Urban,High,Yes,Yes
+Germany,2007,2,0,0,Europe,Male,20,Urban,High,Yes,No
+Germany,2006,1,0,0,Europe,Male,53,Urban,High,Yes,No
+Germany,2004,3,0,0,Europe,Female,8,Rural,Medium,Yes,Yes
+Germany,2003,1,0,0,Europe,Female,8,Urban,High,Yes,No
+Germany,2002,1,0,0,Europe,Male,20,Urban,High,Yes,Yes
+Germany,2001,1,0,0,Europe,Male,4,Urban,High,Yes,No
+Germany,2000,2,0,0,Europe,Male,26,Rural,High,Yes,No
+Germany,1999,3,0,0,Europe,Male,12,Rural,High,Yes,No
+Germany,1998,5,0,0,Europe,Female,9,Rural,High,Yes,No
+Germany,1997,2,0,0,Europe,Female,3,Urban,Medium,Yes,No
+Germany,1995,1,0,0,Europe,Male,10,Rural,High,Yes,Yes
+Germany,1994,5,0,0,Europe,Male,47,Urban,Medium,Yes,No
+Germany,1993,1,0,0,Europe,Female,12,Urban,High,Yes,No
+Germany,1992,1,0,0,Europe,Female,33,Rural,High,Yes,Yes
+Germany,1990,1,0,0,Europe,Male,0,Urban,High,Yes,No
+Germany,1989,1,0,0,Europe,Male,19,Urban,High,Yes,No
+Germany,1988,2,0,0,Europe,Male,5,Urban,Medium,Yes,No
+Germany,1986,2,0,0,Europe,Female,49,Urban,Medium,Yes,No
+Germany,1982,1,0,0,Europe,Female,57,Rural,High,Yes,No
+Germany,1981,4,0,0,Europe,Female,3,Urban,High,Yes,No
+Germany,1980,4,0,0,Europe,Male,16,Urban,Medium,Yes,No
+Germany,1977,1,0,0,Europe,Male,2,Urban,High,Yes,Yes
+Germany,1976,2,0,0,Europe,Female,17,Urban,High,Yes,No
+Germany,1975,1,0,0,Europe,Female,33,Urban,Medium,Yes,No
+Germany,1974,3,0,0,Europe,Male,3,Urban,High,Yes,No
+Germany,1973,6,0,0,Europe,Female,0,Urban,Medium,Yes,No
+Germany,1972,2,0,0,Europe,Female,10,Urban,High,Yes,Yes
+Germany,1971,1,0,0,Europe,Male,0,Rural,Medium,Yes,No
+Ghana,2016,175,0,0,Africa,Female,8,Urban,Low,No,Yes
+Ghana,2015,692,8,1.2,Africa,Male,5,Urban,Low,Yes,Yes
+Ghana,2014,28944,243,0.8,Africa,Male,33,Urban,Medium,Yes,No
+Ghana,2013,50,0,0,Africa,Male,10,Urban,Low,Yes,Yes
+Ghana,2012,9548,100,1.05,Africa,Male,18,Rural,Low,Yes,Yes
+Ghana,2011,10628,105,0.99,Africa,Male,21,Rural,Low,Yes,No
+Ghana,2010,438,3,0.68,Africa,Male,13,Urban,Low,No,Yes
+Ghana,2009,1294,9,0.7,Africa,Male,5,Rural,Medium,No,Yes
+Ghana,2008,1223,25,2.04,Africa,Female,12,Rural,Medium,Yes,Yes
+Ghana,2007,179,18,10.06,Africa,Male,55,Urban,Low,Yes,No
+Ghana,2006,3357,107,3.19,Africa,Male,43,Rural,Low,No,No
+Ghana,2005,3166,51,1.61,Africa,Female,1,Rural,Low,Yes,No
+Ghana,2004,407,6,1.47,Africa,Female,55,Rural,Medium,Yes,No
+Ghana,2003,204,4,1.96,Africa,Female,9,Rural,Low,Yes,No
+Ghana,2002,3614,65,1.8,Africa,Male,10,Urban,Medium,Yes,Yes
+Ghana,2001,5487,160,2.92,Africa,Female,2,Rural,Low,No,Yes
+Ghana,2000,3331,74,2.22,Africa,Male,30,Rural,Low,No,No
+Ghana,1999,9432,260,2.76,Africa,Male,24,Urban,High,Yes,No
+Ghana,1998,3426,108,3.15,Africa,Male,9,Rural,Medium,Yes,No
+Ghana,1997,379,12,3.17,Africa,Male,43,Urban,Low,Yes,No
+Ghana,1996,1665,70,4.2,Africa,Female,3,Rural,High,Yes,No
+Ghana,1995,4698,93,1.98,Africa,Female,3,Rural,Medium,No,Yes
+Ghana,1994,2267,54,2.38,Africa,Male,2,Urban,High,No,No
+Ghana,1993,1448,38,2.62,Africa,Male,36,Urban,Medium,Yes,No
+Ghana,1992,228,23,10.09,Africa,Male,41,Rural,Medium,No,No
+Ghana,1991,13172,409,3.11,Africa,Female,46,Urban,High,No,No
+Ghana,1990,2937,60,2.04,Africa,Male,8,Urban,Low,No,No
+Ghana,1985,60,0,0,Africa,Male,1,Urban,Medium,Yes,No
+Ghana,1984,1015,92,9.06,Africa,Female,2,Urban,Medium,Yes,No
+Ghana,1983,14160,819,5.78,Africa,Female,4,Urban,Low,No,No
+Ghana,1982,11051,1225,11.09,Africa,Male,2,Urban,Low,Yes,No
+Ghana,1981,943,62,6.57,Africa,Female,50,Urban,Low,No,No
+Ghana,1980,260,21,8.08,Africa,Female,8,Rural,Medium,No,No
+Ghana,1979,1783,113,6.34,Africa,Male,0,Rural,Medium,No,No
+Ghana,1978,1853,120,6.48,Africa,Female,0,Urban,Medium,Yes,Yes
+Ghana,1977,6565,353,5.38,Africa,Male,0,Urban,Low,No,No
+Ghana,1976,102,0,0,Africa,Female,56,Rural,Medium,Yes,Yes
+Ghana,1975,187,10,5.35,Africa,Male,5,Urban,High,No,No
+Ghana,1974,483,37,7.66,Africa,Male,1,Urban,Low,Yes,No
+Ghana,1973,677,39,5.76,Africa,Male,35,Urban,Medium,Yes,No
+Ghana,1972,625,32,5.12,Africa,Female,29,Rural,Medium,No,Yes
+Ghana,1971,13048,641,4.91,Africa,Male,10,Rural,Medium,Yes,No
+Ghana,1970,2733,180,6.59,Africa,Female,42,Rural,Medium,Yes,No
+Greece,1993,1,0,0,Europe,Male,8,Rural,High,No,No
+Greece,1986,1,0,0,Europe,Male,3,Rural,Low,Yes,No
+Guatemala,2003,1,0,0,Americas,Female,0,Urban,High,No,No
+Guatemala,2002,1,0,0,Americas,Male,3,Rural,Low,Yes,No
+Guatemala,2001,13,0,0,Americas,Male,4,Urban,Low,No,No
+Guatemala,2000,612,6,0.98,Americas,Female,7,Rural,Low,No,Yes
+Guatemala,1999,2077,0,0,Americas,Male,47,Rural,Medium,Yes,No
+Guatemala,1998,5970,57,0.95,Americas,Male,44,Rural,Medium,Yes,Yes
+Guatemala,1997,1263,0,0,Americas,Male,32,Urban,Low,Yes,No
+Guatemala,1996,1568,14,0.89,Americas,Male,50,Urban,Low,Yes,Yes
+Guatemala,1995,7970,95,1.19,Americas,Female,17,Rural,High,Yes,No
+Guatemala,1994,5282,36,0.68,Americas,Female,0,Rural,High,No,No
+Guatemala,1993,30604,306,1,Americas,Male,2,Rural,Medium,Yes,No
+Guatemala,1992,15395,207,1.34,Americas,Female,20,Urban,Medium,Yes,No
+Guatemala,1991,3674,50,1.36,Americas,Male,42,Rural,Medium,No,Yes
+Guinea,2014,1,0,0,Africa,Female,4,Rural,Low,Yes,No
+Guinea,2013,319,32,10.03,Africa,Male,10,Rural,High,Yes,No
+Guinea,2012,7350,133,1.81,Africa,Male,57,Rural,Low,Yes,No
+Guinea,2011,3,0,0,Africa,Male,5,Rural,Medium,Yes,No
+Guinea,2009,42,0,0,Africa,Male,57,Rural,Low,No,No
+Guinea,2008,513,32,6.24,Africa,Male,32,Rural,Medium,No,No
+Guinea,2007,8546,311,3.64,Africa,Male,5,Rural,Medium,Yes,No
+Guinea,2006,3242,219,6.76,Africa,Female,12,Urban,Medium,Yes,No
+Guinea,2005,3821,107,2.8,Africa,Male,6,Urban,Low,Yes,No
+Guinea,2004,1516,117,7.72,Africa,Female,3,Rural,Medium,Yes,No
+Guinea,2003,6,1,16.67,Africa,Male,6,Rural,Low,No,No
+Guinea,2002,61,11,18.03,Africa,Female,15,Rural,Low,Yes,Yes
+Guinea,2001,392,22,5.61,Africa,Female,4,Urban,Low,Yes,No
+Guinea,2000,519,32,6.17,Africa,Female,42,Urban,Medium,Yes,No
+Guinea,1999,599,28,4.67,Africa,Male,17,Rural,Medium,No,No
+Guinea,1998,881,53,6.02,Africa,Male,3,Rural,Medium,No,No
+Guinea,1996,287,17,5.92,Africa,Female,4,Urban,Medium,No,No
+Guinea,1995,6506,565,8.68,Africa,Male,11,Urban,Medium,No,No
+Guinea,1994,31415,671,2.14,Africa,Female,6,Rural,Medium,Yes,No
+Guinea,1986,286,58,20.28,Africa,Male,38,Urban,Low,Yes,No
+Guinea,1970,2000,60,3,Africa,Female,46,Rural,Low,Yes,No
+Guinea-Bissau,2014,11,2,18.2,Africa,Female,50,Urban,Medium,No,Yes
+Guinea-Bissau,2013,969,28,2.89,Africa,Male,0,Rural,Medium,No,Yes
+Guinea-Bissau,2012,3068,22,0.72,Africa,Female,35,Rural,High,Yes,No
+Guinea-Bissau,2009,5,0,0,Africa,Male,5,Rural,High,No,No
+Guinea-Bissau,2008,14323,225,1.57,Africa,Female,55,Urban,Low,No,No
+Guinea-Bissau,2007,153,8,5.23,Africa,Female,37,Rural,Low,No,No
+Guinea-Bissau,2006,37,0,0,Africa,Male,30,Urban,Medium,Yes,No
+Guinea-Bissau,2005,25111,399,1.59,Africa,Male,8,Urban,Low,No,No
+Guinea-Bissau,2004,155,3,1.94,Africa,Male,14,Rural,Low,Yes,No
+Guinea-Bissau,2003,290,2,0.69,Africa,Female,13,Rural,High,No,No
+Guinea-Bissau,2002,842,6,0.71,Africa,Male,54,Rural,Low,No,No
+Guinea-Bissau,1998,126,2,1.59,Africa,Female,20,Urban,High,Yes,No
+Guinea-Bissau,1997,20555,905,4.4,Africa,Female,13,Urban,Medium,No,No
+Guinea-Bissau,1996,8397,84,1,Africa,Male,13,Urban,Medium,No,No
+Guinea-Bissau,1995,119,0,0,Africa,Male,9,Rural,Low,Yes,No
+Guinea-Bissau,1994,15296,285,1.86,Africa,Female,14,Rural,Low,Yes,No
+Guinea-Bissau,1987,6000,68,1.13,Africa,Female,9,Rural,Medium,Yes,No
+Guinea-Bissau,1986,200,50,25,Africa,Male,6,Rural,Low,No,No
+Guyana,1993,66,2,3.03,Americas,Male,13,Urban,Low,No,No
+Guyana,1992,576,8,1.39,Americas,Male,10,Urban,Low,Yes,No
+Haiti,2016,41421,447,1.1,Americas,Male,13,Urban,Low,Yes,Yes
+Haiti,2015,36045,322,0.9,Americas,Male,54,Urban,Low,No,No
+Haiti,2014,27753,296,1.1,Americas,Female,0,Urban,Medium,Yes,No
+Haiti,2013,58809,593,1.01,Americas,Female,27,Rural,Low,Yes,Yes
+Haiti,2012,112076,894,0.8,Americas,Female,1,Urban,Low,No,Yes
+Haiti,2011,340311,2869,0.84,Americas,Female,12,Rural,Low,Yes,No
+Haiti,2010,179379,3990,2.22,Americas,Male,7,Urban,Medium,Yes,No
+Honduras,2001,1,0,0,Americas,Male,19,Rural,Low,No,No
+Honduras,2000,8,0,0,Americas,Male,21,Rural,Low,No,No
+Honduras,1999,56,3,5.36,Americas,Female,6,Rural,Medium,No,No
+Honduras,1998,306,13,4.25,Americas,Female,0,Urban,High,No,Yes
+Honduras,1997,100,1,1,Americas,Male,12,Rural,Medium,Yes,Yes
+Honduras,1996,708,14,1.98,Americas,Male,57,Rural,Medium,Yes,No
+Honduras,1995,4717,77,1.63,Americas,Female,11,Urban,Low,Yes,No
+Honduras,1994,5049,102,2.02,Americas,Female,11,Urban,Medium,No,No
+Honduras,1993,4013,102,2.54,Americas,Male,43,Urban,Low,No,No
+Honduras,1992,407,17,4.18,Americas,Male,8,Rural,Medium,No,No
+Honduras,1991,17,0,0,Americas,Female,8,Rural,Medium,No,Yes
+Hungary,1997,1,0,0,Europe,Male,33,Rural,High,No,Yes
+India,2016,841,3,0.4,South-East Asia,Male,12,Urban,Low,Yes,No
+India,2015,889,4,0.4,South-East Asia,Male,44,Urban,Low,No,Yes
+India,2014,4031,21,0.5,South-East Asia,Female,1,Rural,Low,Yes,No
+India,2013,6008,54,0.9,South-East Asia,Female,5,Urban,Medium,Yes,No
+India,2010,5155,9,0.17,South-East Asia,Female,54,Rural,Medium,No,No
+India,2008,2680,1,0.04,South-East Asia,Female,11,Rural,Low,No,No
+India,2007,2635,3,0.11,South-East Asia,Female,59,Urban,Low,No,Yes
+India,2006,1939,3,0.15,South-East Asia,Female,3,Rural,Low,No,No
+India,2005,3155,6,0.19,South-East Asia,Female,12,Urban,Low,Yes,No
+India,2004,4695,7,0.15,South-East Asia,Male,5,Rural,Medium,No,No
+India,2003,2893,2,0.07,South-East Asia,Male,10,Urban,Low,No,Yes
+India,2002,3455,10,0.29,South-East Asia,Male,25,Rural,Medium,Yes,No
+India,2001,4081,6,0.15,South-East Asia,Male,10,Urban,Low,No,Yes
+India,2000,4053,20,0.49,South-East Asia,Male,16,Urban,Medium,No,No
+India,1999,3839,6,0.16,South-East Asia,Male,0,Rural,Low,No,No
+India,1998,7151,11,0.15,South-East Asia,Male,48,Urban,Medium,No,No
+India,1997,2768,16,0.58,South-East Asia,Female,14,Rural,Low,No,No
+India,1996,4396,34,0.77,South-East Asia,Female,8,Urban,Low,No,No
+India,1995,3315,5,0.15,South-East Asia,Male,53,Rural,Low,Yes,No
+India,1994,4973,32,0.64,South-East Asia,Male,3,Urban,Low,Yes,No
+India,1993,12084,51,0.42,South-East Asia,Female,58,Rural,Low,Yes,Yes
+India,1992,6911,55,0.8,South-East Asia,Male,6,Urban,Low,Yes,No
+India,1991,6993,149,2.13,South-East Asia,Male,20,Urban,Medium,No,No
+India,1990,3583,83,2.32,South-East Asia,Female,30,Urban,Low,No,No
+India,1989,5640,93,1.65,South-East Asia,Male,35,Rural,Medium,Yes,No
+India,1988,17162,380,2.21,South-East Asia,Female,3,Urban,Medium,Yes,No
+India,1987,11934,240,2.01,South-East Asia,Male,5,Rural,Low,Yes,No
+India,1986,4208,70,1.66,South-East Asia,Female,27,Rural,Low,No,No
+India,1985,5808,155,2.67,South-East Asia,Female,7,Urban,Low,No,No
+India,1984,2527,27,1.07,South-East Asia,Female,7,Rural,Low,No,Yes
+India,1983,8542,309,3.62,South-East Asia,Male,44,Urban,Low,No,Yes
+India,1982,4656,213,4.57,South-East Asia,Female,11,Urban,Medium,Yes,No
+India,1981,4681,150,3.2,South-East Asia,Male,40,Rural,Low,Yes,No
+India,1980,8344,307,3.68,South-East Asia,Male,11,Rural,Low,Yes,No
+India,1979,5073,113,2.23,South-East Asia,Male,13,Rural,Low,Yes,Yes
+India,1978,10585,246,2.32,South-East Asia,Male,13,Urban,Medium,No,No
+India,1977,8376,289,3.45,South-East Asia,Female,52,Urban,Low,No,No
+India,1976,14946,662,4.43,South-East Asia,Female,12,Urban,Low,No,No
+India,1975,22049,2330,10.57,South-East Asia,Male,35,Rural,Low,No,No
+India,1974,30903,2289,7.41,South-East Asia,Male,12,Rural,Low,Yes,No
+India,1973,41611,5406,12.99,South-East Asia,Female,24,Rural,Medium,Yes,Yes
+India,1972,20435,2845,13.92,South-East Asia,Male,29,Urban,Medium,No,No
+India,1971,71386,10478,14.68,South-East Asia,Female,20,Urban,Low,No,No
+India,1970,15067,3420,22.7,South-East Asia,Male,51,Urban,Low,Yes,No
+India,1969,19280,0,0,South-East Asia,Male,0,Urban,Low,No,Yes
+India,1968,22587,0,0,South-East Asia,Female,4,Urban,Low,No,No
+India,1967,13708,0,0,South-East Asia,Male,4,Rural,Low,No,No
+India,1966,13052,2799,21.45,South-East Asia,Female,4,Rural,Low,No,No
+India,1965,42677,12664,29.67,South-East Asia,Male,54,Rural,Low,No,Yes
+India,1964,53011,17035,32.13,South-East Asia,Male,54,Urban,Medium,No,Yes
+India,1963,44839,16357,36.48,South-East Asia,Male,16,Urban,Low,No,Yes
+India,1962,51082,27141,53.13,South-East Asia,Female,0,Rural,Medium,No,No
+India,1961,47637,26946,56.57,South-East Asia,Male,3,Urban,Low,Yes,Yes
+India,1960,14621,0,0,South-East Asia,Male,41,Rural,Low,No,No
+India,1959,14852,7696,51.82,South-East Asia,Male,17,Urban,Medium,Yes,Yes
+India,1958,66849,49818,74.52,South-East Asia,Male,2,Urban,Low,Yes,No
+India,1957,54961,49715,90.46,South-East Asia,Female,12,Rural,Low,No,Yes
+India,1956,39829,17206,43.2,South-East Asia,Female,3,Urban,Low,No,No
+India,1955,23533,7662,32.56,South-East Asia,Male,2,Rural,Low,Yes,No
+India,1954,22146,19368,87.46,South-East Asia,Female,11,Rural,Medium,Yes,No
+India,1953,213225,124227,58.26,South-East Asia,Male,28,Urban,Medium,Yes,No
+India,1952,101493,58252,57.4,South-East Asia,Male,0,Urban,Low,No,Yes
+India,1951,86787,41543,47.87,South-East Asia,Male,6,Rural,Low,Yes,No
+India,1950,625,396,63.36,South-East Asia,Female,49,Rural,Low,Yes,No
+Indonesia,2008,1007,27,2.68,South-East Asia,Female,4,Urban,Low,No,Yes
+Indonesia,2005,1338,19,1.42,South-East Asia,Female,2,Rural,Medium,Yes,No
+Indonesia,2001,561,6,1.07,South-East Asia,Female,12,Urban,Low,Yes,Yes
+Indonesia,1997,66,0,0,South-East Asia,Female,9,Urban,Medium,No,No
+Indonesia,1996,66,0,0,South-East Asia,Female,37,Urban,Low,Yes,No
+Indonesia,1994,47,0,0,South-East Asia,Female,13,Urban,Low,No,No
+Indonesia,1993,3564,25,0.7,South-East Asia,Female,19,Urban,Medium,No,No
+Indonesia,1992,25,0,0,South-East Asia,Female,18,Rural,Medium,No,Yes
+Indonesia,1991,6202,55,0.89,South-East Asia,Male,34,Urban,High,Yes,No
+Indonesia,1990,155,0,0,South-East Asia,Female,25,Urban,High,Yes,Yes
+Indonesia,1989,67,0,0,South-East Asia,Female,12,Urban,Low,No,No
+Indonesia,1988,50,0,0,South-East Asia,Female,5,Rural,Low,No,Yes
+Indonesia,1987,659,18,2.73,South-East Asia,Female,35,Rural,High,Yes,No
+Indonesia,1986,11915,391,3.28,South-East Asia,Female,55,Urban,High,Yes,No
+Indonesia,1985,4732,85,1.8,South-East Asia,Female,8,Urban,High,Yes,No
+Indonesia,1984,7921,59,0.74,South-East Asia,Female,33,Urban,Low,Yes,No
+Indonesia,1983,13832,346,2.5,South-East Asia,Female,6,Urban,High,Yes,No
+Indonesia,1982,10391,535,5.15,South-East Asia,Female,7,Urban,Low,Yes,No
+Indonesia,1981,18354,463,2.52,South-East Asia,Female,31,Urban,Medium,Yes,No
+Indonesia,1980,5541,150,2.71,South-East Asia,Female,34,Urban,High,No,No
+Indonesia,1979,18817,769,4.09,South-East Asia,Male,0,Rural,Low,Yes,No
+Indonesia,1978,10683,507,4.75,South-East Asia,Male,34,Urban,High,No,No
+Indonesia,1977,17112,780,4.56,South-East Asia,Female,2,Rural,Low,No,No
+Indonesia,1976,41264,2665,6.46,South-East Asia,Female,13,Rural,High,Yes,Yes
+Indonesia,1975,48387,3715,7.68,South-East Asia,Male,52,Rural,Low,No,No
+Indonesia,1974,41474,3920,9.45,South-East Asia,Female,40,Urban,High,No,Yes
+Indonesia,1973,52042,3058,5.88,South-East Asia,Male,11,Urban,Low,Yes,Yes
+Indonesia,1972,44383,6956,15.67,South-East Asia,Male,3,Urban,Medium,Yes,No
+Indonesia,1971,23555,3607,15.31,South-East Asia,Male,44,Rural,Medium,Yes,No
+Indonesia,1970,5997,1257,20.96,South-East Asia,Male,30,Urban,Medium,No,No
+Indonesia,1969,627,262,41.79,South-East Asia,Male,10,Rural,Low,No,Yes
+Indonesia,1968,135,22,16.3,South-East Asia,Female,41,Rural,Medium,Yes,No
+Indonesia,1967,700,139,19.86,South-East Asia,Male,23,Urban,Low,No,No
+Indonesia,1966,204,36,17.65,South-East Asia,Female,51,Rural,Medium,Yes,Yes
+Indonesia,1964,326,69,21.17,South-East Asia,Female,45,Urban,Low,Yes,No
+Indonesia,1963,535,83,15.51,South-East Asia,Male,29,Urban,High,No,No
+Indonesia,1962,428,80,18.69,South-East Asia,Male,13,Urban,Low,Yes,No
+Indonesia,1961,1742,474,27.21,South-East Asia,Female,26,Urban,Low,No,Yes
+Indonesia,1960,41,22,53.66,South-East Asia,Male,9,Rural,Low,No,No
+Iran (Islamic Republic of),2015,86,1,1.2,Eastern Mediterranean,Male,25,Urban,Medium,No,No
+Iran (Islamic Republic of),2013,256,7,2.73,Eastern Mediterranean,Female,6,Urban,Low,Yes,No
+Iran (Islamic Republic of),2012,53,0,0,Eastern Mediterranean,Female,10,Rural,Medium,No,No
+Iran (Islamic Republic of),2011,1187,12,1.01,Eastern Mediterranean,Male,7,Rural,High,No,Yes
+Iran (Islamic Republic of),2008,72,4,5.56,Eastern Mediterranean,Female,14,Urban,Medium,Yes,No
+Iran (Islamic Republic of),2007,19,0,0,Eastern Mediterranean,Male,4,Rural,Medium,Yes,No
+Iran (Islamic Republic of),2005,1133,11,0.97,Eastern Mediterranean,Male,37,Rural,Low,Yes,Yes
+Iran (Islamic Republic of),2004,94,1,1.06,Eastern Mediterranean,Male,13,Urban,Medium,No,No
+Iran (Islamic Republic of),2003,96,0,0,Eastern Mediterranean,Female,7,Urban,Low,No,No
+Iran (Islamic Republic of),2002,118,0,0,Eastern Mediterranean,Female,50,Urban,Medium,Yes,Yes
+Iran (Islamic Republic of),2001,105,0,0,Eastern Mediterranean,Female,3,Rural,Low,No,No
+Iran (Islamic Republic of),2000,345,3,0.87,Eastern Mediterranean,Female,45,Rural,Medium,Yes,No
+Iran (Islamic Republic of),1999,1369,21,1.53,Eastern Mediterranean,Female,5,Rural,Low,No,No
+Iran (Islamic Republic of),1998,270,1,0.37,Eastern Mediterranean,Male,6,Urban,High,Yes,No
+Iran (Islamic Republic of),1997,1106,9,0.81,Eastern Mediterranean,Male,6,Urban,Low,Yes,No
+Iran (Islamic Republic of),1995,2177,59,2.71,Eastern Mediterranean,Male,13,Urban,Medium,Yes,No
+Iran (Islamic Republic of),1994,15,0,0,Eastern Mediterranean,Male,9,Urban,Low,Yes,No
+Iran (Islamic Republic of),1993,1347,5,0.37,Eastern Mediterranean,Female,7,Rural,Medium,No,No
+Iran (Islamic Republic of),1992,97,4,4.12,Eastern Mediterranean,Male,11,Rural,High,Yes,Yes
+Iran (Islamic Republic of),1991,1892,32,1.69,Eastern Mediterranean,Female,6,Urban,Medium,Yes,No
+Iran (Islamic Republic of),1990,178,3,1.69,Eastern Mediterranean,Male,8,Urban,Medium,Yes,Yes
+Iran (Islamic Republic of),1989,5222,85,1.63,Eastern Mediterranean,Female,1,Urban,High,Yes,Yes
+Iran (Islamic Republic of),1988,486,15,3.09,Eastern Mediterranean,Female,32,Urban,Medium,No,No
+Iran (Islamic Republic of),1987,295,4,1.36,Eastern Mediterranean,Male,31,Urban,Medium,No,No
+Iran (Islamic Republic of),1986,20,1,5,Eastern Mediterranean,Male,14,Urban,Medium,Yes,No
+Iran (Islamic Republic of),1985,1208,9,0.75,Eastern Mediterranean,Male,27,Urban,Medium,Yes,No
+Iran (Islamic Republic of),1984,531,5,0.94,Eastern Mediterranean,Male,8,Urban,Low,Yes,No
+Iran (Islamic Republic of),1983,270,0,0,Eastern Mediterranean,Female,10,Urban,High,No,No
+Iran (Islamic Republic of),1982,427,0,0,Eastern Mediterranean,Male,8,Urban,Medium,No,No
+Iran (Islamic Republic of),1981,6034,108,1.79,Eastern Mediterranean,Male,2,Rural,Low,No,No
+Iran (Islamic Republic of),1980,1599,32,2,Eastern Mediterranean,Female,1,Urban,Medium,No,No
+Iran (Islamic Republic of),1979,1856,56,3.02,Eastern Mediterranean,Male,3,Rural,Low,No,No
+Iran (Islamic Republic of),1978,264,0,0,Eastern Mediterranean,Male,27,Urban,Low,No,No
+Iran (Islamic Republic of),1977,10836,0,0,Eastern Mediterranean,Male,0,Urban,Medium,Yes,No
+Iran (Islamic Republic of),1976,2100,0,0,Eastern Mediterranean,Male,40,Urban,High,Yes,Yes
+Iran (Islamic Republic of),1975,2966,0,0,Eastern Mediterranean,Male,18,Urban,High,Yes,No
+Iran (Islamic Republic of),1974,304,0,0,Eastern Mediterranean,Female,39,Rural,High,Yes,No
+Iran (Islamic Republic of),1973,55,0,0,Eastern Mediterranean,Male,10,Urban,High,No,No
+Iran (Islamic Republic of),1972,322,0,0,Eastern Mediterranean,Male,7,Rural,Low,Yes,No
+Iran (Islamic Republic of),1971,344,0,0,Eastern Mediterranean,Male,2,Rural,Low,Yes,No
+Iran (Islamic Republic of),1970,19663,0,0,Eastern Mediterranean,Male,48,Rural,High,Yes,No
+Iran (Islamic Republic of),1969,557,0,0,Eastern Mediterranean,Male,52,Rural,Low,Yes,No
+Iran (Islamic Republic of),1967,221,0,0,Eastern Mediterranean,Female,7,Rural,Medium,Yes,No
+Iran (Islamic Republic of),1966,162,0,0,Eastern Mediterranean,Male,2,Urban,Medium,No,No
+Iran (Islamic Republic of),1965,5037,0,0,Eastern Mediterranean,Female,10,Rural,Low,No,No
+Iraq,2016,0,0,0.0 0.0,Eastern Mediterranean,Female,43,Urban,High,No,Yes
+Iraq,2015,4965,2,0.04,Eastern Mediterranean,Male,13,Urban,Medium,Yes,Yes
+Iraq,2013,1,0,0,Eastern Mediterranean,Male,35,Urban,Medium,Yes,No
+Iraq,2012,4693,4,0,Eastern Mediterranean,Male,36,Rural,High,Yes,No
+Iraq,2010,2,0,0,Eastern Mediterranean,Male,56,Rural,Medium,No,No
+Iraq,2009,6,0,0,Eastern Mediterranean,Female,3,Urban,Low,Yes,Yes
+Iraq,2008,925,11,1.19,Eastern Mediterranean,Male,3,Rural,Medium,Yes,Yes
+Iraq,2007,4697,24,0.51,Eastern Mediterranean,Male,12,Urban,High,No,Yes
+Iraq,2004,35,0,0,Eastern Mediterranean,Male,7,Urban,Medium,Yes,No
+Iraq,2003,187,0,0,Eastern Mediterranean,Male,13,Urban,Medium,Yes,No
+Iraq,2002,718,0,0,Eastern Mediterranean,Male,9,Urban,Medium,Yes,Yes
+Iraq,2001,560,0,0,Eastern Mediterranean,Male,42,Urban,Low,Yes,Yes
+Iraq,2000,532,4,0.75,Eastern Mediterranean,Female,16,Rural,High,Yes,No
+Iraq,1999,1985,30,1.51,Eastern Mediterranean,Female,31,Rural,High,Yes,No
+Iraq,1998,53,1,1.89,Eastern Mediterranean,Male,12,Urban,Low,No,No
+Iraq,1996,1,0,0,Eastern Mediterranean,Male,13,Urban,Low,No,No
+Iraq,1995,820,3,0.37,Eastern Mediterranean,Male,35,Rural,High,Yes,No
+Iraq,1994,838,0,0,Eastern Mediterranean,Female,6,Rural,High,No,No
+Iraq,1993,280,0,0,Eastern Mediterranean,Male,29,Urban,High,Yes,No
+Iraq,1992,97,0,0,Eastern Mediterranean,Female,9,Urban,High,Yes,Yes
+Iraq,1991,877,6,0.68,Eastern Mediterranean,Male,6,Rural,Medium,Yes,Yes
+Iraq,1978,96,0,0,Eastern Mediterranean,Male,23,Rural,Medium,No,Yes
+Iraq,1977,133,1,0.75,Eastern Mediterranean,Male,0,Urban,Medium,Yes,No
+Iraq,1966,227,20,8.81,Eastern Mediterranean,Male,1,Urban,Low,No,No
+Ireland,2001,1,0,0,Europe,Female,26,Rural,Medium,No,Yes
+Israel,2013,1,0,0,Europe,Female,13,Urban,Medium,Yes,No
+Israel,1988,1,0,0,Europe,Male,13,Rural,Medium,No,No
+Israel,1987,2,0,0,Europe,Male,7,Urban,Medium,No,No
+Israel,1982,1,0,0,Europe,Female,10,Rural,Medium,Yes,No
+Israel,1972,11,0,0,Europe,Female,0,Urban,Low,Yes,No
+Israel,1971,1,0,0,Europe,Female,12,Urban,Low,No,No
+Israel,1970,185,10,5.41,Europe,Female,6,Rural,Low,No,Yes
+Italy,2013,1,0,0,Europe,Male,51,Urban,Low,Yes,No
+Italy,2007,1,0,0,Europe,Female,22,Rural,High,Yes,No
+Italy,2006,1,0,0,Europe,Male,2,Urban,Low,Yes,No
+Italy,1998,2,9,450,Europe,Female,16,Urban,Low,Yes,No
+Italy,1995,1,0,0,Europe,Female,2,Urban,Medium,Yes,No
+Italy,1994,12,9,75,Europe,Female,20,Rural,Medium,No,No
+Italy,1979,8,0,0,Europe,Female,42,Urban,Low,No,No
+Italy,1977,2,0,0,Europe,Female,51,Urban,Medium,Yes,No
+Italy,1975,1,0,0,Europe,Male,3,Urban,Medium,No,No
+Italy,1973,278,23,8.27,Europe,Male,50,Rural,Low,No,No
+Japan,2016,10,0,0,Western Pacific,Female,3,Rural,High,Yes,No
+Japan,2015,7,0,0,Western Pacific,Female,3,Urban,Medium,Yes,Yes
+Japan,2014,5,0,0,Western Pacific,Male,2,Urban,Medium,Yes,No
+Japan,2013,8,0,0,Western Pacific,Female,11,Rural,High,Yes,No
+Japan,2012,3,0,0,Western Pacific,Female,47,Urban,High,Yes,No
+Japan,2011,12,0,0,Western Pacific,Male,7,Rural,High,Yes,No
+Japan,2007,0,0,0,Western Pacific,Female,3,Rural,High,Yes,Yes
+Japan,2006,34,0,0,Western Pacific,Female,30,Rural,High,Yes,Yes
+Japan,2005,43,0,0,Western Pacific,Male,14,Urban,High,Yes,No
+Japan,2004,66,0,0,Western Pacific,Male,39,Rural,High,Yes,No
+Japan,2003,16,0,0,Western Pacific,Male,2,Rural,High,Yes,No
+Japan,2002,27,0,0,Western Pacific,Female,23,Urban,Medium,Yes,Yes
+Japan,2001,11,0,0,Western Pacific,Male,7,Urban,Medium,Yes,No
+Japan,2000,34,0,0,Western Pacific,Male,7,Urban,High,Yes,No
+Japan,1999,40,0,0,Western Pacific,Male,30,Urban,Medium,Yes,No
+Japan,1998,60,0,0,Western Pacific,Male,26,Urban,High,Yes,Yes
+Japan,1997,89,0,0,Western Pacific,Male,40,Urban,Medium,Yes,No
+Japan,1996,39,0,0,Western Pacific,Male,6,Urban,High,Yes,No
+Japan,1995,321,1,0.31,Western Pacific,Female,11,Urban,High,Yes,No
+Japan,1994,91,0,0,Western Pacific,Female,6,Urban,High,Yes,No
+Japan,1993,89,0,0,Western Pacific,Male,44,Urban,High,Yes,No
+Japan,1992,46,0,0,Western Pacific,Male,39,Rural,Medium,Yes,No
+Japan,1991,90,1,1.11,Western Pacific,Male,3,Urban,High,Yes,Yes
+Japan,1990,73,0,0,Western Pacific,Female,12,Urban,High,Yes,Yes
+Japan,1989,95,0,0,Western Pacific,Female,29,Urban,High,Yes,Yes
+Japan,1988,33,0,0,Western Pacific,Female,13,Urban,High,Yes,No
+Japan,1987,34,0,0,Western Pacific,Female,4,Rural,High,Yes,No
+Japan,1986,26,0,0,Western Pacific,Female,20,Rural,High,Yes,No
+Japan,1985,36,0,0,Western Pacific,Female,37,Urban,Medium,Yes,Yes
+Japan,1984,55,0,0,Western Pacific,Female,35,Rural,Medium,Yes,No
+Japan,1983,35,0,0,Western Pacific,Female,54,Urban,Medium,Yes,No
+Japan,1982,16,0,0,Western Pacific,Female,2,Urban,High,Yes,No
+Japan,1981,19,0,0,Western Pacific,Male,22,Urban,Medium,Yes,Yes
+Japan,1980,23,0,0,Western Pacific,Male,12,Rural,High,Yes,No
+Japan,1979,11,0,0,Western Pacific,Male,4,Urban,High,Yes,No
+Japan,1978,34,1,2.94,Western Pacific,Male,12,Urban,High,Yes,No
+Japan,1977,52,1,1.92,Western Pacific,Female,16,Rural,Medium,Yes,No
+Japan,1976,6,0,0,Western Pacific,Female,44,Urban,Medium,Yes,Yes
+Japan,1975,3,0,0,Western Pacific,Male,26,Urban,Medium,Yes,No
+Japan,1970,5,0,0,Western Pacific,Female,12,Rural,Medium,Yes,No
+Japan,1969,8,0,0,Western Pacific,Male,42,Urban,Medium,Yes,No
+Japan,1964,2,1,50,Western Pacific,Female,53,Urban,Medium,Yes,No
+Japan,1963,16,0,0,Western Pacific,Male,4,Urban,High,Yes,Yes
+Jordan,1990,2,0,0,Eastern Mediterranean,Female,39,Rural,Low,Yes,Yes
+Jordan,1981,870,4,0.46,Eastern Mediterranean,Female,6,Urban,Low,Yes,No
+Jordan,1979,141,0,0,Eastern Mediterranean,Male,14,Urban,Low,Yes,No
+Jordan,1977,427,1,0.23,Eastern Mediterranean,Female,14,Urban,Medium,No,No
+Jordan,1976,152,0,0,Eastern Mediterranean,Male,29,Urban,Medium,Yes,No
+Jordan,1970,3,0,0,Eastern Mediterranean,Male,5,Rural,Medium,No,Yes
+Kazakhstan,2008,1,0,0,Europe,Male,7,Rural,High,Yes,No
+Kazakhstan,2001,1,0,0,Europe,Male,9,Rural,High,Yes,Yes
+Kazakhstan,1997,4,0,0,Europe,Female,28,Urban,Low,Yes,No
+Kazakhstan,1995,16,0,0,Europe,Female,2,Rural,Low,Yes,No
+Kazakhstan,1994,3,0,0,Europe,Female,29,Rural,Medium,No,No
+Kazakhstan,1993,74,0,0,Europe,Male,10,Urban,Low,No,No
+Kenya,2016,5866,80,1.4,Africa,Female,4,Rural,Medium,Yes,Yes
+Kenya,2015,13291,67,0.5,Africa,Male,4,Rural,Medium,No,No
+Kenya,2014,35,9,25.7,Africa,Female,39,Rural,Medium,No,No
+Kenya,2011,74,2,2.7,Africa,Female,14,Rural,High,Yes,No
+Kenya,2010,3188,63,1.98,Africa,Female,20,Urban,High,No,No
+Kenya,2009,11425,264,2.31,Africa,Male,1,Urban,Low,Yes,No
+Kenya,2008,3091,113,3.66,Africa,Female,28,Rural,Medium,Yes,No
+Kenya,2007,1206,67,5.56,Africa,Female,6,Urban,Medium,Yes,No
+Kenya,2006,870,11,1.26,Africa,Male,2,Urban,Low,No,No
+Kenya,2005,816,21,2.57,Africa,Female,31,Rural,Low,Yes,Yes
+Kenya,2004,870,15,1.72,Africa,Male,50,Rural,Medium,No,No
+Kenya,2002,291,10,3.44,Africa,Female,58,Urban,Low,No,No
+Kenya,2001,1001,55,5.49,Africa,Male,31,Rural,Low,Yes,Yes
+Kenya,2000,1157,78,6.74,Africa,Male,1,Rural,Medium,Yes,Yes
+Kenya,1999,11039,350,3.17,Africa,Female,3,Rural,Medium,Yes,No
+Kenya,1998,22432,1237,5.51,Africa,Male,13,Urban,Low,Yes,No
+Kenya,1997,17200,555,3.23,Africa,Male,14,Urban,Low,Yes,No
+Kenya,1996,482,14,2.9,Africa,Male,11,Urban,High,Yes,No
+Kenya,1995,1547,39,2.52,Africa,Male,12,Urban,Low,Yes,No
+Kenya,1994,880,28,3.18,Africa,Male,12,Urban,High,Yes,No
+Kenya,1992,3388,100,2.95,Africa,Male,5,Urban,Medium,Yes,No
+Kenya,1989,918,32,3.49,Africa,Female,45,Urban,Low,Yes,No
+Kenya,1987,255,12,4.71,Africa,Male,16,Rural,Low,No,No
+Kenya,1986,839,45,5.36,Africa,Male,58,Urban,Low,No,No
+Kenya,1985,1352,102,7.54,Africa,Female,9,Rural,Low,Yes,No
+Kenya,1984,14,0,0,Africa,Female,9,Rural,Low,Yes,No
+Kenya,1983,1049,53,5.05,Africa,Female,4,Urban,Medium,Yes,No
+Kenya,1982,3498,91,2.6,Africa,Female,57,Rural,Low,Yes,No
+Kenya,1981,2424,108,4.46,Africa,Female,6,Rural,Medium,Yes,No
+Kenya,1980,2808,42,1.5,Africa,Female,7,Urban,Medium,No,No
+Kenya,1979,1070,2,0.19,Africa,Female,6,Rural,Low,No,No
+Kenya,1978,673,17,2.53,Africa,Male,1,Urban,Low,Yes,No
+Kenya,1977,21,0,0,Africa,Male,51,Rural,Low,No,No
+Kenya,1976,1359,59,4.34,Africa,Female,17,Urban,Low,Yes,No
+Kenya,1975,1093,74,6.77,Africa,Male,31,Rural,Medium,Yes,No
+Kenya,1974,402,20,4.98,Africa,Male,14,Urban,Low,Yes,No
+Kenya,1972,51,0,0,Africa,Male,19,Rural,Medium,Yes,No
+Kenya,1971,239,38,15.9,Africa,Female,7,Urban,Medium,Yes,No
+Kiribati,1978,494,0,0,Western Pacific,Female,0,Rural,Medium,Yes,No
+Kiribati,1977,1307,21,1.61,Western Pacific,Male,6,Rural,Medium,Yes,No
+Kuwait,2015,5,0,0,Eastern Mediterranean,Female,17,Urban,Medium,Yes,Yes
+Kuwait,1997,1,0,0,Eastern Mediterranean,Male,11,Rural,Low,No,No
+Kuwait,1993,1,0,0,Eastern Mediterranean,Male,1,Urban,Low,No,No
+Kuwait,1989,133,0,0,Eastern Mediterranean,Male,33,Rural,Medium,Yes,No
+Kuwait,1986,38,0,0,Eastern Mediterranean,Male,4,Urban,Low,Yes,No
+Kuwait,1985,113,0,0,Eastern Mediterranean,Female,11,Rural,Medium,Yes,No
+Kuwait,1981,8,0,0,Eastern Mediterranean,Female,39,Rural,Medium,No,No
+Kuwait,1979,3,0,0,Eastern Mediterranean,Female,9,Urban,Medium,Yes,No
+Kuwait,1978,1,0,0,Eastern Mediterranean,Male,39,Urban,Medium,Yes,Yes
+Kuwait,1977,13,0,0,Eastern Mediterranean,Female,3,Urban,Medium,Yes,No
+Kuwait,1976,2,0,0,Eastern Mediterranean,Male,25,Rural,Medium,Yes,No
+Kuwait,1975,3,1,33.33,Eastern Mediterranean,Female,5,Urban,Medium,Yes,No
+Kuwait,1970,4,0,0,Eastern Mediterranean,Male,16,Rural,Medium,No,Yes
+Kyrgyzstan,1994,4,0,0,Europe,Male,9,Rural,Medium,No,No
+Lao People's Democratic Republic,2010,237,4,1.69,Western Pacific,Male,10,Urban,High,Yes,No
+Lao People's Democratic Republic,2008,201,0,0,Western Pacific,Female,1,Rural,Medium,Yes,Yes
+Lao People's Democratic Republic,2007,169,3,1.78,Western Pacific,Female,9,Urban,Medium,Yes,Yes
+Lao People's Democratic Republic,1996,720,33,4.58,Western Pacific,Female,11,Urban,Medium,Yes,Yes
+Lao People's Democratic Republic,1995,1365,174,12.75,Western Pacific,Female,9,Rural,Medium,No,No
+Lao People's Democratic Republic,1994,9660,606,6.27,Western Pacific,Male,3,Urban,Low,Yes,Yes
+Lao People's Democratic Republic,1993,5521,255,4.62,Western Pacific,Female,41,Urban,High,Yes,No
+Lao People's Democratic Republic,1969,448,21,4.69,Western Pacific,Female,22,Rural,Low,Yes,No
+Lao People's Democratic Republic,1953,31,18,58.06,Western Pacific,Male,14,Urban,Medium,No,No
+Lebanon,2005,1,0,0,Eastern Mediterranean,Male,57,Rural,Medium,No,No
+Lebanon,1994,3,0,0,Eastern Mediterranean,Male,12,Rural,High,Yes,No
+Lebanon,1993,344,23,6.69,Eastern Mediterranean,Female,22,Urban,Low,Yes,Yes
+Lebanon,1977,30,0,0,Eastern Mediterranean,Male,3,Urban,Medium,Yes,No
+Lebanon,1970,54,1,1.85,Eastern Mediterranean,Male,14,Rural,Medium,No,No
+Lesotho,2006,0,0,0,Africa,Male,6,Urban,Low,Yes,No
+Lesotho,2005,0,0,0,Africa,Female,59,Urban,Low,Yes,No
+Liberia,2014,44,0,0,Africa,Male,51,Rural,Medium,Yes,Yes
+Liberia,2013,92,0,0,Africa,Female,50,Urban,Medium,No,No
+Liberia,2012,219,0,0,Africa,Female,3,Rural,Low,Yes,No
+Liberia,2011,1146,0,0,Africa,Male,51,Urban,Medium,Yes,Yes
+Liberia,2010,1546,0,0,Africa,Male,3,Urban,Medium,Yes,No
+Liberia,2009,1070,2,0.19,Africa,Female,5,Urban,Medium,No,No
+Liberia,2008,1236,3,0.24,Africa,Male,19,Rural,High,No,No
+Liberia,2007,3063,7,0.23,Africa,Male,13,Rural,Medium,No,No
+Liberia,2006,4929,17,0.34,Africa,Female,1,Rural,High,Yes,No
+Liberia,2005,3823,18,0.47,Africa,Female,5,Urban,High,Yes,Yes
+Liberia,2004,2786,4,0.14,Africa,Male,3,Urban,Low,No,No
+Liberia,2003,34740,38,0.11,Africa,Female,33,Urban,Low,Yes,No
+Liberia,2002,1115,0,0,Africa,Male,29,Urban,Medium,No,Yes
+Liberia,2001,1062,0,0,Africa,Male,46,Rural,Medium,No,No
+Liberia,2000,365,10,2.74,Africa,Male,1,Rural,Medium,Yes,No
+Liberia,1999,215,0,0,Africa,Female,13,Urban,Medium,Yes,No
+Liberia,1998,2123,17,0.8,Africa,Male,9,Rural,Medium,No,Yes
+Liberia,1997,91,0,0,Africa,Male,27,Urban,Medium,No,No
+Liberia,1996,8922,169,1.89,Africa,Male,45,Rural,Low,Yes,No
+Liberia,1995,3420,126,3.68,Africa,Female,56,Urban,High,Yes,No
+Liberia,1994,764,17,2.23,Africa,Female,35,Urban,Low,Yes,No
+Liberia,1991,132,40,30.3,Africa,Female,2,Urban,High,Yes,No
+Liberia,1989,28,0,0,Africa,Female,1,Urban,Low,Yes,No
+Liberia,1988,68,1,1.47,Africa,Female,11,Rural,High,Yes,Yes
+Liberia,1987,33,1,3.03,Africa,Male,53,Urban,Low,No,No
+Liberia,1986,59,0,0,Africa,Female,38,Urban,Low,No,No
+Liberia,1985,355,3,0.85,Africa,Female,35,Rural,Low,No,No
+Liberia,1984,492,8,1.63,Africa,Female,9,Rural,Medium,Yes,No
+Liberia,1983,183,12,6.56,Africa,Male,25,Rural,High,Yes,No
+Liberia,1982,670,8,1.19,Africa,Female,42,Urban,Medium,No,No
+Liberia,1981,1582,33,2.09,Africa,Female,16,Rural,High,Yes,No
+Liberia,1980,2690,55,2.04,Africa,Male,3,Rural,Medium,Yes,No
+Liberia,1979,438,6,1.37,Africa,Female,10,Urban,Medium,Yes,No
+Liberia,1978,422,9,2.13,Africa,Male,10,Urban,High,No,No
+Liberia,1977,512,18,3.52,Africa,Male,56,Urban,Low,No,Yes
+Liberia,1976,646,10,1.55,Africa,Male,16,Urban,Low,Yes,Yes
+Liberia,1975,704,16,2.27,Africa,Male,1,Urban,High,No,Yes
+Liberia,1974,512,12,2.34,Africa,Male,11,Urban,High,Yes,No
+Liberia,1973,1336,27,2.02,Africa,Female,9,Rural,High,Yes,Yes
+Liberia,1972,947,28,2.96,Africa,Male,55,Rural,High,No,No
+Liberia,1971,606,106,17.49,Africa,Male,51,Rural,Low,No,No
+Liberia,1970,168,27,16.07,Africa,Female,12,Rural,High,Yes,Yes
+Libya,1995,22,2,9.09,Eastern Mediterranean,Male,1,Urban,Medium,Yes,No
+Libya,1970,1151,28,2.43,Eastern Mediterranean,Female,1,Rural,High,No,Yes
+Madagascar,2006,0,0,0,Africa,Female,1,Rural,Medium,No,No
+Madagascar,2005,0,0,0,Africa,Female,11,Urban,Medium,No,No
+Madagascar,2003,5,0,0,Africa,Male,48,Rural,Medium,Yes,No
+Madagascar,2002,27,0,0,Africa,Male,6,Rural,Low,No,Yes
+Madagascar,2001,7219,413,5.72,Africa,Male,11,Rural,Low,No,No
+Madagascar,2000,29305,1672,5.71,Africa,Female,16,Rural,High,Yes,No
+Madagascar,1999,9973,549,5.5,Africa,Male,13,Urban,High,No,No
+Madagascar,1996,0,0,0,Africa,Male,11,Urban,Low,Yes,No
+Madagascar,1971,2,0,0,Africa,Male,12,Urban,Medium,Yes,No
+Malawi,2016,1792,46,2.6,Africa,Female,28,Rural,Medium,No,No
+Malawi,2015,693,11,1.6,Africa,Female,28,Rural,Medium,Yes,No
+Malawi,2012,187,2,1.07,Africa,Male,9,Rural,Low,Yes,Yes
+Malawi,2011,120,4,3.33,Africa,Male,50,Urban,High,No,No
+Malawi,2010,1155,17,1.47,Africa,Male,28,Urban,Medium,Yes,No
+Malawi,2009,5751,125,2.17,Africa,Male,50,Rural,Medium,Yes,No
+Malawi,2008,831,26,3.13,Africa,Female,59,Rural,Medium,No,No
+Malawi,2007,475,5,1.05,Africa,Female,1,Urban,Low,Yes,No
+Malawi,2006,4148,55,1.32,Africa,Female,12,Urban,Medium,Yes,No
+Malawi,2005,1105,11,1,Africa,Female,35,Rural,Low,Yes,No
+Malawi,2004,675,4,0.59,Africa,Male,13,Rural,Low,Yes,Yes
+Malawi,2003,2736,34,1.24,Africa,Male,5,Urban,Medium,No,No
+Malawi,2002,32618,911,2.79,Africa,Male,12,Urban,High,No,No
+Malawi,2001,2395,42,1.75,Africa,Female,46,Rural,Medium,Yes,No
+Malawi,2000,2391,56,2.34,Africa,Male,0,Rural,Low,No,No
+Malawi,1999,26508,648,2.44,Africa,Female,11,Urban,Medium,Yes,No
+Malawi,1998,1745,74,4.24,Africa,Female,37,Urban,High,Yes,No
+Malawi,1997,130,15,11.54,Africa,Male,10,Rural,Medium,No,No
+Malawi,1996,1,0,0,Africa,Male,0,Urban,High,No,No
+Malawi,1995,1,0,0,Africa,Male,11,Urban,Medium,Yes,No
+Malawi,1994,107,11,10.28,Africa,Female,37,Rural,Medium,Yes,No
+Malawi,1993,25193,524,2.08,Africa,Male,12,Urban,Low,Yes,Yes
+Malawi,1992,298,8,2.68,Africa,Female,8,Rural,Low,Yes,No
+Malawi,1991,8088,245,3.03,Africa,Male,8,Urban,Low,Yes,Yes
+Malawi,1990,13457,481,3.57,Africa,Female,12,Rural,Medium,No,No
+Malawi,1989,8351,16,0.19,Africa,Female,8,Urban,High,Yes,No
+Malawi,1988,6,0,0,Africa,Male,3,Urban,High,No,No
+Malawi,1983,487,49,10.06,Africa,Female,53,Urban,Low,Yes,No
+Malawi,1981,261,0,0,Africa,Female,7,Rural,Low,Yes,No
+Malawi,1978,263,24,9.13,Africa,Male,30,Rural,Low,Yes,No
+Malawi,1977,577,0,0,Africa,Female,17,Urban,Low,Yes,No
+Malawi,1976,19,0,0,Africa,Male,9,Rural,Medium,No,No
+Malawi,1973,371,20,5.39,Africa,Female,34,Rural,High,Yes,No
+Malaysia,2015,244,2,0.8,Western Pacific,Male,47,Rural,High,Yes,No
+Malaysia,2014,134,1,0.7,Western Pacific,Male,2,Urban,Medium,No,No
+Malaysia,2013,171,1,0.58,Western Pacific,Female,34,Rural,High,No,No
+Malaysia,2012,282,1,0.4,Western Pacific,Female,53,Urban,Medium,Yes,Yes
+Malaysia,2011,586,10,1.71,Western Pacific,Female,33,Urban,Low,Yes,No
+Malaysia,2010,443,6,1.35,Western Pacific,Female,12,Rural,Medium,No,No
+Malaysia,2009,187,1,0.53,Western Pacific,Female,11,Rural,Medium,No,No
+Malaysia,2007,0,0,0,Western Pacific,Male,59,Urban,Medium,No,No
+Malaysia,2006,237,2,0.84,Western Pacific,Female,2,Urban,Low,Yes,No
+Malaysia,2004,16,0,0,Western Pacific,Male,9,Rural,Low,No,No
+Malaysia,2001,557,11,1.97,Western Pacific,Male,9,Rural,Low,Yes,No
+Malaysia,2000,124,1,0.81,Western Pacific,Female,11,Urban,High,Yes,No
+Malaysia,1999,535,0,0,Western Pacific,Male,53,Rural,Medium,No,No
+Malaysia,1998,1304,19,1.46,Western Pacific,Male,14,Urban,Medium,Yes,No
+Malaysia,1997,389,4,1.03,Western Pacific,Male,10,Urban,Medium,Yes,Yes
+Malaysia,1996,1486,0,0,Western Pacific,Male,10,Rural,Low,Yes,No
+Malaysia,1995,2209,27,1.22,Western Pacific,Female,2,Urban,Medium,Yes,No
+Malaysia,1994,534,0,0,Western Pacific,Male,5,Urban,High,No,No
+Malaysia,1993,995,13,1.31,Western Pacific,Female,2,Rural,Medium,No,No
+Malaysia,1992,474,8,1.69,Western Pacific,Female,21,Rural,High,Yes,No
+Malaysia,1991,506,6,1.19,Western Pacific,Male,12,Urban,Low,Yes,No
+Malaysia,1990,2071,38,1.83,Western Pacific,Female,9,Rural,Low,No,No
+Malaysia,1989,393,14,3.56,Western Pacific,Female,10,Rural,High,No,Yes
+Malaysia,1988,1324,32,2.42,Western Pacific,Female,7,Urban,High,Yes,No
+Malaysia,1987,1168,18,1.54,Western Pacific,Male,8,Rural,High,No,Yes
+Malaysia,1986,55,2,3.64,Western Pacific,Female,0,Urban,Medium,No,No
+Malaysia,1985,52,2,3.85,Western Pacific,Female,42,Urban,High,Yes,Yes
+Malaysia,1984,67,1,1.49,Western Pacific,Female,6,Rural,High,Yes,No
+Malaysia,1983,2195,38,1.73,Western Pacific,Male,57,Rural,High,Yes,Yes
+Malaysia,1982,516,17,3.29,Western Pacific,Female,9,Urban,Medium,No,No
+Malaysia,1981,469,14,2.99,Western Pacific,Male,2,Urban,Low,Yes,No
+Malaysia,1980,97,7,7.22,Western Pacific,Male,49,Urban,High,Yes,No
+Malaysia,1979,502,10,1.99,Western Pacific,Male,0,Urban,Medium,Yes,No
+Malaysia,1978,1635,64,3.91,Western Pacific,Male,43,Urban,Medium,No,No
+Malaysia,1977,444,12,2.7,Western Pacific,Male,13,Urban,Medium,Yes,No
+Malaysia,1976,246,4,1.63,Western Pacific,Male,9,Rural,Medium,No,No
+Malaysia,1975,110,8,7.27,Western Pacific,Female,56,Urban,Medium,No,No
+Malaysia,1974,349,0,0,Western Pacific,Male,0,Urban,Low,Yes,No
+Malaysia,1973,369,17,4.61,Western Pacific,Female,9,Rural,High,Yes,No
+Malaysia,1972,864,11,1.27,Western Pacific,Female,52,Rural,Medium,Yes,No
+Malaysia,1971,53,1,1.89,Western Pacific,Male,0,Urban,Medium,No,No
+Malaysia,1970,106,3,2.83,Western Pacific,Female,11,Urban,Low,Yes,Yes
+Malaysia,1969,70,0,0,Western Pacific,Female,57,Rural,Low,Yes,No
+Malaysia,1968,15,3,20,Western Pacific,Female,3,Urban,Low,Yes,No
+Malaysia,1966,5,0,0,Western Pacific,Female,1,Urban,Medium,Yes,Yes
+Malaysia,1965,16,1,6.25,Western Pacific,Male,38,Rural,Low,No,No
+Malaysia,1964,512,143,27.93,Western Pacific,Female,1,Urban,High,No,No
+Malaysia,1963,349,24,6.88,Western Pacific,Male,13,Urban,Low,No,Yes
+Malaysia,1954,1,0,0,Western Pacific,Female,12,Urban,Low,Yes,No
+Maldives,1978,11336,220,1.94,South-East Asia,Female,10,Urban,Low,Yes,No
+Mali,2013,23,2,8.7,Africa,Male,53,Urban,Low,No,No
+Mali,2012,219,19,8.68,Africa,Female,9,Rural,Medium,Yes,No
+Mali,2011,2220,95,4.28,Africa,Female,13,Urban,High,No,No
+Mali,2008,153,5,3.27,Africa,Female,58,Urban,Medium,Yes,No
+Mali,2006,7,0,0,Africa,Male,3,Urban,Low,Yes,No
+Mali,2005,1178,76,6.45,Africa,Female,21,Rural,Low,No,No
+Mali,2004,2839,205,7.22,Africa,Male,40,Rural,Medium,No,No
+Mali,2003,1455,119,8.18,Africa,Female,20,Urban,High,No,Yes
+Mali,2002,18,2,11.11,Africa,Male,7,Rural,Low,Yes,No
+Mali,2001,67,9,13.43,Africa,Male,4,Urban,Medium,Yes,No
+Mali,2000,1885,51,2.71,Africa,Female,44,Urban,Medium,Yes,Yes
+Mali,1999,6,3,50,Africa,Female,24,Urban,Low,No,No
+Mali,1997,6,3,50,Africa,Male,5,Urban,Medium,No,Yes
+Mali,1996,5723,761,13.3,Africa,Male,8,Urban,Low,Yes,No
+Mali,1995,2191,231,10.54,Africa,Female,12,Rural,Medium,No,No
+Mali,1987,352,84,23.86,Africa,Male,29,Urban,Low,No,No
+Mali,1986,1916,151,7.88,Africa,Female,6,Rural,Medium,No,Yes
+Mali,1985,3759,838,22.29,Africa,Female,21,Urban,Low,Yes,No
+Mali,1984,1795,406,22.62,Africa,Female,11,Urban,High,Yes,No
+Mali,1974,130,21,16.15,Africa,Female,0,Urban,Low,No,No
+Mali,1973,219,32,14.61,Africa,Male,25,Rural,High,Yes,No
+Mali,1972,2,0,0,Africa,Female,1,Urban,High,No,No
+Mali,1971,4792,1321,27.57,Africa,Male,12,Rural,High,No,No
+Mali,1970,2665,201,7.54,Africa,Female,11,Urban,Medium,No,No
+Marshall Islands,2000,300,6,2,Western Pacific,Male,6,Urban,Medium,Yes,Yes
+Mauritania,2011,46,3,6.52,Africa,Female,14,Urban,Low,Yes,No
+Mauritania,2007,3,0,0,Africa,Male,11,Urban,Low,Yes,No
+Mauritania,2006,25,0,0,Africa,Male,46,Urban,Medium,Yes,No
+Mauritania,2005,4132,70,1.69,Africa,Female,4,Urban,Low,Yes,Yes
+Mauritania,2003,34,8,23.53,Africa,Female,10,Rural,High,Yes,No
+Mauritania,2002,80,0,0,Africa,Female,29,Urban,Low,Yes,No
+Mauritania,1997,462,7,1.52,Africa,Female,10,Rural,Medium,Yes,No
+Mauritania,1996,4534,148,3.26,Africa,Male,11,Urban,Medium,Yes,No
+Mauritania,1989,700,27,3.86,Africa,Female,5,Rural,Medium,Yes,No
+Mauritania,1988,575,38,6.61,Africa,Male,12,Rural,Medium,Yes,Yes
+Mauritania,1987,1578,101,6.4,Africa,Male,22,Urban,Low,No,Yes
+Mauritania,1986,3734,113,3.03,Africa,Female,3,Urban,Medium,Yes,No
+Mauritania,1985,259,20,7.72,Africa,Male,2,Rural,Low,Yes,No
+Mauritania,1984,166,15,9.04,Africa,Male,17,Rural,High,No,No
+Mauritania,1973,150,22,14.67,Africa,Male,28,Urban,Medium,No,No
+Mauritania,1972,148,24,16.22,Africa,Male,8,Urban,High,Yes,No
+Mauritania,1971,1139,53,4.65,Africa,Female,5,Rural,Low,No,No
+Mauritius,2006,0,0,0,Africa,Female,7,Urban,Low,No,No
+Mauritius,2005,0,0,0,Africa,Female,9,Rural,Low,No,No
+Mexico,2015,1,0,0,Americas,Female,39,Urban,Low,Yes,Yes
+Mexico,2014,14,0,0,Americas,Male,31,Urban,Low,No,No
+Mexico,2013,187,1,0.53,Americas,Male,13,Rural,Medium,Yes,Yes
+Mexico,2012,2,0,0,Americas,Female,37,Rural,Low,Yes,No
+Mexico,2011,1,0,0,Americas,Female,19,Urban,Medium,No,No
+Mexico,2010,1,0,0,Americas,Female,1,Urban,High,Yes,No
+Mexico,2008,1,0,0,Americas,Male,32,Rural,Medium,No,No
+Mexico,2001,1,0,0,Americas,Female,42,Rural,Low,Yes,No
+Mexico,2000,5,0,0,Americas,Female,10,Urban,Low,No,Yes
+Mexico,1998,71,0,0,Americas,Female,7,Rural,Medium,Yes,Yes
+Mexico,1997,2356,1,0.04,Americas,Male,0,Rural,Low,Yes,No
+Mexico,1996,1088,5,0.46,Americas,Male,17,Rural,Medium,Yes,No
+Mexico,1995,16430,137,0.83,Americas,Male,30,Rural,Low,Yes,No
+Mexico,1994,4059,56,1.38,Americas,Male,6,Urban,High,Yes,Yes
+Mexico,1993,10712,193,1.8,Americas,Male,4,Rural,Medium,No,No
+Mexico,1992,8162,99,1.21,Americas,Male,32,Rural,Medium,Yes,No
+Mexico,1991,2690,34,1.26,Americas,Male,6,Urban,Low,No,No
+Micronesia (Federated States of),2005,0,0,0,Western Pacific,Male,14,Urban,Low,Yes,No
+Micronesia (Federated States of),2001,14,0,0,Western Pacific,Female,25,Urban,Medium,Yes,Yes
+Micronesia (Federated States of),2000,3452,20,0.58,Western Pacific,Female,40,Rural,Medium,No,No
+Micronesia (Federated States of),1996,1,0,0,Western Pacific,Male,5,Urban,Low,Yes,No
+Micronesia (Federated States of),1990,34,1,2.94,Western Pacific,Male,8,Rural,Low,No,No
+Mongolia,2005,0,0,0,Western Pacific,Female,6,Rural,Low,No,No
+Mongolia,1996,177,12,6.78,Western Pacific,Male,5,Rural,Medium,Yes,Yes
+Morocco,1994,6,0,0,Eastern Mediterranean,Male,6,Rural,Low,No,No
+Morocco,1990,4573,137,3,Eastern Mediterranean,Male,47,Rural,Medium,No,No
+Morocco,1976,2,0,0,Eastern Mediterranean,Female,51,Urban,Medium,Yes,Yes
+Morocco,1972,7,0,0,Eastern Mediterranean,Female,1,Rural,Medium,No,No
+Morocco,1971,56,0,0,Eastern Mediterranean,Female,27,Urban,High,Yes,No
+Mozambique,2016,883,2,0.2,Africa,Female,11,Rural,Medium,No,Yes
+Mozambique,2015,8739,64,0.7,Africa,Female,2,Urban,Low,No,No
+Mozambique,2014,480,1,0.2,Africa,Male,36,Rural,Low,No,No
+Mozambique,2013,1869,19,1.02,Africa,Female,35,Rural,Low,No,No
+Mozambique,2012,647,7,1.08,Africa,Male,0,Rural,Low,No,No
+Mozambique,2011,1279,5,0.39,Africa,Male,57,Urban,Low,No,No
+Mozambique,2010,7430,117,1.57,Africa,Female,13,Urban,Low,No,Yes
+Mozambique,2009,19679,155,0.79,Africa,Female,6,Rural,Low,Yes,No
+Mozambique,2008,9087,102,1.12,Africa,Male,8,Urban,Low,Yes,No
+Mozambique,2007,2622,22,0.84,Africa,Male,12,Rural,Low,No,No
+Mozambique,2006,6306,29,0.46,Africa,Male,2,Urban,Medium,No,No
+Mozambique,2005,2226,24,1.08,Africa,Female,34,Rural,Low,Yes,No
+Mozambique,2004,20080,110,0.55,Africa,Female,23,Urban,Medium,Yes,Yes
+Mozambique,2003,13758,102,0.74,Africa,Female,8,Rural,Low,Yes,No
+Mozambique,2002,24375,342,1.4,Africa,Female,7,Rural,Low,No,No
+Mozambique,2001,8794,102,1.16,Africa,Female,6,Urban,Medium,No,No
+Mozambique,2000,17649,238,1.35,Africa,Male,4,Urban,Low,No,Yes
+Mozambique,1999,44329,1194,2.69,Africa,Female,8,Urban,Medium,Yes,Yes
+Mozambique,1998,42672,1353,3.17,Africa,Male,1,Rural,Low,Yes,No
+Mozambique,1997,8739,259,2.96,Africa,Male,8,Rural,Low,Yes,No
+Mozambique,1996,0,0,0,Africa,Male,10,Rural,Low,Yes,No
+Mozambique,1994,692,27,3.9,Africa,Female,2,Rural,Low,No,No
+Mozambique,1993,19803,507,2.56,Africa,Female,32,Urban,Low,No,No
+Mozambique,1992,30802,727,2.36,Africa,Female,3,Urban,Low,Yes,No
+Mozambique,1991,7847,328,4.18,Africa,Male,13,Urban,Low,Yes,No
+Mozambique,1990,4152,194,4.67,Africa,Male,12,Urban,Low,Yes,No
+Mozambique,1989,371,12,3.23,Africa,Male,43,Rural,Low,No,No
+Mozambique,1986,1,0,0,Africa,Male,39,Rural,Low,Yes,No
+Mozambique,1985,3,0,0,Africa,Male,2,Urban,Low,Yes,No
+Mozambique,1984,521,11,2.11,Africa,Male,2,Rural,Low,Yes,No
+Mozambique,1983,10745,447,4.16,Africa,Female,11,Rural,Medium,No,No
+Mozambique,1982,2301,199,8.65,Africa,Female,1,Urban,Medium,No,No
+Mozambique,1981,1753,132,7.53,Africa,Female,5,Urban,Low,No,Yes
+Mozambique,1980,1212,85,7.01,Africa,Female,8,Urban,Medium,Yes,No
+Mozambique,1979,4564,547,11.99,Africa,Male,9,Rural,Low,No,No
+Mozambique,1977,18,3,16.67,Africa,Male,3,Rural,Medium,No,No
+Mozambique,1976,3,2,66.67,Africa,Female,23,Rural,Medium,Yes,No
+Mozambique,1975,11,3,27.27,Africa,Male,54,Urban,Medium,Yes,Yes
+Mozambique,1974,1018,138,13.56,Africa,Female,40,Urban,Low,No,Yes
+Mozambique,1973,453,87,19.21,Africa,Female,14,Rural,Low,Yes,No
+Myanmar,2016,782,11,1.4,South-East Asia,Female,4,Rural,Low,Yes,No
+Myanmar,2015,103,12,11.7,South-East Asia,Male,16,Rural,Medium,Yes,No
+Myanmar,2014,400,0,0,South-East Asia,Female,56,Rural,Low,Yes,No
+Myanmar,2013,33,0,0,South-East Asia,Female,12,Urban,Medium,Yes,No
+Myanmar,2012,174,0,0,South-East Asia,Female,2,Rural,Low,Yes,No
+Myanmar,2011,16,0,0,South-East Asia,Male,49,Rural,High,No,No
+Myanmar,2008,45,1,2.22,South-East Asia,Male,9,Urban,Low,Yes,No
+Myanmar,1995,1296,6,0.46,South-East Asia,Female,12,Rural,Low,No,No
+Myanmar,1994,421,4,0.95,South-East Asia,Male,23,Urban,Low,Yes,Yes
+Myanmar,1993,1758,52,2.96,South-East Asia,Male,37,Urban,Medium,Yes,No
+Myanmar,1992,826,50,6.05,South-East Asia,Male,35,Urban,Low,Yes,No
+Myanmar,1991,924,39,4.22,South-East Asia,Male,40,Urban,Medium,Yes,No
+Myanmar,1989,597,11,1.84,South-East Asia,Male,45,Urban,Low,Yes,Yes
+Myanmar,1983,989,29,2.93,South-East Asia,Male,1,Urban,Low,Yes,Yes
+Myanmar,1981,28,3,10.71,South-East Asia,Male,59,Rural,High,Yes,No
+Myanmar,1980,1018,50,4.91,South-East Asia,Male,53,Urban,Low,No,No
+Myanmar,1979,874,75,8.58,South-East Asia,Male,6,Urban,High,Yes,No
+Myanmar,1978,3551,372,10.48,South-East Asia,Male,2,Urban,High,No,No
+Myanmar,1976,1519,173,11.39,South-East Asia,Female,3,Rural,Low,Yes,Yes
+Myanmar,1975,2942,172,5.85,South-East Asia,Female,10,Urban,Low,No,No
+Myanmar,1974,2363,203,8.59,South-East Asia,Male,30,Urban,Low,Yes,Yes
+Myanmar,1973,386,24,6.22,South-East Asia,Female,18,Rural,Medium,No,No
+Myanmar,1972,180,7,3.89,South-East Asia,Female,49,Rural,Medium,No,No
+Myanmar,1971,378,42,11.11,South-East Asia,Male,33,Rural,Medium,No,No
+Myanmar,1970,911,76,8.34,South-East Asia,Male,6,Urban,Medium,Yes,No
+Myanmar,1969,205,34,16.59,South-East Asia,Male,8,Urban,Low,No,No
+Myanmar,1968,3,0,0,South-East Asia,Female,7,Rural,High,Yes,No
+Myanmar,1967,9,0,0,South-East Asia,Female,33,Urban,Medium,No,No
+Myanmar,1966,263,17,6.46,South-East Asia,Male,59,Urban,Medium,Yes,No
+Myanmar,1965,207,8,3.86,South-East Asia,Male,24,Urban,High,Yes,No
+Myanmar,1964,922,171,18.55,South-East Asia,Male,20,Rural,Medium,Yes,No
+Myanmar,1963,3019,783,25.94,South-East Asia,Female,20,Urban,Low,Yes,No
+Myanmar,1962,1,0,0,South-East Asia,Female,31,Rural,Medium,No,No
+Myanmar,1961,1,0,0,South-East Asia,Female,10,Rural,Medium,No,No
+Myanmar,1960,259,200,77.22,South-East Asia,Female,13,Urban,Low,No,No
+Myanmar,1959,3,2,66.67,South-East Asia,Male,10,Rural,High,No,No
+Myanmar,1958,7,3,42.86,South-East Asia,Male,2,Rural,Low,No,No
+Myanmar,1957,10,3,30,South-East Asia,Male,53,Rural,Medium,Yes,No
+Myanmar,1956,13,6,46.15,South-East Asia,Male,7,Urban,Medium,Yes,No
+Myanmar,1955,42,12,28.57,South-East Asia,Female,5,Rural,Low,Yes,No
+Myanmar,1954,35,19,54.29,South-East Asia,Female,43,Urban,High,Yes,No
+Myanmar,1953,22,9,40.91,South-East Asia,Male,18,Rural,High,Yes,No
+Myanmar,1952,347,245,70.61,South-East Asia,Male,2,Urban,Medium,Yes,No
+Myanmar,1951,6753,4685,69.38,South-East Asia,Female,10,Urban,Low,Yes,No
+Myanmar,1950,4212,2785,66.12,South-East Asia,Male,5,Rural,Low,Yes,No
+Namibia,2014,485,13,2.7,Africa,Female,25,Rural,Low,No,No
+Namibia,2013,3,0,0,Africa,Male,0,Rural,Low,Yes,No
+Namibia,2009,159,3,1.89,Africa,Male,10,Urban,Medium,Yes,No
+Namibia,2008,3496,38,1.09,Africa,Male,46,Urban,High,Yes,No
+Namibia,2007,14,0,0,Africa,Male,49,Rural,Medium,Yes,No
+Namibia,2006,185,5,2.7,Africa,Male,14,Rural,High,Yes,No
+Namibia,2005,0,0,0,Africa,Male,11,Rural,Medium,Yes,No
+Nauru,1979,50,0,0,Western Pacific,Male,1,Urban,Medium,Yes,No
+Nauru,1978,38,0,0,Western Pacific,Female,14,Urban,High,Yes,Yes
+Nepal,2016,169,0,0,South-East Asia,Female,1,Rural,Medium,Yes,No
+Nepal,2015,80,0,0,South-East Asia,Female,17,Rural,High,Yes,No
+Nepal,2014,933,2,0.2,South-East Asia,Female,12,Urban,Low,No,No
+Nepal,2012,34,0,0,South-East Asia,Female,7,Rural,Low,Yes,No
+Nepal,2011,12,0,0,South-East Asia,Male,27,Rural,High,Yes,No
+Nepal,2010,1790,9,0.5,South-East Asia,Male,13,Urban,Medium,Yes,Yes
+Nepal,2009,82,0,0,South-East Asia,Female,8,Urban,High,No,No
+Nepal,2007,264,0,0,South-East Asia,Male,21,Urban,High,Yes,Yes
+Nepal,1998,1745,17,0.97,South-East Asia,Female,14,Rural,Low,No,No
+Nepal,1997,245,0,0,South-East Asia,Female,7,Urban,Medium,No,No
+Nepal,1996,274,1,0.37,South-East Asia,Male,51,Urban,Low,Yes,No
+Nepal,1995,157,0,0,South-East Asia,Male,7,Rural,Medium,Yes,No
+Nepal,1994,32,0,0,South-East Asia,Male,4,Urban,Medium,Yes,No
+Nepal,1993,31,0,0,South-East Asia,Female,1,Urban,Low,Yes,No
+Nepal,1992,798,15,1.88,South-East Asia,Male,16,Urban,Medium,Yes,No
+Nepal,1991,30648,873,2.85,South-East Asia,Female,48,Rural,Medium,Yes,No
+Nepal,1990,23888,495,2.07,South-East Asia,Female,53,Rural,Low,Yes,No
+Nepal,1989,141,2,1.42,South-East Asia,Female,4,Urban,High,Yes,No
+Nepal,1981,24,0,0,South-East Asia,Male,2,Rural,Medium,No,Yes
+Nepal,1980,1,0,0,South-East Asia,Male,19,Rural,High,Yes,Yes
+Nepal,1979,22,0,0,South-East Asia,Female,1,Urban,Low,No,Yes
+Nepal,1978,1662,10,0.6,South-East Asia,Male,36,Urban,Low,No,No
+Nepal,1977,428,4,0.93,South-East Asia,Male,6,Urban,Medium,No,No
+Nepal,1976,185,1,0.54,South-East Asia,Male,47,Urban,Low,No,No
+Nepal,1975,260,0,0,South-East Asia,Female,47,Rural,High,Yes,No
+Nepal,1974,8,0,0,South-East Asia,Female,3,Rural,Low,Yes,No
+Nepal,1973,7,0,0,South-East Asia,Male,57,Urban,Medium,Yes,No
+Nepal,1972,1,0,0,South-East Asia,Female,0,Urban,Medium,Yes,No
+Nepal,1971,4,0,0,South-East Asia,Male,50,Urban,Low,No,No
+Nepal,1970,391,1,0.26,South-East Asia,Male,13,Rural,Low,No,No
+Nepal,1969,226,6,2.65,South-East Asia,Male,1,Urban,Medium,Yes,No
+Nepal,1968,34,17,50,South-East Asia,Male,0,Rural,Medium,Yes,Yes
+Nepal,1966,2,0,0,South-East Asia,Female,27,Urban,Low,Yes,No
+Nepal,1965,727,97,13.34,South-East Asia,Female,53,Rural,High,Yes,No
+Nepal,1958,2706,384,14.19,South-East Asia,Female,29,Rural,Low,Yes,No
+Netherlands,2016,1,0,0,Europe,Male,44,Urban,Medium,Yes,No
+Netherlands,2008,5,0,0,Europe,Male,18,Urban,Medium,No,No
+Netherlands,2006,3,0,0,Europe,Male,32,Rural,Low,Yes,Yes
+Netherlands,2005,4,0,0,Europe,Female,7,Urban,High,No,No
+Netherlands,2004,1,0,0,Europe,Male,18,Rural,Low,No,Yes
+Netherlands,2003,1,0,0,Europe,Female,3,Urban,Low,No,No
+Netherlands,2002,1,0,0,Europe,Female,28,Rural,Low,Yes,No
+Netherlands,2000,1,0,0,Europe,Female,26,Urban,Medium,No,Yes
+Netherlands,1999,2,0,0,Europe,Female,7,Rural,Medium,No,No
+Netherlands,1998,4,0,0,Europe,Female,7,Rural,Medium,Yes,No
+Netherlands,1997,2,0,0,Europe,Female,0,Rural,Low,Yes,No
+Netherlands,1996,3,0,0,Europe,Male,6,Rural,Low,No,No
+Netherlands,1995,9,0,0,Europe,Male,8,Rural,High,Yes,No
+Netherlands,1994,1,0,0,Europe,Female,36,Urban,Low,Yes,No
+Netherlands,1993,3,0,0,Europe,Female,43,Rural,High,Yes,No
+Netherlands,1990,3,0,0,Europe,Male,48,Rural,Low,No,No
+Netherlands,1988,1,0,0,Europe,Female,13,Urban,High,No,Yes
+Netherlands,1983,2,0,0,Europe,Female,0,Rural,Low,Yes,Yes
+Netherlands,1981,2,0,0,Europe,Male,29,Rural,Medium,Yes,No
+Netherlands,1979,5,0,0,Europe,Female,17,Rural,Low,No,No
+Netherlands,1978,4,0,0,Europe,Female,2,Urban,Low,No,No
+Netherlands,1977,1,0,0,Europe,Female,15,Urban,Low,No,No
+Netherlands,1976,1,1,100,Europe,Male,12,Urban,Low,Yes,Yes
+New Zealand,2005,1,0,0,Western Pacific,Male,2,Urban,Low,Yes,No
+New Zealand,2001,1,0,0,Western Pacific,Male,4,Rural,Medium,Yes,No
+New Zealand,1999,1,0,0,Western Pacific,Female,12,Urban,Medium,No,Yes
+New Zealand,1998,1,0,0,Western Pacific,Female,15,Urban,Medium,Yes,No
+New Zealand,1995,2,0,0,Western Pacific,Male,31,Rural,Medium,Yes,No
+New Zealand,1994,2,0,0,Western Pacific,Female,6,Urban,Medium,Yes,Yes
+New Zealand,1990,5,0,0,Western Pacific,Female,6,Urban,Medium,Yes,No
+New Zealand,1987,2,0,0,Western Pacific,Female,13,Urban,Medium,No,No
+New Zealand,1972,3,1,33.33,Western Pacific,Female,13,Urban,Medium,Yes,No
+Nicaragua,2000,12,0,0,Americas,Female,2,Rural,High,No,No
+Nicaragua,1999,552,7,1.27,Americas,Male,12,Rural,Low,No,No
+Nicaragua,1998,1437,29,2.02,Americas,Female,36,Rural,Low,Yes,No
+Nicaragua,1997,1283,36,2.81,Americas,Male,3,Urban,Medium,No,No
+Nicaragua,1996,2813,107,3.8,Americas,Female,20,Rural,Low,No,Yes
+Nicaragua,1995,8825,164,1.86,Americas,Male,5,Urban,High,No,No
+Nicaragua,1994,7821,134,1.71,Americas,Female,6,Urban,High,Yes,Yes
+Nicaragua,1993,6631,220,3.32,Americas,Male,58,Urban,Low,Yes,No
+Nicaragua,1992,3067,46,1.5,Americas,Female,29,Urban,Low,Yes,No
+Nicaragua,1991,1,0,0,Americas,Male,41,Urban,Medium,No,No
+Niger,2016,38,6,15.8,Africa,Female,16,Urban,Medium,No,Yes
+Niger,2015,51,4,7.8,Africa,Male,30,Rural,Low,No,No
+Niger,2014,2059,80,3.9,Africa,Female,30,Urban,Medium,Yes,No
+Niger,2013,585,13,2.22,Africa,Male,49,Urban,Medium,Yes,Yes
+Niger,2012,5284,110,2.08,Africa,Male,6,Urban,Low,Yes,No
+Niger,2011,2324,60,2.58,Africa,Female,55,Rural,Low,Yes,Yes
+Niger,2010,1154,66,5.72,Africa,Female,46,Urban,Medium,No,No
+Niger,2008,972,70,7.2,Africa,Male,21,Rural,Low,Yes,Yes
+Niger,2007,24,2,8.33,Africa,Female,28,Rural,High,Yes,No
+Niger,2006,1232,81,6.57,Africa,Male,53,Urban,Medium,Yes,Yes
+Niger,2005,553,55,9.95,Africa,Male,48,Urban,Medium,Yes,No
+Niger,2004,2178,57,2.62,Africa,Male,4,Urban,High,Yes,No
+Niger,2003,292,11,3.77,Africa,Female,2,Rural,High,Yes,No
+Niger,2002,236,12,5.08,Africa,Male,30,Urban,Low,Yes,No
+Niger,2001,81,1,1.23,Africa,Male,41,Urban,Low,Yes,Yes
+Niger,2000,225,38,16.89,Africa,Female,13,Urban,Medium,Yes,No
+Niger,1999,1186,85,7.17,Africa,Female,1,Rural,Medium,No,Yes
+Niger,1997,259,13,5.02,Africa,Female,8,Urban,Low,Yes,No
+Niger,1996,3957,206,5.21,Africa,Female,14,Urban,High,No,Yes
+Niger,1995,264,15,5.68,Africa,Male,39,Rural,Low,No,No
+Niger,1994,732,83,11.34,Africa,Male,10,Rural,Low,Yes,No
+Niger,1991,3238,367,11.33,Africa,Male,7,Rural,Low,No,No
+Niger,1989,166,22,13.25,Africa,Male,0,Urban,Medium,Yes,No
+Niger,1984,3788,308,8.13,Africa,Female,8,Rural,Medium,No,No
+Niger,1981,7,0,0,Africa,Male,11,Rural,Low,No,No
+Niger,1974,286,75,26.22,Africa,Male,0,Urban,Low,No,No
+Niger,1973,121,16,13.22,Africa,Female,54,Rural,Low,Yes,No
+Niger,1972,51,12,23.53,Africa,Male,4,Urban,Medium,Yes,No
+Niger,1971,9265,2344,25.3,Africa,Male,12,Rural,Low,Yes,No
+Niger,1970,16,8,50,Africa,Male,32,Urban,High,No,No
+Nigeria,2016,768,32,4.2,Africa,Male,3,Rural,Low,No,No
+Nigeria,2015,5290,186,3.5,Africa,Male,23,Urban,Medium,Yes,Yes
+Nigeria,2014,35996,755,2.1,Africa,Male,12,Rural,Low,No,No
+Nigeria,2013,6600,229,3.47,Africa,Female,10,Urban,Medium,No,No
+Nigeria,2012,597,18,3.02,Africa,Female,14,Rural,Low,No,No
+Nigeria,2011,23377,742,3.17,Africa,Male,12,Rural,Low,No,No
+Nigeria,2010,44456,1712,3.85,Africa,Male,51,Urban,Medium,No,No
+Nigeria,2009,13691,431,3.15,Africa,Female,9,Rural,Medium,Yes,No
+Nigeria,2008,5410,247,4.57,Africa,Male,42,Rural,Low,No,No
+Nigeria,2007,1661,48,2.89,Africa,Male,4,Urban,Medium,Yes,No
+Nigeria,2006,2028,127,6.26,Africa,Male,9,Urban,Low,No,Yes
+Nigeria,2005,4477,174,3.89,Africa,Female,26,Rural,Medium,No,Yes
+Nigeria,2004,3186,185,5.81,Africa,Male,14,Urban,Low,No,Yes
+Nigeria,2003,1933,87,4.5,Africa,Female,6,Urban,Low,No,No
+Nigeria,2002,5429,154,2.84,Africa,Male,50,Urban,Low,Yes,No
+Nigeria,2001,2312,119,5.15,Africa,Female,50,Urban,Low,Yes,No
+Nigeria,2000,2799,43,1.54,Africa,Female,12,Urban,Medium,No,No
+Nigeria,1999,26358,2085,7.91,Africa,Male,9,Urban,Low,Yes,No
+Nigeria,1998,3464,187,5.4,Africa,Female,7,Rural,Low,No,No
+Nigeria,1997,1322,134,10.14,Africa,Male,5,Rural,Low,Yes,No
+Nigeria,1996,12374,1193,9.64,Africa,Female,6,Urban,Low,Yes,No
+Nigeria,1995,1059,87,8.22,Africa,Male,9,Rural,Low,Yes,Yes
+Nigeria,1994,2859,313,10.95,Africa,Male,0,Rural,Low,No,Yes
+Nigeria,1993,4160,266,6.39,Africa,Female,17,Rural,Medium,No,Yes
+Nigeria,1992,8687,686,7.9,Africa,Male,40,Urban,Low,Yes,No
+Nigeria,1991,59478,7654,12.87,Africa,Male,13,Urban,Low,Yes,No
+Nigeria,1989,1078,61,5.66,Africa,Female,11,Rural,Medium,No,Yes
+Nigeria,1988,137,10,7.3,Africa,Male,12,Rural,Low,Yes,Yes
+Nigeria,1987,1290,111,8.6,Africa,Male,1,Rural,Medium,No,Yes
+Nigeria,1986,91,23,25.27,Africa,Female,11,Rural,Medium,No,No
+Nigeria,1985,30,0,0,Africa,Female,9,Urban,Low,No,No
+Nigeria,1984,1667,185,11.1,Africa,Male,12,Rural,Low,No,No
+Nigeria,1983,178,2,1.12,Africa,Male,11,Urban,Low,No,No
+Nigeria,1982,248,18,7.26,Africa,Female,10,Urban,Low,No,No
+Nigeria,1981,107,18,16.82,Africa,Female,16,Rural,Medium,No,Yes
+Nigeria,1980,138,25,18.12,Africa,Male,13,Urban,Low,No,No
+Nigeria,1979,293,4,1.37,Africa,Female,11,Urban,Low,Yes,No
+Nigeria,1978,197,20,10.15,Africa,Male,3,Rural,Low,No,No
+Nigeria,1977,376,10,2.66,Africa,Male,3,Urban,Low,Yes,No
+Nigeria,1976,112,25,22.32,Africa,Male,7,Rural,Low,No,No
+Nigeria,1975,38,1,2.63,Africa,Male,2,Rural,Medium,No,No
+Nigeria,1973,157,27,17.2,Africa,Male,4,Rural,Low,Yes,Yes
+Nigeria,1972,1363,96,7.04,Africa,Female,6,Urban,Low,Yes,No
+Nigeria,1971,22931,2945,12.84,Africa,Female,19,Urban,Low,No,Yes
+Nigeria,1970,15,4,26.67,Africa,Female,23,Urban,Medium,No,No
+Norway,2015,1,0,0,Europe,Female,12,Urban,High,Yes,Yes
+Norway,2007,1,0,0,Europe,Male,4,Urban,Medium,Yes,No
+Norway,2006,1,0,0,Europe,Male,52,Rural,High,Yes,No
+Norway,2005,1,0,0,Europe,Male,7,Urban,Medium,Yes,No
+Norway,1998,2,0,0,Europe,Male,28,Rural,High,Yes,No
+Norway,1995,1,0,0,Europe,Female,5,Urban,High,Yes,No
+Norway,1989,1,0,0,Europe,Male,55,Urban,High,Yes,No
+Norway,1987,1,0,0,Europe,Male,31,Rural,High,Yes,No
+Oman,2015,1,0,0,Eastern Mediterranean,Female,14,Urban,Low,Yes,No
+Oman,2002,1,0,0,Eastern Mediterranean,Female,3,Urban,Medium,No,No
+Oman,2001,7,0,0,Eastern Mediterranean,Female,35,Rural,Low,Yes,Yes
+Oman,1971,9,8,88.89,Eastern Mediterranean,Female,32,Rural,Low,Yes,No
+Pakistan,2014,1218,6,0.5,Eastern Mediterranean,Male,26,Rural,High,Yes,Yes
+Pakistan,2013,1069,23,2.15,Eastern Mediterranean,Male,1,Urban,Medium,No,No
+Pakistan,2012,144,8,5.6,Eastern Mediterranean,Female,25,Urban,High,Yes,No
+Pakistan,2011,527,219,41.56,Eastern Mediterranean,Male,14,Rural,Medium,Yes,No
+Pakistan,2010,164,0,0,Eastern Mediterranean,Male,7,Rural,Low,Yes,Yes
+Pakistan,1993,12092,206,1.7,Eastern Mediterranean,Male,24,Urban,Medium,Yes,Yes
+Pakistan,1981,4,0,0,Eastern Mediterranean,Female,7,Rural,Medium,No,No
+Pakistan,1977,12,1,8.33,Eastern Mediterranean,Male,28,Urban,High,Yes,No
+Pakistan,1976,144,0,0,Eastern Mediterranean,Female,35,Urban,Low,Yes,No
+Pakistan,1971,1185,43,3.63,Eastern Mediterranean,Male,44,Urban,High,Yes,No
+Pakistan,1970,2,0,0,Eastern Mediterranean,Male,7,Urban,High,No,No
+Pakistan,1969,717,17,2.37,Eastern Mediterranean,Male,40,Rural,Medium,Yes,Yes
+Pakistan,1968,3932,55,1.4,Eastern Mediterranean,Female,5,Urban,High,No,Yes
+Pakistan,1965,21,1,4.76,Eastern Mediterranean,Male,9,Urban,Low,No,No
+Pakistan,1960,6704,1107,16.51,Eastern Mediterranean,Female,1,Rural,High,Yes,No
+Pakistan,1958,366,86,23.5,Eastern Mediterranean,Female,9,Rural,Medium,Yes,No
+Panama,1993,42,4,9.52,Americas,Female,5,Rural,Low,Yes,Yes
+Panama,1992,2416,49,2.03,Americas,Male,6,Rural,High,No,Yes
+Panama,1991,1178,29,2.46,Americas,Male,1,Urban,Medium,Yes,No
+Papua New Guinea,2011,1535,2,0.13,Western Pacific,Male,11,Rural,Medium,Yes,No
+Papua New Guinea,2010,8997,95,1.06,Western Pacific,Male,13,Rural,Medium,No,No
+Papua New Guinea,2009,1957,45,2.3,Western Pacific,Female,9,Rural,Low,Yes,No
+Papua New Guinea,2005,0,0,0,Western Pacific,Female,54,Urban,Medium,Yes,No
+Papua New Guinea,1962,1293,464,35.89,Western Pacific,Female,12,Urban,High,Yes,No
+Paraguay,2009,5,0,0,Americas,Male,47,Rural,Low,Yes,Yes
+Paraguay,1996,4,0,0,Americas,Female,1,Urban,Low,Yes,Yes
+Paraguay,1993,3,0,0,Americas,Male,49,Rural,Low,Yes,Yes
+Peru,2002,16,0,0,Americas,Female,12,Rural,Medium,No,No
+Peru,2001,494,0,0,Americas,Male,7,Rural,Medium,Yes,No
+Peru,2000,934,6,0.64,Americas,Male,11,Rural,Medium,No,No
+Peru,1999,1546,6,0.39,Americas,Female,25,Rural,High,No,Yes
+Peru,1998,41717,568,1.36,Americas,Female,9,Urban,Medium,Yes,No
+Peru,1997,3483,29,0.83,Americas,Female,12,Rural,Low,No,No
+Peru,1996,4518,21,0.46,Americas,Female,33,Rural,High,Yes,No
+Peru,1995,22397,171,0.76,Americas,Male,13,Urban,Medium,No,No
+Peru,1994,23887,199,0.83,Americas,Female,10,Urban,Medium,No,Yes
+Peru,1993,72404,575,0.79,Americas,Female,7,Urban,Medium,Yes,No
+Peru,1992,242237,801,0.33,Americas,Female,32,Rural,High,Yes,No
+Peru,1991,322562,2909,0.9,Americas,Male,4,Urban,Medium,Yes,No
+Philippines,2016,124,0,0,Western Pacific,Male,12,Rural,Low,Yes,Yes
+Philippines,2014,4547,8,0.2,Western Pacific,Female,9,Urban,Medium,Yes,No
+Philippines,2013,6,0,0,Western Pacific,Male,26,Urban,Low,Yes,No
+Philippines,2012,1864,14,0.8,Western Pacific,Female,11,Rural,Low,No,No
+Philippines,2011,120,3,2.5,Western Pacific,Male,36,Urban,Medium,Yes,No
+Philippines,2010,33,2,6.06,Western Pacific,Male,14,Rural,Low,No,No
+Philippines,2007,0,0,0,Western Pacific,Male,9,Rural,Low,No,No
+Philippines,2006,66,1,1.5,Western Pacific,Male,54,Rural,Low,Yes,No
+Philippines,2005,139,2,1.44,Western Pacific,Female,8,Urban,Medium,No,No
+Philippines,2004,533,3,0.56,Western Pacific,Female,12,Rural,High,Yes,No
+Philippines,2001,174,0,0,Western Pacific,Female,3,Rural,High,Yes,No
+Philippines,2000,275,6,2.18,Western Pacific,Male,13,Rural,Low,No,Yes
+Philippines,1999,330,0,0,Western Pacific,Female,21,Urban,Medium,Yes,No
+Philippines,1998,729,17,2.33,Western Pacific,Female,2,Rural,High,Yes,No
+Philippines,1997,605,0,0,Western Pacific,Female,4,Rural,Low,No,No
+Philippines,1996,1402,14,1,Western Pacific,Male,58,Rural,Medium,No,Yes
+Philippines,1995,847,4,0.47,Western Pacific,Male,4,Urban,Medium,No,No
+Philippines,1994,3340,27,0.81,Western Pacific,Male,12,Urban,Low,No,Yes
+Philippines,1993,708,10,1.41,Western Pacific,Female,6,Urban,High,Yes,No
+Philippines,1992,345,0,0,Western Pacific,Female,10,Urban,High,Yes,Yes
+Philippines,1985,10,1,10,Western Pacific,Female,18,Urban,Low,No,No
+Philippines,1982,930,31,3.33,Western Pacific,Male,14,Urban,Low,Yes,No
+Philippines,1981,864,51,5.9,Western Pacific,Male,40,Rural,Low,Yes,No
+Philippines,1980,836,61,7.3,Western Pacific,Female,0,Urban,Low,Yes,No
+Philippines,1979,1268,408,32.18,Western Pacific,Male,42,Rural,Medium,No,No
+Philippines,1978,1408,122,8.66,Western Pacific,Male,48,Urban,Medium,Yes,Yes
+Philippines,1977,1363,180,13.21,Western Pacific,Male,53,Urban,Low,No,No
+Philippines,1976,1258,160,12.72,Western Pacific,Male,9,Urban,High,Yes,Yes
+Philippines,1975,680,15,2.21,Western Pacific,Female,18,Urban,Low,Yes,No
+Philippines,1974,1730,33,1.91,Western Pacific,Male,55,Rural,Low,Yes,No
+Philippines,1973,2840,447,15.74,Western Pacific,Male,2,Rural,Low,Yes,No
+Philippines,1972,5601,78,1.39,Western Pacific,Male,14,Urban,Medium,No,No
+Philippines,1971,3585,109,3.04,Western Pacific,Male,12,Urban,Medium,Yes,Yes
+Philippines,1970,1095,38,3.47,Western Pacific,Female,26,Urban,Low,Yes,No
+Philippines,1969,1541,106,6.88,Western Pacific,Female,14,Rural,Low,Yes,No
+Philippines,1968,2787,89,3.19,Western Pacific,Male,3,Rural,High,Yes,No
+Philippines,1967,1629,52,3.19,Western Pacific,Male,50,Rural,High,Yes,No
+Philippines,1966,5261,273,5.19,Western Pacific,Male,32,Rural,Low,Yes,No
+Philippines,1965,4581,448,9.78,Western Pacific,Male,48,Rural,Low,No,Yes
+Philippines,1964,16464,1518,9.22,Western Pacific,Male,43,Urban,Medium,No,No
+Philippines,1963,3979,433,10.88,Western Pacific,Male,12,Urban,Medium,Yes,No
+Philippines,1962,13015,1682,12.92,Western Pacific,Female,11,Rural,Low,Yes,No
+Philippines,1961,9923,1405,14.16,Western Pacific,Male,53,Rural,High,Yes,No
+Poland,2005,1,0,0,Europe,Female,41,Rural,Medium,Yes,Yes
+Poland,1994,1,0,0,Europe,Female,56,Rural,Medium,No,Yes
+Poland,1981,1,0,0,Europe,Male,52,Urban,Medium,No,Yes
+Portugal,1995,1,0,0,Europe,Female,3,Rural,High,Yes,No
+Portugal,1994,1,0,0,Europe,Female,16,Rural,Medium,No,Yes
+Portugal,1975,1066,8,0.75,Europe,Female,7,Urban,Low,Yes,No
+Portugal,1974,2467,48,1.95,Europe,Female,14,Rural,Low,Yes,No
+Portugal,1971,64,4,6.25,Europe,Female,48,Rural,Medium,Yes,Yes
+Qatar,2005,2,0,0,Eastern Mediterranean,Female,0,Urban,Low,Yes,No
+Qatar,2004,1,0,0,Eastern Mediterranean,Male,27,Urban,Medium,No,No
+Qatar,2002,1,0,0,Eastern Mediterranean,Female,3,Urban,High,Yes,No
+Republic of Korea,2016,4,0,0,Western Pacific,Female,44,Rural,Medium,Yes,No
+Republic of Korea,2013,3,0,0,Western Pacific,Female,36,Urban,High,No,No
+Republic of Korea,2011,3,0,0,Western Pacific,Male,1,Rural,Low,No,No
+Republic of Korea,2010,1,0,0,Western Pacific,Female,18,Rural,High,No,Yes
+Republic of Korea,2004,10,0,0,Western Pacific,Male,14,Urban,Medium,No,No
+Republic of Korea,2001,138,0,0,Western Pacific,Female,29,Rural,Low,Yes,No
+Republic of Korea,1997,10,0,0,Western Pacific,Male,4,Rural,Medium,No,No
+Republic of Korea,1995,74,0,0,Western Pacific,Male,51,Urban,Low,No,No
+Republic of Korea,1994,34,0,0,Western Pacific,Female,13,Urban,Medium,No,No
+Republic of Korea,1993,5,0,0,Western Pacific,Female,13,Rural,Medium,No,No
+Republic of Korea,1992,6,0,0,Western Pacific,Male,3,Rural,Low,Yes,No
+Republic of Korea,1991,113,4,3.54,Western Pacific,Female,6,Urban,Medium,No,Yes
+Republic of Korea,1980,145,4,2.76,Western Pacific,Male,48,Urban,Medium,Yes,Yes
+Republic of Korea,1970,475,23,4.84,Western Pacific,Male,6,Urban,Low,Yes,No
+Republic of Korea,1969,1538,137,8.91,Western Pacific,Male,8,Rural,Low,Yes,No
+Republic of Korea,1964,11,1,9.09,Western Pacific,Male,9,Urban,Medium,No,No
+Republic of Korea,1963,415,38,9.16,Western Pacific,Male,10,Rural,Medium,Yes,No
+Republic of Moldova,1995,240,5,2.08,Europe,Female,53,Rural,High,Yes,Yes
+Republic of Moldova,1994,8,0,0,Europe,Male,13,Urban,High,Yes,Yes
+Republic of Moldova,1993,1,0,0,Europe,Male,0,Rural,Medium,No,No
+Romania,1995,118,3,2.54,Europe,Female,13,Urban,Medium,Yes,Yes
+Romania,1994,80,4,5,Europe,Male,7,Rural,Medium,No,No
+Romania,1993,15,0,0,Europe,Female,2,Urban,Medium,No,No
+Romania,1992,3,0,0,Europe,Female,28,Rural,Low,Yes,No
+Romania,1991,226,9,3.98,Europe,Female,43,Rural,Low,Yes,No
+Romania,1990,270,1,0.37,Europe,Male,3,Urban,Medium,No,No
+Russian Federation,2014,1,0,0,Europe,Male,15,Urban,Low,No,Yes
+Russian Federation,2012,1,0,0,Europe,Male,35,Urban,Medium,No,No
+Russian Federation,2010,3,0,0,Europe,Female,7,Urban,High,Yes,No
+Russian Federation,2007,1,0,0,Europe,Male,39,Rural,Low,No,No
+Russian Federation,2006,1,0,0,Europe,Female,7,Rural,Medium,Yes,No
+Russian Federation,2004,1,0,0,Europe,Male,43,Urban,High,Yes,No
+Russian Federation,2001,53,0,0,Europe,Female,0,Rural,Medium,No,No
+Russian Federation,1999,8,0,0,Europe,Male,9,Rural,Low,Yes,No
+Russian Federation,1998,10,0,0,Europe,Male,17,Rural,Low,No,No
+Russian Federation,1997,11,0,0,Europe,Male,12,Urban,Medium,Yes,No
+Russian Federation,1996,4,1,25,Europe,Female,3,Urban,Medium,No,No
+Russian Federation,1995,9,0,0,Europe,Female,4,Urban,Low,Yes,Yes
+Russian Federation,1994,1048,15,1.43,Europe,Male,4,Rural,Low,Yes,No
+Russian Federation,1993,23,2,8.7,Europe,Male,31,Urban,High,No,Yes
+Russian Federation,1992,6,0,0,Europe,Female,33,Urban,Medium,Yes,No
+Russian Federation,1991,78,0,0,Europe,Female,56,Urban,High,Yes,No
+Russian Federation,1990,49,0,0,Europe,Female,3,Rural,Medium,No,No
+Russian Federation,1977,1,0,0,Europe,Male,14,Urban,High,Yes,Yes
+Russian Federation,1976,1,0,0,Europe,Female,33,Urban,Low,No,No
+Russian Federation,1970,720,0,0,Europe,Male,6,Urban,Medium,Yes,No
+Rwanda,2016,355,0,0,Africa,Female,10,Urban,Low,Yes,Yes
+Rwanda,2012,9,0,0,Africa,Male,3,Rural,Medium,No,No
+Rwanda,2009,67,0,0,Africa,Female,39,Urban,Medium,No,Yes
+Rwanda,2008,23,0,0,Africa,Female,18,Urban,Low,Yes,No
+Rwanda,2007,1453,21,1.45,Africa,Female,8,Rural,High,Yes,Yes
+Rwanda,2006,405,21,5.19,Africa,Female,13,Urban,High,No,No
+Rwanda,2005,89,0,0,Africa,Female,33,Urban,Low,Yes,No
+Rwanda,2004,586,0,0,Africa,Male,44,Rural,Medium,Yes,No
+Rwanda,2003,12,0,0,Africa,Female,2,Urban,Low,Yes,No
+Rwanda,2001,157,2,1.27,Africa,Female,14,Urban,Medium,Yes,No
+Rwanda,2000,1235,8,0.65,Africa,Female,14,Urban,High,Yes,Yes
+Rwanda,1999,327,49,14.98,Africa,Male,12,Urban,Low,Yes,No
+Rwanda,1998,3220,74,2.3,Africa,Female,59,Rural,High,Yes,No
+Rwanda,1997,274,16,5.84,Africa,Male,0,Rural,Low,Yes,No
+Rwanda,1996,106,10,9.43,Africa,Female,0,Rural,Medium,Yes,No
+Rwanda,1995,3,0,0,Africa,Female,46,Urban,Medium,No,No
+Rwanda,1994,10,0,0,Africa,Male,11,Urban,Low,Yes,No
+Rwanda,1993,568,34,5.99,Africa,Female,13,Rural,Low,No,No
+Rwanda,1992,503,35,6.96,Africa,Male,53,Rural,High,No,Yes
+Rwanda,1991,679,35,5.15,Africa,Male,1,Urban,Medium,Yes,No
+Rwanda,1989,1,0,0,Africa,Female,14,Urban,Low,No,No
+Rwanda,1988,70,3,4.29,Africa,Male,1,Urban,Medium,Yes,Yes
+Rwanda,1987,101,6,5.94,Africa,Female,8,Urban,Low,No,No
+Rwanda,1986,226,7,3.1,Africa,Female,14,Urban,Low,No,No
+Rwanda,1985,21,0,0,Africa,Male,42,Urban,Medium,Yes,No
+Rwanda,1984,161,13,8.07,Africa,Male,6,Rural,Low,No,No
+Rwanda,1983,54,5,9.26,Africa,Male,11,Rural,High,Yes,Yes
+Rwanda,1982,201,2,1,Africa,Male,13,Urban,Medium,Yes,No
+Rwanda,1981,24,1,4.17,Africa,Female,3,Urban,High,No,No
+Rwanda,1980,30,4,13.33,Africa,Female,14,Rural,Medium,Yes,No
+Rwanda,1979,5,0,0,Africa,Male,6,Urban,High,Yes,No
+Rwanda,1978,838,48,5.73,Africa,Female,4,Rural,Medium,Yes,No
+Samoa,1980,1,0,0,Western Pacific,Female,5,Urban,Medium,No,No
+Sao Tome and Principe,2008,119,4,3.36,Africa,Female,1,Rural,High,Yes,No
+Sao Tome and Principe,2007,90,0,0,Africa,Female,11,Urban,Medium,No,No
+Sao Tome and Principe,2006,926,9,0.97,Africa,Male,55,Urban,Low,Yes,No
+Sao Tome and Principe,2005,1966,33,1.68,Africa,Male,53,Urban,Medium,Yes,No
+Sao Tome and Principe,1991,3,1,33.33,Africa,Female,52,Urban,High,No,No
+Sao Tome and Principe,1990,804,9,1.12,Africa,Male,48,Urban,Medium,Yes,Yes
+Sao Tome and Principe,1989,3953,64,1.62,Africa,Male,20,Rural,Medium,No,No
+Saudi Arabia,2002,38,0,0,Eastern Mediterranean,Male,1,Urban,Medium,Yes,No
+Saudi Arabia,1986,74,3,4.05,Eastern Mediterranean,Female,36,Urban,High,Yes,No
+Saudi Arabia,1981,13,0,0,Eastern Mediterranean,Female,2,Rural,Low,Yes,No
+Saudi Arabia,1980,2,0,0,Eastern Mediterranean,Female,0,Rural,Medium,No,No
+Saudi Arabia,1979,23,0,0,Eastern Mediterranean,Male,1,Rural,Low,Yes,No
+Saudi Arabia,1978,30,1,3.33,Eastern Mediterranean,Female,7,Rural,Medium,No,Yes
+Saudi Arabia,1977,18,0,0,Eastern Mediterranean,Female,19,Urban,Medium,Yes,Yes
+Saudi Arabia,1976,50,0,0,Eastern Mediterranean,Male,8,Rural,Low,Yes,No
+Saudi Arabia,1975,91,48,52.75,Eastern Mediterranean,Female,38,Rural,Low,Yes,No
+Saudi Arabia,1972,303,0,0,Eastern Mediterranean,Female,49,Rural,Medium,No,No
+Saudi Arabia,1970,266,14,5.26,Eastern Mediterranean,Male,8,Urban,Low,No,No
+Senegal,2012,1,0,0,Africa,Male,5,Urban,Low,No,No
+Senegal,2011,5,0,0,Africa,Male,39,Urban,High,Yes,No
+Senegal,2010,3,0,0,Africa,Female,3,Rural,Low,Yes,No
+Senegal,2009,4,0,0,Africa,Female,5,Rural,Medium,Yes,No
+Senegal,2008,1283,20,1.56,Africa,Female,49,Rural,High,No,No
+Senegal,2007,3984,24,0.6,Africa,Male,1,Urban,Low,Yes,No
+Senegal,2006,365,10,2.74,Africa,Male,42,Rural,Low,Yes,No
+Senegal,2005,31719,458,0,Africa,Female,9,Rural,Medium,Yes,No
+Senegal,2004,1227,10,0.82,Africa,Female,6,Urban,Medium,Yes,No
+Senegal,1997,371,11,2.97,Africa,Male,26,Rural,High,Yes,No
+Senegal,1996,16107,765,4.75,Africa,Male,53,Urban,High,No,No
+Senegal,1995,3332,160,4.8,Africa,Male,59,Rural,Medium,Yes,Yes
+Senegal,1988,390,1,0.26,Africa,Male,7,Rural,Low,No,No
+Senegal,1987,3150,288,9.14,Africa,Female,7,Rural,Low,No,No
+Senegal,1986,476,63,13.24,Africa,Male,2,Rural,Low,Yes,No
+Senegal,1985,2988,474,15.86,Africa,Female,25,Rural,Low,Yes,No
+Senegal,1984,728,94,12.91,Africa,Female,24,Urban,Medium,Yes,Yes
+Senegal,1981,428,0,0,Africa,Female,1,Urban,Medium,No,Yes
+Senegal,1979,103,3,2.91,Africa,Male,10,Rural,Low,Yes,No
+Senegal,1978,315,8,2.54,Africa,Male,1,Urban,High,Yes,Yes
+Senegal,1972,379,37,9.76,Africa,Male,3,Urban,Low,Yes,No
+Senegal,1971,265,60,22.64,Africa,Male,8,Rural,Medium,Yes,No
+Seychelles,2008,0,0,0,Africa,Female,59,Rural,Medium,Yes,No
+Seychelles,2007,178,1,0.56,Africa,Male,12,Urban,Medium,Yes,Yes
+Seychelles,2006,0,0,0,Africa,Male,52,Urban,Medium,No,No
+Seychelles,2005,0,0,0,Africa,Female,5,Urban,Low,No,No
+Sierra Leone,2013,377,32,8.49,Africa,Male,11,Urban,Medium,Yes,Yes
+Sierra Leone,2012,23124,299,1.29,Africa,Female,0,Urban,Medium,Yes,No
+Sierra Leone,2008,62,1,1.61,Africa,Female,14,Rural,High,No,No
+Sierra Leone,2007,2219,84,3.79,Africa,Female,5,Urban,Medium,Yes,No
+Sierra Leone,2006,2560,99,3.87,Africa,Female,14,Urban,Medium,No,No
+Sierra Leone,2005,6,0,0,Africa,Female,58,Urban,Medium,Yes,No
+Sierra Leone,2004,513,42,8.19,Africa,Female,0,Rural,High,No,No
+Sierra Leone,1999,863,5,0.58,Africa,Female,48,Urban,Low,Yes,No
+Sierra Leone,1998,2096,57,2.72,Africa,Female,13,Urban,Medium,Yes,No
+Sierra Leone,1995,10285,447,4.35,Africa,Male,19,Urban,Medium,No,No
+Sierra Leone,1994,9709,623,6.42,Africa,Male,53,Rural,Medium,Yes,No
+Sierra Leone,1987,557,30,5.39,Africa,Male,7,Rural,Low,Yes,No
+Sierra Leone,1986,8957,669,7.47,Africa,Male,12,Urban,Medium,Yes,Yes
+Sierra Leone,1977,12,0,0,Africa,Female,56,Urban,Low,No,No
+Sierra Leone,1971,211,13,6.16,Africa,Male,10,Urban,Medium,Yes,No
+Sierra Leone,1970,293,74,25.26,Africa,Female,48,Rural,Medium,No,No
+Singapore,2014,2,0,0,Western Pacific,Male,9,Rural,High,Yes,No
+Singapore,2013,2,0,0,Western Pacific,Male,53,Urban,Medium,Yes,No
+Singapore,2012,2,0,0,Western Pacific,Male,43,Urban,Low,No,No
+Singapore,2011,2,0,0,Western Pacific,Female,52,Urban,Low,Yes,No
+Singapore,2004,11,1,9.09,Western Pacific,Male,47,Urban,High,Yes,No
+Singapore,2003,1,0,0,Western Pacific,Female,52,Rural,Low,Yes,No
+Singapore,2002,2,0,0,Western Pacific,Female,50,Urban,Medium,Yes,No
+Singapore,2001,8,0,0,Western Pacific,Male,1,Urban,Low,No,No
+Singapore,2000,10,0,0,Western Pacific,Male,2,Urban,Medium,Yes,No
+Singapore,1999,11,0,0,Western Pacific,Male,39,Rural,Medium,Yes,No
+Singapore,1998,31,2,6.45,Western Pacific,Female,3,Rural,Low,Yes,No
+Singapore,1997,19,0,0,Western Pacific,Male,1,Urban,Low,Yes,No
+Singapore,1996,19,1,5.26,Western Pacific,Female,12,Urban,High,Yes,No
+Singapore,1995,14,0,0,Western Pacific,Female,1,Urban,Medium,No,No
+Singapore,1994,41,1,2.44,Western Pacific,Male,45,Urban,Medium,No,Yes
+Singapore,1993,24,0,0,Western Pacific,Male,11,Urban,High,Yes,No
+Singapore,1992,17,0,0,Western Pacific,Female,20,Rural,High,Yes,Yes
+Singapore,1991,34,2,5.88,Western Pacific,Female,24,Rural,Low,No,No
+Singapore,1990,26,0,0,Western Pacific,Female,35,Rural,High,Yes,No
+Singapore,1989,39,0,0,Western Pacific,Male,5,Urban,Low,Yes,No
+Singapore,1988,19,0,0,Western Pacific,Female,29,Rural,Low,No,No
+Singapore,1987,63,0,0,Western Pacific,Male,0,Rural,High,Yes,Yes
+Singapore,1986,27,0,0,Western Pacific,Female,45,Urban,Low,Yes,No
+Singapore,1985,27,1,3.7,Western Pacific,Female,6,Urban,Low,No,No
+Singapore,1984,40,8,20,Western Pacific,Male,41,Urban,Low,No,No
+Singapore,1983,14,0,0,Western Pacific,Female,52,Urban,Medium,Yes,No
+Singapore,1982,31,0,0,Western Pacific,Male,10,Urban,Medium,Yes,No
+Singapore,1981,34,0,0,Western Pacific,Male,4,Rural,Medium,Yes,No
+Singapore,1980,18,0,0,Western Pacific,Female,22,Urban,High,No,No
+Singapore,1979,10,0,0,Western Pacific,Male,35,Rural,Medium,Yes,No
+Singapore,1978,83,0,0,Western Pacific,Male,22,Urban,Low,Yes,No
+Singapore,1977,11,0,0,Western Pacific,Female,14,Rural,High,No,No
+Singapore,1975,10,0,0,Western Pacific,Male,44,Urban,Low,Yes,No
+Singapore,1974,8,0,0,Western Pacific,Male,30,Rural,Low,Yes,Yes
+Singapore,1973,1,0,0,Western Pacific,Male,12,Urban,Low,Yes,No
+Singapore,1972,114,3,2.63,Western Pacific,Female,55,Urban,Medium,Yes,Yes
+Singapore,1969,11,4,36.36,Western Pacific,Male,5,Rural,Low,Yes,Yes
+Singapore,1968,6,0,0,Western Pacific,Female,28,Urban,Low,No,No
+Singapore,1964,24,3,12.5,Western Pacific,Female,8,Rural,Low,No,Yes
+Singapore,1963,27,2,7.41,Western Pacific,Male,38,Rural,Low,Yes,No
+Singapore,1953,0,0,0,Western Pacific,Male,57,Urban,Medium,Yes,Yes
+Slovenia,2007,0,0,0,Europe,Male,37,Urban,High,Yes,No
+Somalia,2016,15619,548,3.5,Eastern Mediterranean,Female,21,Rural,Medium,Yes,Yes
+Somalia,2015,7536,84,1.1,Eastern Mediterranean,Male,41,Urban,Low,Yes,Yes
+Somalia,2014,2820,0,0,Eastern Mediterranean,Male,39,Rural,Low,No,No
+Somalia,2013,6864,140,2.04,Eastern Mediterranean,Male,10,Rural,High,Yes,No
+Somalia,2012,22576,200,0.89,Eastern Mediterranean,Male,9,Urban,Low,Yes,No
+Somalia,2011,77636,1130,1.46,Eastern Mediterranean,Male,2,Urban,High,Yes,No
+Somalia,2010,3510,103,2.93,Eastern Mediterranean,Female,5,Rural,Low,Yes,No
+Somalia,2009,208,3,1.44,Eastern Mediterranean,Female,37,Urban,High,Yes,Yes
+Somalia,2008,1281,16,1.25,Eastern Mediterranean,Male,5,Urban,Low,Yes,No
+Somalia,2007,41643,1182,2.84,Eastern Mediterranean,Male,34,Urban,Medium,Yes,Yes
+Somalia,2004,4490,26,0.58,Eastern Mediterranean,Male,0,Rural,Medium,No,No
+Somalia,2003,11020,56,0.51,Eastern Mediterranean,Male,12,Urban,Medium,Yes,Yes
+Somalia,2002,2775,159,5.73,Eastern Mediterranean,Female,2,Urban,Low,Yes,No
+Somalia,2001,2567,93,3.62,Eastern Mediterranean,Male,59,Rural,Medium,Yes,No
+Somalia,2000,7496,563,7.51,Eastern Mediterranean,Female,0,Urban,Medium,No,No
+Somalia,1999,17757,693,3.9,Eastern Mediterranean,Female,2,Urban,Low,Yes,No
+Somalia,1998,4417,196,4.44,Eastern Mediterranean,Male,30,Rural,Low,Yes,No
+Somalia,1997,6814,252,3.7,Eastern Mediterranean,Female,2,Rural,Medium,Yes,No
+Somalia,1996,10274,464,4.52,Eastern Mediterranean,Female,8,Rural,Low,No,No
+Somalia,1995,9255,191,2.06,Eastern Mediterranean,Female,14,Urban,Medium,Yes,No
+Somalia,1994,28334,1206,4.26,Eastern Mediterranean,Female,10,Rural,Low,Yes,No
+Somalia,1986,15980,1945,12.17,Eastern Mediterranean,Male,9,Urban,Medium,Yes,No
+Somalia,1985,10199,1589,15.58,Eastern Mediterranean,Male,6,Urban,Low,Yes,No
+Somalia,1971,89,10,11.24,Eastern Mediterranean,Female,6,Urban,Medium,Yes,No
+Somalia,1970,43,10,23.26,Eastern Mediterranean,Male,2,Urban,Low,Yes,No
+South Africa,2013,1,0,0,Africa,Male,9,Rural,Low,No,No
+South Africa,2009,10520,57,0.54,Africa,Male,16,Urban,Low,No,No
+South Africa,2008,3907,22,0.56,Africa,Male,46,Rural,High,Yes,No
+South Africa,2006,0,0,0,Africa,Male,1,Rural,Low,Yes,No
+South Africa,2005,3503,28,0.8,Africa,Female,12,Rural,Medium,Yes,No
+South Africa,2004,2767,35,1.26,Africa,Male,2,Urban,Low,Yes,No
+South Africa,2003,3901,45,1.15,Africa,Male,8,Rural,Low,No,No
+South Africa,2002,10004,32,0.32,Africa,Male,2,Urban,Medium,No,No
+South Africa,2001,106159,232,0.22,Africa,Male,2,Urban,Medium,Yes,Yes
+South Africa,2000,19667,68,0.35,Africa,Female,12,Rural,High,Yes,No
+South Africa,1999,68,2,2.94,Africa,Female,18,Urban,High,Yes,Yes
+South Africa,1998,20,1,5,Africa,Female,4,Urban,Medium,No,No
+South Africa,1994,4,0,0,Africa,Female,8,Rural,Medium,No,No
+South Africa,1993,78,2,2.56,Africa,Male,50,Urban,Medium,No,No
+South Africa,1992,11,0,0,Africa,Female,6,Rural,Low,No,No
+South Africa,1991,10,0,0,Africa,Male,9,Urban,High,Yes,Yes
+South Africa,1987,37,0,0,Africa,Male,11,Urban,Medium,No,Yes
+South Africa,1986,120,1,0.83,Africa,Male,14,Urban,Medium,No,No
+South Africa,1985,2742,4,0.15,Africa,Male,28,Urban,Low,Yes,No
+South Africa,1984,1182,20,1.69,Africa,Male,2,Urban,Low,Yes,No
+South Africa,1983,4715,63,1.34,Africa,Female,2,Rural,High,No,No
+South Africa,1982,11968,224,1.87,Africa,Female,33,Rural,Low,Yes,No
+South Africa,1981,4180,52,1.24,Africa,Female,1,Rural,Medium,No,No
+South Africa,1980,859,16,1.86,Africa,Female,12,Urban,Low,No,No
+South Africa,1979,2,0,0,Africa,Male,11,Rural,High,No,No
+South Africa,1974,37,0,0,Africa,Female,9,Rural,Low,No,No
+South Africa,1973,1,0,0,Africa,Male,31,Rural,High,Yes,No
+South Sudan,2016,4295,82,1.9,Africa,Female,23,Urban,Low,No,No
+South Sudan,2015,1818,47,2.6,Africa,Male,50,Rural,High,Yes,No
+South Sudan,2014,6421,167,2.6,Africa,Male,43,Rural,Medium,Yes,No
+Spain,2015,2,0,0,Europe,Female,13,Urban,Low,Yes,Yes
+Spain,2008,5,0,0,Europe,Male,7,Rural,Medium,Yes,No
+Spain,2007,2,0,0,Europe,Male,18,Urban,Low,Yes,No
+Spain,2006,2,0,0,Europe,Female,58,Rural,Low,No,No
+Spain,2002,1,0,0,Europe,Male,28,Rural,High,Yes,No
+Spain,2001,1,0,0,Europe,Female,1,Rural,Medium,Yes,No
+Spain,1996,1,0,0,Europe,Female,56,Urban,Low,Yes,No
+Spain,1995,6,0,0,Europe,Female,34,Urban,Low,Yes,No
+Spain,1994,1,0,0,Europe,Male,8,Rural,Low,No,No
+Spain,1993,3,0,0,Europe,Male,28,Urban,High,Yes,No
+Spain,1991,1,0,0,Europe,Male,3,Urban,Low,No,Yes
+Spain,1990,11,0,0,Europe,Female,58,Rural,High,No,No
+Spain,1989,3,0,0,Europe,Male,4,Urban,High,Yes,No
+Spain,1987,2,0,0,Europe,Female,46,Urban,Low,No,No
+Spain,1984,4,0,0,Europe,Female,2,Urban,Low,Yes,No
+Spain,1983,2,0,0,Europe,Male,12,Urban,High,Yes,No
+Spain,1982,2,0,0,Europe,Female,12,Rural,Low,No,Yes
+Spain,1980,4,0,0,Europe,Male,17,Rural,Low,No,No
+Spain,1979,267,0,0,Europe,Male,27,Rural,Low,Yes,Yes
+Spain,1976,2,0,0,Europe,Male,2,Rural,Medium,Yes,No
+Spain,1975,11,0,0,Europe,Male,55,Rural,Medium,Yes,No
+Spain,1974,5,0,0,Europe,Male,58,Rural,Low,Yes,No
+Spain,1971,22,0,0,Europe,Female,27,Urban,Low,No,Yes
+Sri Lanka,2002,9,1,11.11,South-East Asia,Female,56,Rural,High,Yes,No
+Sri Lanka,2000,2,0,0,South-East Asia,Female,7,Urban,Medium,Yes,No
+Sri Lanka,1999,108,5,4.63,South-East Asia,Male,1,Rural,Medium,No,No
+Sri Lanka,1998,1536,49,3.19,South-East Asia,Male,14,Rural,Medium,Yes,No
+Sri Lanka,1997,430,12,2.79,South-East Asia,Male,2,Urban,Medium,Yes,No
+Sri Lanka,1993,1,0,0,South-East Asia,Female,8,Rural,Medium,No,No
+Sri Lanka,1992,121,3,2.48,South-East Asia,Male,56,Urban,Low,No,No
+Sri Lanka,1991,70,2,2.86,South-East Asia,Female,3,Rural,Low,No,No
+Sri Lanka,1988,154,11,7.14,South-East Asia,Female,1,Urban,Medium,Yes,No
+Sri Lanka,1983,86,2,2.33,South-East Asia,Male,3,Rural,Medium,No,No
+Sri Lanka,1982,309,21,6.8,South-East Asia,Male,11,Urban,High,Yes,No
+Sri Lanka,1981,574,57,9.93,South-East Asia,Female,57,Urban,Low,Yes,Yes
+Sri Lanka,1980,104,4,3.85,South-East Asia,Male,11,Urban,High,No,No
+Sri Lanka,1979,46,0,0,South-East Asia,Female,8,Urban,High,Yes,Yes
+Sri Lanka,1978,48,2,4.17,South-East Asia,Male,39,Urban,Low,No,No
+Sri Lanka,1977,5,0,0,South-East Asia,Male,10,Rural,Medium,Yes,No
+Sri Lanka,1976,728,16,2.2,South-East Asia,Female,37,Urban,Medium,Yes,No
+Sri Lanka,1975,1453,67,4.61,South-East Asia,Male,9,Urban,High,No,No
+Sri Lanka,1974,4559,333,7.3,South-East Asia,Female,56,Urban,Medium,Yes,No
+Sri Lanka,1973,118,13,11.02,South-East Asia,Male,11,Rural,Medium,No,No
+Sudan,2009,13681,52,0.38,Eastern Mediterranean,Female,4,Rural,Low,Yes,No
+Sudan,2008,17241,118,0.68,Eastern Mediterranean,Female,6,Rural,Low,No,No
+Sudan,2007,13731,500,3.64,Eastern Mediterranean,Male,11,Rural,Low,Yes,No
+Sudan,2006,30662,1011,3.29,Eastern Mediterranean,Female,11,Urban,Low,Yes,No
+Sudan,1999,0,0,0,Eastern Mediterranean,Male,36,Urban,Medium,Yes,Yes
+Sudan,1985,4457,239,5.36,Eastern Mediterranean,Male,11,Urban,Low,No,No
+Sudan,1980,17,2,11.76,Eastern Mediterranean,Male,57,Rural,Low,No,No
+Sudan,1979,845,176,20.83,Eastern Mediterranean,Female,44,Rural,Low,No,No
+Suriname,1992,12,1,8.33,Americas,Female,12,Urban,Medium,Yes,No
+Sweden,2015,1,0,0,Europe,Male,0,Urban,High,Yes,Yes
+Sweden,2011,1,0,0,Europe,Male,5,Urban,Medium,Yes,No
+Sweden,2006,1,0,0,Europe,Female,41,Urban,Medium,Yes,No
+Sweden,2004,1,0,0,Europe,Male,11,Urban,High,Yes,No
+Sweden,2003,1,0,0,Europe,Male,13,Urban,High,Yes,Yes
+Sweden,1996,1,0,0,Europe,Female,13,Rural,High,Yes,No
+Sweden,1995,2,0,0,Europe,Male,53,Urban,High,Yes,No
+Sweden,1994,1,0,0,Europe,Female,36,Rural,High,Yes,No
+Sweden,1992,1,0,0,Europe,Male,6,Rural,Medium,Yes,No
+Sweden,1987,1,0,0,Europe,Female,12,Rural,High,Yes,Yes
+Sweden,1986,1,0,0,Europe,Male,4,Urban,Medium,Yes,No
+Sweden,1979,1,0,0,Europe,Male,39,Urban,High,Yes,No
+Sweden,1976,1,0,0,Europe,Female,2,Urban,High,Yes,No
+Sweden,1974,1,0,0,Europe,Male,56,Urban,High,Yes,No
+Sweden,1973,10,0,0,Europe,Female,5,Urban,High,Yes,No
+Sweden,1971,4,0,0,Europe,Male,6,Rural,High,Yes,No
+Switzerland,2015,2,0,0,Europe,Female,4,Rural,High,Yes,Yes
+Switzerland,2006,1,0,0,Europe,Female,18,Rural,Medium,Yes,No
+Switzerland,1998,2,0,0,Europe,Female,42,Rural,High,Yes,No
+Switzerland,1995,2,0,0,Europe,Female,1,Urban,Medium,Yes,No
+Switzerland,1993,2,0,0,Europe,Male,1,Urban,Low,No,No
+Switzerland,1992,1,0,0,Europe,Male,7,Urban,Medium,No,No
+Switzerland,1988,1,0,0,Europe,Female,10,Rural,Medium,Yes,Yes
+Switzerland,1985,1,0,0,Europe,Female,5,Rural,Low,Yes,No
+Switzerland,1981,2,0,0,Europe,Female,9,Urban,Low,No,No
+Switzerland,1978,1,0,0,Europe,Male,9,Rural,Medium,Yes,No
+Switzerland,1977,1,0,0,Europe,Male,1,Rural,Low,Yes,No
+Syrian Arab Republic,1979,689,30,4.35,Eastern Mediterranean,Male,45,Urban,Low,Yes,No
+Syrian Arab Republic,1977,2362,66,2.79,Eastern Mediterranean,Male,9,Rural,Medium,Yes,No
+Syrian Arab Republic,1976,795,11,1.38,Eastern Mediterranean,Female,13,Rural,Low,No,No
+Syrian Arab Republic,1975,67,6,8.96,Eastern Mediterranean,Female,17,Urban,High,Yes,Yes
+Syrian Arab Republic,1972,505,25,4.95,Eastern Mediterranean,Female,23,Rural,Low,Yes,No
+Syrian Arab Republic,1971,5,0,0,Eastern Mediterranean,Male,4,Rural,Medium,Yes,No
+Syrian Arab Republic,1970,49,0,0,Eastern Mediterranean,Male,9,Urban,Medium,No,No
+Tajikistan,1994,10,0,0,Europe,Male,11,Urban,Medium,Yes,No
+Tajikistan,1993,165,5,3.03,Europe,Female,0,Rural,Low,Yes,No
+Thailand,2016,52,1,1.9,South-East Asia,Female,26,Urban,High,No,Yes
+Thailand,2015,125,1,0.8,South-East Asia,Male,36,Urban,Medium,No,Yes
+Thailand,2014,12,0,0,South-East Asia,Female,23,Urban,High,No,No
+Thailand,2013,8,0,0,South-East Asia,Male,4,Rural,Low,No,No
+Thailand,2012,29,0,0,South-East Asia,Male,38,Rural,Low,Yes,No
+Thailand,2011,279,4,1.43,South-East Asia,Female,6,Rural,Medium,Yes,Yes
+Thailand,2010,1974,15,0.76,South-East Asia,Male,2,Urban,Low,Yes,No
+Thailand,2009,315,2,0.63,South-East Asia,Female,10,Rural,Medium,Yes,No
+Thailand,2008,436,3,0.69,South-East Asia,Male,7,Urban,Low,No,No
+Thailand,2007,1428,7,0.49,South-East Asia,Female,1,Urban,Medium,No,No
+Thailand,2006,35,0,0,South-East Asia,Female,19,Urban,High,No,No
+Thailand,1994,3487,5,0.14,South-East Asia,Female,43,Urban,Medium,Yes,No
+Thailand,1988,3418,41,1.2,South-East Asia,Male,52,Rural,High,No,No
+Thailand,1987,6353,36,0.57,South-East Asia,Male,16,Rural,Medium,No,Yes
+Thailand,1986,213,1,0.47,South-East Asia,Female,9,Urban,Medium,Yes,No
+Thailand,1985,899,14,1.56,South-East Asia,Female,2,Rural,High,No,Yes
+Thailand,1984,645,19,2.95,South-East Asia,Male,4,Rural,High,Yes,No
+Thailand,1983,1497,41,2.74,South-East Asia,Male,8,Rural,Medium,Yes,Yes
+Thailand,1982,638,16,2.51,South-East Asia,Male,48,Urban,Low,No,No
+Thailand,1981,39,2,5.13,South-East Asia,Female,17,Rural,Medium,No,Yes
+Thailand,1980,4331,85,1.96,South-East Asia,Male,3,Urban,Low,Yes,Yes
+Thailand,1979,1788,44,2.46,South-East Asia,Male,7,Rural,Medium,Yes,No
+Thailand,1978,4183,123,2.94,South-East Asia,Female,1,Urban,Medium,No,No
+Thailand,1977,383,5,1.31,South-East Asia,Male,1,Rural,High,No,No
+Thailand,1976,6,0,0,South-East Asia,Male,53,Urban,High,No,No
+Thailand,1975,1335,88,6.59,South-East Asia,Male,13,Urban,Medium,Yes,Yes
+Thailand,1974,1475,64,4.34,South-East Asia,Female,11,Rural,Low,Yes,No
+Thailand,1973,844,33,3.91,South-East Asia,Female,27,Rural,High,Yes,No
+Thailand,1969,961,40,4.16,South-East Asia,Female,1,Rural,Low,Yes,No
+Thailand,1968,404,21,5.2,South-East Asia,Female,14,Rural,Medium,Yes,No
+Thailand,1967,148,6,4.05,South-East Asia,Female,24,Urban,Low,Yes,No
+Thailand,1966,401,21,5.24,South-East Asia,Female,32,Rural,Low,Yes,No
+Thailand,1965,65,4,6.15,South-East Asia,Female,9,Urban,High,Yes,No
+Thailand,1964,960,30,3.13,South-East Asia,Male,40,Urban,Low,No,No
+Thailand,1963,2230,156,7,South-East Asia,Male,6,Rural,Medium,Yes,No
+Thailand,1959,4368,613,14.03,South-East Asia,Female,0,Rural,Low,Yes,No
+Thailand,1958,10201,1426,13.98,South-East Asia,Male,57,Rural,High,Yes,No
+Thailand,1951,1,0,0,South-East Asia,Male,13,Rural,High,Yes,No
+Thailand,1949,16,2,12.5,South-East Asia,Female,2,Rural,Low,Yes,Yes
+The former state union Serbia and Montenegro,1994,2,0,0,Europe,Male,1,Urban,Low,No,No
+The former state union Serbia and Montenegro,1989,4,0,0,Europe,Male,0,Urban,Medium,No,No
+The former state union Serbia and Montenegro,1981,2,0,0,Europe,Male,47,Rural,Low,Yes,Yes
+The former state union Serbia and Montenegro,1976,3,1,33.33,Europe,Male,31,Urban,Medium,Yes,No
+Togo,2015,35,1,2.9,Africa,Male,49,Urban,Low,Yes,Yes
+Togo,2014,262,11,4.2,Africa,Female,1,Urban,Low,No,No
+Togo,2013,166,4,2.41,Africa,Female,24,Rural,Medium,Yes,No
+Togo,2012,61,1,1.64,Africa,Female,41,Urban,Low,Yes,Yes
+Togo,2011,4,0,0,Africa,Male,12,Rural,High,No,Yes
+Togo,2010,72,3,4.17,Africa,Female,30,Rural,Low,No,No
+Togo,2009,218,1,0.46,Africa,Male,7,Urban,Low,No,No
+Togo,2008,397,3,0.76,Africa,Male,4,Rural,High,No,No
+Togo,2007,65,1,1.54,Africa,Male,0,Rural,Medium,No,No
+Togo,2006,1159,25,2.16,Africa,Male,41,Rural,Medium,Yes,No
+Togo,2005,1320,15,1.14,Africa,Female,23,Rural,Low,Yes,Yes
+Togo,2004,1080,33,3.06,Africa,Female,12,Urban,Medium,No,No
+Togo,2003,384,28,7.29,Africa,Male,5,Rural,Medium,No,No
+Togo,2002,257,14,5.45,Africa,Female,0,Urban,Low,No,No
+Togo,2001,2551,130,5.1,Africa,Male,1,Rural,High,Yes,No
+Togo,2000,338,23,6.8,Africa,Female,28,Rural,Medium,Yes,No
+Togo,1999,667,31,4.65,Africa,Female,6,Rural,Low,Yes,No
+Togo,1998,3217,221,6.87,Africa,Male,14,Urban,Medium,Yes,No
+Togo,1997,42,7,16.67,Africa,Female,0,Urban,Medium,Yes,No
+Togo,1996,146,17,11.64,Africa,Male,38,Urban,Low,No,No
+Togo,1995,65,4,6.15,Africa,Female,5,Urban,Medium,Yes,No
+Togo,1994,47,5,10.64,Africa,Male,3,Urban,Low,No,Yes
+Togo,1993,19,2,10.53,Africa,Male,4,Rural,Medium,No,No
+Togo,1992,753,53,7.04,Africa,Female,2,Urban,Medium,Yes,No
+Togo,1991,2396,81,3.38,Africa,Female,9,Rural,Medium,Yes,Yes
+Togo,1988,1,0,0,Africa,Male,4,Urban,High,No,No
+Togo,1978,6,6,100,Africa,Female,25,Rural,Low,No,No
+Togo,1977,132,12,9.09,Africa,Female,50,Rural,Medium,No,No
+Togo,1974,58,8,13.79,Africa,Male,2,Rural,Medium,No,No
+Togo,1972,16,0,0,Africa,Male,10,Rural,Medium,No,No
+Togo,1971,335,26,7.76,Africa,Female,12,Urban,Medium,Yes,Yes
+Togo,1970,75,3,4,Africa,Male,1,Rural,Low,No,No
+Tonga,2001,145,2,1.38,Western Pacific,Male,36,Urban,Low,No,No
+Tunisia,1973,656,16,2.44,Eastern Mediterranean,Male,6,Urban,Low,No,No
+Tunisia,1972,4,0,0,Eastern Mediterranean,Female,11,Rural,High,Yes,Yes
+Tunisia,1970,27,0,0,Eastern Mediterranean,Female,25,Urban,Low,No,Yes
+Turkey,1977,17,0,0,Europe,Male,6,Rural,High,Yes,No
+Turkey,1970,384,52,13.54,Europe,Female,23,Urban,Medium,No,Yes
+Turkmenistan,2002,30,2,6.67,Europe,Male,14,Urban,Low,Yes,No
+Turkmenistan,2001,561,6,1.07,Europe,Female,4,Urban,Medium,Yes,No
+Turkmenistan,1997,55,0,0,Europe,Male,11,Urban,High,Yes,No
+Turkmenistan,1994,1,0,0,Europe,Male,24,Urban,High,Yes,No
+Tuvalu,1992,293,8,2.73,Western Pacific,Female,2,Urban,Low,Yes,No
+Tuvalu,1990,42,0,0,Western Pacific,Male,3,Urban,Low,No,No
+Uganda,2016,516,11,2.1,Africa,Female,27,Rural,Low,Yes,No
+Uganda,2015,1461,33,2.3,Africa,Female,11,Urban,Low,Yes,No
+Uganda,2014,309,9,2.9,Africa,Male,8,Rural,Low,Yes,No
+Uganda,2013,748,27,3.61,Africa,Male,9,Urban,Medium,No,No
+Uganda,2012,6326,135,2.13,Africa,Female,31,Rural,Low,Yes,No
+Uganda,2010,2341,78,3.33,Africa,Male,1,Urban,Medium,Yes,No
+Uganda,2009,1095,23,2.1,Africa,Male,2,Urban,Low,No,No
+Uganda,2008,3726,120,3.22,Africa,Male,12,Rural,Low,No,No
+Uganda,2007,276,3,1.09,Africa,Male,6,Urban,Low,Yes,No
+Uganda,2006,5194,106,2.04,Africa,Male,44,Rural,Medium,Yes,Yes
+Uganda,2005,4924,98,0,Africa,Female,44,Urban,Medium,Yes,No
+Uganda,2004,3380,91,2.69,Africa,Female,13,Rural,Low,No,No
+Uganda,2003,4377,129,2.95,Africa,Male,5,Urban,Low,Yes,No
+Uganda,2002,2274,133,5.85,Africa,Male,4,Urban,Low,No,No
+Uganda,2001,247,4,1.62,Africa,Male,29,Rural,Low,Yes,Yes
+Uganda,2000,2807,172,6.13,Africa,Female,5,Urban,Low,No,No
+Uganda,1999,5179,228,4.4,Africa,Male,11,Rural,Medium,Yes,Yes
+Uganda,1998,49514,2064,4.17,Africa,Female,54,Urban,Low,Yes,No
+Uganda,1997,2610,188,7.2,Africa,Female,35,Rural,Medium,No,No
+Uganda,1996,291,40,13.75,Africa,Female,5,Urban,Low,Yes,No
+Uganda,1995,538,66,12.27,Africa,Male,12,Rural,Low,Yes,No
+Uganda,1994,704,39,5.54,Africa,Female,1,Rural,Medium,No,No
+Uganda,1992,5072,104,2.05,Africa,Male,7,Urban,Low,No,No
+Uganda,1991,279,28,10.04,Africa,Female,12,Urban,Medium,Yes,No
+Uganda,1987,140,50,35.71,Africa,Male,3,Urban,Low,No,No
+Uganda,1982,190,48,25.26,Africa,Female,1,Rural,Low,No,No
+Uganda,1980,1539,181,11.76,Africa,Male,14,Urban,Medium,No,No
+Uganda,1979,940,60,6.38,Africa,Female,21,Urban,Medium,No,No
+Uganda,1978,1120,110,9.82,Africa,Male,11,Urban,Low,No,Yes
+Uganda,1975,3,0,0,Africa,Male,11,Urban,Low,Yes,Yes
+Uganda,1971,757,30,3.96,Africa,Male,5,Rural,Medium,No,No
+Ukraine,2011,33,0,0,Europe,Male,11,Rural,High,Yes,No
+Ukraine,2007,0,0,0,Europe,Female,11,Rural,Low,Yes,Yes
+Ukraine,1999,2,0,0,Europe,Female,56,Rural,High,Yes,No
+Ukraine,1995,525,10,1.9,Europe,Male,2,Rural,Medium,Yes,No
+Ukraine,1994,813,20,2.46,Europe,Female,21,Urban,Medium,No,No
+Ukraine,1991,75,0,0,Europe,Male,6,Urban,Medium,Yes,No
+United Arab Emirates,2002,3,0,0,Eastern Mediterranean,Male,23,Rural,Medium,Yes,No
+United Arab Emirates,1972,2,0,0,Eastern Mediterranean,Female,1,Rural,High,Yes,No
+United Kingdom of Great Britain and Northern Ireland,2016,19,0,0,Europe,Male,39,Rural,Medium,Yes,No
+United Kingdom of Great Britain and Northern Ireland,2015,15,0,0,Europe,Male,11,Urban,High,Yes,Yes
+United Kingdom of Great Britain and Northern Ireland,2014,14,0,0,Europe,Female,6,Urban,Low,No,No
+United Kingdom of Great Britain and Northern Ireland,2013,6,0,0,Europe,Male,7,Urban,Medium,Yes,Yes
+United Kingdom of Great Britain and Northern Ireland,2012,17,0,0,Europe,Male,33,Rural,High,Yes,No
+United Kingdom of Great Britain and Northern Ireland,2011,32,0,0,Europe,Male,4,Rural,Medium,No,No
+United Kingdom of Great Britain and Northern Ireland,2010,8,0,0,Europe,Male,33,Rural,Medium,Yes,No
+United Kingdom of Great Britain and Northern Ireland,2009,16,0,0,Europe,Female,51,Urban,Medium,No,No
+United Kingdom of Great Britain and Northern Ireland,2008,8,0,0,Europe,Female,10,Rural,High,Yes,No
+United Kingdom of Great Britain and Northern Ireland,2007,32,0,0,Europe,Female,5,Urban,High,Yes,No
+United Kingdom of Great Britain and Northern Ireland,2006,49,0,0,Europe,Male,43,Urban,Low,Yes,Yes
+United Kingdom of Great Britain and Northern Ireland,2004,13,0,0,Europe,Male,23,Rural,High,Yes,No
+United Kingdom of Great Britain and Northern Ireland,2003,9,0,0,Europe,Female,47,Urban,Medium,Yes,Yes
+United Kingdom of Great Britain and Northern Ireland,2000,33,0,0,Europe,Male,11,Urban,Low,No,Yes
+United Kingdom of Great Britain and Northern Ireland,1998,18,0,0,Europe,Male,47,Rural,High,No,No
+United Kingdom of Great Britain and Northern Ireland,1997,6,0,0,Europe,Male,54,Rural,Medium,No,Yes
+United Kingdom of Great Britain and Northern Ireland,1996,13,0,0,Europe,Male,15,Urban,High,No,No
+United Kingdom of Great Britain and Northern Ireland,1995,10,0,0,Europe,Female,0,Rural,Low,Yes,No
+United Kingdom of Great Britain and Northern Ireland,1994,18,0,0,Europe,Female,22,Urban,Low,No,No
+United Kingdom of Great Britain and Northern Ireland,1993,13,0,0,Europe,Female,1,Rural,Medium,Yes,Yes
+United Kingdom of Great Britain and Northern Ireland,1992,5,0,0,Europe,Male,21,Rural,Low,No,No
+United Kingdom of Great Britain and Northern Ireland,1991,8,0,0,Europe,Female,34,Rural,Medium,Yes,No
+United Kingdom of Great Britain and Northern Ireland,1990,6,0,0,Europe,Female,2,Rural,Low,No,No
+United Kingdom of Great Britain and Northern Ireland,1989,1,0,0,Europe,Male,25,Urban,Medium,No,No
+United Kingdom of Great Britain and Northern Ireland,1988,10,0,0,Europe,Male,57,Urban,Low,Yes,No
+United Kingdom of Great Britain and Northern Ireland,1987,2,0,0,Europe,Female,13,Urban,Low,Yes,No
+United Kingdom of Great Britain and Northern Ireland,1986,11,0,0,Europe,Female,4,Urban,Medium,Yes,No
+United Kingdom of Great Britain and Northern Ireland,1985,4,1,25,Europe,Female,46,Rural,Low,Yes,Yes
+United Kingdom of Great Britain and Northern Ireland,1984,5,0,0,Europe,Female,31,Urban,Medium,No,No
+United Kingdom of Great Britain and Northern Ireland,1983,4,0,0,Europe,Male,13,Urban,High,No,No
+United Kingdom of Great Britain and Northern Ireland,1982,1,0,0,Europe,Female,0,Urban,Medium,Yes,No
+United Kingdom of Great Britain and Northern Ireland,1981,12,0,0,Europe,Female,9,Rural,High,Yes,No
+United Kingdom of Great Britain and Northern Ireland,1980,6,0,0,Europe,Male,5,Urban,Low,No,Yes
+United Kingdom of Great Britain and Northern Ireland,1977,2,0,0,Europe,Female,8,Rural,Low,Yes,No
+United Kingdom of Great Britain and Northern Ireland,1976,1,0,0,Europe,Male,0,Urban,High,Yes,No
+United Kingdom of Great Britain and Northern Ireland,1975,1,0,0,Europe,Male,11,Urban,Medium,No,No
+United Kingdom of Great Britain and Northern Ireland,1974,3,0,0,Europe,Male,39,Urban,Medium,No,No
+United Kingdom of Great Britain and Northern Ireland,1973,5,0,0,Europe,Female,5,Rural,Medium,Yes,Yes
+United Kingdom of Great Britain and Northern Ireland,1972,2,0,0,Europe,Female,28,Rural,Medium,Yes,No
+United Kingdom of Great Britain and Northern Ireland,1971,3,0,0,Europe,Male,7,Rural,Low,No,Yes
+United Kingdom of Great Britain and Northern Ireland,1970,1,0,0,Europe,Female,44,Urban,Medium,No,No
+United Republic of Tanzania,2016,11360,172,1.5,Africa,Female,27,Urban,Medium,No,Yes
+United Republic of Tanzania,2015,11563,144,1.2,Africa,Male,57,Rural,Medium,Yes,No
+United Republic of Tanzania,2013,270,17,6.3,Africa,Male,30,Urban,High,No,Yes
+United Republic of Tanzania,2012,286,4,1.4,Africa,Female,25,Rural,Low,Yes,No
+United Republic of Tanzania,2011,942,11,1.17,Africa,Male,43,Rural,Low,No,No
+United Republic of Tanzania,2010,4469,59,1.32,Africa,Female,6,Urban,High,Yes,No
+United Republic of Tanzania,2009,7700,113,1.47,Africa,Female,53,Rural,Medium,Yes,No
+United Republic of Tanzania,2008,2911,88,3.02,Africa,Female,54,Urban,Medium,No,No
+United Republic of Tanzania,2007,1609,65,4.04,Africa,Female,1,Urban,Low,Yes,Yes
+United Republic of Tanzania,2006,14297,254,1.78,Africa,Male,50,Urban,Low,Yes,No
+United Republic of Tanzania,2005,2945,94,3.19,Africa,Male,11,Rural,Medium,No,No
+United Republic of Tanzania,2004,10319,272,2.64,Africa,Male,14,Urban,Low,No,Yes
+United Republic of Tanzania,2003,710,32,4.51,Africa,Male,41,Rural,High,No,No
+United Republic of Tanzania,2002,11920,297,2.49,Africa,Female,7,Rural,High,Yes,No
+United Republic of Tanzania,2001,1300,52,4,Africa,Female,26,Rural,High,Yes,No
+United Republic of Tanzania,2000,4637,156,3.36,Africa,Male,22,Rural,Low,No,Yes
+United Republic of Tanzania,1999,12266,584,4.76,Africa,Female,13,Urban,Medium,Yes,No
+United Republic of Tanzania,1998,14488,608,4.2,Africa,Female,6,Urban,Low,No,No
+United Republic of Tanzania,1997,40249,2231,5.54,Africa,Female,4,Urban,Low,Yes,No
+United Republic of Tanzania,1996,1464,36,2.46,Africa,Male,42,Rural,Low,No,No
+United Republic of Tanzania,1995,2957,96,3.25,Africa,Male,49,Rural,Low,Yes,Yes
+United Republic of Tanzania,1994,2240,155,6.92,Africa,Male,6,Rural,High,Yes,No
+United Republic of Tanzania,1993,792,74,9.34,Africa,Female,13,Rural,Low,No,No
+United Republic of Tanzania,1992,18526,2173,11.73,Africa,Male,6,Rural,Low,Yes,No
+United Republic of Tanzania,1991,5676,572,10.08,Africa,Male,41,Urban,High,No,No
+United Republic of Tanzania,1990,2230,81,3.63,Africa,Male,0,Rural,Low,No,No
+United Republic of Tanzania,1989,2150,232,10.79,Africa,Male,13,Rural,Medium,No,No
+United Republic of Tanzania,1988,5267,580,11.01,Africa,Male,6,Urban,Low,No,No
+United Republic of Tanzania,1987,1892,232,12.26,Africa,Male,10,Rural,Low,Yes,No
+United Republic of Tanzania,1986,1231,215,17.47,Africa,Female,30,Urban,High,Yes,Yes
+United Republic of Tanzania,1985,1984,250,12.6,Africa,Female,7,Rural,Low,Yes,No
+United Republic of Tanzania,1984,2600,338,13,Africa,Male,43,Rural,Medium,Yes,No
+United Republic of Tanzania,1983,1816,127,6.99,Africa,Male,9,Rural,Low,Yes,No
+United Republic of Tanzania,1982,4071,324,7.96,Africa,Female,11,Urban,Low,Yes,No
+United Republic of Tanzania,1981,4241,330,7.78,Africa,Female,56,Rural,Low,Yes,No
+United Republic of Tanzania,1980,5196,587,11.3,Africa,Male,53,Rural,Low,Yes,No
+United Republic of Tanzania,1979,2559,305,11.92,Africa,Male,5,Urban,Low,Yes,No
+United Republic of Tanzania,1978,6608,733,11.09,Africa,Male,2,Rural,Medium,No,No
+United Republic of Tanzania,1977,297,26,8.75,Africa,Male,19,Rural,Medium,Yes,No
+United Republic of Tanzania,1974,10,6,60,Africa,Female,7,Rural,Low,Yes,No
+United States of America,2016,14,0,0,Americas,Male,36,Urban,Medium,No,No
+United States of America,2015,4,0,0,Americas,Male,9,Urban,High,Yes,Yes
+United States of America,2014,7,0,0,Americas,Male,5,Rural,High,No,No
+United States of America,2013,14,0,0,Americas,Male,8,Urban,Medium,No,No
+United States of America,2012,18,0,0,Americas,Female,13,Urban,High,Yes,No
+United States of America,2011,42,0,0,Americas,Female,10,Rural,Low,No,No
+United States of America,2010,15,0,0,Americas,Female,6,Rural,Low,No,No
+United States of America,2009,10,0,0,Americas,Male,10,Rural,Medium,Yes,No
+United States of America,2008,5,0,0,Americas,Male,58,Urban,Medium,No,No
+United States of America,2007,7,0,0,Americas,Female,37,Urban,Medium,Yes,No
+United States of America,2006,8,0,0,Americas,Male,39,Urban,Medium,Yes,No
+United States of America,2005,12,0,0,Americas,Male,52,Urban,High,Yes,No
+United States of America,2004,5,0,0,Americas,Female,58,Rural,High,Yes,No
+United States of America,2003,2,0,0,Americas,Female,31,Rural,Medium,Yes,No
+United States of America,2002,2,0,0,Americas,Female,34,Urban,Medium,No,No
+United States of America,2001,4,0,0,Americas,Female,12,Urban,Low,Yes,No
+United States of America,2000,4,0,0,Americas,Male,50,Urban,Low,Yes,No
+United States of America,1999,6,0,0,Americas,Male,25,Urban,Low,Yes,No
+United States of America,1998,17,0,0,Americas,Female,55,Urban,Medium,No,No
+United States of America,1997,4,0,0,Americas,Male,1,Rural,Low,No,No
+United States of America,1996,3,0,0,Americas,Female,7,Rural,High,No,No
+United States of America,1995,19,0,0,Americas,Female,4,Rural,Low,No,No
+United States of America,1994,47,0,0,Americas,Male,33,Urban,Medium,No,No
+United States of America,1993,19,0,0,Americas,Female,7,Rural,Low,No,No
+United States of America,1992,103,1,0.97,Americas,Male,10,Rural,Low,No,Yes
+United States of America,1991,26,0,0,Americas,Male,0,Rural,High,Yes,No
+United States of America,1990,7,0,0,Americas,Male,6,Urban,Medium,Yes,Yes
+United States of America,1988,9,0,0,Americas,Male,51,Rural,High,No,No
+United States of America,1987,6,0,0,Americas,Female,6,Rural,High,Yes,No
+Uzbekistan,1994,1,0,0,Europe,Male,31,Rural,Low,Yes,No
+Venezuela (Bolivarian Republic of),2013,4,0,0,Americas,Female,47,Urban,Low,Yes,No
+Venezuela (Bolivarian Republic of),2011,49,0,0,Americas,Female,7,Urban,High,No,No
+Venezuela (Bolivarian Republic of),2000,141,0,0,Americas,Female,18,Urban,High,Yes,No
+Venezuela (Bolivarian Republic of),1999,376,8,2.13,Americas,Female,27,Urban,Medium,No,Yes
+Venezuela (Bolivarian Republic of),1998,313,7,2.24,Americas,Male,9,Rural,Medium,No,Yes
+Venezuela (Bolivarian Republic of),1997,2551,59,2.31,Americas,Male,0,Urban,Medium,No,No
+Venezuela (Bolivarian Republic of),1996,269,9,3.35,Americas,Female,45,Urban,Low,No,Yes
+Venezuela (Bolivarian Republic of),1993,409,10,2.45,Americas,Female,27,Urban,Medium,No,No
+Venezuela (Bolivarian Republic of),1992,2842,68,2.39,Americas,Male,6,Urban,High,Yes,No
+Venezuela (Bolivarian Republic of),1991,15,2,13.33,Americas,Female,53,Urban,Medium,Yes,No
+Viet Nam,2011,3,0,0,Western Pacific,Male,16,Rural,Low,Yes,No
+Viet Nam,2010,606,0,0,Western Pacific,Female,27,Rural,Low,No,No
+Viet Nam,2009,471,1,0.21,Western Pacific,Male,58,Urban,Low,No,Yes
+Viet Nam,2008,853,0,0,Western Pacific,Female,6,Urban,Low,No,No
+Viet Nam,2007,1946,0,0,Western Pacific,Female,4,Urban,High,Yes,Yes
+Viet Nam,2005,0,0,0,Western Pacific,Male,10,Urban,Low,Yes,No
+Viet Nam,1999,169,0,0,Western Pacific,Female,21,Rural,Low,Yes,No
+Viet Nam,1998,13,1,7.69,Western Pacific,Female,2,Rural,Low,Yes,Yes
+Viet Nam,1997,4,0,0,Western Pacific,Male,53,Rural,Medium,Yes,No
+Viet Nam,1996,566,2,0.35,Western Pacific,Female,20,Rural,Medium,Yes,Yes
+Viet Nam,1995,6088,45,0.74,Western Pacific,Male,4,Urban,Low,No,No
+Viet Nam,1994,5776,68,1.18,Western Pacific,Male,39,Rural,Low,Yes,No
+Viet Nam,1993,3361,9,0.27,Western Pacific,Female,0,Rural,Low,Yes,No
+Viet Nam,1992,4260,110,2.58,Western Pacific,Female,11,Rural,Medium,No,No
+Viet Nam,1991,52,1,1.92,Western Pacific,Female,12,Urban,Low,Yes,No
+Viet Nam,1990,358,4,1.12,Western Pacific,Female,17,Rural,High,Yes,No
+Viet Nam,1989,143,0,0,Western Pacific,Female,13,Rural,Medium,Yes,No
+Viet Nam,1988,343,7,2.04,Western Pacific,Female,6,Rural,Low,Yes,Yes
+Viet Nam,1987,216,5,2.31,Western Pacific,Female,9,Urban,Medium,Yes,Yes
+Viet Nam,1986,525,8,1.52,Western Pacific,Male,8,Rural,Low,Yes,No
+Viet Nam,1985,502,9,1.79,Western Pacific,Female,4,Rural,Medium,Yes,No
+Viet Nam,1984,22,0,0,Western Pacific,Male,3,Rural,Low,Yes,No
+Viet Nam,1983,392,0,0,Western Pacific,Female,39,Rural,Medium,Yes,No
+Viet Nam,1982,57,0,0,Western Pacific,Female,6,Rural,Medium,No,No
+Viet Nam,1981,157,8,5.1,Western Pacific,Male,50,Urban,High,Yes,Yes
+Viet Nam,1980,978,49,5.01,Western Pacific,Female,30,Rural,Low,No,No
+Viet Nam,1979,365,28,7.67,Western Pacific,Female,7,Urban,Low,Yes,No
+Viet Nam,1978,2,0,0,Western Pacific,Male,7,Rural,Medium,Yes,No
+Viet Nam,1977,32,0,0,Western Pacific,Female,47,Urban,High,No,No
+Viet Nam,1976,1068,0,0,Western Pacific,Female,24,Rural,High,Yes,No
+Viet Nam,1975,5,0,0,Western Pacific,Female,41,Rural,Low,Yes,No
+Viet Nam,1974,139,2,1.44,Western Pacific,Male,4,Rural,Low,No,No
+Viet Nam,1973,1495,18,1.2,Western Pacific,Female,8,Rural,Medium,Yes,Yes
+Viet Nam,1972,146,1,0.68,Western Pacific,Female,14,Rural,Low,No,Yes
+Viet Nam,1971,270,1,0.37,Western Pacific,Female,14,Rural,Low,No,No
+Viet Nam,1970,82,1,1.22,Western Pacific,Female,43,Urban,Low,Yes,No
+Viet Nam,1969,2573,26,1.01,Western Pacific,Male,7,Urban,Medium,Yes,Yes
+Viet Nam,1968,1097,8,0.73,Western Pacific,Male,3,Urban,High,Yes,No
+Viet Nam,1967,7664,71,0.93,Western Pacific,Female,1,Urban,High,No,No
+Viet Nam,1966,8353,167,2,Western Pacific,Female,20,Rural,Low,No,Yes
+Viet Nam,1965,1738,29,1.67,Western Pacific,Male,11,Rural,Medium,No,No
+Viet Nam,1964,20186,872,4.32,Western Pacific,Male,10,Rural,High,Yes,No
+Viet Nam,1954,3,3,100,Western Pacific,Female,0,Urban,Low,No,No
+Viet Nam,1953,7,7,100,Western Pacific,Male,8,Urban,Medium,Yes,No
+Viet Nam,1952,7,6,85.71,Western Pacific,Female,14,Rural,Medium,Yes,No
+Viet Nam,1951,26,21,80.77,Western Pacific,Male,7,Rural,Low,No,No
+Viet Nam,1950,9,4,44.44,Western Pacific,Male,5,Urban,Medium,Yes,No
+Yemen,2016,15751,164,1,Eastern Mediterranean,Male,11,Rural,Low,No,No
+Yemen,2011,31789,134,0.42,Eastern Mediterranean,Male,5,Rural,Low,Yes,No
+Yemen,2010,300,4,1.33,Eastern Mediterranean,Female,1,Urban,Low,No,No
+Yemen,2009,55,3,5.45,Eastern Mediterranean,Male,45,Rural,Low,Yes,No
+Yemen,1992,4,0,0,Eastern Mediterranean,Male,55,Urban,Low,Yes,Yes
+Yemen,1980,720,20,2.78,Eastern Mediterranean,Female,23,Rural,Medium,Yes,No
+Yemen,1979,1953,45,2.3,Eastern Mediterranean,Male,6,Urban,Low,No,No
+Yemen,1978,414,12,2.9,Eastern Mediterranean,Male,1,Urban,Low,Yes,No
+Yemen,1975,1,0,0,Eastern Mediterranean,Female,45,Rural,Low,No,No
+Yemen,1974,6,1,16.67,Eastern Mediterranean,Male,7,Urban,Low,Yes,No
+Yemen,1973,215,23,10.7,Eastern Mediterranean,Female,42,Rural,Low,Yes,No
+Yemen,1972,1064,140,13.16,Eastern Mediterranean,Female,14,Urban,Medium,Yes,No
+Yemen,1971,190,26,13.68,Eastern Mediterranean,Female,1,Urban,Low,No,No
+Zambia,2012,198,2,1.01,Africa,Female,7,Urban,Low,No,No
+Zambia,2011,330,7,2.12,Africa,Male,9,Urban,Medium,No,Yes
+Zambia,2010,6794,62,0.91,Africa,Female,9,Rural,Low,Yes,Yes
+Zambia,2009,4712,80,1.7,Africa,Male,15,Urban,Low,Yes,No
+Zambia,2008,2061,39,1.89,Africa,Male,34,Rural,Medium,No,No
+Zambia,2007,2286,35,1.53,Africa,Male,4,Rural,Medium,Yes,No
+Zambia,2006,5360,183,3.41,Africa,Male,11,Rural,Medium,Yes,No
+Zambia,2005,1503,7,0.47,Africa,Male,0,Urban,Medium,Yes,No
+Zambia,2004,12149,373,3.07,Africa,Male,28,Rural,Medium,Yes,No
+Zambia,2003,1049,29,2.76,Africa,Male,38,Urban,Medium,Yes,No
+Zambia,2002,339,12,3.54,Africa,Male,27,Urban,Low,Yes,Yes
+Zambia,2001,3109,165,5.31,Africa,Male,38,Urban,Low,No,No
+Zambia,2000,4504,303,6.73,Africa,Male,1,Urban,Medium,Yes,No
+Zambia,1999,13511,535,3.96,Africa,Female,25,Urban,Low,Yes,No
+Zambia,1998,171,0,0,Africa,Female,43,Rural,High,Yes,No
+Zambia,1997,36,0,0,Africa,Female,9,Urban,High,Yes,Yes
+Zambia,1996,2172,42,1.93,Africa,Male,12,Urban,Low,Yes,No
+Zambia,1993,6766,426,6.3,Africa,Female,9,Rural,Low,No,No
+Zambia,1992,11659,913,7.83,Africa,Female,56,Urban,Low,Yes,No
+Zambia,1991,13154,1091,8.29,Africa,Female,46,Urban,Low,No,No
+Zambia,1990,3717,315,8.47,Africa,Male,0,Urban,Low,Yes,No
+Zambia,1989,44,44,100,Africa,Male,13,Rural,Medium,No,No
+Zambia,1983,233,19,8.15,Africa,Male,10,Urban,High,Yes,Yes
+Zambia,1982,1403,131,9.34,Africa,Male,15,Urban,Medium,Yes,No
+Zambia,1981,14,0,0,Africa,Female,33,Rural,Low,No,No
+Zambia,1980,57,17,29.82,Africa,Female,7,Rural,Low,Yes,No
+Zambia,1979,12,11,91.67,Africa,Female,8,Rural,Medium,No,No
+Zambia,1978,263,36,13.69,Africa,Female,9,Rural,High,Yes,No
+Zimbabwe,2016,10,1,10,Africa,Male,33,Urban,High,No,No
+Zimbabwe,2015,60,0,0,Africa,Male,14,Urban,High,No,Yes
+Zimbabwe,2012,23,1,4.35,Africa,Male,51,Urban,Medium,No,No
+Zimbabwe,2011,1220,2,0.16,Africa,Female,5,Urban,Medium,Yes,Yes
+Zimbabwe,2010,951,21,2.21,Africa,Male,9,Urban,Low,Yes,Yes
+Zimbabwe,2009,68153,2706,1.38,Africa,Male,47,Urban,Medium,No,No
+Zimbabwe,2008,60055,2928,4.88,Africa,Female,14,Rural,Low,No,Yes
+Zimbabwe,2007,65,4,6.15,Africa,Female,10,Rural,Medium,No,No
+Zimbabwe,2006,789,61,7.73,Africa,Male,3,Urban,Medium,Yes,No
+Zimbabwe,2005,516,26,5.04,Africa,Male,8,Rural,Low,No,No
+Zimbabwe,2004,119,9,7.56,Africa,Male,38,Urban,Low,Yes,No
+Zimbabwe,2003,1009,35,3.47,Africa,Male,33,Urban,Low,Yes,No
+Zimbabwe,2002,3125,192,6.14,Africa,Male,2,Rural,Low,Yes,No
+Zimbabwe,2001,650,14,2.15,Africa,Male,56,Urban,Low,Yes,No
+Zimbabwe,2000,1675,223,13.31,Africa,Female,29,Urban,Low,No,Yes
+Zimbabwe,1999,5637,385,6.83,Africa,Female,4,Urban,Low,Yes,No
+Zimbabwe,1998,995,44,4.42,Africa,Female,8,Rural,Low,No,No
+Zimbabwe,1993,5385,332,6.17,Africa,Male,6,Rural,High,Yes,No
+Zimbabwe,1992,2048,105,5.13,Africa,Female,8,Urban,Low,Yes,No
+Zimbabwe,1986,2,0,0,Africa,Male,14,Rural,Low,Yes,No
+Zimbabwe,1985,144,6,4.17,Africa,Male,0,Rural,Medium,Yes,No
+Zimbabwe,1976,144,9,6.25,Africa,Female,5,Rural,High,Yes,No
+Zimbabwe,1975,615,33,5.37,Africa,Male,8,Rural,Medium,No,No
+Zimbabwe,1974,37,0,0,Africa,Male,50,Urban,Low,No,No
+Zimbabwe,1973,1,0,0,Africa,Female,7,Urban,Medium,Yes,No
+Andorra,1993,0,0,0,Europe,Female,42,Rural,Medium,Yes,Yes
+Argentina,1992,0,15,0,Americas,Female,5,Rural,Medium,Yes,No
+Australia,1990,0,0,0,Western Pacific,Male,52,Urban,High,Yes,No
+Australia,1969,0,0,0,Western Pacific,Female,12,Urban,Medium,Yes,Yes
+Austria,1982,0,0,0,Europe,Female,6,Rural,High,No,No
+Belgium,1981,0,0,0,Europe,Male,4,Rural,Medium,Yes,No
+Bhutan,1958,0,0,0,South-East Asia,Female,34,Rural,Medium,Yes,No
+Canada,1988,0,0,0,Americas,Female,48,Rural,High,Yes,Yes
+Ethiopia,1979,0,0,0,Africa,Female,0,Rural,Medium,No,No
+Greece,1981,0,0,0,Europe,Male,9,Urban,Low,No,No
+Norway,1981,0,0,0,Europe,Male,0,Urban,Medium,Yes,No
+Poland,1991,0,0,0,Europe,Male,42,Urban,Low,Yes,No
+Portugal,1981,0,0,0,Europe,Male,12,Rural,Medium,Yes,No
+Romania,1979,0,8,0,Europe,Female,1,Rural,High,No,No
+Russian Federation,1986,0,0,0,Europe,Male,11,Rural,Low,No,No
+Russian Federation,1984,0,0,0,Europe,Male,45,Urban,Medium,No,Yes
+Russian Federation,1981,0,0,0,Europe,Female,24,Urban,Low,Yes,No
+Russian Federation,1980,0,0,0,Europe,Female,12,Rural,Low,No,Yes
+Russian Federation,1971,0,0,0,Europe,Female,31,Urban,Low,No,No
+Sweden,1984,0,0,0,Europe,Male,8,Urban,High,Yes,No
+Switzerland,1980,0,0,0,Europe,Male,50,Urban,Low,No,No
+Cambodia,2011,0,0,0,Western Pacific,Male,17,Urban,High,No,No

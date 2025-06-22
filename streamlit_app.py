@@ -47,19 +47,18 @@ col1, col2 = st.columns(2)
 
 # Map: Cholera cases by country (with fixed projection)
 with col1:
-    # Prepare total cases per country
-    all_countries = df["Country"].dropna().unique()
-    case_map = df.groupby("Country")["Number of reported cases of cholera"].sum().reset_index()
+    map_df = df.groupby("Country")["Number of reported cases of cholera"].sum().reset_index()
+    map_df["Number of reported cases of cholera"] = map_df["Number of reported cases of cholera"].clip(upper=1_000_000)
 
-    # Ensure all countries are present
-    case_map = case_map.set_index("Country").reindex(all_countries, fill_value=0).reset_index()
+    all_countries = df["Country"].dropna().unique()
+    case_map = map_df.set_index("Country").reindex(all_countries, fill_value=0).reset_index()
 
     map_fig = px.choropleth(
         case_map,
         locations="Country",
         locationmode="country names",
         color="Number of reported cases of cholera",
-        title="Cholera Cases by Country (Global View)",
+        title="Cholera Cases by Country (Clipped for Realism)",
         color_continuous_scale="OrRd",
         template="plotly_white"
     )
@@ -73,6 +72,7 @@ with col1:
         lataxis_range=[-60, 90]
     )
     st.plotly_chart(map_fig, use_container_width=True)
+
 
 with col2:
     bar_df = filtered_df.groupby("Sanitation_Level")["Number of reported deaths from cholera"].sum().reset_index()

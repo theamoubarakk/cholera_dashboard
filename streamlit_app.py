@@ -109,41 +109,6 @@ with right_col:
     clean_df = filtered_df.dropna(subset=numeric_cols)
 
 
-    # --- CHART 1: Population Pyramid of Cases by Region and Gender ---
-    st.subheader("Cholera Cases by Region and Gender")
-    
-    # Prepare data for the pyramid
-    pyramid_data = clean_df.groupby(['WHO Region', 'Gender'])['Number of reported cases of cholera'].sum().reset_index()
-    
-    # Key step for pyramid: make one gender's values negative
-    pyramid_data['Cases'] = pyramid_data.apply(
-        lambda row: -row['Number of reported cases of cholera'] if row['Gender'] == 'Male' else row['Number of reported cases of cholera'],
-        axis=1
-    )
-    
-    fig_pyramid = px.bar(pyramid_data, 
-                         y='WHO Region', 
-                         x='Cases', 
-                         color='Gender',
-                         orientation='h',
-                         barmode='relative',
-                         color_discrete_map={'Female': '#E6443E', 'Male': '#FFA07A'},
-                         labels={'Cases': 'Number of Reported Cases'})
-                         
-    # Customize layout for pyramid look
-    fig_pyramid.update_layout(
-        xaxis=dict(
-            tickformat=',.0f',
-            tickvals=[-5000000, -2500000, 0, 2500000, 5000000],
-            ticktext=['5M', '2.5M', '0', '2.5M', '5M']
-        ),
-        yaxis_autorange='reversed',
-        height=220, 
-        margin=dict(l=0, r=10, t=10, b=0),
-        legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1)
-    )
-    st.plotly_chart(fig_pyramid, use_container_width=True)
-
     # --- CHART 3: Heatmap of Fatality Rate by Region and Sanitation ---
     st.subheader("Fatality Rate: Region vs. Sanitation")
     
@@ -190,3 +155,41 @@ with right_col:
     
     fig_factors.update_layout(height=180, margin=dict(l=0, r=10, t=10, b=0), coloraxis_showscale=False)
     st.plotly_chart(fig_factors, use_container_width=True)
+
+
+
+
+ # --- CHART 1: Population Pyramid of Cases by Region and Gender ---
+    st.subheader("Cholera Cases by Region and Gender")
+    
+    # Prepare data for the pyramid
+    pyramid_data = clean_df.groupby(['WHO Region', 'Gender'])['Number of reported cases of cholera'].sum().reset_index()
+    
+    # Key step for pyramid: make one gender's values negative
+    pyramid_data['Cases'] = pyramid_data.apply(
+        lambda row: -row['Number of reported cases of cholera'] if row['Gender'] == 'Male' else row['Number of reported cases of cholera'],
+        axis=1
+    )
+    
+    fig_pyramid = px.bar(pyramid_data, 
+                         y='WHO Region', 
+                         x='Cases', 
+                         color='Gender',
+                         orientation='h',
+                         barmode='relative',
+                         color_discrete_map={'Female': '#E6443E', 'Male': '#FFA07A'},
+                         labels={'Cases': 'Number of Reported Cases'})
+                         
+    # Customize layout for pyramid look
+    fig_pyramid.update_layout(
+        xaxis=dict(
+            tickformat=',.0f',
+            tickvals=[-5000000, -2500000, 0, 2500000, 5000000],
+            ticktext=['5M', '2.5M', '0', '2.5M', '5M']
+        ),
+        yaxis_autorange='reversed',
+        height=220, 
+        margin=dict(l=0, r=10, t=10, b=0),
+        legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1)
+    )
+    st.plotly_chart(fig_pyramid, use_container_width=True)

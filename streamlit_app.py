@@ -95,7 +95,7 @@ with left_col:
     trend = filtered_df.groupby("Year")["Number of reported cases of cholera"].sum().reset_index()
     fig_trend = px.line(trend, x="Year", y="Number of reported cases of cholera", markers=True)
     # Shorter trend line with ZERO TOP MARGIN to sit flush under its title
-    fig_trend.update_layout(height=220, margin=dict(l=0, r=0, t=0, b=30))
+    fig_trend.update_layout(height=180, margin=dict(l=0, r=0, t=0, b=30))
     st.plotly_chart(fig_trend, use_container_width=True)
 
 

@@ -144,8 +144,29 @@ with right_col:
     )
     st.plotly_chart(fig_pyramid, use_container_width=True)
 
+    # --- CHART 3: Heatmap of Fatality Rate by Region and Sanitation ---
+    st.subheader("Fatality Rate: Region vs. Sanitation")
+    
+    # Create a pivot table to structure the data for the heatmap
+    heatmap_data = clean_df.pivot_table(
+        values='Cholera case fatality rate',
+        index='WHO Region',
+        columns='Sanitation_Level',
+        aggfunc='mean'
+    ).reindex(columns=['Low', 'Medium', 'High']) # Ensure logical column order
 
-    # --- CHART 2: Factor Importance (Average Fatality Rate) ---
+    fig_heatmap = px.imshow(heatmap_data,
+                            labels=dict(x="Sanitation Level", y="WHO Region", color="Avg. Fatality Rate"),
+                            color_continuous_scale='Reds')
+
+    fig_heatmap.update_layout(height=180, margin=dict(l=0, r=10, t=10, b=0))
+    st.plotly_chart(fig_heatmap, use_container_width=True)
+
+
+
+
+
+  # --- CHART 2: Factor Importance (Average Fatality Rate) ---
     st.subheader("Factors Affecting Fatality Rate")
     
     factors = ['WHO Region', 'Urban_or_Rural', 'Sanitation_Level', 'Access_to_Clean_Water', 'Vaccinated_Against_Cholera']
@@ -172,22 +193,3 @@ with right_col:
     
     fig_factors.update_layout(height=200, margin=dict(l=0, r=10, t=10, b=0), coloraxis_showscale=False)
     st.plotly_chart(fig_factors, use_container_width=True)
-
-
-    # --- CHART 3: Heatmap of Fatality Rate by Region and Sanitation ---
-    st.subheader("Fatality Rate: Region vs. Sanitation")
-    
-    # Create a pivot table to structure the data for the heatmap
-    heatmap_data = clean_df.pivot_table(
-        values='Cholera case fatality rate',
-        index='WHO Region',
-        columns='Sanitation_Level',
-        aggfunc='mean'
-    ).reindex(columns=['Low', 'Medium', 'High']) # Ensure logical column order
-
-    fig_heatmap = px.imshow(heatmap_data,
-                            labels=dict(x="Sanitation Level", y="WHO Region", color="Avg. Fatality Rate"),
-                            color_continuous_scale='Reds')
-
-    fig_heatmap.update_layout(height=180, margin=dict(l=0, r=10, t=10, b=0))
-    st.plotly_chart(fig_heatmap, use_container_width=True)

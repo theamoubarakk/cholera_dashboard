@@ -3,24 +3,37 @@ import pandas as pd
 import plotly.express as px
 import numpy as np
 
-# --- Page Configuration and Custom CSS ---
+# --- Page Configuration and AGGRESSIVE CSS Injection ---
 st.set_page_config(layout="wide")
 
-# VITAL: Inject CSS to reduce top padding of the main page and titles
+# This CSS is the key to removing all whitespace and controlling font sizes
 st.markdown("""
     <style>
+        /* Reduce top padding of the whole page */
         .block-container {
-            padding-top: 1rem; /* Reduce top padding */
-        }
-        .st-emotion-cache-18ni7ap { /* Specific selector for main container */
             padding-top: 1rem;
+            padding-bottom: 0rem;
+            padding-left: 5rem; /* Adjust if sidebar text is hidden */
+            padding-right: 5rem;
         }
+        /* Reduce space above the main title */
         h1 {
-            padding-top: 0rem; /* Reduce padding above the main title */
+            padding-top: 0rem !important;
+            margin-top: 0rem !important;
         }
+        /* Make the main title smaller */
+        h1 {
+            font-size: 2.5rem !important;
+        }
+        /* Make the plot titles (subheaders) smaller */
         h3 {
-            padding-top: 0rem; /* Reduce padding above subheaders */
-            padding-bottom: 0rem; /* Reduce padding below subheaders */
+            font-size: 1.25rem !important;
+            margin-top: 0.5rem !important;
+            margin-bottom: 0rem !important;
+        }
+        /* Reduce the gap between elements in columns */
+        .st-emotion-cache-z5fcl4 {
+             gap: 0.5rem !important;
         }
     </style>
     """, unsafe_allow_html=True)
@@ -34,7 +47,6 @@ def load_data(path):
 df = load_data("enriched_data_logical_cleaned.csv")
 
 # --- Sidebar Filters ---
-# The sidebar code remains unchanged
 with st.sidebar:
     st.title("Filters")
     countries = st.multiselect("Select Countries", sorted(df["Country"].dropna().unique()))
@@ -59,38 +71,35 @@ if water_access != "Both":
 if vaccinated != "Both":
     filtered_df = filtered_df[filtered_df["Vaccinated_Against_Cholera"] == vaccinated]
 
-# --- Main Page Title (Now closer to the top) ---
+# --- Main Page Title (No Sub-text) ---
 st.title("\U0001F30E Global Cholera Tracker")
-st.markdown("Use the filters on the left to explore reported cholera cases across countries and time.")
+# The requested line of text is now removed.
 
 # --- Layout Columns ---
-left_col, right_col = st.columns([2, 3])
+left_col, right_col = st.columns([2, 3]) # Give more space to the right column
 
-# --- Left Column ---
+# --- Left Column (Smaller Plots) ---
 with left_col:
     # Cases by Gender and Vaccination Status
     st.subheader("Cases by Gender and Vaccination Status")
     stacked_bar = filtered_df.groupby(["Gender", "Vaccinated_Against_Cholera"])["Number of reported cases of cholera"].sum().reset_index()
-    # MODIFIED: Removed the title from inside the plot
     fig_bar = px.bar(stacked_bar, x="Gender", y="Number of reported cases of cholera", color="Vaccinated_Against_Cholera",
                      barmode="stack")
-    # MODIFIED: Reduced margins to remove whitespace
-    fig_bar.update_layout(height=280, margin=dict(l=0, r=10, t=10, b=0))
+    # MODIFIED: Smaller height and tight margins
+    fig_bar.update_layout(height=260, margin=dict(l=0, r=10, t=10, b=0))
     st.plotly_chart(fig_bar, use_container_width=True)
 
     # Age Distribution by Sanitation Level
     st.subheader("Age Distribution by Sanitation Level")
     box_data = filtered_df[["Sanitation_Level", "Age"]].dropna()
-    # MODIFIED: Removed the title from inside the plot
     fig_box = px.box(box_data, x="Sanitation_Level", y="Age", color="Sanitation_Level")
-    # MODIFIED: Reduced margins and removed legend
-    fig_box.update_layout(height=280, showlegend=False, margin=dict(l=0, r=10, t=10, b=0))
+    # MODIFIED: Smaller height and tight margins
+    fig_box.update_layout(height=260, showlegend=False, margin=dict(l=0, r=10, t=10, b=0))
     st.plotly_chart(fig_box, use_container_width=True)
 
-# --- Right Column ---
+# --- Right Column (Bigger Map, Smaller Trend) ---
 with right_col:
     # Choropleth Map
-    # MODIFIED: Placed the title outside the plot using st.subheader
     st.subheader("Reported Cholera Cases (Log Scale)")
     map_df = filtered_df.groupby("Country")["Number of reported cases of cholera"].sum().reset_index()
     if not map_df.empty and map_df["Number of reported cases of cholera"].sum() > 0:
@@ -98,19 +107,16 @@ with right_col:
     else:
         map_df["Log_Cases"] = 0
 
-    # MODIFIED: Removed the title from inside the plot
     fig_map = px.choropleth(map_df, locations="Country", locationmode="country names",
                             color="Log_Cases", color_continuous_scale="Reds")
-    # MODIFIED: Set margins to 0 to bring the map right up to the title
+    # MODIFIED: Much larger height and zero margins to fill space
     fig_map.update_layout(height=400, margin=dict(l=0, r=0, t=0, b=0))
     st.plotly_chart(fig_map, use_container_width=True)
 
     # Line Chart: Cholera Over Time
-    # MODIFIED: Placed the title outside the plot
     st.subheader("Cholera Cases Over Time")
     trend = filtered_df.groupby("Year")["Number of reported cases of cholera"].sum().reset_index()
-    # MODIFIED: Removed the title from inside the plot
     fig_trend = px.line(trend, x="Year", y="Number of reported cases of cholera", markers=True)
-    # MODIFIED: Set margins to push the chart up
-    fig_trend.update_layout(height=200, margin=dict(l=0, r=0, t=10, b=0))
+    # MODIFIED: Much smaller height to fit under the map
+    fig_trend.update_layout(height=180, margin=dict(l=0, r=0, t=10, b=20))
     st.plotly_chart(fig_trend, use_container_width=True)

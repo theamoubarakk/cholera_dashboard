@@ -109,19 +109,60 @@ with left_col:
 
 
 
-# --- Right Column (Bar and Box Plots) ---
+# --- Right Column (NEW, INTERESTING GRAPHS) ---
 with right_col:
-    # Cases by Gender and Vaccination Status
-    st.subheader("Cases by Gender and Vaccination Status")
-    stacked_bar = filtered_df.groupby(["Gender", "Vaccinated_Against_Cholera"])["Number of reported cases of cholera"].sum().reset_index()
-    fig_bar = px.bar(stacked_bar, x="Gender", y="Number of reported cases of cholera", color="Vaccinated_Against_Cholera",
-                     barmode="stack")
-    fig_bar.update_layout(height=190, margin=dict(l=0, r=10, t=0, b=0))
-    st.plotly_chart(fig_bar, use_container_width=True)
 
-    # Age Distribution by Sanitation Level
-    st.subheader("Age Distribution by Sanitation Level")
-    box_data = filtered_df[["Sanitation_Level", "Age"]].dropna()
-    fig_box = px.box(box_data, x="Sanitation_Level", y="Age", color="Sanitation_Level")
-    fig_box.update_layout(height=190, showlegend=True, margin=dict(l=0, r=10, t=0, b=0))
-    st.plotly_chart(fig_box, use_container_width=True)
+    # --- GRAPH 1: Cholera Cases by WHO Region Over Time ---
+    st.subheader("Regional Contribution to Cholera Cases")
+    
+    # Prepare data: Group by Year and WHO Region, summing the cases
+    regional_trend = filtered_df.groupby(['Year', 'WHO Region'])['Number of reported cases of cholera'].sum().reset_index()
+    
+    fig_regional = px.area(regional_trend, 
+                           x="Year", 
+                           y="Number of reported cases of cholera", 
+                           color="WHO Region",
+                           title="Cases by WHO Region Over Time")
+                           
+    fig_regional.update_layout(height=280, margin=dict(l=0, r=10, t=30, b=0))
+    st.plotly_chart(fig_regional, use_container_width=True)
+
+
+    # --- GRAPH 2: Fatality Rate by Sanitation and Water Access ---
+    st.subheader("How Environment Affects Fatality Rate")
+    
+    # Clean the fatality rate data (remove potential infinite values)
+    filtered_df['Cholera case fatality rate'] = pd.to_numeric(filtered_df['Cholera case fatality rate'], errors='coerce')
+    filtered_df.replace([np.inf, -np.inf], np.nan, inplace=True)
+
+    # Prepare data: Group by Sanitation and Water Access, calculating the *mean* fatality rate
+    fatality_data = filtered_df.groupby(['Sanitation_Level', 'Access_to_Clean_Water'])['Cholera case fatality rate'].mean().reset_index().dropna()
+    
+    fig_fatality = px.bar(fatality_data, 
+                          x="Sanitation_Level", 
+                          y="Cholera case fatality rate", 
+                          color="Sanitation_Level",
+                          facet_col="Access_to_Clean_Water", # Creates side-by-side charts
+                          title="Avg. Fatality Rate by Sanitation & Water Access",
+                          category_orders={"Sanitation_Level": ["Low", "Medium", "High"]}) # Ensure correct order
+
+    fig_fatality.update_layout(height=320, margin=dict(l=0, r=10, t=30, b=0))
+    st.plotly_chart(fig_fatality, use_container_width=True)
+
+
+    # --- GRAPH 3 (Optional third graph): Age Distribution in Urban vs. Rural areas ---
+    st.subheader("Age Distribution by Location")
+    
+    # # Prepare data: simply select the needed columns and drop missing values
+    age_location_data = filtered_df[['Urban_or_Rural', 'Age']].dropna()
+    
+    fig_violin = px.violin(age_location_data, 
+                            x='Urban_or_Rural', 
+                            y='Age', 
+                            color='Urban_or_Rural',
+                            box=True, # Show a box plot inside the violin
+                            points=False, # Hide individual data points for a cleaner look
+                            title="Age Distribution in Urban vs. Rural Settings")
+                         
+    fig_violin.update_layout(height=280, margin=dict(l=0, r=10, t=30, b=0))
+    st.plotly_chart(fig_violin, use_container_width=True)

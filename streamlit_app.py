@@ -133,5 +133,5 @@ with right_col:
         xaxis=dict(tickformat=',.0f', tickvals=[-50000000, -25000000, 0, 25000000, 50000000],
                    ticktext=['50M', '25M', '0', '25M', '50M']),
         yaxis_autorange='reversed', height=170, margin=dict(l=0, r=10, t=0, b=0),
-        legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1))
+        legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=0.90))
     st.plotly_chart(fig_pyramid, use_container_width=True)

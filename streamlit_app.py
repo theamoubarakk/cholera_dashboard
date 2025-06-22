@@ -48,7 +48,11 @@ col1, col2 = st.columns(2)
 # Map: Cholera cases by country (with fixed projection)
 with col1:
     map_df = df.groupby("Country")["Number of reported cases of cholera"].sum().reset_index()
-    map_df["Number of reported cases of cholera"] = map_df["Number of reported cases of cholera"].clip(upper=1_000_000)
+
+    # Convert to numeric and clip unrealistic values
+    map_df["Number of reported cases of cholera"] = pd.to_numeric(
+        map_df["Number of reported cases of cholera"], errors="coerce"
+    ).fillna(0).clip(upper=1_000_000)
 
     all_countries = df["Country"].dropna().unique()
     case_map = map_df.set_index("Country").reindex(all_countries, fill_value=0).reset_index()
@@ -58,7 +62,7 @@ with col1:
         locations="Country",
         locationmode="country names",
         color="Number of reported cases of cholera",
-        title="Cholera Cases by Country (Clipped for Realism)",
+        title="Cholera Cases by Country (Cleaned & Clipped)",
         color_continuous_scale="OrRd",
         template="plotly_white"
     )

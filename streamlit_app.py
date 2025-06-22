@@ -3,67 +3,65 @@ import pandas as pd
 import plotly.express as px
 import numpy as np
 
-# Load data
+# Load CSV
 df = pd.read_csv("enriched_data_logical.csv")
 
-# Sidebar filters
-st.sidebar.title("Filters")
-countries = st.sidebar.multiselect("Select Countries", options=df["Country"].unique())
-year_range = st.sidebar.slider("Select Year Range", min_value=int(df['Year'].min()), max_value=int(df['Year'].max()), value=(2000, 2016))
-genders = st.sidebar.multiselect("Select Gender", options=df["Gender"].dropna().unique(), default=df["Gender"].dropna().unique())
-area = st.sidebar.radio("Urban or Rural", options=['Both', 'Urban', 'Rural'], index=0)
-water = st.sidebar.selectbox("Access to Clean Water", options=['Both', 'Yes', 'No'])
-vaccine = st.sidebar.selectbox("Vaccinated Against Cholera", options=['Both', 'Yes', 'No'])
+# Fix missing values and column names
+df["Number of reported cases of cholera"] = pd.to_numeric(df["Number of reported cases of cholera"], errors="coerce").fillna(0)
+df["Log_Cases"] = df["Number of reported cases of cholera"].apply(lambda x: np.log10(x) if x > 0 else 0)
 
-# Filter data
-filtered_df = df[
-    (df["Year"] >= year_range[0]) & (df["Year"] <= year_range[1]) &
-    (df["Gender"].isin(genders))
-]
+# Sidebar filters
+st.sidebar.header("Filters")
+countries = st.sidebar.multiselect("Select Countries", options=df["Country"].unique())
+years = st.sidebar.slider("Select Year Range", int(df["Year"].min()), int(df["Year"].max()), (2000, 2016))
+genders = st.sidebar.multiselect("Select Gender", options=df["Gender"].dropna().unique(), default=list(df["Gender"].dropna().unique()))
+urban_rural = st.sidebar.radio("Urban or Rural", ["Both", "Urban", "Rural"])
+clean_water = st.sidebar.selectbox("Access to Clean Water", ["Both", "Yes", "No"])
+vaccinated = st.sidebar.selectbox("Vaccinated Against Cholera", ["Both", "Yes", "No"])
+
+# Filtering
+filtered_df = df.copy()
+filtered_df = filtered_df[filtered_df["Year"].between(years[0], years[1])]
 if countries:
     filtered_df = filtered_df[filtered_df["Country"].isin(countries)]
-if area != 'Both':
-    filtered_df = filtered_df[filtered_df["Urban_or_Rural"] == area]
-if water != 'Both':
-    filtered_df = filtered_df[filtered_df["Access_to_Clean_Water"] == water]
-if vaccine != 'Both':
-    filtered_df = filtered_df[filtered_df["Vaccinated_Against_Cholera"] == vaccine]
+if genders:
+    filtered_df = filtered_df[filtered_df["Gender"].isin(genders)]
+if urban_rural != "Both":
+    filtered_df = filtered_df[filtered_df["Urban_or_Rural"] == urban_rural]
+if clean_water != "Both":
+    filtered_df = filtered_df[filtered_df["Access_to_Clean_Water"] == clean_water]
+if vaccinated != "Both":
+    filtered_df = filtered_df[filtered_df["Vaccinated_Against_Cholera"] == vaccinated]
 
-# Grid layout
-col1, col2 = st.columns([1, 1])
+# Title
+st.markdown("<h1 style='text-align:center;'>🌍 Global Cholera Tracker</h1>", unsafe_allow_html=True)
+st.markdown("Use the filters on the left to explore reported cholera cases across countries and time.")
 
-# Map
-with col2:
+# Layout: Map top-right, Trend below it, others on left
+col_left, col_right = st.columns([1, 1.2])
+
+with col_right:
     st.markdown("### Reported Cholera Cases (Log Scale)")
-    df_map = filtered_df.copy()
-    df_map["Log_Cases"] = df_map["Number of reported cases of cholera"].apply(lambda x: 0 if x <= 0 else px.utils.math.log10(x))
-    fig_map = px.choropleth(df_map,
-        locations="Country",
-        locationmode="country names",
-        color="Log_Cases",
-        color_continuous_scale="Reds",
-        title=""
-    )
-    fig_map.update_layout(height=280, margin=dict(l=0, r=0, t=0, b=0))
+    fig_map = px.choropleth(filtered_df, locations="Country", locationmode="country names",
+                            color="Log_Cases", hover_name="Country",
+                            color_continuous_scale="Reds")
+    fig_map.update_layout(height=320, margin=dict(t=0, b=0))
     st.plotly_chart(fig_map, use_container_width=True)
 
-# Line chart
-with col2:
     st.markdown("### Cholera Cases Over Time")
-    line_data = filtered_df.groupby("Year")["Number of reported cases of cholera"].sum().reset_index()
-    fig_line = px.line(line_data, x="Year", y="Number of reported cases of cholera", markers=True)
-    fig_line.update_layout(height=200, margin=dict(l=0, r=0, t=0, b=0))
-    st.plotly_chart(fig_line, use_container_width=True)
+    trend_df = filtered_df.groupby("Year")["Number of reported cases of cholera"].sum().reset_index()
+    fig_trend = px.line(trend_df, x="Year", y="Number of reported cases of cholera", markers=True)
+    fig_trend.update_layout(height=220, margin=dict(t=10, b=10))
+    st.plotly_chart(fig_trend, use_container_width=True)
 
-# Left column with 3 smaller graphs
-with col1:
+with col_left:
     st.markdown("### Cases by Gender and Vaccination Status")
-    stacked = filtered_df.groupby(["Gender", "Vaccinated_Against_Cholera"])["Number of reported cases of cholera"].sum().reset_index()
-    fig_stacked = px.bar(stacked, x="Gender", y="Number of reported cases of cholera", color="Vaccinated_Against_Cholera", barmode="stack")
-    fig_stacked.update_layout(height=200, margin=dict(l=0, r=0, t=0, b=0))
-    st.plotly_chart(fig_stacked, use_container_width=True)
+    bar_df = filtered_df.groupby(["Gender", "Vaccinated_Against_Cholera"])["Number of reported cases of cholera"].sum().reset_index()
+    fig_bar = px.bar(bar_df, x="Gender", y="Number of reported cases of cholera", color="Vaccinated_Against_Cholera",
+                     barmode="stack", height=250)
+    st.plotly_chart(fig_bar, use_container_width=True)
 
     st.markdown("### Age Distribution by Sanitation Level")
     fig_box = px.box(filtered_df, x="Sanitation_Level", y="Age", color="Sanitation_Level")
-    fig_box.update_layout(height=200, margin=dict(l=0, r=0, t=0, b=0))
+    fig_box.update_layout(height=250)
     st.plotly_chart(fig_box, use_container_width=True)

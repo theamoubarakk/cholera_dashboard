@@ -6,7 +6,7 @@ import plotly.express as px
 # ----------------------------
 # ✅ Load and clean the data
 # ----------------------------
-df = pd.read_csv("enriched_data_logical.csv")
+df = pd.read_csv("enriched_data_cleaned_logical.csv")
 df["Country"] = df["Country"].str.strip()
 df["Number of reported cases of cholera"] = pd.to_numeric(df["Number of reported cases of cholera"], errors="coerce").fillna(0)
 

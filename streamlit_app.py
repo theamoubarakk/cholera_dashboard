@@ -47,27 +47,32 @@ col1, col2 = st.columns(2)
 
 # ✅ Choropleth map using GeoPandas + Matplotlib
 with col1:
+    # Prepare data
     map_df = filtered_df.groupby("Country")["Number of reported cases of cholera"].sum().reset_index()
-    map_df["Number of reported cases of cholera"] = pd.to_numeric(map_df["Number of reported cases of cholera"], errors="coerce").fillna(0).clip(upper=1_000_000)
+    map_df["Number of reported cases of cholera"] = pd.to_numeric(
+        map_df["Number of reported cases of cholera"], errors="coerce"
+    ).fillna(0).clip(upper=1_000_000)
 
-    # Load country boundaries from public GeoJSON
-    world = gpd.read_file("https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_110m_admin_0_countries.geojson")
-    merged = world.merge(map_df, how="left", left_on="NAME", right_on="Country")
-    merged["Number of reported cases of cholera"] = merged["Number of reported cases of cholera"].fillna(0)
-
-    fig, ax = plt.subplots(1, 1, figsize=(16, 8))
-    merged.plot(
-        column="Number of reported cases of cholera",
-        cmap="Reds",
-        linewidth=0.8,
-        ax=ax,
-        edgecolor="0.8",
-        legend=True,
-        legend_kwds={"label": "Cholera Cases", "orientation": "vertical"}
+    # Plotly choropleth
+    map_fig = px.choropleth(
+        map_df,
+        locations="Country",
+        locationmode="country names",
+        color="Number of reported cases of cholera",
+        title="Interactive Cholera Cases Map",
+        color_continuous_scale="Reds",
+        template="plotly_white",
+        hover_name="Country"
     )
-    ax.set_title("Cholera Burden by Country", fontsize=16)
-    ax.axis("off")
-    st.pyplot(fig)
+    map_fig.update_geos(
+        projection_type="natural earth",
+        showcountries=True,
+        showcoastlines=True,
+        showland=True,
+        fitbounds="locations"
+    )
+    st.plotly_chart(map_fig, use_container_width=True)
+
 
 # Bar chart: deaths by sanitation level
 with col2:

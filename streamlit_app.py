@@ -28,7 +28,6 @@ st.markdown("""
 
 # Title
 st.title("🌍 Global Cholera Tracker")
-st.markdown("Use the filters on the left to explore reported cholera cases across countries and time.")
 
 # MAIN LAYOUT
 col_left, col_right = st.columns([1.1, 1.9])  # More space for the right side (Map + Trend)

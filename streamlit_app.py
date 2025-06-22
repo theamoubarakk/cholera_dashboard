@@ -91,7 +91,7 @@ with left_col:
                             title="Reported Cholera Cases (Log Scale)")
     
     # 2. MODIFIED: Height and margins now match the Malaria map exactly
-    fig_map.update_layout(height=400, margin=dict(t=30, b=10))
+    fig_map.update_layout(height=400, margin=dict(t=30, b=10 ))
     st.plotly_chart(fig_map, use_container_width=True)
 
 
@@ -103,7 +103,7 @@ with left_col:
                         title="Cholera Cases Over Time")
 
     # 2. MODIFIED: Height and margins now match the Malaria trend line exactly
-    fig_trend.update_layout(height=200, margin=dict(t=30, b=10))
+    fig_trend.update_layout(height=200, margin=dict(t=30, b=10, l=80 ))
     st.plotly_chart(fig_trend, use_container_width=True)
 
 

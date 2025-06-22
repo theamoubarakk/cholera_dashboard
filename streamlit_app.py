@@ -2,12 +2,11 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 import numpy as np
-import plotly.graph_objects as go  # MOVED TO THE TOP OF THE SCRIPT
+import plotly.graph_objects as go
 
-# --- Page Configuration and CSS for a Hyper-Compact Layout ---
+# --- Page Configuration and CSS ---
 st.set_page_config(layout="wide")
 
-# This CSS is the key to removing all extra space.
 st.markdown("""
     <style>
         .block-container {
@@ -17,11 +16,10 @@ st.markdown("""
             padding-top: 0rem !important; margin-top: 0rem !important; font-size: 2.5rem !important;
         }
         h3 {
-            font-size: 1.2rem !important; margin-top: 1rem !important; margin-bottom: 0rem !important;
+            font-size: 1.15rem !important; margin-top: 1rem !important; margin-bottom: 0.2rem !important; font-weight: 500;
         }
-        /* This targets the container for elements in a column and removes the gap */
         div[data-testid="stVerticalBlock"] {
-            gap: 0.5rem; /* A small gap is better than zero for readability */
+            gap: 0.5rem;
         }
     </style>
     """, unsafe_allow_html=True)
@@ -32,17 +30,15 @@ def load_data(path):
     df = pd.read_csv(path)
     return df
 
-df = load_data("enriched_data_logical_cleaned.csv")
+df = pd.read_csv("enriched_data_logical_cleaned.csv")
 
 # --- Sidebar Filters ---
 with st.sidebar:
     st.title("Filters")
     countries = st.multiselect("Select Countries", sorted(df["Country"].dropna().unique()))
-    year_range = st.slider("Select Year Range", int(df["Year"].min()), int(df["Year"].max()), (1994, 2016)) # Adjusted to match screenshot
-    genders = st.multiselect("Select Gender", df["Gender"].dropna().unique(), default=list(df["Gender"].dropna().unique()))
+    year_range = st.slider("Select Year Range", int(df["Year"].min()), int(df["Year"].max()), (1986, 2016))
+    genders = st.multiselect("Select Gender", df["Gender"].dropna().unique(), default=['Male', 'Female'])
     location = st.radio("Urban or Rural", ["Both", "Urban", "Rural"], index=0)
-    
-    # MODIFIED: Changed from st.selectbox to st.radio
     water_access = st.radio("Access to Clean Water", ["Both", "Yes", "No"], index=0)
     vaccinated = st.radio("Vaccinated Against Cholera", ["Both", "Yes", "No"], index=0)
 
@@ -62,18 +58,14 @@ if vaccinated != "Both":
     filtered_df = filtered_df[filtered_df["Vaccinated_Against_Cholera"] == vaccinated]
 
 # --- Main Page Title ---
-st.title("\U0001F30E Cholera Dashboard - Global Trends and Risk Factors")
+st.title("Cholera Dashboard - Global Trends and Risk Factors")
 
 # --- Layout Columns ---
 left_col, right_col = st.columns([3, 2])
 
-# --- UNIFIED LAYOUT STYLE ---
-# Both columns now use external subheaders and tight margins for a consistent look.
-
 # --- Left Column (Map and Trend Line) ---
 with left_col:
-    # --- Choropleth Map (Bigger) ---
-    st.subheader("Reported Cholera Cases (Log Scale)") # External title
+    st.subheader("Reported Cases by Country (Log Scale)")
     map_df = filtered_df.groupby("Country")["Number of reported cases of cholera"].sum().reset_index()
     if not map_df.empty and map_df["Number of reported cases of cholera"].sum() > 0:
         map_df["Log_Cases"] = np.log10(map_df["Number of reported cases of cholera"] + 1)
@@ -82,108 +74,64 @@ with left_col:
 
     fig_map = px.choropleth(map_df, locations="Country", locationmode="country names",
                             color="Log_Cases", color_continuous_scale="Reds")
-    # Taller map with ZERO TOP MARGIN
-    fig_map.update_layout(height=400, margin=dict(l=0, r=0, t=0, b=0))
+    fig_map.update_layout(height=380, margin=dict(l=0, r=0, t=0, b=0))
     st.plotly_chart(fig_map, use_container_width=True)
 
-
-    # --- Line Chart: Cholera Over Time (Smaller) ---
-    st.subheader("Cholera Cases Over Time") # External title
+    st.subheader("Cholera Cases Over Time")
     trend = filtered_df.groupby("Year")["Number of reported cases of cholera"].sum().reset_index()
     fig_trend = px.line(trend, x="Year", y="Number of reported cases of cholera", markers=True,
-                        color_discrete_sequence=['red'])
-
-    # Shorter trend line with ZERO TOP MARGIN
-    fig_trend.update_layout(height=155, margin=dict(l=0, r=0, t=0, b=30))
+                        color_discrete_sequence=['#B22222'])
+    fig_trend.update_layout(height=220, margin=dict(l=0, r=0, t=0, b=30))
     st.plotly_chart(fig_trend, use_container_width=True)
 
-
-# --- Right Column (ADVANCED VISUALIZATIONS) ---
+# --- Right Column (Advanced Visualizations) ---
 with right_col:
-    
     # --- Data Cleaning (Important First Step) ---
-    # Convert numeric columns, coercing errors to NaN (Not a Number)
     numeric_cols = ['Number of reported cases of cholera', 'Cholera case fatality rate']
     for col in numeric_cols:
         filtered_df[col] = pd.to_numeric(filtered_df[col], errors='coerce')
-    
-    # Remove rows where these critical values are missing
     clean_df = filtered_df.dropna(subset=numeric_cols)
 
- # --- CHART 2 (CORRECTED): Factors Affecting Fatality Rate ---
-st.subheader("What Makes an Outbreak More Deadly?")
+    # --- CHART 1 (was CHART 2): Factors Affecting Fatality Rate ---
+    st.subheader("What Makes an Outbreak More Deadly?")
+    factors = ['WHO Region', 'Urban_or_Rural', 'Sanitation_Level', 'Access_to_Clean_Water', 'Vaccinated_Against_Cholera']
+    factor_fatality_list = []
+    for factor in factors:
+        grouped = clean_df.groupby(factor)['Cholera case fatality rate'].mean().reset_index()
+        clean_factor_name = factor.replace('_', ' ').replace('Level', '').replace('Against Cholera', '').strip()
+        if factor == 'WHO Region':
+            grouped['Display_Label'] = grouped[factor]
+        else:
+            grouped['Display_Label'] = clean_factor_name + ': ' + grouped[factor]
+        factor_fatality_list.append(grouped[['Display_Label', 'Cholera case fatality rate']])
+    all_factors_df = pd.concat(factor_fatality_list).dropna().sort_values('Cholera case fatality rate', ascending=True)
+    fig_factors = px.bar(all_factors_df, x='Cholera case fatality rate', y='Display_Label',
+                         color='Cholera case fatality rate', color_continuous_scale='Reds',
+                         orientation='h', labels={'Display_Label': '', 'Cholera case fatality rate': 'Avg. Fatality Rate (%)'})
+    fig_factors.update_layout(height=200, margin=dict(l=10, r=10, t=10, b=0), coloraxis_showscale=False, yaxis={'title': ''})
+    st.plotly_chart(fig_factors, use_container_width=True)
 
-# List of categorical factors to analyze
-factors = ['WHO Region', 'Urban_or_Rural', 'Sanitation_Level', 'Access_to_Clean_Water', 'Vaccinated_Against_Cholera']
-factor_fatality_list = []
+    # --- CHART 2: Heatmap ---
+    st.subheader("Where Sanitation Matters Most")
+    heatmap_data = clean_df.pivot_table(values='Cholera case fatality rate', index='WHO Region',
+                                        columns='Sanitation_Level', aggfunc='mean').reindex(columns=['Low', 'Medium', 'High'])
+    fig_heatmap = px.imshow(heatmap_data, labels=dict(x="Sanitation Level", y="", color="Avg. Fatality Rate"),
+                            color_continuous_scale='Reds')
+    fig_heatmap.update_layout(height=180, margin=dict(l=0, r=10, t=0, b=0))
+    st.plotly_chart(fig_heatmap, use_container_width=True)
 
-# --- NEW, CORRECTED LOGIC ---
-for factor in factors:
-    # Group by the specific factor and calculate the mean fatality rate
-    grouped = clean_df.groupby(factor)['Cholera case fatality rate'].mean().reset_index()
-    
-    # Create a new, descriptive label column.
-    # Example: For the 'Sanitation_Level' factor, it will create labels like "Sanitation: Low"
-    clean_factor_name = factor.replace('_', ' ').replace('Level', '').replace('Against Cholera', '').strip()
-    
-    # For WHO Region, we don't need to add a prefix. For others, we do.
-    if factor == 'WHO Region':
-        grouped['Display_Label'] = grouped[factor]
-    else:
-        grouped['Display_Label'] = clean_factor_name + ': ' + grouped[factor]
-    
-    factor_fatality_list.append(grouped[['Display_Label', 'Cholera case fatality rate']])
-
-# Combine all data into a single DataFrame
-all_factors_df = pd.concat(factor_fatality_list).dropna()
-
-# Sort by fatality rate to rank the factors from most to least deadly
-all_factors_df = all_factors_df.sort_values('Cholera case fatality rate', ascending=True)
-
-# Create the bar chart using the new, clear display labels
-fig_factors = px.bar(all_factors_df,
-                     x='Cholera case fatality rate',
-                     y='Display_Label',
-                     color='Cholera case fatality rate',
-                     color_continuous_scale='Reds',
-                     orientation='h',
-                     labels={'Display_Label': 'Factor', 'Cholera case fatality rate': 'Avg. Fatality Rate (%)'})
-
-fig_factors.update_layout(height=200, margin=dict(l=10, r=10, t=10, b=0), coloraxis_showscale=False, yaxis={'title': ''})
-st.plotly_chart(fig_factors, use_container_width=True)
-
-
- # --- CHART 1: Population Pyramid of Cases by Region and Gender ---
-    st.subheader("Cholera Cases by Region and Gender")
-    
-    # Prepare data for the pyramid
+    # --- CHART 3: Population Pyramid ---
+    st.subheader("Regional Cases by Gender")
     pyramid_data = clean_df.groupby(['WHO Region', 'Gender'])['Number of reported cases of cholera'].sum().reset_index()
-    
-    # Key step for pyramid: make one gender's values negative
     pyramid_data['Cases'] = pyramid_data.apply(
-        lambda row: -row['Number of reported cases of cholera'] if row['Gender'] == 'Male' else row['Number of reported cases of cholera'],
-        axis=1
-    )
-    
-    fig_pyramid = px.bar(pyramid_data, 
-                         y='WHO Region', 
-                         x='Cases', 
-                         color='Gender',
-                         orientation='h',
-                         barmode='relative',
+        lambda row: -row['Number of reported cases of cholera'] if row['Gender'] == 'Male' else row['Number of reported cases of cholera'], axis=1)
+    fig_pyramid = px.bar(pyramid_data, y='WHO Region', x='Cases', color='Gender',
+                         orientation='h', barmode='relative',
                          color_discrete_map={'Female': '#E6443E', 'Male': '#FFA07A'},
-                         labels={'Cases': 'Number of Reported Cases'})
-                         
-    # Customize layout for pyramid look
+                         labels={'Cases': 'Number of Reported Cases', 'WHO Region': ''})
     fig_pyramid.update_layout(
-        xaxis=dict(
-            tickformat=',.0f',
-            tickvals=[-5000000, -2500000, 0, 2500000, 5000000],
-            ticktext=['5M', '2.5M', '0', '2.5M', '5M']
-        ),
-        yaxis_autorange='reversed',
-        height=160, 
-        margin=dict(l=0, r=10, t=10, b=0),
-        legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1)
-    )
+        xaxis=dict(tickformat=',.0f', tickvals=[-50000000, -25000000, 0, 25000000, 50000000],
+                   ticktext=['50M', '25M', '0', '25M', '50M']),
+        yaxis_autorange='reversed', height=180, margin=dict(l=0, r=10, t=0, b=0),
+        legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1))
     st.plotly_chart(fig_pyramid, use_container_width=True)

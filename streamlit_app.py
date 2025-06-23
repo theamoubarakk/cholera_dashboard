@@ -186,7 +186,6 @@ with right_col:
 
 #########predictive
 # --- Predict Fatality Rate Based on Living Conditions ---
-st.markdown("---")
 st.subheader("💀 Predict Cholera Fatality Rate (%)")
 
 # Load model

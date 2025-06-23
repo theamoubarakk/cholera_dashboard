@@ -177,7 +177,7 @@ with right_col:
 #########predictive
 
 # --- Predictive Analysis Model Training (Cached) ---
-@st.cache_resource # Use cache_resource for complex objects like models
+@st.cache_resource
 def get_trained_model_and_columns():
     """
     This function loads data, preprocesses it, handles class imbalance with SMOTE,
@@ -198,10 +198,10 @@ def get_trained_model_and_columns():
     target = 'Outbreak_Risk'
     X = df_model[features]
     y = df_model[target]
-    
+
     # One-hot encode features to handle categorical data
     X_encoded = pd.get_dummies(X, columns=X.select_dtypes(include='object').columns, drop_first=True)
-    
+
     # Split data for training
     X_train, _, y_train, _ = train_test_split(X_encoded, y, test_size=0.25, random_state=42, stratify=y)
 

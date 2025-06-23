@@ -3,14 +3,7 @@ import pandas as pd
 import plotly.express as px
 import numpy as np
 import plotly.graph_objects as go
-
 import joblib
-
-@st.cache_resource
-def load_fatality_model():
-    model = joblib.load("fatality_model.pkl")
-    columns = joblib.load("fatality_columns.pkl")
-    return model, columns
 
 
 
@@ -185,31 +178,36 @@ with right_col:
 
 
 #########predictive
-# --- Predict Fatality Rate Based on Living Conditions ---
-st.subheader("💀 Predict Cholera Fatality Rate (%)")
+import joblib
+
+@st.cache_resource
+def load_logistic_model():
+    model = joblib.load("logistic_model.pkl")
+    columns = joblib.load("logistic_columns.pkl")
+    return model, columns
+
+st.subheader("⚠️ Predict High Fatality Risk")
 
 # Load model
-fatality_model, fatality_columns = load_fatality_model()
+log_model, log_columns = load_logistic_model()
 
-# Input widgets
-pred_san = st.selectbox("Sanitation Level", options=df["Sanitation_Level"].dropna().unique(), key="san_pred")
-pred_water = st.selectbox("Access to Clean Water", options=df["Access_to_Clean_Water"].dropna().unique(), key="water_pred")
-pred_rural = st.selectbox("Urban or Rural", options=df["Urban_or_Rural"].dropna().unique(), key="rural_pred")
-pred_vax = st.selectbox("Vaccinated Against Cholera", options=df["Vaccinated_Against_Cholera"].dropna().unique(), key="vax_pred")
-pred_region = st.selectbox("WHO Region", options=df["WHO Region"].dropna().unique(), key="region_pred")
+# Input fields
+input_dict = {
+    'Sanitation_Level': st.selectbox("Sanitation Level", df["Sanitation_Level"].dropna().unique(), key="log_san"),
+    'Access_to_Clean_Water': st.selectbox("Access to Clean Water", df["Access_to_Clean_Water"].dropna().unique(), key="log_water"),
+    'Urban_or_Rural': st.selectbox("Urban or Rural", df["Urban_or_Rural"].dropna().unique(), key="log_rural"),
+    'Vaccinated_Against_Cholera': st.selectbox("Vaccinated Against Cholera", df["Vaccinated_Against_Cholera"].dropna().unique(), key="log_vax"),
+    'WHO Region': st.selectbox("WHO Region", df["WHO Region"].dropna().unique(), key="log_region")
+}
 
-if st.button("Estimate Fatality Rate"):
-    input_df = pd.DataFrame({
-        'Sanitation_Level': [pred_san],
-        'Access_to_Clean_Water': [pred_water],
-        'Urban_or_Rural': [pred_rural],
-        'Vaccinated_Against_Cholera': [pred_vax],
-        'WHO Region': [pred_region]
-    })
-
+# Predict button
+if st.button("Predict Fatality Risk"):
+    input_df = pd.DataFrame([input_dict])
     input_encoded = pd.get_dummies(input_df)
-    input_final = input_encoded.reindex(columns=fatality_columns, fill_value=0)
+    input_final = input_encoded.reindex(columns=log_columns, fill_value=0)
 
-    predicted_rate = fatality_model.predict(input_final)[0]
-    st.success(f"Estimated Fatality Rate: **{predicted_rate:.2f}%**")
-
+    prob = log_model.predict_proba(input_final)[0][1]  # Probability of high fatality
+    if prob >= 0.5:
+        st.error(f"⚠️ High Risk of Fatality: {prob*100:.1f}%")
+    else:
+        st.success(f"✅ Low Risk of Fatality: {prob*100:.1f}%")

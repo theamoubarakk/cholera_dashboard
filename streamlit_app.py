@@ -3,9 +3,7 @@ import pandas as pd
 import plotly.express as px
 import numpy as np
 import plotly.graph_objects as go
-from sklearn.model_selection import train_test_split
-from sklearn.ensemble import RandomForestClassifier
-from imblearn.over_sampling import SMOTE
+
 
 # --- Page Configuration and CSS ---
 st.set_page_config(layout="wide")

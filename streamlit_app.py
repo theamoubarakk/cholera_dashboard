@@ -169,3 +169,140 @@ with right_col:
         yaxis_autorange='reversed', height=160, margin=dict(l=0, r=10, t=10, b=40),
         legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1))
     st.plotly_chart(fig_pyramid, use_container_width=True)
+
+
+
+
+
+#########predictive
+# ==============================================================================
+# CORRECTED Predictive Analysis Section
+# ==============================================================================
+
+# Use a divider to separate the visualization from the prediction part
+st.markdown("---")
+st.header("🔬 Predictive Analysis: Outbreak Risk Classification")
+
+# Load data again for the prediction part to keep it self-contained
+# THIS IS THE FIX: We load the CSV directly into a new DataFrame.
+try:
+    df_for_prediction = pd.read_csv("enriched_data_logical_cleaned.csv")
+    df_pred = df_for_prediction.copy()
+
+    # --- 1. Feature Engineering: Create the Target Variable ---
+    st.subheader("1. Defining the Outbreak Risk")
+    st.write("""
+    First, we need to convert our continuous 'Number of reported cases' into a categorical risk level.
+    This turns the problem into a classification task, which is often more stable and interpretable.
+    - **No Outbreak**: 0 cases
+    - **Minor Outbreak**: 1 to 1,000 cases
+    - **Major Outbreak**: More than 1,000 cases
+    """)
+
+    def define_risk_level(cases):
+        if cases == 0:
+            return 'No Outbreak'
+        elif 1 <= cases <= 1000:
+            return 'Minor Outbreak'
+        else:
+            return 'Major Outbreak'
+
+    df_pred['Outbreak_Risk'] = df_pred['Number of reported cases of cholera'].apply(define_risk_level)
+
+    risk_counts = df_pred['Outbreak_Risk'].value_counts()
+    st.write("**Original Data Class Distribution:**")
+    st.dataframe(risk_counts)
+
+    # --- 2. Data Preprocessing ---
+    st.subheader("2. Preparing Data for the Model")
+    st.write("We select our features (predictors) and the target variable. All non-numeric features like 'Country' or 'Sanitation_Level' are converted to numbers using one-hot encoding.")
+
+    features = [
+        'Country', 'Year', 'Gender', 'Age', 'Urban_or_Rural',
+        'Sanitation_Level', 'Access_to_Clean_Water', 'Vaccinated_Against_Cholera'
+    ]
+    target = 'Outbreak_Risk'
+
+    X = df_pred[features]
+    y = df_pred[target]
+
+    X_encoded = pd.get_dummies(X, columns=X.select_dtypes(include='object').columns, drop_first=True)
+    X_train, X_test, y_train, y_test = train_test_split(X_encoded, y, test_size=0.25, random_state=42, stratify=y)
+
+    # --- 3. Handling Class Imbalance with SMOTE ---
+    st.subheader("3. Handling Class Imbalance with SMOTE")
+    st.markdown("... (explanation text remains the same) ...")
+
+    smote = SMOTE(random_state=42)
+    X_train_smote, y_train_smote = smote.fit_resample(X_train, y_train)
+
+    st.write("**Balanced Training Data Class Distribution (After SMOTE):**")
+    st.dataframe(y_train_smote.value_counts())
+
+    # --- 4. Training the Random Forest Model ---
+    st.subheader("4. Training the Classifier")
+    st.write("... (explanation text remains the same) ...")
+
+    model = RandomForestClassifier(n_estimators=100, random_state=42, n_jobs=-1)
+    model.fit(X_train_smote, y_train_smote)
+    st.success("Model training complete!")
+
+    # --- 5. Evaluating Model Performance ---
+    st.subheader("5. Evaluating Model Performance")
+    st.write("... (explanation text remains the same) ...")
+    
+    y_pred = model.predict(X_test)
+    st.write("**Classification Report:**")
+    report = classification_report(y_test, y_pred, output_dict=True)
+    st.dataframe(pd.DataFrame(report).transpose())
+
+    st.write("**Confusion Matrix:**")
+    cm = confusion_matrix(y_test, y_pred, labels=model.classes_)
+    fig_cm = ff.create_annotated_heatmap(z=cm, x=list(model.classes_), y=list(model.classes_), colorscale='Viridis')
+    fig_cm.update_layout(title="Confusion Matrix", yaxis_title="True Label", xaxis_title="Predicted Label")
+    st.plotly_chart(fig_cm)
+
+    # --- 6. Live Prediction Interface ---
+    st.markdown("---")
+    st.subheader("🔮 Try the Live Risk Predictor!")
+
+    with st.expander("Enter conditions to predict outbreak risk"):
+        # Use the full df_for_prediction for dropdown options to have all unique values
+        country_input = st.selectbox("Country", options=sorted(df_for_prediction['Country'].unique()))
+        year_input = st.slider("Year", 2000, 2025, 2023, key="pred_year")
+        age_input = st.slider("Average Age of Patient", 0, 100, 30, key="pred_age")
+        gender_input = st.selectbox("Predominant Gender", options=df_for_prediction['Gender'].unique())
+        urban_rural_input = st.selectbox("Location", options=df_for_prediction['Urban_or_Rural'].unique())
+        sanitation_input = st.selectbox("Sanitation Level", options=df_for_prediction['Sanitation_Level'].unique())
+        water_input = st.selectbox("Access to Clean Water", options=df_for_prediction['Access_to_Clean_Water'].unique())
+        vaccine_input = st.selectbox("Vaccinated Against Cholera", options=df_for_prediction['Vaccinated_Against_Cholera'].unique())
+
+        if st.button("Predict Risk"):
+            input_data = pd.DataFrame({
+                'Country': [country_input], 'Year': [year_input], 'Gender': [gender_input],
+                'Age': [age_input], 'Urban_or_Rural': [urban_rural_input], 'Sanitation_Level': [sanitation_except],
+                'Access_to_Clean_Water': [water_input], 'Vaccinated_Against_Cholera': [vaccine_input]
+            })
+            input_encoded = pd.get_dummies(input_data)
+            final_input = input_encoded.reindex(columns=X_train.columns, fill_value=0)
+            
+            prediction = model.predict(final_input)[0]
+            prediction_proba = model.predict_proba(final_input)
+
+            st.write("---")
+            st.write(f"### Predicted Outbreak Risk: **{prediction}**")
+            if prediction == "Major Outbreak":
+                st.error("High risk of a major outbreak detected. Immediate resource allocation recommended.")
+            elif prediction == "Minor Outbreak":
+                st.warning("Moderate risk of a minor outbreak. Monitoring and preventative measures advised.")
+            else:
+                st.success("Low risk of an outbreak based on the provided conditions.")
+            
+            st.write("**Prediction Confidence:**")
+            proba_df = pd.DataFrame(prediction_proba, columns=model.classes_, index=['Probability'])
+            st.dataframe(proba_df)
+
+except FileNotFoundError:
+    st.error("The data file 'enriched_data_logical_cleaned.csv' was not found. Please make sure it's in the same directory as the script.")
+except Exception as e:
+    st.error(f"An error occurred during the predictive analysis: {e}")

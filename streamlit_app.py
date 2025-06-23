@@ -175,3 +175,83 @@ with right_col:
 
 
 #########predictive
+
+# --- Predictive Analysis Model Training (Cached) ---
+@st.cache_resource # Use cache_resource for complex objects like models
+def get_trained_model_and_columns():
+    """
+    This function loads data, preprocesses it, handles class imbalance with SMOTE,
+    trains a RandomForestClassifier, and returns the trained model and the required column order.
+    It's cached so it only runs once per session.
+    """
+    df_model = pd.read_csv("enriched_data_logical_cleaned.csv")
+
+    # 1. Feature Engineering: Define risk categories
+    def define_risk_level(cases):
+        if cases == 0: return 'No Outbreak'
+        elif 1 <= cases <= 1000: return 'Minor Outbreak'
+        else: return 'Major Outbreak'
+    df_model['Outbreak_Risk'] = df_model['Number of reported cases of cholera'].apply(define_risk_level)
+
+    # 2. Preprocessing
+    features = ['Country', 'Year', 'Gender', 'Age', 'Urban_or_Rural', 'Sanitation_Level', 'Access_to_Clean_Water', 'Vaccinated_Against_Cholera']
+    target = 'Outbreak_Risk'
+    X = df_model[features]
+    y = df_model[target]
+    
+    # One-hot encode features to handle categorical data
+    X_encoded = pd.get_dummies(X, columns=X.select_dtypes(include='object').columns, drop_first=True)
+    
+    # Split data for training
+    X_train, _, y_train, _ = train_test_split(X_encoded, y, test_size=0.25, random_state=42, stratify=y)
+
+    # 3. Handle Imbalance with SMOTE
+    smote = SMOTE(random_state=42)
+    X_train_smote, y_train_smote = smote.fit_resample(X_train, y_train)
+
+    # 4. Train Model
+    model = RandomForestClassifier(n_estimators=100, random_state=42, n_jobs=-1)
+    model.fit(X_train_smote, y_train_smote)
+
+    # Return the necessary objects for prediction
+    return model, X_encoded.columns
+
+# Get the trained model and column names once using the cached function
+model, trained_columns = get_trained_model_and_columns()
+
+# --- Predictive Analysis Tool in Sidebar ---
+with st.sidebar:
+    st.markdown("---")
+    st.subheader("🔮 Outbreak Risk Predictor")
+
+    # Inputs for the prediction
+    pred_country = st.selectbox("Country", options=sorted(df['Country'].unique()), key="pred_country")
+    pred_year = st.slider("Year", 2024, 2030, 2024, key="pred_year")
+    pred_age = st.slider("Average Age", 0, 100, 30, key="pred_age")
+    pred_sanitation = st.selectbox("Sanitation Level", options=df['Sanitation_Level'].unique(), key="pred_sanitation")
+    pred_water = st.selectbox("Water Access", options=df['Access_to_Clean_Water'].unique(), key="pred_water")
+
+    if st.button("Predict Outbreak Risk"):
+        # Prepare user input into the correct format
+        input_data = pd.DataFrame({
+            'Country': [pred_country], 'Year': [pred_year], 'Age': [pred_age],
+            'Sanitation_Level': [pred_sanitation], 'Access_to_Clean_Water': [pred_water],
+            # Add placeholders for other features model was trained on to ensure column match
+            'Gender': ['Male'], 'Urban_or_Rural': ['Urban'], 'Vaccinated_Against_Cholera': ['No']
+        })
+
+        input_encoded = pd.get_dummies(input_data)
+        final_input = input_encoded.reindex(columns=trained_columns, fill_value=0)
+
+        # Make prediction and get probabilities
+        prediction = model.predict(final_input)[0]
+        prediction_proba = model.predict_proba(final_input)
+        confidence = np.max(prediction_proba) * 100
+
+        # Display result IN THE SIDEBAR
+        if prediction == "Major Outbreak":
+            st.error(f"High Risk: {prediction}\n({confidence:.1f}% confidence)")
+        elif prediction == "Minor Outbreak":
+            st.warning(f"Medium Risk: {prediction}\n({confidence:.1f}% confidence)")
+        else:
+            st.success(f"Low Risk: {prediction}\n({confidence:.1f}% confidence)")

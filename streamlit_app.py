@@ -4,6 +4,15 @@ import plotly.express as px
 import numpy as np
 import plotly.graph_objects as go
 
+import joblib
+
+@st.cache_resource
+def load_fatality_model():
+    model = joblib.load("fatality_model.pkl")
+    columns = joblib.load("fatality_columns.pkl")
+    return model, columns
+
+
 
 # --- Page Configuration and CSS ---
 st.set_page_config(layout="wide")

@@ -178,36 +178,42 @@ with right_col:
 
 
 #########predictive
+import streamlit as st
+import pandas as pd
 import joblib
 
-@st.cache_resource
-def load_logistic_model():
-    model = joblib.load("logistic_model.pkl")
-    columns = joblib.load("logistic_columns.pkl")
-    return model, columns
+# Load trained model and columns
+model = joblib.load("rf_model.pkl")
+model_columns = joblib.load("rf_model_columns.pkl")
 
-st.subheader("⚠️ Predict High Fatality Risk")
+# Title
+st.subheader("🧪 Predict Cholera Fatality Risk Based on Living Conditions")
 
-# Load model
-log_model, log_columns = load_logistic_model()
+# User Inputs
+sanitation = st.selectbox("Sanitation Level", ["Low", "Medium", "High"])
+water = st.radio("Access to Clean Water", ["Yes", "No"])
+urban_rural = st.radio("Urban or Rural", ["Urban", "Rural"])
+vaccinated = st.radio("Vaccinated Against Cholera", ["Yes", "No"])
+region = st.selectbox("WHO Region", ["Africa", "Americas", "Eastern Mediterranean", "Europe", "South-East Asia", "Western Pacific"])
 
-# Input fields
-input_dict = {
-    'Sanitation_Level': st.selectbox("Sanitation Level", df["Sanitation_Level"].dropna().unique(), key="log_san"),
-    'Access_to_Clean_Water': st.selectbox("Access to Clean Water", df["Access_to_Clean_Water"].dropna().unique(), key="log_water"),
-    'Urban_or_Rural': st.selectbox("Urban or Rural", df["Urban_or_Rural"].dropna().unique(), key="log_rural"),
-    'Vaccinated_Against_Cholera': st.selectbox("Vaccinated Against Cholera", df["Vaccinated_Against_Cholera"].dropna().unique(), key="log_vax"),
-    'WHO Region': st.selectbox("WHO Region", df["WHO Region"].dropna().unique(), key="log_region")
-}
-
-# Predict button
+# Make prediction on button click
 if st.button("Predict Fatality Risk"):
-    input_df = pd.DataFrame([input_dict])
-    input_encoded = pd.get_dummies(input_df)
-    input_final = input_encoded.reindex(columns=log_columns, fill_value=0)
+    # Build input row
+    input_data = pd.DataFrame({
+        'Sanitation_Level': [sanitation],
+        'Access_to_Clean_Water': [water],
+        'Urban_or_Rural': [urban_rural],
+        'Vaccinated_Against_Cholera': [vaccinated],
+        'WHO Region': [region]
+    })
 
-    prob = log_model.predict_proba(input_final)[0][1]  # Probability of high fatality
-    if prob >= 0.5:
-        st.error(f"⚠️ High Risk of Fatality: {prob*100:.1f}%")
-    else:
-        st.success(f"✅ Low Risk of Fatality: {prob*100:.1f}%")
+    # One-hot encode and align columns
+    input_encoded = pd.get_dummies(input_data)
+    input_encoded = input_encoded.reindex(columns=model_columns, fill_value=0)
+
+    # Predict
+    prediction = model.predict(input_encoded)[0]
+
+    # Display result
+    st.success("High Fatality Risk" if prediction == 1 else "Low Fatality Risk")
+

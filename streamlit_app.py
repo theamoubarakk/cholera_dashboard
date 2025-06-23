@@ -185,3 +185,32 @@ with right_col:
 
 
 #########predictive
+# --- Predict Fatality Rate Based on Living Conditions ---
+st.markdown("---")
+st.subheader("💀 Predict Cholera Fatality Rate (%)")
+
+# Load model
+fatality_model, fatality_columns = load_fatality_model()
+
+# Input widgets
+pred_san = st.selectbox("Sanitation Level", options=df["Sanitation_Level"].dropna().unique(), key="san_pred")
+pred_water = st.selectbox("Access to Clean Water", options=df["Access_to_Clean_Water"].dropna().unique(), key="water_pred")
+pred_rural = st.selectbox("Urban or Rural", options=df["Urban_or_Rural"].dropna().unique(), key="rural_pred")
+pred_vax = st.selectbox("Vaccinated Against Cholera", options=df["Vaccinated_Against_Cholera"].dropna().unique(), key="vax_pred")
+pred_region = st.selectbox("WHO Region", options=df["WHO Region"].dropna().unique(), key="region_pred")
+
+if st.button("Estimate Fatality Rate"):
+    input_df = pd.DataFrame({
+        'Sanitation_Level': [pred_san],
+        'Access_to_Clean_Water': [pred_water],
+        'Urban_or_Rural': [pred_rural],
+        'Vaccinated_Against_Cholera': [pred_vax],
+        'WHO Region': [pred_region]
+    })
+
+    input_encoded = pd.get_dummies(input_df)
+    input_final = input_encoded.reindex(columns=fatality_columns, fill_value=0)
+
+    predicted_rate = fatality_model.predict(input_final)[0]
+    st.success(f"Estimated Fatality Rate: **{predicted_rate:.2f}%**")
+

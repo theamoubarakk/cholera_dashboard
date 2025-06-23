@@ -176,3 +176,52 @@ with right_col:
 
 
 #########predictive
+# --- Fatality Rate Regression Model (Lightweight & Cached) ---
+@st.cache_resource
+def train_fatality_model():
+    df_model = pd.read_csv("enriched_data_logical_cleaned.csv")
+
+    # Select features and target
+    features = ['Sanitation_Level', 'Access_to_Clean_Water', 'Urban_or_Rural',
+                'Vaccinated_Against_Cholera', 'WHO Region']
+    target = 'Cholera case fatality rate'
+
+    df_model = df_model.dropna(subset=features + [target])
+    X = pd.get_dummies(df_model[features], drop_first=True)
+    y = df_model[target]
+
+    from sklearn.ensemble import RandomForestRegressor
+    model = RandomForestRegressor(n_estimators=20, random_state=42)
+    model.fit(X, y)
+
+    return model, X.columns
+
+# --- Sidebar: Fatality Rate Prediction ---
+with st.sidebar:
+    st.markdown("---")
+    st.subheader("💀 Predict Cholera Fatality Rate (%)")
+
+    # Load trained model
+    fatality_model, fatality_columns = train_fatality_model()
+
+    # User inputs
+    pred_san = st.selectbox("Sanitation Level", options=df["Sanitation_Level"].dropna().unique(), key="san_pred")
+    pred_water = st.selectbox("Access to Clean Water", options=df["Access_to_Clean_Water"].dropna().unique(), key="water_pred")
+    pred_rural = st.selectbox("Urban or Rural", options=df["Urban_or_Rural"].dropna().unique(), key="rural_pred")
+    pred_vax = st.selectbox("Vaccinated Against Cholera", options=df["Vaccinated_Against_Cholera"].dropna().unique(), key="vax_pred")
+    pred_region = st.selectbox("WHO Region", options=df["WHO Region"].dropna().unique(), key="region_pred")
+
+    if st.button("Estimate Fatality Rate"):
+        input_df = pd.DataFrame({
+            'Sanitation_Level': [pred_san],
+            'Access_to_Clean_Water': [pred_water],
+            'Urban_or_Rural': [pred_rural],
+            'Vaccinated_Against_Cholera': [pred_vax],
+            'WHO Region': [pred_region]
+        })
+
+        input_encoded = pd.get_dummies(input_df)
+        input_final = input_encoded.reindex(columns=fatality_columns, fill_value=0)
+
+        predicted_rate = fatality_model.predict(input_final)[0]
+        st.success(f"Estimated Fatality Rate: **{predicted_rate:.2f}%**")

@@ -66,6 +66,68 @@ st.title("Cholera Dashboard - Global Trends and Risk Factors")
 # --- Layout Columns ---
 left_col, right_col = st.columns([3, 2])
 
+
+
+# --- CHOLERA FATALITY PREDICTION (Sidebar) ---
+import joblib
+
+# Load trained model
+model = joblib.load("logreg_model.joblib")
+
+# Sidebar Inputs for Prediction
+st.sidebar.header("🔬 Predict Cholera Fatality Risk")
+
+# Collect inputs from user
+region = st.sidebar.selectbox("WHO Region", ["Africa", "Americas", "Eastern Mediterranean", "Europe", "South-East Asia", "Western Pacific"])
+sanitation = st.sidebar.selectbox("Sanitation Level", ["Low", "Medium", "High"])
+urban_rural = st.sidebar.selectbox("Urban or Rural", ["Urban", "Rural"])
+water = st.sidebar.selectbox("Access to Clean Water", ["Yes", "No"])
+vaccinated = st.sidebar.selectbox("Vaccinated Against Cholera", ["Yes", "No"])
+gender = st.sidebar.radio("Gender", ["Male", "Female"])
+age = st.sidebar.slider("Age", 0, 100, 30)
+
+# Manually bucket age into categories
+if age <= 12:
+    age_group = "Child"
+elif age <= 18:
+    age_group = "Teen"
+elif age <= 35:
+    age_group = "Young Adult"
+elif age <= 50:
+    age_group = "Adult"
+elif age <= 65:
+    age_group = "Middle Age"
+else:
+    age_group = "Senior"
+
+# All one-hot encoded possible columns (should match training set)
+columns = joblib.load("cholera_model_columns.pkl")
+user_input = pd.DataFrame([{
+    'Sanitation_Level': sanitation,
+    'Access_to_Clean_Water': water,
+    'Urban_or_Rural': urban_rural,
+    'Vaccinated_Against_Cholera': vaccinated,
+    'WHO Region': region,
+    'Gender': gender,
+    'Age_Group': age_group
+}])
+
+# One-hot encode and align with training columns
+encoded_input = pd.get_dummies(user_input)
+encoded_input = encoded_input.reindex(columns=columns, fill_value=0)
+
+# Prediction
+pred = model.predict(encoded_input)[0]
+prob = model.predict_proba(encoded_input)[0][1]
+
+# Result display
+st.sidebar.subheader("Prediction Result")
+if pred == 1:
+    st.sidebar.error(f"⚠️ High Fatality Risk ({prob*100:.1f}%)")
+else:
+    st.sidebar.success(f"✅ Low Fatality Risk ({(1-prob)*100:.1f}%)")
+
+
 # --- Left Column (Map and Trend Line) ---
 with left_col:
     st.subheader("Heatmap of Reported Cholera Cases Across the World")
@@ -178,42 +240,4 @@ with right_col:
 
 
 #########predictive
-import streamlit as st
-import pandas as pd
-import joblib
-
-# Load trained model and columns
-model = joblib.load("rf_model.pkl")
-model_columns = joblib.load("rf_model_columns.pkl")
-
-# Title
-st.subheader("🧪 Predict Cholera Fatality Risk Based on Living Conditions")
-
-# User Inputs
-sanitation = st.selectbox("Sanitation Level", ["Low", "Medium", "High"])
-water = st.radio("Access to Clean Water", ["Yes", "No"])
-urban_rural = st.radio("Urban or Rural", ["Urban", "Rural"])
-vaccinated = st.radio("Vaccinated Against Cholera", ["Yes", "No"])
-region = st.selectbox("WHO Region", ["Africa", "Americas", "Eastern Mediterranean", "Europe", "South-East Asia", "Western Pacific"])
-
-# Make prediction on button click
-if st.button("Predict Fatality Risk"):
-    # Build input row
-    input_data = pd.DataFrame({
-        'Sanitation_Level': [sanitation],
-        'Access_to_Clean_Water': [water],
-        'Urban_or_Rural': [urban_rural],
-        'Vaccinated_Against_Cholera': [vaccinated],
-        'WHO Region': [region]
-    })
-
-    # One-hot encode and align columns
-    input_encoded = pd.get_dummies(input_data)
-    input_encoded = input_encoded.reindex(columns=model_columns, fill_value=0)
-
-    # Predict
-    prediction = model.predict(input_encoded)[0]
-
-    # Display result
-    st.success("High Fatality Risk" if prediction == 1 else "Low Fatality Risk")
 

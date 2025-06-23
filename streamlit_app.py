@@ -131,7 +131,7 @@ else:
 # --- Left Column (Map and Trend Line) ---
 with left_col:
     st.subheader("Heatmap of Reported Cholera Cases Across the World")
-    map_df = filtered_df.groupby("Country")["Number of reported cases"].sum().reset_index()
+    map_df = filtered_df.groupby("Country")["Number of reported cases of cholera"].sum().reset_index()
     if not map_df.empty and map_df["Number of reported cases of cholera"].sum() > 0:
         map_df["Log_Cases"] = np.log10(map_df["Number of reported cases of cholera"] + 1)
     else:

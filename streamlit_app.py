@@ -1,4 +1,4 @@
-# Importing Libraries
+# --- Importing Libraries ---
 import streamlit as st
 import pandas as pd
 import plotly.express as px
@@ -25,7 +25,6 @@ st.markdown("""
         }
     </style>
     """, unsafe_allow_html=True)
-
 
 @st.cache_data
 def load_data(path):
@@ -65,16 +64,15 @@ st.title("Cholera Dashboard - Global Trends and Risk Factors")
 # --- Layout Columns ---
 left_col, right_col = st.columns([3, 2])
 
-# --- CHOLERA FATALITY PREDICTION (Sidebar) ---
+# --- Prediction Model: CHOLERA FATALITY PREDICTION---
+# --- Load trained model ---
 import joblib
-
-# Load trained model
 model = joblib.load("logreg_model.joblib")
 
-# Sidebar Inputs for Prediction
+# --- Sidebar Inputs for Prediction ---
 st.sidebar.header("🔬 Predict Cholera Fatality Risk")
 
-# Collect inputs from user
+# --- Collect inputs from user ---
 region = st.sidebar.selectbox("WHO Region", ["Africa", "Americas", "Eastern Mediterranean", "Europe", "South-East Asia", "Western Pacific"])
 sanitation = st.sidebar.selectbox("Sanitation Level", ["Low", "Medium", "High"])
 urban_rural = st.sidebar.selectbox("Urban or Rural", ["Urban", "Rural"])
@@ -83,7 +81,7 @@ vaccinated = st.sidebar.selectbox("Vaccinated Against Cholera", ["Yes", "No"])
 gender = st.sidebar.radio("Gender", ["Male", "Female"])
 age = st.sidebar.slider("Age", 0, 100, 30)
 
-# Manually bucket age into categories
+# --- Manually bucket age into categories ---
 if age <= 12:
     age_group = "Child"
 elif age <= 18:
@@ -96,8 +94,7 @@ elif age <= 65:
     age_group = "Middle Age"
 else:
     age_group = "Senior"
-
-# All one-hot encoded possible columns (should match training set)
+    
 columns = joblib.load("cholera_model_columns.pkl")
 user_input = pd.DataFrame([{
     'Sanitation_Level': sanitation,
@@ -109,15 +106,14 @@ user_input = pd.DataFrame([{
     'Age_Group': age_group
 }])
 
-# One-hot encode and align with training columns
+# --- One-hot encode and align ---
 encoded_input = pd.get_dummies(user_input)
 encoded_input = encoded_input.reindex(columns=columns, fill_value=0)
 
-# Prediction
+# --- Prediction ---
 pred = model.predict(encoded_input)[0]
 prob = model.predict_proba(encoded_input)[0][1]
 
-# Result display
 st.sidebar.subheader("Prediction Result")
 if pred == 1:
     st.sidebar.error(f"⚠️ High Fatality Risk ({prob*100:.1f}%)")
@@ -153,21 +149,11 @@ with right_col:
         filtered_df[col] = pd.to_numeric(filtered_df[col], errors='coerce')
     clean_df = filtered_df.dropna(subset=numeric_cols)
 
-    # --- Right Column  ---
-with right_col:
-    # --- Data Cleaning ---
-    numeric_cols = ['Number of reported cases of cholera', 'Cholera case fatality rate']
-    for col in numeric_cols:
-        filtered_df[col] = pd.to_numeric(filtered_df[col], errors='coerce')
-    clean_df = filtered_df.dropna(subset=numeric_cols)
-    
     # --- CHART: What Makes an Outbreak More Deadly? ---
     st.subheader("Which Living Conditions Increase Risk of Death?")
 
     factors = ['Urban_or_Rural', 'Sanitation_Level', 'Access_to_Clean_Water', 'Vaccinated_Against_Cholera']
     factor_fatality_list = []
-
-    # Loop through each factor to calculate its average fatality rate and create a clean label
     for factor in factors:
         grouped = clean_df.groupby(factor)['Cholera case fatality rate'].mean().reset_index()
         
@@ -176,10 +162,10 @@ with right_col:
         
         factor_fatality_list.append(grouped[['Display_Label', 'Cholera case fatality rate']])
 
-    # Combine all factors into one DataFrame for plotting
+    # --- Combine all factors into one DataFrame for plotting ---
     all_factors_df = pd.concat(factor_fatality_list).dropna()
 
-    # Sorting by fatality rate to rank the factors from most to least deadly
+    # --- Sorting by fatality rate to rank the factors from most to least deadly ---
     all_factors_df = all_factors_df.sort_values('Cholera case fatality rate', ascending=True)
 
     # --- CHART 1: Bar chart ---

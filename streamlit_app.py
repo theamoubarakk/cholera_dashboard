@@ -8,7 +8,6 @@ import joblib
 
 # --- Page Configuration and CSS ---
 st.set_page_config(layout="wide")
-
 st.markdown("""
     <style>
         .block-container {
@@ -31,6 +30,7 @@ def load_data(path):
     df = pd.read_csv(path)
     return df
 
+# --- File Upload ---
 df = pd.read_csv("enriched_data_logical_cleaned.csv")
 
 # --- Sidebar Filters ---
@@ -72,7 +72,7 @@ model = joblib.load("logreg_model.joblib")
 # --- Sidebar Inputs for Prediction ---
 st.sidebar.header("🔬 Predict Cholera Fatality Risk")
 
-# --- Collect inputs from user ---
+# --- Collecting inputs from user ---
 region = st.sidebar.selectbox("WHO Region", ["Africa", "Americas", "Eastern Mediterranean", "Europe", "South-East Asia", "Western Pacific"])
 sanitation = st.sidebar.selectbox("Sanitation Level", ["Low", "Medium", "High"])
 urban_rural = st.sidebar.selectbox("Urban or Rural", ["Urban", "Rural"])
@@ -120,6 +120,7 @@ if pred == 1:
 else:
     st.sidebar.success(f"✅ Low Fatality Risk ({(1-prob)*100:.1f}%)")
 
+# --- Charts ---
 # --- Left Column (Map and Trend Line) ---
 with left_col:
     st.subheader("Heatmap of Reported Cholera Cases Across the World")
@@ -141,15 +142,14 @@ with left_col:
     fig_trend.update_layout(height=155, margin=dict(l=0, r=0, t=0, b=30))
     st.plotly_chart(fig_trend, use_container_width=True)
 
-# --- Right Column ---
+# --- Right Column (Bar Chart, Heat Map, Bar Chart) ---
 with right_col:
     # --- Data Cleaning ---
     numeric_cols = ['Number of reported cases of cholera', 'Cholera case fatality rate']
     for col in numeric_cols:
         filtered_df[col] = pd.to_numeric(filtered_df[col], errors='coerce')
     clean_df = filtered_df.dropna(subset=numeric_cols)
-
-    # --- CHART: What Makes an Outbreak More Deadly? ---
+    
     st.subheader("Which Living Conditions Increase Risk of Death?")
 
     factors = ['Urban_or_Rural', 'Sanitation_Level', 'Access_to_Clean_Water', 'Vaccinated_Against_Cholera']
@@ -178,14 +178,13 @@ with right_col:
                          labels={'Display_Label': '', 'Cholera case fatality rate': 'Avg. Fatality Rate (%)'})
                          
     # Update layout for a clean look
-    fig_factors.update_layout(height=160, # Give this important chart more vertical space
+    fig_factors.update_layout(height=160,
                               margin=dict(l=10, r=10, t=10, b=40), 
                               coloraxis_showscale=False, 
                               yaxis={'title': ''})
-                              
     st.plotly_chart(fig_factors, use_container_width=True)
 
-    # --- CHART 2: Heatmap ---
+    # --- CHART 2: HEATMAP ---
     st.subheader("Sanitation Disparities and Death Rates Across Geographic Zones")
     heatmap_data = clean_df.pivot_table(values='Cholera case fatality rate', index='WHO Region',
                                         columns='Sanitation_Level', aggfunc='mean').reindex(columns=['Low', 'Medium', 'High'])
@@ -194,7 +193,7 @@ with right_col:
     fig_heatmap.update_layout(height=190, margin=dict(l=0, r=10, t=0, b=0))
     st.plotly_chart(fig_heatmap, use_container_width=True)
 
-    # --- CHART 3: REGIONAL CASES BY GENDER ---
+    # --- CHART 3: BAR CHART, REGIONAL CASES BY GENDER ---
     st.subheader("Regional Gender Gaps in Cholera Cases")
     pyramid_data = clean_df.groupby(['WHO Region', 'Gender'])['Number of reported cases of cholera'].sum().reset_index()
     pyramid_data['Cases'] = pyramid_data.apply(

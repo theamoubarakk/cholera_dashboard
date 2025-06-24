@@ -110,7 +110,7 @@ user_input = pd.DataFrame([{
 encoded_input = pd.get_dummies(user_input)
 encoded_input = encoded_input.reindex(columns=columns, fill_value=0)
 
-# --- Prediction ---
+# --- Prediction Model ---
 pred = model.predict(encoded_input)[0]
 prob = model.predict_proba(encoded_input)[0][1]
 
@@ -122,6 +122,7 @@ else:
 
 # --- Charts ---
 # --- Left Column (Map and Trend Line) ---
+# --- Chart 1: HEATMAP 
 with left_col:
     st.subheader("Heatmap of Reported Cholera Cases Across the World")
     map_df = filtered_df.groupby("Country")["Number of reported cases of cholera"].sum().reset_index()
@@ -134,7 +135,7 @@ with left_col:
                             color="Log_Cases", color_continuous_scale="Reds")
     fig_map.update_layout(height=400, margin=dict(l=0, r=0, t=0, b=0))
     st.plotly_chart(fig_map, use_container_width=True)
-
+# --- Chart 2: Line Chart --- 
     st.subheader("Decades of Cholera: How Cases Have Risen and Fallen Over Time")
     trend = filtered_df.groupby("Year")["Number of reported cases of cholera"].sum().reset_index()
     fig_trend = px.line(trend, x="Year", y="Number of reported cases of cholera", markers=True,

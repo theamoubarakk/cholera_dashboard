@@ -5,8 +5,6 @@ import numpy as np
 import plotly.graph_objects as go
 import joblib
 
-
-
 # --- Page Configuration and CSS ---
 st.set_page_config(layout="wide")
 
@@ -65,8 +63,6 @@ st.title("Cholera Dashboard - Global Trends and Risk Factors")
 
 # --- Layout Columns ---
 left_col, right_col = st.columns([3, 2])
-
-
 
 # --- CHOLERA FATALITY PREDICTION (Sidebar) ---
 import joblib
@@ -127,7 +123,6 @@ if pred == 1:
 else:
     st.sidebar.success(f"✅ Low Fatality Risk ({(1-prob)*100:.1f}%)")
 
-
 # --- Left Column (Map and Trend Line) ---
 with left_col:
     st.subheader("Heatmap of Reported Cholera Cases Across the World")
@@ -149,17 +144,17 @@ with left_col:
     fig_trend.update_layout(height=155, margin=dict(l=0, r=0, t=0, b=30))
     st.plotly_chart(fig_trend, use_container_width=True)
 
-# --- Right Column (Advanced Visualizations) ---
+# --- Right Column ---
 with right_col:
-    # --- Data Cleaning (Important First Step) ---
+    # --- Data Cleaning ---
     numeric_cols = ['Number of reported cases of cholera', 'Cholera case fatality rate']
     for col in numeric_cols:
         filtered_df[col] = pd.to_numeric(filtered_df[col], errors='coerce')
     clean_df = filtered_df.dropna(subset=numeric_cols)
 
-    # --- Right Column (Revised for one clear, insightful chart) ---
+    # --- Right Column  ---
 with right_col:
-    # --- Data Cleaning (Run Once at the Top) ---
+    # --- Data Cleaning ---
     numeric_cols = ['Number of reported cases of cholera', 'Cholera case fatality rate']
     for col in numeric_cols:
         filtered_df[col] = pd.to_numeric(filtered_df[col], errors='coerce')
@@ -168,7 +163,6 @@ with right_col:
     # --- CHART: What Makes an Outbreak More Deadly? ---
     st.subheader("Which Living Conditions Increase Risk of Death?")
 
-    # Define the specific, comparable factors to analyze
     factors = ['Urban_or_Rural', 'Sanitation_Level', 'Access_to_Clean_Water', 'Vaccinated_Against_Cholera']
     factor_fatality_list = []
 
@@ -176,7 +170,6 @@ with right_col:
     for factor in factors:
         grouped = clean_df.groupby(factor)['Cholera case fatality rate'].mean().reset_index()
         
-        # Create a descriptive label (e.g., "Sanitation: Low")
         clean_name = factor.replace('_', ' ').replace('Level', '').replace('Against Cholera', '').strip()
         grouped['Display_Label'] = clean_name + ': ' + grouped[factor]
         
@@ -185,10 +178,10 @@ with right_col:
     # Combine all factors into one DataFrame for plotting
     all_factors_df = pd.concat(factor_fatality_list).dropna()
 
-    # Sort by fatality rate to rank the factors from most to least deadly
+    # Sorting by fatality rate to rank the factors from most to least deadly
     all_factors_df = all_factors_df.sort_values('Cholera case fatality rate', ascending=True)
 
-    # Create the final bar chart
+    # --- CHART 1: Bar chart ---
     fig_factors = px.bar(all_factors_df,
                          x='Cholera case fatality rate',
                          y='Display_Label',
@@ -205,10 +198,6 @@ with right_col:
                               
     st.plotly_chart(fig_factors, use_container_width=True)
 
-    # You can add the other charts (like the pyramid) below this if you have space
-    # and want to bring them back later.
-    
-
     # --- CHART 2: Heatmap ---
     st.subheader("Sanitation Disparities and Death Rates Across Geographic Zones")
     heatmap_data = clean_df.pivot_table(values='Cholera case fatality rate', index='WHO Region',
@@ -218,8 +207,7 @@ with right_col:
     fig_heatmap.update_layout(height=190, margin=dict(l=0, r=10, t=0, b=0))
     st.plotly_chart(fig_heatmap, use_container_width=True)
 
-    
-    # --- CHART 3: (Kept as is) REGIONAL CASES BY GENDER ---
+    # --- CHART 3: REGIONAL CASES BY GENDER ---
     st.subheader("Regional Gender Gaps in Cholera Cases")
     pyramid_data = clean_df.groupby(['WHO Region', 'Gender'])['Number of reported cases of cholera'].sum().reset_index()
     pyramid_data['Cases'] = pyramid_data.apply(
@@ -234,10 +222,3 @@ with right_col:
         yaxis_autorange='reversed', height=160, margin=dict(l=0, r=10, t=10, b=40),
         legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1))
     st.plotly_chart(fig_pyramid, use_container_width=True)
-
-
-
-
-
-#########predictive
-

@@ -64,7 +64,7 @@ st.title("Cholera Dashboard - Global Trends and Risk Factors")
 # --- Layout Columns ---
 left_col, right_col = st.columns([3, 2])
 
-# --- Prediction Model: CHOLERA FATALITY PREDICTION---
+# --- Prediction Model: CHOLERA FATALITY PREDICTION ---
 # --- Load trained model ---
 import joblib
 model = joblib.load("logreg_model.joblib")
@@ -105,7 +105,6 @@ user_input = pd.DataFrame([{
     'Gender': gender,
     'Age_Group': age_group
 }])
-
 # --- One-hot encode and align ---
 encoded_input = pd.get_dummies(user_input)
 encoded_input = encoded_input.reindex(columns=columns, fill_value=0)
@@ -135,6 +134,7 @@ with left_col:
                             color="Log_Cases", color_continuous_scale="Reds")
     fig_map.update_layout(height=400, margin=dict(l=0, r=0, t=0, b=0))
     st.plotly_chart(fig_map, use_container_width=True)
+    
 # --- Chart 2: Line Chart --- 
     st.subheader("Decades of Cholera: How Cases Have Risen and Fallen Over Time")
     trend = filtered_df.groupby("Year")["Number of reported cases of cholera"].sum().reset_index()
@@ -163,13 +163,13 @@ with right_col:
         
         factor_fatality_list.append(grouped[['Display_Label', 'Cholera case fatality rate']])
 
-    # --- Combine all factors into one DataFrame for plotting ---
+# --- Combine all factors into one DataFrame for plotting ---
     all_factors_df = pd.concat(factor_fatality_list).dropna()
 
-    # --- Sorting by fatality rate to rank the factors from most to least deadly ---
+# --- Sorting by fatality rate to rank the factors from most to least deadly ---
     all_factors_df = all_factors_df.sort_values('Cholera case fatality rate', ascending=True)
-
-    # --- CHART 1: Bar chart ---
+    
+# --- CHART 1: Bar chart ---
     fig_factors = px.bar(all_factors_df,
                          x='Cholera case fatality rate',
                          y='Display_Label',
@@ -178,14 +178,14 @@ with right_col:
                          orientation='h',
                          labels={'Display_Label': '', 'Cholera case fatality rate': 'Avg. Fatality Rate (%)'})
                          
-    # Update layout for a clean look
+# --- Update layout ---
     fig_factors.update_layout(height=160,
                               margin=dict(l=10, r=10, t=10, b=40), 
                               coloraxis_showscale=False, 
                               yaxis={'title': ''})
     st.plotly_chart(fig_factors, use_container_width=True)
 
-    # --- CHART 2: HEATMAP ---
+# --- CHART 2: HEATMAP ---
     st.subheader("Sanitation Disparities and Death Rates Across Geographic Zones")
     heatmap_data = clean_df.pivot_table(values='Cholera case fatality rate', index='WHO Region',
                                         columns='Sanitation_Level', aggfunc='mean').reindex(columns=['Low', 'Medium', 'High'])
@@ -194,7 +194,7 @@ with right_col:
     fig_heatmap.update_layout(height=190, margin=dict(l=0, r=10, t=0, b=0))
     st.plotly_chart(fig_heatmap, use_container_width=True)
 
-    # --- CHART 3: BAR CHART, REGIONAL CASES BY GENDER ---
+# --- CHART 3: BAR CHART, REGIONAL CASES BY GENDER ---
     st.subheader("Regional Gender Gaps in Cholera Cases")
     pyramid_data = clean_df.groupby(['WHO Region', 'Gender'])['Number of reported cases of cholera'].sum().reset_index()
     pyramid_data['Cases'] = pyramid_data.apply(
